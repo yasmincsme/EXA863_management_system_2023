@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Add a new class called &quot;Service&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Installation.java" afterDir="false" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Add a new class called &quot;Cleaning&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Building.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680450350014</updated>
-      <workItem from="1680450351469" duration="2649000" />
+      <workItem from="1680450351469" duration="5186000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1680450391990</created>
@@ -110,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680452965816</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add a new class called &quot;Installation&quot;">
+      <created>1680453702091</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680453702091</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add a new class called &quot;Cleaning&quot;">
+      <created>1680454010020</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680454010020</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +134,8 @@
     <MESSAGE value="Add a new class named &quot;Person&quot;" />
     <MESSAGE value="Add a new class named &quot;Client&quot;" />
     <MESSAGE value="Add a new class called &quot;Service&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a new class called &quot;Service&quot;" />
+    <MESSAGE value="Add a new class called &quot;Installation&quot;" />
+    <MESSAGE value="Add a new class called &quot;Cleaning&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a new class called &quot;Cleaning&quot;" />
   </component>
 </project>
