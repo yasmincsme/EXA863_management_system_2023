@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update in the class &quot;Service&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" afterDir="false" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Created the class &quot;WorkOrder&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680450350014</updated>
-      <workItem from="1680450351469" duration="7975000" />
+      <workItem from="1680450351469" duration="8483000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1680450391990</created>
@@ -144,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680461351958</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Created the class &quot;Technician&quot;">
+      <created>1680465026658</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680465026658</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Created the class &quot;WorkOrder&quot;">
+      <created>1680465060493</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680465060493</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +172,8 @@
     <MESSAGE value="Add a new class called &quot;ComputerCleaning&quot;" />
     <MESSAGE value="Add a new class called &quot;Building&quot;" />
     <MESSAGE value="Update in the class &quot;Service&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update in the class &quot;Service&quot;" />
+    <MESSAGE value="Created the class &quot;Technician&quot;" />
+    <MESSAGE value="Created the class &quot;WorkOrder&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the class &quot;WorkOrder&quot;" />
   </component>
 </project>
