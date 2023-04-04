@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Created the class &quot;WorkOrder&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementation.java" afterDir="false" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Created the class &quot;ClientDAO&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/CRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/DAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -50,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/meira/Downloads/GitHub/EXA863_management_system_2023",
+    "last_opened_file_path": "C:/Users/meira/Downloads/GitHub/gestao-academica",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +59,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.exa863_management_system_2023.dao" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,7 +75,8 @@
       <workItem from="1680450351469" duration="8483000" />
       <workItem from="1680468947311" duration="1049000" />
       <workItem from="1680576058494" duration="847000" />
-      <workItem from="1680576921055" duration="1272000" />
+      <workItem from="1680576921055" duration="1364000" />
+      <workItem from="1680640236103" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1680450391990</created>
@@ -162,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680465060493</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Created the class &quot;ClientDAO&quot;">
+      <created>1680578222172</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1680578222172</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +194,7 @@
     <MESSAGE value="Update in the class &quot;Service&quot;" />
     <MESSAGE value="Created the class &quot;Technician&quot;" />
     <MESSAGE value="Created the class &quot;WorkOrder&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the class &quot;WorkOrder&quot;" />
+    <MESSAGE value="Created the class &quot;ClientDAO&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the class &quot;ClientDAO&quot;" />
   </component>
 </project>
