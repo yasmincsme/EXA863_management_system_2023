@@ -4,9 +4,11 @@ public class ComputerComponent {
 
     private String name;
     private String manufacturer;
+    private String id;
     private String serialNumber;
     private Double cost;
     private Double price;
+    private int quantity;
 
     public ComputerComponent(Double cost) {
         this.cost = cost;
@@ -24,6 +26,13 @@ public class ComputerComponent {
     }
     public void setManufacturer() {
         this.manufacturer = manufacturer;
+    }
+
+    public String getId() {
+        return id;
+    }
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getSerialNumber() {
