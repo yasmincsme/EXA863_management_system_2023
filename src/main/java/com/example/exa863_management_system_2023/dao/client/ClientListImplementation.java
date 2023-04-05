@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ClientListImplementation {
+public class ClientListImplementation implements ClientDAO {
 
     private List<Client> listOfClients;
     private int nextID;
