@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Created the class &quot;ClientDAO&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/CRUD.java" afterDir="false" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Created CRUD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/DAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/meira/Downloads/GitHub/gestao-academica",
+    "last_opened_file_path": "C:/Users/meira/Downloads/GitHub/EXA863_management_system_2023",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,7 +74,8 @@
       <workItem from="1680468947311" duration="1049000" />
       <workItem from="1680576058494" duration="847000" />
       <workItem from="1680576921055" duration="1364000" />
-      <workItem from="1680640236103" duration="529000" />
+      <workItem from="1680640236103" duration="588000" />
+      <workItem from="1680658003804" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1680450391990</created>
@@ -176,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680578222172</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Created CRUD">
+      <created>1680640820885</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1680640820885</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +201,7 @@
     <MESSAGE value="Created the class &quot;Technician&quot;" />
     <MESSAGE value="Created the class &quot;WorkOrder&quot;" />
     <MESSAGE value="Created the class &quot;ClientDAO&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the class &quot;ClientDAO&quot;" />
+    <MESSAGE value="Created CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created CRUD" />
   </component>
 </project>
