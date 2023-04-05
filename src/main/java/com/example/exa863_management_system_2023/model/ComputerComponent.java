@@ -3,11 +3,12 @@ package com.example.exa863_management_system_2023.model;
 public class ComputerComponent {
 
     private String name;
+    private String description;
     private String manufacturer;
     private String id;
     private String serialNumber;
     private Double cost;
-    private Double price;
+    private Double unitPrice;
     private int quantity;
 
     public ComputerComponent(Double cost) {
@@ -19,6 +20,13 @@ public class ComputerComponent {
     }
     public void setName() {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription() {
+        this.description = description;
     }
 
     public String getManufacturer() {
@@ -49,10 +57,17 @@ public class ComputerComponent {
         this.cost = cost;
     }
 
-    public Double getPrice() {
-        return price;
+    public Double getUnitPrice() {
+        return unitPrice;
     }
     public void setPrice() {
-        this.price = price;
+        this.unitPrice = unitPrice;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+    public void setName(String name) {
+        this.name = name;
     }
 }
