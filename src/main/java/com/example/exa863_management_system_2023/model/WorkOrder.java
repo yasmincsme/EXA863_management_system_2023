@@ -27,49 +27,49 @@ public class WorkOrder {
     public Client getClient() {
         return client;
     }
-    public void setClient() {
+    public void setClient(Client client) {
         this.client = client;
     }
 
     public Technician getTechnician() {
         return technician;
     }
-    public void setTechnician() {
+    public void setTechnician(Technician technician) {
         this.technician = technician;
     }
 
     public String getStatus() {
         return status;
     }
-    public void setStatus() {
+    public void setStatus(String status) {
         this.status = status;
     }
 
     public List<Service> getServices() {
         return services;
     }
-    public void setServices() {
+    public void setServices(List<Service> services) {
         this.services = services;
     }
 
     public String getDescription() {
         return description;
     }
-    public void setDescription() {
+    public void setDescription(String description) {
         this.description = description;
     }
 
     public Date getCreatedAt() {
         return createdAt;
     }
-    public void setCreatedAt() {
+    public void setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
     }
 
     public Date getFinishedAtdAt() {
         return finishedAt;
     }
-    public void setFinishedAt() {
+    public void setFinishedAt(Date finishedAt) {
         this.finishedAt = finishedAt;
     }
 }
