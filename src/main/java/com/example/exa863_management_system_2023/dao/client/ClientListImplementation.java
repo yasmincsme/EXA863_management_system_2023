@@ -26,7 +26,7 @@ public class ClientListImplementation implements ClientDAO {
     @Override
     public List<Client> findMany() {
         List<Client> clientList = new ArrayList<Client>();
-        for(Object client : this.listOfClients) {
+        for (Object client : this.listOfClients) {
             clientList.add((Client) client);
         }
         return clientList;
@@ -34,7 +34,7 @@ public class ClientListImplementation implements ClientDAO {
 
     @Override
     public Client findByID(int id) {
-        for(Client client : this.listOfClients) {
+        for (Client client : this.listOfClients) {
             if(client.getId() == id) {
                 return client;
             }
@@ -53,4 +53,29 @@ public class ClientListImplementation implements ClientDAO {
         return clientList;
     }
 
+    @Override
+    public void update(Client client) {
+        for (int i = 0; i < this.listOfClients.size(); i++) {
+            if (this.listOfClients.get(i).getId() == client.getId()) {
+                this.listOfClients.set(i, client);
+                return;
+            }
+        }
+    }
+
+    @Override
+    public void delete(int id) {
+        for (int i = 0; i < this.listOfClients.size(); i++) {
+            if (this.listOfClients.get(i).getId() == id) {
+                this.listOfClients.remove(i);
+                return;
+            }
+        }
+    }
+
+    @Override
+    public void deleteMany() {
+        this.listOfClients = new ArrayList<>();
+        this.nextID = 0;
+    }
 }
