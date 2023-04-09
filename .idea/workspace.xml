@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the interface &quot;CRUD&quot;">
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Create the class &quot;TechnicianDAO&quot;">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/CRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/OrderListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderListImplementation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +50,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaClassFindUsagesOptions.isDerivedClasses": "true",
+    "JavaClassFindUsagesOptions.isFieldsUsages": "true",
+    "JavaClassFindUsagesOptions.isMethodsUsages": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -60,6 +67,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.exa863_management_system_2023.dao.workOrder" />
+      <recent name="com.example.exa863_management_system_2023.dao.technician" />
       <recent name="com.example.exa863_management_system_2023.dao.client" />
       <recent name="com.example.exa863_management_system_2023.dao" />
     </key>
@@ -78,7 +87,7 @@
       <workItem from="1680576921055" duration="1364000" />
       <workItem from="1680640236103" duration="588000" />
       <workItem from="1680658003804" duration="2599000" />
-      <workItem from="1680997091517" duration="4779000" />
+      <workItem from="1680997091517" duration="10518000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1680450391990</created>
@@ -262,7 +271,42 @@
       <option name="project" value="LOCAL" />
       <updated>1681002784252</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Update the class &quot;ClientListImplementation&quot;">
+      <created>1681003613582</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1681003613582</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Update the class &quot;ClientListImplementation&quot;">
+      <created>1681003644129</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1681003644129</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Update the class &quot;TechnicianListImplementation&quot;">
+      <created>1681006514600</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1681006514600</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Create the class &quot;OrderListImplementation&quot;">
+      <created>1681006541815</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1681006541815</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Create the class &quot;TechnicianDAO&quot;">
+      <created>1681006568106</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1681006568106</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,10 +330,13 @@
     <MESSAGE value="Create the class &quot;ClietListImplementation&quot;" />
     <MESSAGE value="Update the class &quot;ComputerComponent&quot;" />
     <MESSAGE value="Update the class &quot;ClientDAO&quot;" />
-    <MESSAGE value="Update the class &quot;ClientListImplementation&quot;" />
     <MESSAGE value="Update the class &quot;DAO&quot;" />
     <MESSAGE value="Update the class &quot;Person&quot;" />
     <MESSAGE value="Update the interface &quot;CRUD&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the interface &quot;CRUD&quot;" />
+    <MESSAGE value="Update the class &quot;ClientListImplementation&quot;" />
+    <MESSAGE value="Update the class &quot;TechnicianListImplementation&quot;" />
+    <MESSAGE value="Create the class &quot;OrderListImplementation&quot;" />
+    <MESSAGE value="Create the class &quot;TechnicianDAO&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create the class &quot;TechnicianDAO&quot;" />
   </component>
 </project>
