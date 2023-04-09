@@ -21,21 +21,21 @@ public abstract class Service {
     public String getDescription() {
         return description;
     }
-    public void setDescription() {
+    public void setDescription(String description) {
         this.description = description;
     }
 
     public Double getPrice() {
         return price;
     }
-    public void setPrice() {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
     public Double getCost() {
         return cost;
     }
-    public void setCost() {
+    public void setCost(Double price) {
         this.cost = cost;
     }
 }
