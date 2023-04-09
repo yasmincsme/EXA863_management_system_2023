@@ -13,14 +13,14 @@ public class Client extends Person {
     public String getAddress() {
         return address;
     }
-    public void setAddress() {
+    public void setAddress(String address) {
         this.address = address;
     }
 
     public String getPhone() {
         return phone;
     }
-    public void setPhone() {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
