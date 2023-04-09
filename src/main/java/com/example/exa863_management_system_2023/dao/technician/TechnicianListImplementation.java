@@ -5,7 +5,7 @@ import com.example.exa863_management_system_2023.model.Technician;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TechnicianListImplementation implements TechnicianDAO{
+public class TechnicianListImplementation implements TechnicianDAO {
 
     private List<Technician> listOfTechnician;
     private int nextID;
@@ -33,7 +33,7 @@ public class TechnicianListImplementation implements TechnicianDAO{
     }
 
     @Override
-    public Technician findbyID(int id) {
+    public Technician findByID(int id) {
         for (Technician technician : this.listOfTechnician) {
             if(technician.getId() == id) {
                 return technician;
