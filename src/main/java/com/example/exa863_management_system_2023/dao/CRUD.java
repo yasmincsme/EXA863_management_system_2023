@@ -6,7 +6,7 @@ public interface CRUD<T, E extends Exception> {
 
     public T create(T object);
 
-    public T findbyID(int id);
+    public T findByID(int id);
 
     public List<T> findMany();
 
