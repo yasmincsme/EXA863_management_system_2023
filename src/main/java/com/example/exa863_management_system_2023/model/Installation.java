@@ -21,7 +21,7 @@ public class Installation extends Service {
     public String getOperatingSystem() {
         return operatingSystem;
     }
-    public void setOperatingSystem() {
+    public void setOperatingSystem(String operatingSystem) {
         this.operatingSystem = operatingSystem;
     }
 }
