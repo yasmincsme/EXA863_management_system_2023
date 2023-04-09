@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the class &quot;ComputerComponent&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentListImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/computerComponent/ComputerComponentLDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationDAO.java" afterDir="false" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the interface &quot;InstallationDAO&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Installation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Installation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +84,7 @@
       <workItem from="1680640236103" duration="588000" />
       <workItem from="1680658003804" duration="2599000" />
       <workItem from="1680997091517" duration="13799000" />
-      <workItem from="1681053932751" duration="5342000" />
+      <workItem from="1681053932751" duration="6129000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1680450391990</created>
@@ -363,22 +352,83 @@
       <option name="project" value="LOCAL" />
       <updated>1681015140819</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Update in the class &quot;Client&quot; - Modifying getters and setters">
+      <created>1681059740133</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1681059740134</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Update in the class &quot;ComputerComponent&quot; - Modifying getters and setters">
+      <created>1681059770627</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1681059770627</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Update in the class &quot;Installation&quot; - Modifying getters and setters">
+      <created>1681059794118</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1681059794118</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Update in the class &quot;Person&quot; - Modifying getters and setters">
+      <created>1681059923236</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1681059923236</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Update in the class &quot;WorkOrder&quot; - Modifying getters and setters">
+      <created>1681059953813</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1681059953813</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Update in the class &quot;Service&quot; - Modifying getters and setters">
+      <created>1681059979177</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1681059979177</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Update in the class &quot;Service&quot; - Modifying getters and setters">
+      <created>1681059999592</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1681059999592</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Update in the class &quot;ComponentListImplementation&quot; - Modifying getters and setters">
+      <created>1681060045448</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1681060045448</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Update the interface &quot;ComputerComponentDAO&quot;">
+      <created>1681060089736</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1681060089736</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Update the interface &quot;InstallationDAO&quot;">
+      <created>1681060120624</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1681060120624</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add a new class called &quot;Installation&quot;" />
-    <MESSAGE value="Add a new class called &quot;Cleaning&quot;" />
-    <MESSAGE value="Add a new class called &quot;ComputerCleaning&quot;" />
-    <MESSAGE value="Add a new class called &quot;Building&quot;" />
-    <MESSAGE value="Update in the class &quot;Service&quot;" />
-    <MESSAGE value="Created the class &quot;Technician&quot;" />
-    <MESSAGE value="Created the class &quot;WorkOrder&quot;" />
-    <MESSAGE value="Created the class &quot;ClientDAO&quot;" />
-    <MESSAGE value="Created CRUD" />
     <MESSAGE value="create the class &quot;ClientDAO&quot;" />
     <MESSAGE value="Create the class &quot;ClietListImplementation&quot;" />
     <MESSAGE value="Update the class &quot;ClientDAO&quot;" />
@@ -395,6 +445,15 @@
     <MESSAGE value="Update the class &quot;WorkOrderListImplementation&quot;" />
     <MESSAGE value="Update the interface &quot;WorkOrderDAO&quot;" />
     <MESSAGE value="Update the class &quot;ComputerComponent&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the class &quot;ComputerComponent&quot;" />
+    <MESSAGE value="Update in the class &quot;Client&quot; - Modifying getters and setters" />
+    <MESSAGE value="Update in the class &quot;ComputerComponent&quot; - Modifying getters and setters" />
+    <MESSAGE value="Update in the class &quot;Installation&quot; - Modifying getters and setters" />
+    <MESSAGE value="Update in the class &quot;Person&quot; - Modifying getters and setters" />
+    <MESSAGE value="Update in the class &quot;WorkOrder&quot; - Modifying getters and setters" />
+    <MESSAGE value="Update in the class &quot;Service&quot; - Modifying getters and setters" />
+    <MESSAGE value="Update in the class &quot;ComponentListImplementation&quot; - Modifying getters and setters" />
+    <MESSAGE value="Update the interface &quot;ComputerComponentDAO&quot;" />
+    <MESSAGE value="Update the interface &quot;InstallationDAO&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the interface &quot;InstallationDAO&quot;" />
   </component>
 </project>
