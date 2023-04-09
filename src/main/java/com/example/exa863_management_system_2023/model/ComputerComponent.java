@@ -3,9 +3,9 @@ package com.example.exa863_management_system_2023.model;
 public class ComputerComponent {
 
     private String name;
+    private int id;
     private String description;
     private String manufacturer;
-    private int id;
     private String serialNumber;
     private Double cost;
     private Double unitPrice;
@@ -22,20 +22,6 @@ public class ComputerComponent {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-    public void setDescription() {
-        this.description = description;
-    }
-
-    public String getManufacturer() {
-        return manufacturer;
-    }
-    public void setManufacturer() {
-        this.manufacturer = manufacturer;
-    }
-
     public int getId() {
         return id;
     }
@@ -43,31 +29,44 @@ public class ComputerComponent {
         this.id = id;
     }
 
+    public String getDescription() {
+        return description;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
     public String getSerialNumber() {
         return serialNumber;
     }
-    public void setSerialNumber() {
+    public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
     public Double getCost() {
         return cost;
     }
-    public void setCost() {
+    public void setCost(Double cost) {
         this.cost = cost;
     }
 
     public Double getUnitPrice() {
         return unitPrice;
     }
-    public void setPrice() {
+    public void setPrice(Double unitPrice) {
         this.unitPrice = unitPrice;
     }
 
     public int getQuantity() {
         return quantity;
     }
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;}
 }
