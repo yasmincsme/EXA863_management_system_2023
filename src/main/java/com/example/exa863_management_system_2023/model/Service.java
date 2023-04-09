@@ -3,6 +3,7 @@ package com.example.exa863_management_system_2023.model;
 public abstract class Service {
 
     private String name;
+    private int id;
     private String description;
     private Double price;
     private Double cost;
@@ -16,6 +17,11 @@ public abstract class Service {
     }
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getId() { return id;}
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getDescription() {
