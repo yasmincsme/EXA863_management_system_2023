@@ -13,7 +13,7 @@ public class Cleaning extends Service{
     public List<String> getComponents() {
         return getComponents();
     }
-    public void setComponents() {
+    public void setComponents(List<String> components) {
         this.components = components;
     }
 }

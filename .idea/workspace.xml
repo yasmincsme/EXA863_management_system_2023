@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the interface &quot;InstallationDAO&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the interface &quot;ComputerComponentDAO&quot; - Add a new field" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +82,7 @@
       <workItem from="1680640236103" duration="588000" />
       <workItem from="1680658003804" duration="2599000" />
       <workItem from="1680997091517" duration="13799000" />
-      <workItem from="1681053932751" duration="6129000" />
+      <workItem from="1681053932751" duration="6566000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1680450391990</created>
@@ -422,14 +420,20 @@
       <option name="project" value="LOCAL" />
       <updated>1681060120624</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Update the interface &quot;ComputerComponentDAO&quot; - Add a new field">
+      <created>1681060716013</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1681060716013</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create the class &quot;ClientDAO&quot;" />
     <MESSAGE value="Create the class &quot;ClietListImplementation&quot;" />
     <MESSAGE value="Update the class &quot;ClientDAO&quot;" />
     <MESSAGE value="Update the class &quot;DAO&quot;" />
@@ -454,6 +458,7 @@
     <MESSAGE value="Update in the class &quot;ComponentListImplementation&quot; - Modifying getters and setters" />
     <MESSAGE value="Update the interface &quot;ComputerComponentDAO&quot;" />
     <MESSAGE value="Update the interface &quot;InstallationDAO&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the interface &quot;InstallationDAO&quot;" />
+    <MESSAGE value="Update the interface &quot;ComputerComponentDAO&quot; - Add a new field" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the interface &quot;ComputerComponentDAO&quot; - Add a new field" />
   </component>
 </project>
