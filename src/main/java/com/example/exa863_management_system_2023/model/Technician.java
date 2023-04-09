@@ -11,7 +11,7 @@ public class Technician extends Person {
     public WorkOrder getWorkorder() {
         return workOrder;
     }
-    public void setWorkOrder() {
+    public void setWorkOrder(WorkOrder workOrder) {
         this.workOrder = workOrder;
     }
 }
