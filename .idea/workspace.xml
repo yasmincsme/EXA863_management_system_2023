@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the class &quot;Person&quot;" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the interface &quot;CRUD&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementation.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/meira/Downloads/GitHub/EXA863_management_system_2023",
+    "last_opened_file_path": "C:/Users/meira/Downloads/GitHub/gestao-academica",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +77,8 @@
       <workItem from="1680576058494" duration="847000" />
       <workItem from="1680576921055" duration="1364000" />
       <workItem from="1680640236103" duration="588000" />
-      <workItem from="1680658003804" duration="1952000" />
+      <workItem from="1680658003804" duration="2599000" />
+      <workItem from="1680997091517" duration="4779000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1680450391990</created>
@@ -216,7 +220,49 @@
       <option name="project" value="LOCAL" />
       <updated>1680660649509</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Update the class &quot;ComputerComponent&quot;">
+      <created>1680660962721</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1680660962721</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update the class &quot;ClientDAO&quot;">
+      <created>1681002695888</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681002695888</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update the class &quot;ClientListImplementation&quot;">
+      <created>1681002721756</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681002721756</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update the class &quot;DAO&quot;">
+      <created>1681002745084</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681002745084</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Update the class &quot;Person&quot;">
+      <created>1681002764213</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1681002764213</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Update the interface &quot;CRUD&quot;">
+      <created>1681002784252</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1681002784252</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +285,11 @@
     <MESSAGE value="create the class &quot;ClientDAO&quot;" />
     <MESSAGE value="Create the class &quot;ClietListImplementation&quot;" />
     <MESSAGE value="Update the class &quot;ComputerComponent&quot;" />
+    <MESSAGE value="Update the class &quot;ClientDAO&quot;" />
+    <MESSAGE value="Update the class &quot;ClientListImplementation&quot;" />
+    <MESSAGE value="Update the class &quot;DAO&quot;" />
     <MESSAGE value="Update the class &quot;Person&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the class &quot;Person&quot;" />
+    <MESSAGE value="Update the interface &quot;CRUD&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the interface &quot;CRUD&quot;" />
   </component>
 </project>
