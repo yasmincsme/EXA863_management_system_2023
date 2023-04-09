@@ -14,7 +14,7 @@ public class Installation extends Service {
     public List<String> getPrograms() {
         return programs;
     }
-    public void setPrograms() {
+    public void setPrograms(List<String> programs) {
         this.programs = programs;
     }
 
