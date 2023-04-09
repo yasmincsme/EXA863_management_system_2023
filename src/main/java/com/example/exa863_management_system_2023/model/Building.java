@@ -13,7 +13,7 @@ public class Building extends Service{
     public List<ComputerComponent> getUsedComponents() {
         return usedComponents;
     }
-    public void setUsedComponents() {
+    public void setUsedComponents(List<ComputerComponent> usedComponents) {
         this.usedComponents = usedComponents;
     }
 }
