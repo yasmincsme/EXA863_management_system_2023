@@ -4,7 +4,6 @@ public class Client extends Person {
 
     private String address;
     private String phone;
-    private String email;
 
     public Client(String name) {
         super(name);
