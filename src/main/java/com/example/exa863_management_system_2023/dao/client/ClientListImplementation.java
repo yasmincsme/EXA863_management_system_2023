@@ -39,7 +39,7 @@ public class ClientListImplementation implements ClientDAO {
     @Override
     public Client findByID(String id) {
         for (Client client : this.listOfClients) {
-            if(Objects.equals(client.getID(), id)) {
+            if (Objects.equals(client.getID(), id)) {
                 return client;
             }
         }
