@@ -4,21 +4,25 @@ import com.example.exa863_management_system_2023.model.Building;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 public class BuildingListImplementation implements BuildingDAO {
 
     private List<Building> listOfBuilding;
-    private int nextID;
+    private String nextID;
 
     public BuildingListImplementation() {
         this.listOfBuilding = new ArrayList<Building>();
-        this.nextID = 0;
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
     }
 
     @Override
     public Building create(Building building) {
-        building.setId(this.nextID);
-        this.nextID++;
+        building.setID(this.nextID);
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
         this.listOfBuilding.add(building);
         return building;
     }
@@ -33,9 +37,9 @@ public class BuildingListImplementation implements BuildingDAO {
     }
 
     @Override
-    public Building findByID(int id) {
+    public Building findByID(String id) {
         for (Building building : this.listOfBuilding) {
-            if (building.getId() == id) {
+            if (Objects.equals(building.getID(), id)) {
                 return building;
             }
         }
@@ -45,16 +49,19 @@ public class BuildingListImplementation implements BuildingDAO {
     @Override
     public void update(Building building) throws Exception {
         for (int i = 0; i < this.listOfBuilding.size(); i++) {
-            this.listOfBuilding.set(i, building);
-            return;
+            if (Objects.equals(this.listOfBuilding.get(i).getID(), building.getID())) {
+                this.listOfBuilding.set(i, building);
+                return;
+            }
         }
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(String id) throws Exception {
         for (int i = 0; i < this.listOfBuilding.size(); i++) {
-            if (this.listOfBuilding.get(i).getId() == id) {
+            if (this.listOfBuilding.get(i).getID().equals(id)) {
                 this.listOfBuilding.remove(i);
+                return;
             }
         }
     }
@@ -62,6 +69,6 @@ public class BuildingListImplementation implements BuildingDAO {
     @Override
     public void deleteMany() {
         this.listOfBuilding = new ArrayList<>();
-        this.nextID = 0;
+        this.nextID = null;
     }
 }
