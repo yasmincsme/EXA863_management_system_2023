@@ -4,27 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the class &quot;Service&quot; - Add the field &quot;id&quot;">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/employee/EmployeeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/employee/EmployeeListImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/CRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/BuildingListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/BuildingListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientDAO.java" afterDir="false" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the interface &quot;CRUD&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/manager/ManagerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/manager/ManagerListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/employee/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/employee/EmployeeListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeListImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,11 +66,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.exa863_management_system_2023.dao.manager" />
+      <recent name="com.example.exa863_management_system_2023.dao.building.employee" />
       <recent name="com.example.exa863_management_system_2023.dao.building" />
       <recent name="com.example.exa863_management_system_2023.dao.cleaning" />
       <recent name="com.example.exa863_management_system_2023.dao.computerComponent" />
-      <recent name="com.example.exa863_management_system_2023.dao.installation" />
-      <recent name="com.example.exa863_management_system_2023.dao.workOrder" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.exa863_management_system_2023.dao" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -107,140 +95,7 @@
       <workItem from="1681081729355" duration="4090000" />
       <workItem from="1681085878745" duration="1702000" />
       <workItem from="1681136691158" duration="2575000" />
-      <workItem from="1681173786796" duration="2107000" />
-    </task>
-    <task id="LOCAL-00010" summary="Add a new class called &quot;Building&quot;">
-      <created>1680460783912</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1680460783912</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Update in the class &quot;Service&quot;">
-      <created>1680461351958</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1680461351958</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Created the class &quot;Technician&quot;">
-      <created>1680465026658</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1680465026658</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Created the class &quot;WorkOrder&quot;">
-      <created>1680465060493</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1680465060493</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Created the class &quot;ClientDAO&quot;">
-      <created>1680578222172</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1680578222172</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Created CRUD">
-      <created>1680640820885</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1680640820885</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Created CRUD">
-      <created>1680659317427</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1680659317427</updated>
-    </task>
-    <task id="LOCAL-00017" summary="create the class &quot;ClientDAO&quot;">
-      <created>1680660545853</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1680660545853</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Create the class &quot;ClietListImplementation&quot;">
-      <created>1680660583234</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1680660583234</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Update the class &quot;ComputerComponent&quot;">
-      <created>1680660620467</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1680660620467</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Update the class &quot;Person&quot;">
-      <created>1680660649509</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1680660649509</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Update the class &quot;ComputerComponent&quot;">
-      <created>1680660962721</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1680660962721</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Update the class &quot;ClientDAO&quot;">
-      <created>1681002695888</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1681002695888</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Update the class &quot;ClientListImplementation&quot;">
-      <created>1681002721756</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1681002721756</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Update the class &quot;DAO&quot;">
-      <created>1681002745084</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1681002745084</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Update the class &quot;Person&quot;">
-      <created>1681002764213</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1681002764213</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Update the interface &quot;CRUD&quot;">
-      <created>1681002784252</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1681002784252</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Update the class &quot;ClientListImplementation&quot;">
-      <created>1681003613582</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1681003613582</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Update the class &quot;ClientListImplementation&quot;">
-      <created>1681003644129</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1681003644129</updated>
+      <workItem from="1681173786796" duration="6630000" />
     </task>
     <task id="LOCAL-00029" summary="Update the class &quot;TechnicianListImplementation&quot;">
       <created>1681006514600</created>
@@ -452,31 +307,146 @@
       <option name="project" value="LOCAL" />
       <updated>1681077354011</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Update the class &quot;BuildingListImplementation&quot; - Change the implementation of the id (uuid)">
+      <created>1681176603658</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176603660</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Update the class &quot;CleaningListImplementation&quot; - Change the implementation of the id (uuid)">
+      <created>1681176624315</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176624315</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Update the class &quot;ComponentListImplementation&quot; - Change the implementation of the id (uuid)">
+      <created>1681176642554</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176642554</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Update the class &quot;ClientListImplementation&quot; - Change the implementation of the id (uuid)">
+      <created>1681176663051</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176663051</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Update the class &quot;InstallationListImplementation&quot; - Change the implementation of the id (uuid)">
+      <created>1681176695026</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176695026</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Update the class &quot;TechnicianListImplementation&quot; - Change the implementation of the id (uuid)">
+      <created>1681176719000</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176719000</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Update the class &quot;WorkOrderListImplementation&quot; - Change the implementation of the id (uuid)">
+      <created>1681176739187</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176739187</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Update the class &quot;Person&quot; - Now the field id is a String">
+      <created>1681176790327</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176790327</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Update the class &quot;Service&quot; - Now the field id is a String">
+      <created>1681176805492</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176805493</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Update the class &quot;WorkOrder&quot; - Now the field id is a String">
+      <created>1681176821661</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176821661</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Update the class &quot;Client&quot; - Now the field id is a String">
+      <created>1681176837677</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176837677</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Create the class &quot;Manager&quot;">
+      <created>1681176883771</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176883771</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Create the class &quot;Employee&quot;">
+      <created>1681176907310</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176907310</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Create the class &quot;EmployeeListImplementation&quot;">
+      <created>1681176935168</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176935168</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Create the class &quot;User&quot;">
+      <created>1681176957587</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176957587</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Create the interface &quot;EmployeeDAO&quot;">
+      <created>1681176978847</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1681176978847</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Update the interface &quot;ClientDAO&quot;">
+      <created>1681177004658</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1681177004658</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Update the interface &quot;CRUD&quot;">
+      <created>1681177024188</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1681177024188</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Update the interface &quot;CRUD&quot;">
+      <created>1681177036747</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1681177036747</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update in the the interface &quot;CRUD&quot;" />
-    <MESSAGE value="Update in the interface &quot;CRUD&quot;" />
-    <MESSAGE value="Update the class &quot;TechnicianListImplementation&quot;" />
-    <MESSAGE value="Update the class &quot;WorkOrderListImplementation&quot;" />
-    <MESSAGE value="Update the interface &quot;WorkOrderDAO&quot;" />
-    <MESSAGE value="Update the class &quot;ComputerComponent&quot;" />
-    <MESSAGE value="Update in the class &quot;Client&quot; - Modifying getters and setters" />
-    <MESSAGE value="Update in the class &quot;ComputerComponent&quot; - Modifying getters and setters" />
-    <MESSAGE value="Update in the class &quot;Installation&quot; - Modifying getters and setters" />
-    <MESSAGE value="Update in the class &quot;Person&quot; - Modifying getters and setters" />
-    <MESSAGE value="Update in the class &quot;WorkOrder&quot; - Modifying getters and setters" />
-    <MESSAGE value="Update in the class &quot;Service&quot; - Modifying getters and setters" />
-    <MESSAGE value="Update in the class &quot;ComponentListImplementation&quot; - Modifying getters and setters" />
-    <MESSAGE value="Update the interface &quot;ComputerComponentDAO&quot;" />
-    <MESSAGE value="Update the interface &quot;InstallationDAO&quot;" />
-    <MESSAGE value="Update the interface &quot;ComputerComponentDAO&quot; - Add a new field" />
-    <MESSAGE value="Update the class &quot;Cleaning&quot;" />
-    <MESSAGE value="Update the class &quot;Building&quot; - Edit the field &quot;setOperatingSystem&quot;" />
     <MESSAGE value="Update the class &quot;Installation&quot; - Edit the field &quot;setOperatingSystem&quot;" />
     <MESSAGE value="Create the interface &quot;BuildingDAO&quot;" />
     <MESSAGE value="Create the interface &quot;CleaningDAO&quot;" />
@@ -484,6 +454,24 @@
     <MESSAGE value="Create the class &quot;CleaningListImplementation&quot;" />
     <MESSAGE value="Create the class &quot;InstallationListImplementation&quot;" />
     <MESSAGE value="Update the class &quot;Service&quot; - Add the field &quot;id&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the class &quot;Service&quot; - Add the field &quot;id&quot;" />
+    <MESSAGE value="Update the class &quot;BuildingListImplementation&quot; - Change the implementation of the id (uuid)" />
+    <MESSAGE value="Update the class &quot;CleaningListImplementation&quot; - Change the implementation of the id (uuid)" />
+    <MESSAGE value="Update the class &quot;ComponentListImplementation&quot; - Change the implementation of the id (uuid)" />
+    <MESSAGE value="Update the class &quot;ClientListImplementation&quot; - Change the implementation of the id (uuid)" />
+    <MESSAGE value="Update the class &quot;InstallationListImplementation&quot; - Change the implementation of the id (uuid)" />
+    <MESSAGE value="Update the class &quot;TechnicianListImplementation&quot; - Change the implementation of the id (uuid)" />
+    <MESSAGE value="Update the class &quot;WorkOrderListImplementation&quot; - Change the implementation of the id (uuid)" />
+    <MESSAGE value="Update the class &quot;Person&quot; - Now the field id is a String" />
+    <MESSAGE value="Update the class &quot;Service&quot; - Now the field id is a String" />
+    <MESSAGE value="Update the class &quot;WorkOrder&quot; - Now the field id is a String" />
+    <MESSAGE value="Update the class &quot;Client&quot; - Now the field id is a String" />
+    <MESSAGE value="Create the class &quot;Manager&quot;" />
+    <MESSAGE value="Create the class &quot;Employee&quot;" />
+    <MESSAGE value="Create the class &quot;EmployeeListImplementation&quot;" />
+    <MESSAGE value="Create the class &quot;User&quot;" />
+    <MESSAGE value="Create the interface &quot;EmployeeDAO&quot;" />
+    <MESSAGE value="Update the interface &quot;ClientDAO&quot;" />
+    <MESSAGE value="Update the interface &quot;CRUD&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the interface &quot;CRUD&quot;" />
   </component>
 </project>
