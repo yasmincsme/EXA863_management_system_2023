@@ -5,21 +5,25 @@ import com.example.exa863_management_system_2023.model.ComputerComponent;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 public class ComponentListImplementation implements ComputerComponentLDAO {
 
     private List<ComputerComponent> stock;
-    private int nextID;
+    private String nextID;
 
     public ComponentListImplementation() {
         this.stock = new ArrayList<ComputerComponent>();
-        this.nextID = 0;
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
     }
 
     @Override
     public ComputerComponent create(ComputerComponent component) {
-        component.setId(this.nextID);
-        this.nextID++;
+        component.setID(this.nextID);
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
         this.stock.add(component);
         return component;
     }
@@ -34,9 +38,9 @@ public class ComponentListImplementation implements ComputerComponentLDAO {
     }
 
     @Override
-    public ComputerComponent findByID(int id) {
+    public ComputerComponent findByID(String id) {
         for (ComputerComponent component : this.stock) {
-            if (component.getId() == id) {
+            if (Objects.equals(component.getID(), id)) {
                 return component;
             }
         }
@@ -47,7 +51,7 @@ public class ComponentListImplementation implements ComputerComponentLDAO {
     public List<ComputerComponent> findByName(String name) {
         List<ComputerComponent> componentList = new ArrayList<ComputerComponent>();
         for (ComputerComponent component : this.stock) {
-            if(component.getName() == name) {
+            if(Objects.equals(component.getName(), name)) {
                 componentList.add(component);
             }
         }
@@ -57,7 +61,7 @@ public class ComponentListImplementation implements ComputerComponentLDAO {
     @Override
     public void update(ComputerComponent component) throws Exception{
         for (int i = 0; i < this.stock.size(); i++) {
-            if (this.stock.get(i).getId() == component.getId()) {
+            if (Objects.equals(this.stock.get(i).getID(), component.getID())) {
                 this.stock.set(i, component);
                 return;
             }
@@ -65,10 +69,11 @@ public class ComponentListImplementation implements ComputerComponentLDAO {
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(String id) {
         for (int i = 0; i < this.stock.size(); i++) {
-            if (this.stock.get(i).getId() == id) {
+            if (Objects.equals(this.stock.get(i).getID(), id)) {
                 this.stock.remove(i);
+                return;
             }
         }
     }
@@ -76,14 +81,14 @@ public class ComponentListImplementation implements ComputerComponentLDAO {
     @Override
     public void deleteMany() {
         this.stock = new ArrayList<>();
-        this.nextID = 0;
+        this.nextID = null;
     }
 
-    public void deleteSome(int id, int quantity) {
-        for (int i = 0; i< this.stock.size(); i++) {
-            if(this.stock.get(i).getId() == id) {
-                int currentQuantity = this.stock.get(i).getQuantity();
-                this.stock.get(i).setQuantity(currentQuantity - quantity);
+    public void deleteSome(String id, int quantity) {
+        for (ComputerComponent component : this.stock) {
+            if (Objects.equals(component.getID(), id)) {
+                int currentQuantity = component.getQuantity();
+                component.setQuantity(currentQuantity - quantity);
                 return;
             }
         }
