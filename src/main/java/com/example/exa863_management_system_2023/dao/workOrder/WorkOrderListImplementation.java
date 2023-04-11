@@ -6,21 +6,25 @@ import com.example.exa863_management_system_2023.model.WorkOrder;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 public class WorkOrderListImplementation implements WorkOrderDAO {
 
     private List<WorkOrder> listOfWorkOrder;
-    private int nextID;
+    private String nextID;
 
     public WorkOrderListImplementation() {
         this.listOfWorkOrder = new ArrayList<>();
-        this.nextID = 0;
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
     }
 
     @Override
     public WorkOrder create(WorkOrder workOrder) {
-        workOrder.setId(this.nextID);
-        this.nextID++;
+        workOrder.setID(this.nextID);
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
         this.listOfWorkOrder.add(workOrder);
         return workOrder;
     }
@@ -35,9 +39,9 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     }
 
     @Override
-    public WorkOrder findByID(int id) {
+    public WorkOrder findByID(String id) {
         for (WorkOrder workOrder : this.listOfWorkOrder) {
-            if (workOrder.getId() == id) {
+            if (Objects.equals(workOrder.getID(), id)) {
                 return workOrder;
             }
         }
@@ -47,7 +51,7 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     @Override
     public void update(WorkOrder workOrder) throws Exception {
         for (int i = 0; i < listOfWorkOrder.size(); i++) {
-            if (this.listOfWorkOrder.get(i).getId() == workOrder.getId()) {
+            if (Objects.equals(this.listOfWorkOrder.get(i).getID(), workOrder.getID())) {
                 this.listOfWorkOrder.set(i, workOrder);
                 return;
             }
@@ -55,9 +59,9 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     }
 
     @Override
-    public void delete(int id) throws Exception {
+    public void delete(String id) throws Exception {
         for (int i = 0; i < this.listOfWorkOrder.size(); i++) {
-            if (this.listOfWorkOrder.get(i).getId() == id) {
+            if (Objects.equals(this.listOfWorkOrder.get(i).getID(), id)) {
                 this.listOfWorkOrder.remove(i);
                 return;
             }
@@ -67,6 +71,6 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     @Override
     public void deleteMany() {
         this.listOfWorkOrder = new ArrayList<>();
-        this.nextID = 0;
+        this.nextID = null;
     }
 }
