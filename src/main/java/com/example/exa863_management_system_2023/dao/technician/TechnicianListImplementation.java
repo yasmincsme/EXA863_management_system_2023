@@ -4,21 +4,25 @@ import com.example.exa863_management_system_2023.model.Technician;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 public class TechnicianListImplementation implements TechnicianDAO {
 
     private List<Technician> listOfTechnician;
-    private int nextID;
+    private String nextID;
 
     public TechnicianListImplementation() {
         this.listOfTechnician = new ArrayList<Technician>();
-        this.nextID = 0;
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
     }
 
     @Override
     public Technician create(Technician technician) {
-        technician.setId(this.nextID);
-        this.nextID++;
+        technician.setID(this.nextID);
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
         this.listOfTechnician.add(technician);
         return technician;
     }
@@ -33,9 +37,9 @@ public class TechnicianListImplementation implements TechnicianDAO {
     }
 
     @Override
-    public Technician findByID(int id) {
+    public Technician findByID(String id) {
         for (Technician technician : this.listOfTechnician) {
-            if(technician.getId() == id) {
+            if(Objects.equals(technician.getID(), id)) {
                 return technician;
             }
         }
@@ -46,7 +50,7 @@ public class TechnicianListImplementation implements TechnicianDAO {
     public List<Technician> findByName(String name) {
         List<Technician> technicianList = new ArrayList<Technician>();
         for (Technician technician : this.listOfTechnician) {
-            if (technician.getName() == name) {
+            if (Objects.equals(technician.getName(), name)) {
                 technicianList.add(technician);
             }
         }
@@ -56,7 +60,7 @@ public class TechnicianListImplementation implements TechnicianDAO {
     @Override
     public void update(Technician technician) throws Exception {
         for (int i = 0; i < this.listOfTechnician.size(); i++) {
-            if (this.listOfTechnician.get(i).getId() == technician.getId()) {
+            if (Objects.equals(this.listOfTechnician.get(i).getID(), technician.getID())) {
                 this.listOfTechnician.set(i,technician);
                 return;
             }
@@ -64,9 +68,9 @@ public class TechnicianListImplementation implements TechnicianDAO {
     }
 
     @Override
-    public void delete(int id) throws Exception {
+    public void delete(String id) throws Exception {
         for (int i = 0; i < this.listOfTechnician.size(); i++) {
-            if (this.listOfTechnician.get(i).getId() == id) {
+            if (Objects.equals(this.listOfTechnician.get(i).getID(), id)) {
                 this.listOfTechnician.remove(i);
                 return;
             }
@@ -76,6 +80,6 @@ public class TechnicianListImplementation implements TechnicianDAO {
     @Override
     public void deleteMany() {
         this.listOfTechnician = new ArrayList<>();
-        this.nextID = 0;
+        this.nextID = null;
     }
 }
