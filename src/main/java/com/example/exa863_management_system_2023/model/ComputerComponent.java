@@ -3,7 +3,7 @@ package com.example.exa863_management_system_2023.model;
 public class ComputerComponent {
 
     private String name;
-    private int id;
+    private String id;
     private String description;
     private String manufacturer;
     private String serialNumber;
@@ -22,10 +22,10 @@ public class ComputerComponent {
         this.name = name;
     }
 
-    public int getId() {
+    public String getID() {
         return id;
     }
-    public void setId(int id) {
+    public void setID(String id) {
         this.id = id;
     }
 

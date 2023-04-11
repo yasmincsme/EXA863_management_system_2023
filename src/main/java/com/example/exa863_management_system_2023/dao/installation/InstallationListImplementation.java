@@ -4,21 +4,25 @@ import com.example.exa863_management_system_2023.model.Installation;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 public class InstallationListImplementation implements InstallationDAO {
 
     private List<Installation> listOfInstallations;
-    private int nextID;
+    private String nextID;
 
     public InstallationListImplementation() {
         this.listOfInstallations = new ArrayList<Installation>();
-        this.nextID = 0;
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
     }
 
     @Override
     public Installation create(Installation installation) {
-        installation.setId(this.nextID);
-        this.nextID++;
+        installation.setID(this.nextID);
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
         this.listOfInstallations.add(installation);
         return installation;
     }
@@ -33,9 +37,9 @@ public class InstallationListImplementation implements InstallationDAO {
     }
 
     @Override
-    public Installation findByID(int id) {
+    public Installation findByID(String id) {
         for (Installation installation : this.listOfInstallations) {
-            if (installation.getId() == id) {
+            if (Objects.equals(installation.getID(), id)) {
                 return installation;
             }
         }
@@ -45,7 +49,7 @@ public class InstallationListImplementation implements InstallationDAO {
     @Override
     public void update(Installation installation) throws Exception {
         for (int i = 0; i < this.listOfInstallations.size(); i++) {
-            if (this.listOfInstallations.get(i).getId() == installation.getId()) {
+            if (Objects.equals(this.listOfInstallations.get(i).getID(), installation.getID())) {
                 this.listOfInstallations.set(i, installation);
                 return;
             }
@@ -53,10 +57,11 @@ public class InstallationListImplementation implements InstallationDAO {
     }
 
     @Override
-    public void delete(int id) throws Exception {
+    public void delete(String id) throws Exception {
         for (int i = 0; i < this.listOfInstallations.size(); i++) {
-            if (this.listOfInstallations.get(i).getId() == id) {
+            if (Objects.equals(this.listOfInstallations.get(i).getID(), id)) {
                 this.listOfInstallations.remove(i);
+                return;
             }
         }
     }
@@ -64,6 +69,6 @@ public class InstallationListImplementation implements InstallationDAO {
     @Override
     public void deleteMany() {
         this.listOfInstallations = new ArrayList<>();
-        this.nextID = 0;
+        this.nextID = null;
     }
 }
