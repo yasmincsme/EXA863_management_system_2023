@@ -1,19 +1,29 @@
 package com.example.exa863_management_system_2023.dao.cleaning;
 
 import com.example.exa863_management_system_2023.model.Cleaning;
+import com.example.exa863_management_system_2023.model.Client;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 public class CleaningListImplementation implements CleaningDAO {
 
     private List<Cleaning> listOfCleaning;
-    private int nextID;
+    private String nextID;
+
+    public CleaningListImplementation() {
+        this.listOfCleaning = new ArrayList<Cleaning>();
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
+    }
 
     @Override
     public Cleaning create(Cleaning cleaning) {
-        cleaning.setId(this.nextID);
-        this.nextID++;
+        cleaning.setID(this.nextID);
+        UUID uuid = UUID.randomUUID();
+        this.nextID = uuid.toString();
         this.listOfCleaning.add(cleaning);
         return cleaning;
     }
@@ -28,9 +38,9 @@ public class CleaningListImplementation implements CleaningDAO {
     }
 
     @Override
-    public Cleaning findByID(int id) {
+    public Cleaning findByID(String id) {
         for (Cleaning cleaning : this.listOfCleaning) {
-            if (cleaning.getId() == id) {
+            if (Objects.equals(cleaning.getID(), id)) {
                 return cleaning;
             }
         }
@@ -40,7 +50,7 @@ public class CleaningListImplementation implements CleaningDAO {
     @Override
     public void update(Cleaning cleaning) throws Exception {
         for (int i = 0; i < this.listOfCleaning.size(); i++) {
-            if (this.listOfCleaning.get(i).getId() == cleaning.getId()) {
+            if (Objects.equals(this.listOfCleaning.get(i).getID(), cleaning.getID())) {
                 this.listOfCleaning.set(i, cleaning);
                 return;
             }
@@ -48,10 +58,11 @@ public class CleaningListImplementation implements CleaningDAO {
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(String id) {
         for (int i = 0; i < this.listOfCleaning.size(); i++) {
-            if (this.listOfCleaning.get(i).getId() == id) {
+            if (Objects.equals(this.listOfCleaning.get(i).getID(), id)) {
                 this.listOfCleaning.remove(i);
+                return;
             }
         }
     }
@@ -59,6 +70,6 @@ public class CleaningListImplementation implements CleaningDAO {
     @Override
     public void deleteMany() {
         this.listOfCleaning = new ArrayList<Cleaning>();
-        this.nextID = 0;
+        this.nextID = null;
     }
 }
