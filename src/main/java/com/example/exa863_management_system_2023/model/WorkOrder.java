@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.List;
 public class WorkOrder {
 
-    private int id;
+    private String id;
     private Client client;
     private Technician technician;
     private String status;
@@ -13,14 +13,14 @@ public class WorkOrder {
     private Date createdAt;
     private Date finishedAt;
 
-    public WorkOrder(int id) {
+    public WorkOrder(String id) {
         this.id = id;
     }
 
-    public int getId() {
+    public String getID() {
         return id;
     }
-    public void setId(int id) {
+    public void setID(String id) {
         this.id = id;
     }
 
