@@ -1,6 +1,6 @@
 package com.example.exa863_management_system_2023.model;
 
-public class Technician extends Person {
+public class Technician extends User {
 
     private WorkOrder workOrder;
 
