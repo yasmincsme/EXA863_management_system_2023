@@ -1,14 +1,18 @@
 package com.example.exa863_management_system_2023.model;
 
-public abstract class User {
+public abstract class User extends Person {
 
     private String login;
-    private String id;
     private String password;
 
-    public User(String login, String password) {
+    public User(String id, String login, String password) {
+        super(id);
         this.login = login;
         this.password = password;
+    }
+
+    public User(String name) {
+        super(name);
     }
 
     public String getLogin() {
@@ -16,13 +20,6 @@ public abstract class User {
     }
     public void setLogin(String login) {
         this.login = login;
-    }
-
-    public String getID() {
-        return id;
-    }
-    public void setID(String id) {
-        this.id = id;
     }
 
     public String getPassword() {
