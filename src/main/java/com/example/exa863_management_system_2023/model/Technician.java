@@ -7,6 +7,17 @@ public class Technician extends User {
     }
 
     @Override
+    public boolean equals(Object object) {
+        if (object instanceof Technician) {
+            Technician technician = (Technician) object;
+            if (this.getID().equals(technician.getID())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
     public String toString() {
         return super.toString() + " Role: Technician";
     }
