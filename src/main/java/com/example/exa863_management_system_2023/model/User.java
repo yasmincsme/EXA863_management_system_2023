@@ -5,14 +5,10 @@ public abstract class User extends Person {
     private String login;
     private String password;
 
-    public User(String id, String login, String password) {
-        super(id);
+    public User(String name, String email, String login, String password) {
+        super(name, email);
         this.login = login;
         this.password = password;
-    }
-
-    public User(String name) {
-        super(name);
     }
 
     public String getLogin() {
@@ -27,5 +23,10 @@ public abstract class User extends Person {
     }
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Login: " + this.login + ", Password: " + this.password;
     }
 }
