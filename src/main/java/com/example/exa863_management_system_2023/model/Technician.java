@@ -2,16 +2,12 @@ package com.example.exa863_management_system_2023.model;
 
 public class Technician extends User {
 
-    private WorkOrder workOrder;
-
-    public Technician(String name) {
-        super(name);
+    public Technician(String name, String email, String login, String password) {
+        super(name, email, login, password);
     }
 
-    public WorkOrder getWorkorder() {
-        return workOrder;
-    }
-    public void setWorkOrder(WorkOrder workOrder) {
-        this.workOrder = workOrder;
+    @Override
+    public String toString() {
+        return super.toString() + " Role: Technician";
     }
 }
