@@ -1,5 +1,7 @@
 package com.example.exa863_management_system_2023.model;
 
+import java.util.Objects;
+
 public class ComputerComponent {
 
     private String name;
@@ -59,7 +61,7 @@ public class ComputerComponent {
     public long getUnitCost() {
         return unitCost;
     }
-    public void setUnitCost(long cost) {
+    public void setUnitCost(long unitCost) {
         this.unitCost = unitCost;
     }
 
@@ -75,4 +77,19 @@ public class ComputerComponent {
     }
     public void setQuantity(int quantity) {
         this.quantity = quantity;}
+
+    @Override
+    public boolean equals(Object object) {
+        if(object instanceof ComputerComponent) {
+            ComputerComponent component = (ComputerComponent) object;
+            if (this.getID().equals(component.getID())) {
+                return true;
+            }
+        }
+        return false;
+    }
+    @Override
+    public String toString() {
+        return "ID: " + this.id + ", Description: " + this.description + ", Manufacturer: " + this.manufacturer + ", Serial Number: " + this.serialNumber + ", Unit Cost: " + this.unitCost + ", Unit Price: " + this.unitPrice + ", Quantity: " + this.quantity;
+    }
 }
