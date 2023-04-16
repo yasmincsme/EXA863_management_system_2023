@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the file workspace.xml">
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the class &quot;Employee&quot;">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/building/BuildingListImplementationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningListImplementationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentListImplementationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/employee/EmployeeListImplementationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/installation/InstallationListImplementationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/manager/ManagerListImplementationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderListImplementationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,27 +53,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaClassFindUsagesOptions.isDerivedClasses&quot;: &quot;true&quot;,
-    &quot;JavaClassFindUsagesOptions.isFieldsUsages&quot;: &quot;true&quot;,
-    &quot;JavaClassFindUsagesOptions.isMethodsUsages&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;com.example.exa863_management_system_2023.model.Person&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/meira/Downloads/GitHub/gestao-academica&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaClassFindUsagesOptions.isDerivedClasses": "true",
+    "JavaClassFindUsagesOptions.isFieldsUsages": "true",
+    "JavaClassFindUsagesOptions.isMethodsUsages": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/meira/Downloads/GitHub/gestao-academica",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
       <recent name="com.example.exa863_management_system_2023.model.Person" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -83,6 +89,10 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.exa863_management_system_2023.model" />
+      <recent name="com.example.exa863_management_system_2023.dao.workOrder" />
+      <recent name="com.example.exa863_management_system_2023.dao.technician" />
+      <recent name="com.example.exa863_management_system_2023.dao.manager" />
+      <recent name="com.example.exa863_management_system_2023.dao.installation" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,49 +118,7 @@
       <workItem from="1681259956006" duration="1683000" />
       <workItem from="1681263526414" duration="3390000" />
       <workItem from="1681513889021" duration="924000" />
-      <workItem from="1681596608642" duration="440000" />
-    </task>
-    <task id="LOCAL-00035" summary="Update the class &quot;WorkOrderListImplementation&quot;">
-      <created>1681010926557</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1681010926557</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Update the interface &quot;WorkOrderDAO&quot;">
-      <created>1681010957356</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1681010957356</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Update the interface &quot;WorkOrderDAO&quot;">
-      <created>1681010969439</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1681010969439</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Update the class &quot;ComputerComponent&quot;">
-      <created>1681015140819</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1681015140819</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Update in the class &quot;Client&quot; - Modifying getters and setters">
-      <created>1681059740133</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1681059740134</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Update in the class &quot;ComputerComponent&quot; - Modifying getters and setters">
-      <created>1681059770627</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1681059770627</updated>
+      <workItem from="1681596608642" duration="6051000" />
     </task>
     <task id="LOCAL-00041" summary="Update in the class &quot;Installation&quot; - Modifying getters and setters">
       <created>1681059794118</created>
@@ -453,18 +421,55 @@
       <option name="project" value="LOCAL" />
       <updated>1681181226642</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Update the file workspace.xml">
+      <created>1681597067460</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1681597067462</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Update the class &quot;User&quot; - Add a new constructor">
+      <created>1681597104561</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1681597104561</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Update the class &quot;Client&quot;">
+      <created>1681597126011</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1681597126011</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Update the class &quot;Manager&quot;">
+      <created>1681597141504</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1681597141504</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Update the class &quot;Technician&quot;">
+      <created>1681597159759</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1681597159759</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Update the class &quot;Employee&quot;">
+      <created>1681597280450</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1681597280451</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update the class &quot;Service&quot; - Add the field &quot;id&quot;" />
-    <MESSAGE value="Update the class &quot;BuildingListImplementation&quot; - Change the implementation of the id (uuid)" />
-    <MESSAGE value="Update the class &quot;CleaningListImplementation&quot; - Change the implementation of the id (uuid)" />
-    <MESSAGE value="Update the class &quot;ComponentListImplementation&quot; - Change the implementation of the id (uuid)" />
-    <MESSAGE value="Update the class &quot;ClientListImplementation&quot; - Change the implementation of the id (uuid)" />
     <MESSAGE value="Update the class &quot;InstallationListImplementation&quot; - Change the implementation of the id (uuid)" />
     <MESSAGE value="Update the class &quot;TechnicianListImplementation&quot; - Change the implementation of the id (uuid)" />
     <MESSAGE value="Update the class &quot;WorkOrderListImplementation&quot; - Change the implementation of the id (uuid)" />
@@ -485,6 +490,11 @@
     <MESSAGE value="Update the interface &quot;ManagerDAO&quot;" />
     <MESSAGE value="Update the interface &quot;EmployeeDAO&quot;" />
     <MESSAGE value="Update the file workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the file workspace.xml" />
+    <MESSAGE value="Update the class &quot;User&quot; - Add a new constructor" />
+    <MESSAGE value="Update the class &quot;Client&quot;" />
+    <MESSAGE value="Update the class &quot;Manager&quot;" />
+    <MESSAGE value="Update the class &quot;Technician&quot;" />
+    <MESSAGE value="Update the class &quot;Employee&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the class &quot;Employee&quot;" />
   </component>
 </project>
