@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Delete the test &quot;ComponentListImplementationTest&quot;">
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the file &quot;workspace.xml&quot;">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/ComputerComponentTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderListImplementationTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,35 +141,7 @@
       <workItem from="1681263526414" duration="3390000" />
       <workItem from="1681513889021" duration="924000" />
       <workItem from="1681596608642" duration="8285000" />
-      <workItem from="1681664464438" duration="16266000" />
-    </task>
-    <task id="LOCAL-00067" summary="Update the class &quot;Service&quot; - Now the field id is a String">
-      <created>1681176805492</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176805493</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Update the class &quot;WorkOrder&quot; - Now the field id is a String">
-      <created>1681176821661</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176821661</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Update the class &quot;Client&quot; - Now the field id is a String">
-      <created>1681176837677</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176837677</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Create the class &quot;Manager&quot;">
-      <created>1681176883771</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176883771</updated>
+      <workItem from="1681664464438" duration="19289000" />
     </task>
     <task id="LOCAL-00071" summary="Create the class &quot;Employee&quot;">
       <created>1681176907310</created>
@@ -482,22 +458,46 @@
       <option name="project" value="LOCAL" />
       <updated>1681681833328</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="Delete the test &quot;TechnicianListImplementationTest&quot;">
+      <created>1681681851527</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681851527</updated>
+    </task>
+    <task id="LOCAL-00117" summary="Update the class &quot;Employee&quot;">
+      <created>1681681872817</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681872817</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Update the class &quot;ComputerComponent&quot;">
+      <created>1681681890907</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681890907</updated>
+    </task>
+    <task id="LOCAL-00119" summary="Update the file &quot;workspace.xml&quot;">
+      <created>1681681917750</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681917750</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create the test &quot;BuildingListImplementationTest&quot;" />
-    <MESSAGE value="Create the test &quot;CleaningListImplementationTest&quot;" />
-    <MESSAGE value="Create the test &quot;ComponentListImplementationTest&quot;" />
     <MESSAGE value="Create the test &quot;EmployeeListImplementationTest&quot;" />
     <MESSAGE value="Create the test &quot;InstallationListImplementationTest&quot;" />
     <MESSAGE value="Create the test &quot;ManageListImplementationTest&quot;" />
     <MESSAGE value="Create the test &quot;TechnicianListImplementationTest&quot;" />
     <MESSAGE value="Create the test &quot;WorkOrderListImplementationTest&quot;" />
-    <MESSAGE value="Update the file &quot;workspace.xml&quot;" />
     <MESSAGE value="Update the class &quot;Building&quot;" />
     <MESSAGE value="Update the class &quot;Cleaning&quot;" />
     <MESSAGE value="Update the class &quot;Client&quot;" />
@@ -514,6 +514,10 @@
     <MESSAGE value="Delete the test &quot;BuildingListImplementationTest&quot;" />
     <MESSAGE value="Delete the test &quot;CleaningListImplementationTest&quot;" />
     <MESSAGE value="Delete the test &quot;ComponentListImplementationTest&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete the test &quot;ComponentListImplementationTest&quot;" />
+    <MESSAGE value="Delete the test &quot;TechnicianListImplementationTest&quot;" />
+    <MESSAGE value="Update the class &quot;Employee&quot;" />
+    <MESSAGE value="Update the class &quot;ComputerComponent&quot;" />
+    <MESSAGE value="Update the file &quot;workspace.xml&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the file &quot;workspace.xml&quot;" />
   </component>
 </project>
