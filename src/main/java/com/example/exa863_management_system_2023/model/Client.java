@@ -29,6 +29,17 @@ public class Client extends Person {
     }
 
     @Override
+    public boolean equals(Object object) {
+        if (object instanceof Client) {
+            Client client = (Client) object;
+            if (this.getID().equals(client.getID())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
     public String toString() {
         return super.toString() + ", Address: " + this.address + ", Phone: " + this.phone;
     }
