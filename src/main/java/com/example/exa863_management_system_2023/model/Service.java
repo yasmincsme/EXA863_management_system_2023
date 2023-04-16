@@ -5,8 +5,8 @@ public abstract class Service {
     private String name;
     private String id;
     private String description;
-    private Double price;
-    private Double cost;
+    private long price;
+    private long cost;
 
     public Service(String name) {
         this.name = name;
@@ -31,17 +31,17 @@ public abstract class Service {
         this.description = description;
     }
 
-    public Double getPrice() {
+    public long getPrice() {
         return price;
     }
-    public void setPrice(Double price) {
+    public void setPrice(long price) {
         this.price = price;
     }
 
-    public Double getCost() {
+    public long getCost() {
         return cost;
     }
-    public void setCost(Double price) {
+    public void setCost(long cost) {
         this.cost = cost;
     }
 }
