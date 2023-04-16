@@ -5,16 +5,20 @@ import java.util.List;
 public class WorkOrder {
 
     private String id;
-    private Client client;
-    private Technician technician;
+    private String clientID;
+    private String technicianID;
     private String status;
     private List<Service> services;
     private String description;
     private Date createdAt;
     private Date finishedAt;
+    private int clientSatisfaction;
+    private String paymentMethod;
 
-    public WorkOrder(String id) {
+    public WorkOrder(String id, String clientID) {
         this.id = id;
+        this.clientID = clientID;
+        this.technicianID = null;
     }
 
     public String getID() {
@@ -24,18 +28,18 @@ public class WorkOrder {
         this.id = id;
     }
 
-    public Client getClient() {
-        return client;
+    public String getClientID() {
+        return clientID;
     }
-    public void setClient(Client client) {
-        this.client = client;
+    public void setClientID(String clientID) {
+        this.clientID = clientID;
     }
 
-    public Technician getTechnician() {
-        return technician;
+    public String getTechnicianID() {
+        return technicianID;
     }
-    public void setTechnician(Technician technician) {
-        this.technician = technician;
+    public void setTechnicianID(String technicianID) {
+        this.technicianID = technicianID;
     }
 
     public String getStatus() {
@@ -66,10 +70,38 @@ public class WorkOrder {
         this.createdAt = createdAt;
     }
 
-    public Date getFinishedAtdAt() {
+    public Date getFinishedAt() {
         return finishedAt;
     }
     public void setFinishedAt(Date finishedAt) {
         this.finishedAt = finishedAt;
     }
+
+    public int getClientSatisfaction() {
+        return clientSatisfaction;
+    }
+    public void setClientSatisfaction(int clientSatisfaction) {
+        this.clientSatisfaction = clientSatisfaction;
+    }
+
+    public String getPaymentMethod() {
+        return paymentMethod;
+    }
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
+    }
+
+    public void addBuildingService(Building building) {
+        this.services.add(building);
+    }
+
+    public void addCleaningService(Cleaning cleaning) {
+        this.services.add(cleaning);
+    }
+
+    public void addInstallationService(Installation installation) {
+        this.services.add(installation);
+    }
+
+
 }
