@@ -8,8 +8,10 @@ public class Client extends Person {
     private String phone;
     private List<WorkOrder> workOrderList;
 
-    public Client(String name) {
-        super(name);
+    public Client(String name, String email, String address, String phone) {
+        super(name, email);
+        this.address = address;
+        this.phone = phone;
     }
 
     public String getAddress() {
@@ -26,4 +28,8 @@ public class Client extends Person {
         this.phone = phone;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + ", Address: " + this.address + ", Phone: " + this.phone;
+    }
 }
