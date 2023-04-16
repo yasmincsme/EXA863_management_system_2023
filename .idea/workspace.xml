@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Update the class &quot;Employee&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/building/BuildingListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/employee/EmployeeListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/installation/InstallationListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/manager/ManagerListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderListImplementationTest.java" afterDir="false" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Delete the test &quot;ComponentListImplementationTest&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementationTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +58,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
     "last_opened_file_path": "C:/Users/meira/Downloads/GitHub/gestao-academica",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -75,6 +70,7 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+      <recent name="com.example.exa863_management_system_2023.model.User" />
       <recent name="com.example.exa863_management_system_2023.model.Person" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -94,6 +90,28 @@
       <recent name="com.example.exa863_management_system_2023.dao.manager" />
       <recent name="com.example.exa863_management_system_2023.dao.installation" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EXA863_management_system_2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.exa863_management_system_2023.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.EmployeeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EmployeeTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -118,189 +136,8 @@
       <workItem from="1681259956006" duration="1683000" />
       <workItem from="1681263526414" duration="3390000" />
       <workItem from="1681513889021" duration="924000" />
-      <workItem from="1681596608642" duration="6051000" />
-    </task>
-    <task id="LOCAL-00041" summary="Update in the class &quot;Installation&quot; - Modifying getters and setters">
-      <created>1681059794118</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1681059794118</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Update in the class &quot;Person&quot; - Modifying getters and setters">
-      <created>1681059923236</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1681059923236</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Update in the class &quot;WorkOrder&quot; - Modifying getters and setters">
-      <created>1681059953813</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1681059953813</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Update in the class &quot;Service&quot; - Modifying getters and setters">
-      <created>1681059979177</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1681059979177</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Update in the class &quot;Service&quot; - Modifying getters and setters">
-      <created>1681059999592</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1681059999592</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Update in the class &quot;ComponentListImplementation&quot; - Modifying getters and setters">
-      <created>1681060045448</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1681060045448</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Update the interface &quot;ComputerComponentDAO&quot;">
-      <created>1681060089736</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1681060089736</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Update the interface &quot;InstallationDAO&quot;">
-      <created>1681060120624</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1681060120624</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Update the interface &quot;ComputerComponentDAO&quot; - Add a new field">
-      <created>1681060716013</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1681060716013</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Update the class &quot;Cleaning&quot;">
-      <created>1681061096797</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1681061096797</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Update the class &quot;Building&quot; - Edit the field &quot;setOperatingSystem&quot;">
-      <created>1681061216516</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1681061216516</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Update the class &quot;Installation&quot; - Edit the field &quot;setOperatingSystem&quot;">
-      <created>1681061351920</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1681061351920</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Create the interface &quot;BuildingDAO&quot;">
-      <created>1681077139383</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1681077139384</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Create the interface &quot;CleaningDAO&quot;">
-      <created>1681077162126</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1681077162126</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Create the class &quot;BuildingListImplementation&quot;">
-      <created>1681077207214</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1681077207214</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Create the class &quot;CleaningListImplementation&quot;">
-      <created>1681077233372</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1681077233372</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Create the class &quot;InstallationListImplementation&quot;">
-      <created>1681077262745</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1681077262745</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Update the class &quot;Service&quot; - Add the field &quot;id&quot;">
-      <created>1681077354011</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1681077354011</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Update the class &quot;BuildingListImplementation&quot; - Change the implementation of the id (uuid)">
-      <created>1681176603658</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176603660</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Update the class &quot;CleaningListImplementation&quot; - Change the implementation of the id (uuid)">
-      <created>1681176624315</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176624315</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Update the class &quot;ComponentListImplementation&quot; - Change the implementation of the id (uuid)">
-      <created>1681176642554</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176642554</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Update the class &quot;ClientListImplementation&quot; - Change the implementation of the id (uuid)">
-      <created>1681176663051</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176663051</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Update the class &quot;InstallationListImplementation&quot; - Change the implementation of the id (uuid)">
-      <created>1681176695026</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176695026</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Update the class &quot;TechnicianListImplementation&quot; - Change the implementation of the id (uuid)">
-      <created>1681176719000</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176719000</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Update the class &quot;WorkOrderListImplementation&quot; - Change the implementation of the id (uuid)">
-      <created>1681176739187</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176739187</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Update the class &quot;Person&quot; - Now the field id is a String">
-      <created>1681176790327</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1681176790327</updated>
+      <workItem from="1681596608642" duration="8285000" />
+      <workItem from="1681664464438" duration="16266000" />
     </task>
     <task id="LOCAL-00067" summary="Update the class &quot;Service&quot; - Now the field id is a String">
       <created>1681176805492</created>
@@ -463,38 +300,220 @@
       <option name="project" value="LOCAL" />
       <updated>1681597280451</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Create the test &quot;BuildingListImplementationTest&quot;">
+      <created>1681605703622</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1681605703622</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Create the test &quot;BuildingListImplementationTest&quot;">
+      <created>1681605722299</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1681605722299</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Create the test &quot;CleaningListImplementationTest&quot;">
+      <created>1681605746424</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1681605746424</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Create the test &quot;ComponentListImplementationTest&quot;">
+      <created>1681605766019</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1681605766019</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Create the test &quot;EmployeeListImplementationTest&quot;">
+      <created>1681605785560</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1681605785560</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Create the test &quot;InstallationListImplementationTest&quot;">
+      <created>1681605805514</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1681605805514</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Create the test &quot;ManageListImplementationTest&quot;">
+      <created>1681605829441</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1681605829441</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Create the test &quot;TechnicianListImplementationTest&quot;">
+      <created>1681605849110</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1681605849110</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Create the test &quot;WorkOrderListImplementationTest&quot;">
+      <created>1681605873495</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1681605873495</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Update the file &quot;workspace.xml&quot;">
+      <created>1681605903315</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1681605903315</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Update the class &quot;Building&quot;">
+      <created>1681681497165</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681497166</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Update the class &quot;Cleaning&quot;">
+      <created>1681681544154</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681544154</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Update the class &quot;Client&quot;">
+      <created>1681681563344</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681563344</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Update the class &quot;Manager&quot;">
+      <created>1681681583673</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681583673</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Update the class &quot;Person&quot;">
+      <created>1681681611246</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681611246</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Update the class &quot;Service&quot;">
+      <created>1681681628718</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681628719</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Update the class &quot;Technician&quot;">
+      <created>1681681646452</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681646452</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Update the class &quot;User&quot;">
+      <created>1681681663198</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681663199</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Update the class &quot;WorkOrder&quot;">
+      <created>1681681681284</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681681284</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Create the test &quot;ManagerTest&quot;">
+      <created>1681681725560</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681725560</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Create the test &quot;EmployeeTest&quot;">
+      <created>1681681742400</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681742400</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Create the test &quot;ClientTest&quot;">
+      <created>1681681758974</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681758974</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Create the test &quot;TechnicianTest&quot;">
+      <created>1681681777017</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681777017</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Delete the test &quot;BuildingListImplementationTest&quot;">
+      <created>1681681804146</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681804146</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Delete the test &quot;CleaningListImplementationTest&quot;">
+      <created>1681681818919</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681818919</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Delete the test &quot;ComponentListImplementationTest&quot;">
+      <created>1681681833328</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1681681833328</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update the class &quot;InstallationListImplementation&quot; - Change the implementation of the id (uuid)" />
-    <MESSAGE value="Update the class &quot;TechnicianListImplementation&quot; - Change the implementation of the id (uuid)" />
-    <MESSAGE value="Update the class &quot;WorkOrderListImplementation&quot; - Change the implementation of the id (uuid)" />
-    <MESSAGE value="Update the class &quot;Person&quot; - Now the field id is a String" />
-    <MESSAGE value="Update the class &quot;Service&quot; - Now the field id is a String" />
-    <MESSAGE value="Update the class &quot;WorkOrder&quot; - Now the field id is a String" />
-    <MESSAGE value="Update the class &quot;Client&quot; - Now the field id is a String" />
-    <MESSAGE value="Create the class &quot;Manager&quot;" />
-    <MESSAGE value="Create the class &quot;Employee&quot;" />
-    <MESSAGE value="Create the class &quot;EmployeeListImplementation&quot;" />
-    <MESSAGE value="Create the class &quot;User&quot;" />
-    <MESSAGE value="Create the interface &quot;EmployeeDAO&quot;" />
-    <MESSAGE value="Update the interface &quot;ClientDAO&quot;" />
-    <MESSAGE value="Update the interface &quot;CRUD&quot;" />
-    <MESSAGE value="Update the class &quot;EmployeeListImplementation&quot;" />
-    <MESSAGE value="Update the class &quot;ClientListImplementation&quot;" />
-    <MESSAGE value="Update the class &quot;ManagerListImplementation&quot;" />
-    <MESSAGE value="Update the interface &quot;ManagerDAO&quot;" />
-    <MESSAGE value="Update the interface &quot;EmployeeDAO&quot;" />
-    <MESSAGE value="Update the file workspace.xml" />
-    <MESSAGE value="Update the class &quot;User&quot; - Add a new constructor" />
+    <MESSAGE value="Create the test &quot;BuildingListImplementationTest&quot;" />
+    <MESSAGE value="Create the test &quot;CleaningListImplementationTest&quot;" />
+    <MESSAGE value="Create the test &quot;ComponentListImplementationTest&quot;" />
+    <MESSAGE value="Create the test &quot;EmployeeListImplementationTest&quot;" />
+    <MESSAGE value="Create the test &quot;InstallationListImplementationTest&quot;" />
+    <MESSAGE value="Create the test &quot;ManageListImplementationTest&quot;" />
+    <MESSAGE value="Create the test &quot;TechnicianListImplementationTest&quot;" />
+    <MESSAGE value="Create the test &quot;WorkOrderListImplementationTest&quot;" />
+    <MESSAGE value="Update the file &quot;workspace.xml&quot;" />
+    <MESSAGE value="Update the class &quot;Building&quot;" />
+    <MESSAGE value="Update the class &quot;Cleaning&quot;" />
     <MESSAGE value="Update the class &quot;Client&quot;" />
     <MESSAGE value="Update the class &quot;Manager&quot;" />
+    <MESSAGE value="Update the class &quot;Person&quot;" />
+    <MESSAGE value="Update the class &quot;Service&quot;" />
     <MESSAGE value="Update the class &quot;Technician&quot;" />
-    <MESSAGE value="Update the class &quot;Employee&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the class &quot;Employee&quot;" />
+    <MESSAGE value="Update the class &quot;User&quot;" />
+    <MESSAGE value="Update the class &quot;WorkOrder&quot;" />
+    <MESSAGE value="Create the test &quot;ManagerTest&quot;" />
+    <MESSAGE value="Create the test &quot;EmployeeTest&quot;" />
+    <MESSAGE value="Create the test &quot;ClientTest&quot;" />
+    <MESSAGE value="Create the test &quot;TechnicianTest&quot;" />
+    <MESSAGE value="Delete the test &quot;BuildingListImplementationTest&quot;" />
+    <MESSAGE value="Delete the test &quot;CleaningListImplementationTest&quot;" />
+    <MESSAGE value="Delete the test &quot;ComponentListImplementationTest&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete the test &quot;ComponentListImplementationTest&quot;" />
   </component>
 </project>
