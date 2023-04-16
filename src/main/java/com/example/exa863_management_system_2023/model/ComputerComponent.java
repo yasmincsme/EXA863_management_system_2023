@@ -7,12 +7,18 @@ public class ComputerComponent {
     private String description;
     private String manufacturer;
     private String serialNumber;
-    private Double cost;
-    private Double unitPrice;
+    private long unitCost;
+    private long unitPrice;
     private int quantity;
 
-    public ComputerComponent(Double cost) {
-        this.cost = cost;
+    public ComputerComponent(String name, String description, String manufacturer, String serialNumber, long unitCost, long unitPrice, int quantity) {
+        this.name = name;
+        this.description = description;
+        this.manufacturer = manufacturer;
+        this.serialNumber = serialNumber;
+        this.unitCost = unitCost;
+        this.unitPrice = unitPrice;
+        this.quantity = quantity;
     }
 
     public String getName() {
@@ -50,17 +56,17 @@ public class ComputerComponent {
         this.serialNumber = serialNumber;
     }
 
-    public Double getCost() {
-        return cost;
+    public long getUnitCost() {
+        return unitCost;
     }
-    public void setCost(Double cost) {
-        this.cost = cost;
+    public void setUnitCost(long cost) {
+        this.unitCost = unitCost;
     }
 
-    public Double getUnitPrice() {
+    public long getUnitPrice() {
         return unitPrice;
     }
-    public void setPrice(Double unitPrice) {
+    public void setPrice(long unitPrice) {
         this.unitPrice = unitPrice;
     }
 
