@@ -14,7 +14,18 @@ class EmployeeTest{
         assertEquals("juliaOrtega", employee.getLogin());
         assertEquals("password", employee.getPassword());
     }
+    @Test
+    public void testEquals() {
+        Employee emp1 = new Employee("John Smith", "john.smith@example.com", "johnsmith", "password");
+        Employee emp2 = new Employee("Jane Doe", "jane.doe@example.com", "janedoe", "password");
+        Employee emp3 = new Employee("John Smith", "john.smith@example.com", "johnsmith", "password");
+        Employee emp4 = new Employee("John Smith", "john.smith@example.com", "johndoe", "password");
 
+        assertEquals(emp1, emp3); // same IDs
+        assertNotEquals(emp1, emp2); // different IDs
+        assertNotEquals(emp1, emp4); // same name and email, but different login ID
+        assertNotEquals(null, emp1); // null object
+    }
     @Test
     public void testToString() {
         Employee employee = new Employee("Julia Ortega", "julia.ortega@example.com", "juliaOrtega", "password");
