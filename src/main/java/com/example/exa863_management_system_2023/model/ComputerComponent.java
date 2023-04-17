@@ -23,6 +23,12 @@ public class ComputerComponent {
         this.quantity = quantity;
     }
 
+    public ComputerComponent(String name, String description, String manufacturer) {
+        this.name = name;
+        this.description = description;
+        this.manufacturer = manufacturer;
+    }
+
     public String getName() {
         return name;
     }
