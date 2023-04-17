@@ -17,24 +17,25 @@ class EmployeeTest{
     @Test
     public void testEquals() {
         Employee employee1 = new Employee("John Smith", "john.smith@example.com", "johnsmith", "password");
-        employee1.setID("EMPL001");
+        employee1.setID("42686206-dd39-11ed");
         Employee employee2 = new Employee("Jane Doe", "jane.doe@example.com", "janedoe", "password");
-        employee2.setID("EMPL002");
+        employee2.setID("4fa2c696-dd39-11ed");
         Employee employee3 = new Employee("John Smith", "john.smith@example.com", "johnsmith", "password");
-        employee3.setID("EMPL001");
+        employee3.setID("42686206-dd39-11ed");
         Employee employee4 = new Employee("John Smith", "john.smith@example.com", "johndoe", "password");
-        employee4.setID("EMPL004");
+        employee4.setID("59763b6c-dd39-11ed");
 
-        // Verify that two employees with the same ID are equal
+        //Verify that two employees with the same ID are equal
         assertEquals(employee1, employee3);
 
-        // Verify that two employees with different IDs are not equal
+        //Verify that two employees with different IDs are not equal
         assertNotEquals(employee1, employee2);
-
-        // same name and email, but different login ID
         assertNotEquals(employee1, employee4);
 
-        // Null object
+        //Same name and email, but different login ID
+        assertNotEquals(employee1, employee4);
+
+        //Null object
         assertNotEquals(null, employee1);
     }
     @Test
