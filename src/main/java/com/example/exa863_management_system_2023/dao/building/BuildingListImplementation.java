@@ -30,8 +30,8 @@ public class BuildingListImplementation implements BuildingDAO {
     @Override
     public List<Building> findMany() {
         List<Building> buildingList = new ArrayList<Building>();
-        for (Object building : this.listOfBuilding) {
-            buildingList.add((Building) building);
+        for (Building building : this.listOfBuilding) {
+            buildingList.add(building);
         }
         return buildingList;
     }
@@ -39,7 +39,7 @@ public class BuildingListImplementation implements BuildingDAO {
     @Override
     public Building findByID(String id) {
         for (Building building : this.listOfBuilding) {
-            if (Objects.equals(building.getID(), id)) {
+            if (building.getID().equals(id)) {
                 return building;
             }
         }
@@ -49,7 +49,7 @@ public class BuildingListImplementation implements BuildingDAO {
     @Override
     public void update(Building building) throws Exception {
         for (int i = 0; i < this.listOfBuilding.size(); i++) {
-            if (Objects.equals(this.listOfBuilding.get(i).getID(), building.getID())) {
+            if (this.listOfBuilding.get(i).getID().equals(building.getID())) {
                 this.listOfBuilding.set(i, building);
                 return;
             }
