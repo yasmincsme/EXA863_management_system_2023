@@ -78,6 +78,14 @@ public class ComputerComponent {
     public void setQuantity(int quantity) {
         this.quantity = quantity;}
 
+    public long getCost() {
+        return this.getUnitCost() * this.getQuantity();
+    }
+
+    public long getPrice() {
+        return this.getUnitPrice() * this.getQuantity();
+    }
+
     @Override
     public boolean equals(Object object) {
         if(object instanceof ComputerComponent) {
