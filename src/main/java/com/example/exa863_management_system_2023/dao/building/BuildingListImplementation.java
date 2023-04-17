@@ -51,7 +51,6 @@ public class BuildingListImplementation implements BuildingDAO {
         for (int i = 0; i < this.listOfBuilding.size(); i++) {
             if (this.listOfBuilding.get(i).getID().equals(building.getID())) {
                 this.listOfBuilding.set(i, building);
-                return;
             }
         }
     }

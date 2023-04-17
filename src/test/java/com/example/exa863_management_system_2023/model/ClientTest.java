@@ -18,13 +18,13 @@ public class ClientTest {
 
     @Test
     public void testEquals() {
-        Client client1 = new Client("John Smith", "john.smith@example.com", "johnsmith", "password");
+        Client client1 = new Client("John Smith", "john.smith@example.com", "245 Cold Storage Rd, Craig, Alaska 99921, USA", "password");
         client1.setID("a908ffa4-dd37-11ed");
-        Client client2 = new Client("Jane Doe", "jane.doe@example.com", "janedoe", "password");
+        Client client2 = new Client("Jane Doe", "jane.doe@example.com", "1536 Stellar Dr, Kenai, Alaska 99611, USA", "password");
         client2.setID("ed198b64-dd37-11ed");
-        Client client3 = new Client("John Smith", "john.smith@example.com", "johnsmith", "password");
+        Client client3 = new Client("John Smith", "john.smith@example.com", "257 Fireweed Ln, Ketchikan, Alaska 99901, USA", "password");
         client3.setID("a908ffa4-dd37-11ed");
-        Client client4 = new Client("John Smith", "john.smith@example.com", "johndoe", "password");
+        Client client4 = new Client("John Smith", "john.smith@example.com", "23475 Glacier View Dr, Eagle River, Alaska 99577, USA", "password");
         client4.setID("f89174f2-dd37-11ed");
 
         //Verify that two clients with the same ID are equal

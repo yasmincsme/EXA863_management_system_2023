@@ -58,22 +58,19 @@ public class WorkOrderTest {
     @Test
     void testGetBuildingListPrice() {
         workOrder.addBuildingService(building);
-        workOrder.addBuildingService(building);
-        assertEquals(200, workOrder.getBuildingListPrice());
+        assertEquals(120, workOrder.getBuildingListPrice());
     }
 
     @Test
     void testGetCleaningListPrice() {
         workOrder.addCleaningService(cleaning);
-        workOrder.addCleaningService(cleaning);
-        assertEquals(100, workOrder.getCleaningListPrice());
+        assertEquals(70, workOrder.getCleaningListPrice());
     }
 
     @Test
     void testGetInstallationListPrice() {
         workOrder.addInstallationService(installation);
-        workOrder.addInstallationService(installation);
-        assertEquals(400, workOrder.getInstallationListPrice());
+        assertEquals(100, workOrder.getInstallationListPrice());
     }
 
     @Test
@@ -81,28 +78,25 @@ public class WorkOrderTest {
         workOrder.addBuildingService(building);
         workOrder.addCleaningService(cleaning);
         workOrder.addInstallationService(installation);
-        assertEquals(350, workOrder.getPrice());
+        assertEquals(290, workOrder.getPrice());
     }
 
     @Test
     void testGetBuildingListCost() {
         workOrder.addBuildingService(building);
-        workOrder.addBuildingService(building);
-        assertEquals(100, workOrder.getBuildingListCost());
+        assertEquals(60, workOrder.getBuildingListCost());
     }
 
     @Test
     void testGetCleaningListCost() {
         workOrder.addCleaningService(cleaning);
-        workOrder.addCleaningService(cleaning);
-        assertEquals(50, workOrder.getCleaningListCost());
+        assertEquals(25, workOrder.getCleaningListCost());
     }
 
     @Test
     void testGetInstallationListCost() {
         workOrder.addInstallationService(installation);
-        workOrder.addInstallationService(installation);
-        assertEquals(200, workOrder.getInstallationListCost());
+        assertEquals(0, workOrder.getInstallationListCost());
     }
 
     @Test

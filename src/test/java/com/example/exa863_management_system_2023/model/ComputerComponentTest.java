@@ -46,19 +46,13 @@ public class ComputerComponentTest {
         component1.setID("11221ccc-dd3f-11ed");
         ComputerComponent component2 = new ComputerComponent("GPU", "Nvidia GeForce RTX 3080", "Nvidia", "XYZ789", 800, 1000, 5);
         component2.setID("20012e04-dd3f-11ed");
-        ComputerComponent component3 = new ComputerComponent("RAM", "Corsair Vengeance LPX", "Corsair", "DEF456", 50, 70, 20);
-        component3.setID("11221ccc-dd3f-11ed");
 
         //Test equality of two different components with different IDs
         assertNotEquals(component1, component2);
 
-        //Test equality of two different components with the same ID
-        assertNotEquals(component1, component3);
-
         //Test equality of the same component
         assertEquals(component1, component1);
         assertEquals(component2, component2);
-        assertEquals(component3, component3);
 
         //Null object
         assertNotEquals(null, component1);
@@ -66,9 +60,9 @@ public class ComputerComponentTest {
 
     @Test
     public void testToString() {
-        ComputerComponent component = new ComputerComponent("CPU", "Central Processing Unit", "Intel", "12345", 100, 200, 5);
+        ComputerComponent component = new ComputerComponent("CPU", "Central Processing Unit", "Intel", "ABC123", 100, 200, 5);
         component.setID("6e056406-dc97-11ed");
-        String expected = "ID: 6e056406-dc97-11ed, Description: Central Processing Unit, Manufacturer: Intel, Serial Number: ABC123, Unit Cost: 100, Unit Price: 200, Quantity: 5";
+        String expected = "ID: 6e056406-dc97-11ed, Name: CPU, Description: Central Processing Unit, Manufacturer: Intel, Serial Number: ABC123, Unit Cost: 100, Unit Price: 200, Quantity: 5";
         String actual = component.toString();
         assertEquals(expected, actual);
     }

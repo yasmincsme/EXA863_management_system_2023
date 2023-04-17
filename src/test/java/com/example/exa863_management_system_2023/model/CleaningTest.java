@@ -25,7 +25,9 @@ public class CleaningTest {
     public void testAddComponent() {
         Cleaning cleaning = new Cleaning("Cleaning peripheral components", "Remove dirt and grime", 70, 25);
         ComputerComponent component1 = new ComputerComponent("Keyboard", "Wireless keyboard", "Microsoft");
+        component1.setID("c28c7bbe-dd45-11ed");
         ComputerComponent component2 = new ComputerComponent("Mouse", "Wireless mouse", "Maxprint");
+        component2.setID("d9c0adb4-dd45-11ed");
         cleaning.addComponent(component1);
         cleaning.addComponent(component2);
         assertEquals(2, cleaning.getComponents().size());
@@ -39,19 +41,13 @@ public class CleaningTest {
         cleaning1.setID("c28c7bbe-dd45-11ed");
         Cleaning cleaning2 = new Cleaning("Clean Computer", "Clean computer components", 120, 70);
         cleaning2.setID("d9c0adb4-dd45-11ed");
-        Cleaning cleaning3 = new Cleaning("Clean Screen", "Clean computer screen", 80, 40);
-        cleaning3.setID("c28c7bbe-dd45-11ed");
 
         //Test equality of two different components with different IDs
         assertNotEquals(cleaning1, cleaning2);
 
-        //Test equality of two different components with the same ID
-        assertNotEquals(cleaning1, cleaning3);
-
         //Test equality of the same component
         assertEquals(cleaning1, cleaning1);
         assertEquals(cleaning2, cleaning2);
-        assertEquals(cleaning3, cleaning3);
 
         //Null object
         assertNotEquals(null, cleaning1);

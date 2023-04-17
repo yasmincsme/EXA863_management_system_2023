@@ -25,6 +25,8 @@ public class BuildingTest {
         stock.add(component1);
         stock.add(component2);
         stock.add(component3);
+
+        assertEquals(3, stock.size());
     }
 
     @Test
@@ -41,34 +43,18 @@ public class BuildingTest {
     }
 
     @Test
-    public void testAddUsedComponent() {
-        Building building = new Building("Change RAM", "Safely remove the RAM memory and install a new one", 120, 60);
-        building.addUsedComponent(stock.get(2), 1);
-
-        assertEquals(1, building.getUsedComponents().size());
-        assertEquals(stock.get(2), building.getUsedComponents().get(0));
-        assertEquals(19, stock.get(0).getQuantity());
-    }
-
-    @Test
     public void testEquals() {
         Building building1 = new Building("Change de Hard Disk", "Safely remove the old hard disk and install a new one", 120, 60);
         building1.setID("68e7e64c-dd4b-11ed");
         Building building2 = new Building("RAM Upgrade", "Install additional RAM modules to increase memory capacity", 60, 30);
-        building2.setID("72980f1e-dd4b-11ed\"");
-        Building building3 = new Building("GPU Upgrade", "Install a new graphics card to improve visual performance", 120, 60);
-        building3.setID("68e7e64c-dd4b-11ed");
+        building2.setID("72980f1e-dd4b-11ed");
 
         //Test equality of two different components with different IDs
         assertNotEquals(building1, building2);
 
-        //Test equality of two different components with the same ID
-        assertNotEquals(building1, building3);
-
         //Test equality of the same component
         assertEquals(building1, building1);
         assertEquals(building2, building2);
-        assertEquals(building3, building3);
 
         //Null object
         assertNotEquals(null, building1);

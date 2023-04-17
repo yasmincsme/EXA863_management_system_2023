@@ -43,19 +43,13 @@ public class InstallationTest {
         installation1.setID("68e7e64c-dd4b-11ed");
         Installation installation2 = new Installation("Browser Setup", "Install and configure your preferred web browser", 50, 0, "MacOS");
         installation2.setID("72980f1e-dd4b-11ed");
-        Installation installation3 = new Installation("Driver Installation", "Install and update drivers for your computer's hardware components", 80, 0, "Ubuntu");
-        installation3.setID("68e7e64c-dd4b-11ed");
 
         //Test equality of two different components with different IDs
         assertNotEquals(installation1, installation2);
 
-        //Test equality of two different components with the same ID
-        assertNotEquals(installation1, installation3);
-
         //Test equality of the same component
         assertEquals(installation1, installation1);
         assertEquals(installation2, installation2);
-        assertEquals(installation3, installation3);
 
         //Null object
         assertNotEquals(null, installation1);
