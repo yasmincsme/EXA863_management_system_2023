@@ -7,8 +7,8 @@ public class Building extends Service{
 
     private List<ComputerComponent> usedComponents;
 
-    public Building(String name, String description) {
-        super(name, description);
+    public Building(String name, String description, long price, long cost) {
+        super(name, description, price, cost);
         this.usedComponents = new ArrayList<>();
     }
 
@@ -39,6 +39,11 @@ public class Building extends Service{
             cost += component.getUnitCost() * component.getQuantity();
         }
         return cost;
+    }
+
+    public void addUsedComponent(ComputerComponent component, int quantity) {
+        component.setQuantity(component.getQuantity() - quantity);
+        this.usedComponents.add(component);
     }
 
     @Override
