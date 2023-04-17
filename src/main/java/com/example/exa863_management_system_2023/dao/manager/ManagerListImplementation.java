@@ -32,7 +32,7 @@ public class ManagerListImplementation implements ManagerDAO {
     public List<Manager> findMany() {
         List<Manager> managerList = new ArrayList<Manager>();
         for (Manager manager : this.listOfManagers) {
-            managerList.add((Manager) manager);
+            managerList.add(manager);
         }
         return managerList;
     }
@@ -40,7 +40,7 @@ public class ManagerListImplementation implements ManagerDAO {
     @Override
     public Manager findByID(String id) {
         for (Manager manager : this.listOfManagers) {
-            if (Objects.equals(manager.getID(), id)) {
+            if (manager.getID().equals(id)) {
                 return manager;
             }
         }
@@ -51,7 +51,7 @@ public class ManagerListImplementation implements ManagerDAO {
     public List<Manager> findByLogin(String login) {
         List<Manager> managerList = new ArrayList<Manager>();
         for (Manager manager : this.listOfManagers) {
-            if (Objects.equals(manager.getLogin(), login)) {
+            if (manager.getLogin().equals(login)) {
                 managerList.add(manager);
             }
         }
@@ -61,7 +61,7 @@ public class ManagerListImplementation implements ManagerDAO {
     @Override
     public void update(Manager manager) {
         for (int i = 0; i < this.listOfManagers.size(); i++) {
-            if (Objects.equals(this.listOfManagers.get(i).getID(), manager.getID())) {
+            if (this.listOfManagers.get(i).getID().equals(manager.getID())) {
                 this.listOfManagers.set(i, manager);
                 return;
             }
@@ -71,7 +71,7 @@ public class ManagerListImplementation implements ManagerDAO {
     @Override
     public void delete(String id) {
         for (int i = 0; i < this.listOfManagers.size(); i++) {
-            if(Objects.equals(this.listOfManagers.get(i).getID(), id)) {
+            if(this.listOfManagers.get(i).getID().equals(id)) {
                 this.listOfManagers.remove(i);
                 return;
             }
