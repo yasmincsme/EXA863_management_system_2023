@@ -8,10 +8,10 @@ public class Installation extends Service {
     private List<String> programs;
     private String operatingSystem;
 
-    public Installation(String name, String description) {
-        super(name, description);
+    public Installation(String name, String description, long price, long cost, String operatingSystem) {
+        super(name, description, price, cost);
         this.programs = new ArrayList<>();
-        this.operatingSystem = null;
+        this.operatingSystem = operatingSystem;
     }
 
     public List<String> getPrograms() {
