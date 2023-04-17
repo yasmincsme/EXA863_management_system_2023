@@ -17,18 +17,27 @@ class ManagerTest {
 
     @Test
     public void testEquals() {
-        Manager manager1 = new Manager("John", "john@example.com", "john123", "pass123");
-        manager1.setID("MAN001");
-        Manager manager2 = new Manager("Jane", "jane@example.com", "jane456", "pass456");
-        manager2.setID("MAN002");
-        Manager manager3 = new Manager("John", "john@example.com", "john789", "pass789");
-        manager3.setID("MAN001");
+        Manager manager1 = new Manager("John Smith", "john.smith@example.com", "johnsmith", "password");
+        manager1.setID("7913cf6a-dd3a-11ed");
+        Manager manager2 = new Manager("Jane", "jane.doe@example.com", "janedoe", "password");
+        manager2.setID("84fc3fba-dd3a-11ed");
+        Manager manager3 = new Manager("John Smith", "john.smith@example.com", "johnsmith", "password");
+        manager3.setID("7913cf6a-dd3a-11ed");
+        Manager manager4 = new Manager("John Smith", "john.smith@example.com", "johndoe", "password");
+        manager4.setID("f89174f2-dd37-11ed");
 
         //Verify that two managers with the same ID are equal
         assertEquals(manager1, manager3);
 
         //Verify that two managers with different IDs are not equal
         assertNotEquals(manager1, manager2);
+        assertNotEquals(manager1, manager4);
+
+        //Same name and email,but different ID
+        assertNotEquals(manager1, manager4);
+
+        //Null object
+        assertNotEquals(null, manager1);
     }
 
     @Test
