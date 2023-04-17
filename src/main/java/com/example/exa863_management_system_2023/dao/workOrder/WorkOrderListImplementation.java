@@ -32,8 +32,8 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     @Override
     public List<WorkOrder> findMany() {
         List<WorkOrder> workOrderList = new ArrayList<WorkOrder>();
-        for(Object workOrder: this.listOfWorkOrder) {
-            workOrderList.add((WorkOrder) workOrder);
+        for(WorkOrder workOrder: this.listOfWorkOrder) {
+            workOrderList.add(workOrder);
         }
         return workOrderList;
     }
@@ -41,7 +41,7 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     @Override
     public WorkOrder findByID(String id) {
         for (WorkOrder workOrder : this.listOfWorkOrder) {
-            if (Objects.equals(workOrder.getID(), id)) {
+            if (workOrder.getID().equals(id)) {
                 return workOrder;
             }
         }
@@ -51,7 +51,7 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     @Override
     public void update(WorkOrder workOrder) throws Exception {
         for (int i = 0; i < listOfWorkOrder.size(); i++) {
-            if (Objects.equals(this.listOfWorkOrder.get(i).getID(), workOrder.getID())) {
+            if (this.listOfWorkOrder.get(i).getID().equals(workOrder.getID())) {
                 this.listOfWorkOrder.set(i, workOrder);
                 return;
             }
@@ -61,7 +61,7 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     @Override
     public void delete(String id) throws Exception {
         for (int i = 0; i < this.listOfWorkOrder.size(); i++) {
-            if (Objects.equals(this.listOfWorkOrder.get(i).getID(), id)) {
+            if (this.listOfWorkOrder.get(i).getID().equals(id)) {
                 this.listOfWorkOrder.remove(i);
                 return;
             }
@@ -72,5 +72,37 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     public void deleteMany() {
         this.listOfWorkOrder = new ArrayList<>();
         this.nextID = null;
+    }
+
+    @Override
+    public List<WorkOrder> findOpenWorkOrders() {
+        List<WorkOrder> openWorkOrders = new ArrayList<WorkOrder>();
+        for (WorkOrder workOrder : this.listOfWorkOrder) {
+            if(workOrder.getStatus().equals("This work order is still active")) {
+                openWorkOrders.add(workOrder);
+            }
+        }
+        return openWorkOrders;
+    }
+
+    @Override
+    public List<WorkOrder> findOrderByClientID(String id) {
+        List<WorkOrder> workOrderListByClient = new ArrayList<>();
+        for (WorkOrder workOrder : this.listOfWorkOrder) {
+            if (workOrder.getClientID().equals(id)) {
+                workOrderListByClient.add(workOrder);
+            }
+        }
+        return workOrderListByClient;
+    }
+
+    @Override
+    public WorkOrder findOrderByTechnicianID(String id) {
+        for (WorkOrder workOrder : this.listOfWorkOrder) {
+            if (workOrder.getTechnicianID().equals(id)) {
+                return workOrder;
+            }
+        }
+        return null;
     }
 }
