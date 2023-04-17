@@ -30,8 +30,8 @@ public class TechnicianListImplementation implements TechnicianDAO {
     @Override
     public List<Technician> findMany() {
         List<Technician> technicianList = new ArrayList<Technician>();
-        for (Object technician : this.listOfTechnician) {
-            technicianList.add((Technician) technician);
+        for (Technician technician : this.listOfTechnician) {
+            technicianList.add(technician);
         }
         return technicianList;
     }
@@ -39,7 +39,7 @@ public class TechnicianListImplementation implements TechnicianDAO {
     @Override
     public Technician findByID(String id) {
         for (Technician technician : this.listOfTechnician) {
-            if(Objects.equals(technician.getID(), id)) {
+            if(technician.getID().equals(id)) {
                 return technician;
             }
         }
@@ -50,7 +50,7 @@ public class TechnicianListImplementation implements TechnicianDAO {
     public List<Technician> findByName(String name) {
         List<Technician> technicianList = new ArrayList<Technician>();
         for (Technician technician : this.listOfTechnician) {
-            if (Objects.equals(technician.getName(), name)) {
+            if (technician.getName().equals(name)) {
                 technicianList.add(technician);
             }
         }
@@ -60,7 +60,7 @@ public class TechnicianListImplementation implements TechnicianDAO {
     @Override
     public void update(Technician technician) throws Exception {
         for (int i = 0; i < this.listOfTechnician.size(); i++) {
-            if (Objects.equals(this.listOfTechnician.get(i).getID(), technician.getID())) {
+            if (this.listOfTechnician.get(i).getID().equals(technician.getID())) {
                 this.listOfTechnician.set(i,technician);
                 return;
             }
@@ -70,7 +70,7 @@ public class TechnicianListImplementation implements TechnicianDAO {
     @Override
     public void delete(String id) throws Exception {
         for (int i = 0; i < this.listOfTechnician.size(); i++) {
-            if (Objects.equals(this.listOfTechnician.get(i).getID(), id)) {
+            if (this.listOfTechnician.get(i).getID().equals(id)) {
                 this.listOfTechnician.remove(i);
                 return;
             }
