@@ -7,6 +7,17 @@ public class Manager extends User{
     }
 
     @Override
+    public boolean equals(Object object) {
+        if (object instanceof Manager) {
+            Manager manager = (Manager) object;
+            if (this.getID().equals(manager.getID())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
     public String toString() {
         return super.toString() + ", Role: Manager";
     }
