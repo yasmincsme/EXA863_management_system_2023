@@ -2,7 +2,9 @@ package com.example.exa863_management_system_2023.model;
 
 import java.text.DateFormat;
 import java.time.Duration;
-import java.time.temporal.Temporal;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -158,6 +160,34 @@ public class WorkOrder {
         return this.getBuildingListPrice() + this.getCleaningListPrice() + this.getInstallationListPrice();
     }
 
+    public long getBuildingListCost() {
+        long cost = 0;
+        for(Building building : buildingList) {
+            cost += building.getCost();
+        }
+        return cost;
+    }
+
+    public long getCleaningListCost() {
+        long cost = 0;
+        for(Cleaning cleaning : cleaningList) {
+            cost += cleaning.getCost();
+        }
+        return cost;
+    }
+
+    public long getInstallationListCost() {
+        long cost = 0;
+        for(Cleaning cleaning : cleaningList) {
+            cost += cleaning.getCost();
+        }
+        return cost;
+    }
+
+    public long getCost() {
+        return this.getBuildingListCost() + this.getCleaningListCost() + this.getInstallationListCost();
+    }
+
     public boolean isFinished() {
         return this.status.equals("This work order has been completed.");
     }
@@ -180,9 +210,12 @@ public class WorkOrder {
         this.finishedAt = new Date();
     }
 
-    public Temporal getWaitingTime() {
-        return Duration.between(createdAt, finishedAt);
+    public long getWaitingTime() {
+        LocalDate createdAt = LocalDate.ofInstant(this.createdAt.toInstant(), ZoneId.systemDefault());
+        LocalDate finishedAt = LocalDate.ofInstant(this.finishedAt.toInstant(), ZoneId.systemDefault());
+        return ChronoUnit.HOURS.between(createdAt, finishedAt);
     }
+    //calendar.setTime(date)
 
     @Override
     public boolean equals(Object object) {
