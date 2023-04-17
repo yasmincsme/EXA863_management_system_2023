@@ -1,5 +1,6 @@
 package com.example.exa863_management_system_2023.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 public class WorkOrder {
@@ -8,17 +9,26 @@ public class WorkOrder {
     private String clientID;
     private String technicianID;
     private String status;
-    private List<Service> services;
+    private List<Building> buildingList;
+    private List<Cleaning> cleaningList;
+    private List<Installation> installationList;
     private String description;
     private Date createdAt;
     private Date finishedAt;
     private int clientSatisfaction;
     private String paymentMethod;
 
-    public WorkOrder(String id, String clientID) {
-        this.id = id;
+    public WorkOrder(String clientID, String description) {
         this.clientID = clientID;
         this.technicianID = null;
+        this.status = "This work order is still active";
+        this.buildingList = new ArrayList<>();
+        this.cleaningList = new ArrayList<>();
+        this.buildingList = new ArrayList<>();
+        this.description = description;
+        this.createdAt = new Date();
+        this.clientSatisfaction = 0;
+        this.paymentMethod = null;
     }
 
     public String getID() {
@@ -49,11 +59,25 @@ public class WorkOrder {
         this.status = status;
     }
 
-    public List<Service> getServices() {
-        return services;
+    public List<Building> getBuildindList() {
+        return buildingList;
     }
-    public void setServices(List<Service> services) {
-        this.services = services;
+    public void setBuildingList(List<Building> buildingList) {
+        this.buildingList = buildingList;
+    }
+
+    public List<Cleaning> getCleaningList() {
+        return cleaningList;
+    }
+    public void setCleaningList(List<Cleaning> cleaningList) {
+        this.cleaningList = cleaningList;
+    }
+
+    public List<Installation> getInstallationList() {
+        return installationList;
+    }
+    public void setInstallationList(List<Installation> installationList) {
+        this.installationList = installationList;
     }
 
     public String getDescription() {
@@ -92,16 +116,60 @@ public class WorkOrder {
     }
 
     public void addBuildingService(Building building) {
-        this.services.add(building);
+        this.buildingList.add(building);
     }
 
     public void addCleaningService(Cleaning cleaning) {
-        this.services.add(cleaning);
+        this.cleaningList.add(cleaning);
     }
 
     public void addInstallationService(Installation installation) {
-        this.services.add(installation);
+        this.installationList.add(installation);
     }
 
+    public long getBuildingListPrice() {
+        long price = 0;
+        for(Building building : buildingList) {
+            price += building.getPrice();
+        }
+        return price;
+    }
 
+    public long getCleaningListPrice() {
+        long price = 0;
+        for(Cleaning cleaning : cleaningList) {
+            price += cleaning.getPrice();
+        }
+        return price;
+    }
+
+    public long getInstallationListPrice() {
+        long price = 0;
+        for(Cleaning cleaning : cleaningList) {
+            price += cleaning.getPrice();
+        }
+        return price;
+    }
+
+    public boolean isFinished() {
+        return this.status.equals("This work order has been completed.");
+    }
+
+    public boolean isCanceled() {
+        return this.status.equals("This work order has been cancelled");
+    }
+
+    public boolean isOnGoing() {
+        return this.status.equals("This work order is still active");
+    }
+
+    public void finish() {
+        this.status = "This work order has been completed.";
+        this.finishedAt = new Date();
+    }
+
+    public void cancel() {
+        this.status = "This work order has been cancelled";
+        this.finishedAt = new Date();
+    }
 }
