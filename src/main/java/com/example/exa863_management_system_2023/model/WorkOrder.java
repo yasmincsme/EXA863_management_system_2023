@@ -1,5 +1,8 @@
 package com.example.exa863_management_system_2023.model;
 
+import java.text.DateFormat;
+import java.time.Duration;
+import java.time.temporal.Temporal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -175,6 +178,10 @@ public class WorkOrder {
     public void cancel() {
         this.status = "This work order has been cancelled";
         this.finishedAt = new Date();
+    }
+
+    public Temporal getWaitingTime() {
+        return Duration.between(createdAt, finishedAt);
     }
 
     @Override
