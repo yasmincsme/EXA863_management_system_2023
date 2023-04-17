@@ -30,8 +30,8 @@ public class ClientListImplementation implements ClientDAO {
     @Override
     public List<Client> findMany() {
         List<Client> clientList = new ArrayList<Client>();
-        for (Object client : this.listOfClients) {
-            clientList.add((Client) client);
+        for (Client client : this.listOfClients) {
+            clientList.add(client);
         }
         return clientList;
     }
@@ -39,7 +39,7 @@ public class ClientListImplementation implements ClientDAO {
     @Override
     public Client findByID(String id) {
         for (Client client : this.listOfClients) {
-            if (Objects.equals(client.getID(), id)) {
+            if (client.getID().equals(id)) {
                 return client;
             }
         }
@@ -50,7 +50,7 @@ public class ClientListImplementation implements ClientDAO {
     public List<Client> findByName(String name) {
         List<Client> clientList = new ArrayList<Client>();
         for (Client client : this.listOfClients) {
-            if (Objects.equals(client.getName(), name)) {
+            if (client.getName().equals(name)) {
                 clientList.add(client);
             }
         }
@@ -60,7 +60,7 @@ public class ClientListImplementation implements ClientDAO {
     @Override
     public void update(Client client) {
         for (int i = 0; i < this.listOfClients.size(); i++) {
-            if (Objects.equals(this.listOfClients.get(i).getID(), client.getID())) {
+            if (this.listOfClients.get(i).getID().equals(client.getID())) {
                 this.listOfClients.set(i, client);
                 return;
             }
@@ -70,7 +70,7 @@ public class ClientListImplementation implements ClientDAO {
     @Override
     public void delete(String id) {
         for (int i = 0; i < this.listOfClients.size(); i++) {
-            if (Objects.equals(this.listOfClients.get(i).getID(), id)) {
+            if (this.listOfClients.get(i).getID().equals(id)) {
                 this.listOfClients.remove(i);
                 return;
             }
