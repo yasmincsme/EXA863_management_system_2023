@@ -30,8 +30,8 @@ public class InstallationListImplementation implements InstallationDAO {
     @Override
     public List<Installation> findMany() {
         List<Installation> installationList = new ArrayList<Installation>();
-        for (Object installation : this.listOfInstallations) {
-            installationList.add((Installation) installation);
+        for (Installation installation : this.listOfInstallations) {
+            installationList.add(installation);
         }
         return installationList;
     }
@@ -39,7 +39,7 @@ public class InstallationListImplementation implements InstallationDAO {
     @Override
     public Installation findByID(String id) {
         for (Installation installation : this.listOfInstallations) {
-            if (Objects.equals(installation.getID(), id)) {
+            if (installation.getID().equals(id)) {
                 return installation;
             }
         }
@@ -49,7 +49,7 @@ public class InstallationListImplementation implements InstallationDAO {
     @Override
     public void update(Installation installation) throws Exception {
         for (int i = 0; i < this.listOfInstallations.size(); i++) {
-            if (Objects.equals(this.listOfInstallations.get(i).getID(), installation.getID())) {
+            if (this.listOfInstallations.get(i).getID().equals(installation.getID())) {
                 this.listOfInstallations.set(i, installation);
                 return;
             }
@@ -59,7 +59,7 @@ public class InstallationListImplementation implements InstallationDAO {
     @Override
     public void delete(String id) throws Exception {
         for (int i = 0; i < this.listOfInstallations.size(); i++) {
-            if (Objects.equals(this.listOfInstallations.get(i).getID(), id)) {
+            if (this.listOfInstallations.get(i).getID().equals(id)) {
                 this.listOfInstallations.remove(i);
                 return;
             }
