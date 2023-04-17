@@ -31,7 +31,7 @@ public class EmployeeListImplementation implements EmployeeDAO {
     public List<Employee> findMany() {
         List<Employee> employeeList = new ArrayList<Employee>();
         for (Employee employee : this.listOfEmployees) {
-            employeeList.add((Employee) employee);
+            employeeList.add(employee);
         }
         return employeeList;
     }
@@ -39,7 +39,7 @@ public class EmployeeListImplementation implements EmployeeDAO {
     @Override
     public Employee findByID(String id) {
         for (Employee employee : this.listOfEmployees) {
-            if (Objects.equals(employee.getID(), id)) {
+            if (employee.getID().equals(id)) {
                 return employee;
             }
         }
@@ -50,7 +50,7 @@ public class EmployeeListImplementation implements EmployeeDAO {
     public List<Employee> findByLogin(String login) {
         List<Employee> employeeList = new ArrayList<Employee>();
         for (Employee employee : this.listOfEmployees) {
-            if (Objects.equals(employee.getLogin(), login)) {
+            if (employee.getLogin().equals(login)) {
                 employeeList.add(employee);
             }
         }
@@ -60,7 +60,7 @@ public class EmployeeListImplementation implements EmployeeDAO {
     @Override
     public void update(Employee employee) {
         for (int i = 0; i < this.listOfEmployees.size(); i++) {
-            if (Objects.equals(this.listOfEmployees.get(i).getID(), employee.getID())) {
+            if (this.listOfEmployees.get(i).getID().equals(employee.getID())) {
                 this.listOfEmployees.set(i, employee);
                 return;
             }
@@ -70,7 +70,7 @@ public class EmployeeListImplementation implements EmployeeDAO {
     @Override
     public void delete(String id) {
         for (int i = 0; i < this.listOfEmployees.size(); i++) {
-            if (Objects.equals(this.listOfEmployees.get(i).getID(), id)) {
+            if (this.listOfEmployees.get(i).getID().equals(id)) {
                 this.listOfEmployees.remove(i);
                 return;
             }
