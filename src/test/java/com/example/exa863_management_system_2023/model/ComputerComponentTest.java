@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class ComputerComponentTest {
 
     @Test
-    public void testConstructor() {
+    public void testFirstConstructor() {
 
         ComputerComponent component = new ComputerComponent("CPU", "Central Processing Unit", "Intel", "ABC123", 100, 200, 5);
 
@@ -17,6 +17,15 @@ public class ComputerComponentTest {
         assertEquals(100, component.getUnitCost());
         assertEquals(200, component.getUnitPrice());
         assertEquals(5, component.getQuantity());
+    }
+
+    @Test
+    public void testSecondConstructor() {
+        ComputerComponent component = new ComputerComponent("CPU", "Central Processing Unit", "Intel");
+
+        assertEquals("CPU", component.getName());
+        assertEquals("Central Processing Unit", component.getDescription());
+        assertEquals("Intel", component.getManufacturer());
     }
 
     @Test
