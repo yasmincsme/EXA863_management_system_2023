@@ -16,6 +16,24 @@ class TechnicianTest{
     }
 
     @Test
+    public void testEquals() {
+        Technician technician1 = new Technician("John", "john@example.com", "john123", "password");
+        technician1.setID("TECH001");
+        Technician technician2 = new Technician("Mike", "mike@example.com", "mike123", "password");
+        technician2.setID("TECH002");
+        Technician technician3 = new Technician("John", "john@example.com", "john123", "password");
+        technician3.setID("TECH001");
+
+        // Verify that two technicians with the same ID are equal
+        assertEquals(technician1, technician3);
+
+        // Verify that two technicians with different IDs are not equal
+        assertNotEquals(technician1, technician2);
+
+        // Null object
+        assertNotEquals(null, technician1);
+    }
+    @Test
     public void testToString() {
         Technician technician = new Technician("John Doe", "john.doe@example.com", "johnDoe", "password");
         technician.setID("915e9532-dc9f-11ed");
