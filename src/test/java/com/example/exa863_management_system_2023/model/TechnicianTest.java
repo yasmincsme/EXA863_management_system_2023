@@ -17,20 +17,26 @@ class TechnicianTest{
 
     @Test
     public void testEquals() {
-        Technician technician1 = new Technician("John", "john@example.com", "john123", "password");
-        technician1.setID("TECH001");
-        Technician technician2 = new Technician("Mike", "mike@example.com", "mike123", "password");
-        technician2.setID("TECH002");
-        Technician technician3 = new Technician("John", "john@example.com", "john123", "password");
-        technician3.setID("TECH001");
+        Technician technician1 = new Technician("John Smith", "john.smith@example.com", "johnsmith", "password");
+        technician1.setID("a908ffa4-dd37-11ed");
+        Technician technician2 = new Technician("Jane Doe", "jane.doe@example.com", "janedoe", "password");
+        technician2.setID("ed198b64-dd37-11ed");
+        Technician technician3 = new Technician("John Smith", "john.smith@example.com", "johnsmith", "password");
+        technician3.setID("a908ffa4-dd37-11ed");
+        Technician technician4 = new Technician("John Smith", "john.smith@example.com", "johndoe", "password");
+        technician4.setID("f89174f2-dd37-11ed");
 
-        // Verify that two technicians with the same ID are equal
+        //Verify that two technicians with the same ID are equal
         assertEquals(technician1, technician3);
 
-        // Verify that two technicians with different IDs are not equal
+        //Verify that two technicians with different IDs are not equal
         assertNotEquals(technician1, technician2);
+        assertNotEquals(technician1, technician4);
 
-        // Null object
+        //Same name and email, but different ID
+        assertNotEquals(technician1, technician4);
+
+        //Null object
         assertNotEquals(null, technician1);
     }
     @Test
