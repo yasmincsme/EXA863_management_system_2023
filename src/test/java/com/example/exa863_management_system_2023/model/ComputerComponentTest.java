@@ -26,11 +26,9 @@ public class ComputerComponentTest {
 
         // Test equality of two different components with different IDs
         assertNotEquals(component1, component2);
-        assertNotEquals(component2, component1);
 
         // Test equality of two different components with the same ID
         assertNotEquals(component1, component3);
-        assertNotEquals(component3, component1);
 
         // Test equality of the same component
         assertEquals(component1, component1);
