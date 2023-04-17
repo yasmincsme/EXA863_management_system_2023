@@ -151,6 +151,10 @@ public class WorkOrder {
         return price;
     }
 
+    public long getPrice() {
+        return this.getBuildingListPrice() + this.getCleaningListPrice() + this.getInstallationListPrice();
+    }
+
     public boolean isFinished() {
         return this.status.equals("This work order has been completed.");
     }
@@ -171,5 +175,21 @@ public class WorkOrder {
     public void cancel() {
         this.status = "This work order has been cancelled";
         this.finishedAt = new Date();
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (object instanceof WorkOrder) {
+           WorkOrder workOrder = (WorkOrder) object;
+           if (this.getID().equals(workOrder.getID())) {
+               return true;
+           }
+        }
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + this.id + ", Client ID: " + this.clientID + ", Technician ID: " + this.technicianID + ", Status: " + this.status + ", Building List: " + this.buildingList + ", Cleaning List: " + this.cleaningList + "Installation List: " + this.installationList + ", Description: " + this.description + ", Creation Date: " + this.createdAt + ", Completion Date: " + this.finishedAt + ", Satisfaction Score: " + this.clientSatisfaction + ", Payment Method: " + this.paymentMethod;
     }
 }
