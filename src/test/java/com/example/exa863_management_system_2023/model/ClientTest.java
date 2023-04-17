@@ -18,26 +18,27 @@ public class ClientTest {
 
     @Test
     public void testEquals() {
-        Employee employee1 = new Employee("John Smith", "john.smith@example.com", "johnsmith", "password");
-        employee1.setID("EMPL001");
-        Employee employee2 = new Employee("Jane Doe", "jane.doe@example.com", "janedoe", "password");
-        employee2.setID("EMPL002");
-        Employee employee3 = new Employee("John Smith", "john.smith@example.com", "johnsmith", "password");
-        employee3.setID("EMPL001");
-        Employee employee4 = new Employee("John Smith", "john.smith@example.com", "johndoe", "password");
-        employee4.setID("EMPL004");
+        Client client1 = new Client("John Smith", "john.smith@example.com", "johnsmith", "password");
+        client1.setID("a908ffa4-dd37-11ed");
+        Client client2 = new Client("Jane Doe", "jane.doe@example.com", "janedoe", "password");
+        client2.setID("ed198b64-dd37-11ed");
+        Client client3 = new Client("John Smith", "john.smith@example.com", "johnsmith", "password");
+        client3.setID("a908ffa4-dd37-11ed");
+        Client client4 = new Client("John Smith", "john.smith@example.com", "johndoe", "password");
+        client4.setID("f89174f2-dd37-11ed");
 
-        // Verify that two employees with the same ID are equal
-        assertEquals(employee1, employee3);
+        //Verify that two clients with the same ID are equal
+        assertEquals(client1, client3);
 
-        // Verify that two employees with different IDs are not equal
-        assertNotEquals(employee1, employee2);
+        //Verify that two clients with different IDs are not equal
+        assertNotEquals(client1, client2);
+        assertNotEquals(client1, client4);
 
-        // same name and email, but different login ID
-        assertNotEquals(employee1, employee4);
+        //Same name and email, but different ID
+        assertNotEquals(client1, client4);
 
-        // Null object
-        assertNotEquals(null, employee1);
+        //Null object
+        assertNotEquals(null, client1);
     }
 
     @Test
