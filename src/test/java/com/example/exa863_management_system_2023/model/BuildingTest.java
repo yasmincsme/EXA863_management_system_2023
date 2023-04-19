@@ -16,11 +16,11 @@ public class BuildingTest {
 
     @BeforeEach
     public void setUp() {
-        ComputerComponent component1 = new ComputerComponent("CPU", "Intel Core i7", "Intel", "ABC123", 100, 150, 10);
+        ComputerComponent component1 = new ComputerComponent("CPU", "Intel", "ABC123", 100, 150, 10);
         component1.setID("11221ccc-dd3f-11ed");
-        ComputerComponent component2 = new ComputerComponent("GPU", "Nvidia GeForce RTX 3080", "Nvidia", "XYZ789", 800, 1000, 5);
+        ComputerComponent component2 = new ComputerComponent("GPU", "Nvidia", "XYZ789", 800, 1000, 5);
         component2.setID("20012e04-dd3f-11ed");
-        ComputerComponent component3 = new ComputerComponent("RAM", "Corsair Vengeance LPX", "Corsair", "DEF456", 50, 70, 20);
+        ComputerComponent component3 = new ComputerComponent("RAM", "Corsair", "DEF456", 50, 70, 20);
         component3.setID("11221ccc-dd3f-11ed");
         stock.add(component1);
         stock.add(component2);
