@@ -14,10 +14,10 @@ public class Client {
 
     /**
      *
-     * @param name Name of the User
-     * @param email Email of the User
-     * @param login Login of the User
-     * @param password Password of the User
+     * @param name Client's name
+     * @param email Client's email
+     * @param address Client's address
+     * @param phone Client's phone
      */
     public Client(String name, String email, String address, String phone) {
         this.id = null;
@@ -81,6 +81,6 @@ public class Client {
      */
     @Override
     public String toString() {
-        return "Role: " + this.type + "ID: " + this.id + ", Name: " + this.name + ", Email: " + this.email + ", Login: " + this.login + ", Password: " + this.password;
+        return "Role: " + this.type + "ID: " + this.id + ", Name: " + this.name + ", Email: " + this.email + ", Address: " + this.address + ", Phone: " + this.phone;
     }
 }
