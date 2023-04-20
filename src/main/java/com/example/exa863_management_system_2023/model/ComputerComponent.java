@@ -14,12 +14,12 @@ public class ComputerComponent {
 
     /**
      *
-     * @param name Name of the Component
-     * @param manufacturer Manufacturer of the Component
-     * @param serialNumber Serial number of the Component
-     * @param unitPrice Unit price of the Component
-     * @param unitCost Unit cost of the Component
-     * @param quantity Quantity of the Component
+     * @param name Component's name
+     * @param manufacturer Component's manufacturer
+     * @param serialNumber Component's serial number
+     * @param unitPrice Component's unit price
+     * @param unitCost Component's unit cost
+     * @param quantity Component's quantity
      */
     public ComputerComponent(String name, String manufacturer, String serialNumber, Double unitPrice, Double unitCost, int quantity) {
         this.name = name;
