@@ -2,71 +2,77 @@ package com.example.exa863_management_system_2023.model;
 
 import java.util.List;
 
-public class Client extends Person {
+public class Client {
 
+    private String id;
+    private final String type = "CLIENT";
+    private String name;
+    private String email;
     private String address;
     private String phone;
-    private List<WorkOrder> workOrderList;
+
 
     /**
      *
-     * @param name Name of the Person
-     * @param email Email of the Person
-     * @param address Address of the Person
-     * @param phone Phone of the Person
+     * @param name Name of the User
+     * @param email Email of the User
+     * @param login Login of the User
+     * @param password Password of the User
      */
     public Client(String name, String email, String address, String phone) {
-        super(name, email);
+        this.id = null;
+        this.name = name;
+        this.email = email;
         this.address = address;
         this.phone = phone;
     }
 
     /**
      *
-     * @return Return Client's address
+     * @return Return the Person's ID
      */
-    public String getAddress() {
-        return address;
+    public String getID() {
+        return id;
     }
 
     /**
      *
-     * @param address New value to address
+     * @param id New value to ID
      */
-    public void setAddress(String address) {
-        this.address = address;
+    public void setID(String id) {
+        this.id = id;
     }
 
     /**
      *
-     * @return Return Client's phone
+     * @return Return the Person's name
      */
-    public String getPhone() {
-        return phone;
+    public String getName() {
+        return name;
     }
 
     /**
      *
-     * @param phone New value to phone
+     * @param name New value to name
      */
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**
      *
-     * @param object Receive a random object;
-     * @return Return true if the given object is equal to the current Client object, or false if they are not the same
+     * @return Return the Person's email
      */
-    @Override
-    public boolean equals(Object object) {
-        if (object instanceof Client) {
-            Client client = (Client) object;
-            if (this.getID().equals(client.getID())) {
-                return true;
-            }
-        }
-        return false;
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     *
+     * @param email New value to email
+     */
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     /**
@@ -75,6 +81,6 @@ public class Client extends Person {
      */
     @Override
     public String toString() {
-        return super.toString() + ", Address: " + this.address + ", Phone: " + this.phone;
+        return "Role: " + this.type + "ID: " + this.id + ", Name: " + this.name + ", Email: " + this.email + ", Login: " + this.login + ", Password: " + this.password;
     }
 }
