@@ -29,7 +29,7 @@ public class Client {
 
     /**
      *
-     * @return Return the Person's ID
+     * @return Return Client's ID
      */
     public String getID() {
         return id;
@@ -45,7 +45,7 @@ public class Client {
 
     /**
      *
-     * @return Return the Person's name
+     * @return Return Client's name
      */
     public String getName() {
         return name;
@@ -61,7 +61,7 @@ public class Client {
 
     /**
      *
-     * @return Return the Person's email
+     * @return Return Client's email
      */
     public String getEmail() {
         return email;
