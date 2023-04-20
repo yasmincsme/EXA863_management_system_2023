@@ -11,7 +11,7 @@ public class CleaningTest {
     @Test
     public void testConstructor() {
 
-        Cleaning cleaning = new Cleaning("CPU cooler cleaning", "Reattach it to ensure proper cooling and ventilation", 70, 25);
+        Cleaning cleaning = new Cleaning("CPU cooler cleaning", 70, 25);
 
         assertEquals("CPU cooler cleaning", cleaning.getName());
         assertEquals("Reattach it to ensure proper cooling and ventilation", cleaning.getDescription());
