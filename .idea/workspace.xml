@@ -4,36 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment="Create the test &quot;WorkOrderTest&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/building/BuildingListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/employee/EmployeeListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/installation/InstallationListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/manager/ManagerListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderListImplementationTest.java" afterDir="false" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":sparkles: feat: Adição de método para atualizar o status da &quot;WorkOrder&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/BuildingListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/BuildingListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Building.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Cleaning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Cleaning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Installation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Installation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/BuildingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/BuildingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/CleaningTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/CleaningTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/ComputerComponentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/ComputerComponentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/InstallationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/InstallationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/WorkOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/WorkOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,15 +15,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,26 +43,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaClassFindUsagesOptions.isDerivedClasses": "true",
-    "JavaClassFindUsagesOptions.isFieldsUsages": "true",
-    "JavaClassFindUsagesOptions.isMethodsUsages": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
-    "last_opened_file_path": "C:/Users/meira/Downloads/GitHub/gestao-academica",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaClassFindUsagesOptions.isDerivedClasses&quot;: &quot;true&quot;,
+    &quot;JavaClassFindUsagesOptions.isFieldsUsages&quot;: &quot;true&quot;,
+    &quot;JavaClassFindUsagesOptions.isMethodsUsages&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/meira/Downloads/GitHub/gestao-academica&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -116,35 +88,18 @@
       <recent name="com.example.exa863_management_system_2023.dao.employee" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.example.exa863_management_system_2023.dao in EXA863_management_system_2023">
-    <configuration name="BuildingListImplementationTest.testDeleteMany" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ComputerComponentTest.testFirstConstructor">
+    <configuration name="BuildingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.exa863_management_system_2023.dao.building.*" />
+          <option name="PATTERN" value="com.example.exa863_management_system_2023.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.dao.building" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.dao.building.BuildingListImplementationTest" />
-      <option name="METHOD_NAME" value="testDeleteMany" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BuildingListImplementationTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EXA863_management_system_2023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.exa863_management_system_2023.dao.building.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.dao.building" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.dao.building.BuildingListImplementationTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.BuildingTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComputerComponentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
@@ -174,8 +129,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.ClientTest" />
-      <option name="METHOD_NAME" value="testEquals" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.ComputerComponentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComputerComponentTest.testFirstConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EXA863_management_system_2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.exa863_management_system_2023.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.ComputerComponentTest" />
+      <option name="METHOD_NAME" value="testFirstConstructor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -197,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ComputerComponentTest.testFirstConstructor" />
+        <item itemvalue="JUnit.ComputerComponentTest" />
+        <item itemvalue="JUnit.BuildingTest" />
         <item itemvalue="JUnit.com.example.exa863_management_system_2023.dao in EXA863_management_system_2023" />
         <item itemvalue="JUnit.ClientListImplementationTest.testCreateClient" />
-        <item itemvalue="JUnit.ClientTest.testEquals" />
-        <item itemvalue="JUnit.BuildingListImplementationTest.testUpdate" />
-        <item itemvalue="JUnit.BuildingListImplementationTest.testDeleteMany" />
       </list>
     </recent_temporary>
   </component>
@@ -229,119 +199,10 @@
       <workItem from="1681263526414" duration="3390000" />
       <workItem from="1681513889021" duration="924000" />
       <workItem from="1681596608642" duration="8285000" />
-      <workItem from="1681664464438" duration="82409000" />
-    </task>
-    <task id="LOCAL-00133" summary="Update the class &quot;Installation&quot;">
-      <created>1681697893913</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1681697893913</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Update the class &quot;WorkOrder&quot;">
-      <created>1681697916242</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1681697916243</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Update the class &quot;Manager&quot;">
-      <created>1681697934222</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1681697934222</updated>
-    </task>
-    <task id="LOCAL-00136" summary="Update the test &quot;ManagerTest&quot;">
-      <created>1681697983592</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1681697983592</updated>
-    </task>
-    <task id="LOCAL-00137" summary="Update the test &quot;TechnicianTest&quot;">
-      <created>1681698003484</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1681698003484</updated>
-    </task>
-    <task id="LOCAL-00138" summary="Update the test &quot;EmployeeTest&quot;">
-      <created>1681698019445</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1681698019445</updated>
-    </task>
-    <task id="LOCAL-00139" summary="Update the test &quot;ComputerComponentTest&quot;">
-      <created>1681698037609</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1681698037609</updated>
-    </task>
-    <task id="LOCAL-00140" summary="Update the class &quot;WorkOrder&quot;">
-      <created>1681699487998</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1681699487998</updated>
-    </task>
-    <task id="LOCAL-00141" summary="Update the file &quot;workspace.xml&quot;">
-      <created>1681699517720</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1681699517720</updated>
-    </task>
-    <task id="LOCAL-00142" summary="Update the interface &quot;BuildingDAO&quot;">
-      <created>1681702570783</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1681702570784</updated>
-    </task>
-    <task id="LOCAL-00143" summary="Update the interface &quot;WorkOrderDAO&quot;">
-      <created>1681702592102</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1681702592102</updated>
-    </task>
-    <task id="LOCAL-00144" summary="Update the class &quot;WorkOrder&quot;">
-      <created>1681702616665</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1681702616665</updated>
-    </task>
-    <task id="LOCAL-00145" summary="Delete the test &quot;EmployeeListImplementationTest&quot;">
-      <created>1681742783386</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1681742783386</updated>
-    </task>
-    <task id="LOCAL-00146" summary="Delete the test &quot;ManagerListImplementationTest&quot;">
-      <created>1681742810609</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1681742810609</updated>
-    </task>
-    <task id="LOCAL-00147" summary="Delete the test &quot;InstallationListImplementationTest&quot;">
-      <created>1681742833796</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1681742833796</updated>
-    </task>
-    <task id="LOCAL-00148" summary="Delete the test &quot;ClientListImplementationTest&quot;">
-      <created>1681742860936</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1681742860936</updated>
+      <workItem from="1681664464438" duration="83188000" />
+      <workItem from="1681866147735" duration="10292000" />
+      <workItem from="1681919847888" duration="2834000" />
+      <workItem from="1681944302971" duration="1582000" />
     </task>
     <task id="LOCAL-00149" summary="Update the test &quot;ClientTest&quot;">
       <created>1681742892890</created>
@@ -574,27 +435,136 @@
       <option name="project" value="LOCAL" />
       <updated>1681764914426</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="Final commit">
+      <created>1681789533710</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1681789533711</updated>
+    </task>
+    <task id="LOCAL-00183" summary="Update the file &quot;Building&quot;">
+      <created>1681944344569</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1681944344569</updated>
+    </task>
+    <task id="LOCAL-00184" summary="Update the test &quot;BuildingTest&quot;">
+      <created>1681944367102</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1681944367102</updated>
+    </task>
+    <task id="LOCAL-00185" summary=":test_tube: test: Atualização do teste">
+      <created>1681961855972</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1681961855972</updated>
+    </task>
+    <task id="LOCAL-00186" summary=":recycle: refactor: Desfazendo herança da classe &quot;User&quot;">
+      <created>1681962104566</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962104566</updated>
+    </task>
+    <task id="LOCAL-00187" summary=":recycle: refactor: Desfazendo herança da classe &quot;User&quot;">
+      <created>1681962134383</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962134383</updated>
+    </task>
+    <task id="LOCAL-00188" summary=":recycle: refactor: Desfazendo herança da classe &quot;Person&quot;">
+      <created>1681962160634</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962160634</updated>
+    </task>
+    <task id="LOCAL-00189" summary=":recycle: refactor: Desfazendo herança da classe &quot;User&quot;">
+      <created>1681962185541</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962185541</updated>
+    </task>
+    <task id="LOCAL-00190" summary=":recycle: refactor: Deletando classe abstrata &quot;Service&quot;">
+      <created>1681962217681</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962217681</updated>
+    </task>
+    <task id="LOCAL-00191" summary=":recycle: refactor: Deletando classe abstrata &quot;User&quot;">
+      <created>1681962241365</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962241365</updated>
+    </task>
+    <task id="LOCAL-00192" summary=":recycle: refactor: Desfazendo herança da classe &quot;Service&quot;">
+      <created>1681962279093</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962279094</updated>
+    </task>
+    <task id="LOCAL-00193" summary=":recycle: refactor: Desfazendo herança da classe &quot;Service&quot;">
+      <created>1681962352617</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962352617</updated>
+    </task>
+    <task id="LOCAL-00194" summary=":test_tube: test: Adaptando teste à nova configuração da classe &quot;Cleaning&quot;">
+      <created>1681962412385</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962412385</updated>
+    </task>
+    <task id="LOCAL-00195" summary=":boom: fix: Excluindo atributos subutilizados">
+      <created>1681962490316</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962490316</updated>
+    </task>
+    <task id="LOCAL-00196" summary=":sparkles: feat: Adição de função para retornar o ID">
+      <created>1681962547221</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962547221</updated>
+    </task>
+    <task id="LOCAL-00197" summary=":sparkles: feat: Adição de método para atualizar o status da &quot;WorkOrder&quot;">
+      <created>1681962591038</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1681962591038</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update the class &quot;ClientListImplementation&quot;" />
-    <MESSAGE value="Update the class &quot;EmployeeListImplementation&quot;" />
-    <MESSAGE value="Update the class &quot;InstallationListImplementation&quot;" />
-    <MESSAGE value="Update the class &quot;ComponentListImplementation&quot;" />
-    <MESSAGE value="Update the class &quot;ManagerListImplementation&quot;" />
-    <MESSAGE value="Update the class &quot;TechnicianListImplementation&quot;" />
-    <MESSAGE value="Update the interface &quot;ClientDAO&quot;" />
-    <MESSAGE value="Update the interface &quot;EmployeeDAO&quot;" />
-    <MESSAGE value="Update the interface &quot;InstallationDAO&quot;" />
-    <MESSAGE value="Update the interface &quot;ManagerDAO&quot;" />
-    <MESSAGE value="Update the interface &quot;WorkOrderDAO&quot;" />
-    <MESSAGE value="Update the file &quot;pom.xml&quot;" />
-    <MESSAGE value="Update the test &quot;ClientTest&quot; - Now it has high coverage" />
-    <MESSAGE value="Update the test &quot;EmployeeTest&quot; - Now it has high coverage" />
     <MESSAGE value="Update the test &quot;ManagerTest&quot; - Now it has high coverage" />
     <MESSAGE value="Update the test &quot;TechnicianTest&quot; - Now it has high coverage" />
     <MESSAGE value="Update the file &quot;workspace.xml&quot;" />
@@ -606,7 +576,21 @@
     <MESSAGE value="Update the class &quot;ComputerComponent&quot;" />
     <MESSAGE value="Update the class &quot;Installation&quot;" />
     <MESSAGE value="Create the test &quot;WorkOrderTest&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create the test &quot;WorkOrderTest&quot;" />
+    <MESSAGE value="Final commit" />
+    <MESSAGE value="Update the file &quot;Building&quot;" />
+    <MESSAGE value="Update the test &quot;BuildingTest&quot;" />
+    <MESSAGE value="Update the class &quot;Technician&quot;" />
+    <MESSAGE value=":test_tube: test: Atualização do teste" />
+    <MESSAGE value=":recycle: refactor: Desfazendo herança da classe &quot;Person&quot;" />
+    <MESSAGE value=":recycle: refactor: Desfazendo herança da classe &quot;User&quot;" />
+    <MESSAGE value=":recycle: refactor: Deletando classe abstrata &quot;Service&quot;" />
+    <MESSAGE value=":recycle: refactor: Deletando classe abstrata &quot;User&quot;" />
+    <MESSAGE value=":recycle: refactor: Desfazendo herança da classe &quot;Service&quot;" />
+    <MESSAGE value=":test_tube: test: Adaptando teste à nova configuração da classe &quot;Cleaning&quot;" />
+    <MESSAGE value=":boom: fix: Excluindo atributos subutilizados" />
+    <MESSAGE value=":sparkles: feat: Adição de função para retornar o ID" />
+    <MESSAGE value=":sparkles: feat: Adição de método para atualizar o status da &quot;WorkOrder&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: feat: Adição de método para atualizar o status da &quot;WorkOrder&quot;" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EXA863_management_system_2023$WorkOrderTest_testAddInstallationService.ic" NAME="WorkOrderTest.testAddInstallationService Coverage Results" MODIFIED="1681770639234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
