@@ -1,32 +1,107 @@
 package com.example.exa863_management_system_2023.model;
 
-public class Technician extends User {
+public class Technician {
+
+    private String id;
+    private final String type = "TECHNICIAN";
+    private String name;
+    private String email;
+    private String login;
+    private String password;
 
     /**
      *
-     * @param name Name of the Technician
-     * @param email Email of the Technician
-     * @param login Login of the Technician
-     * @param password Password of the Technician
+     * @param name Name of the User
+     * @param email Email of the User
+     * @param login Login of the User
+     * @param password Password of the User
      */
     public Technician(String name, String email, String login, String password) {
-        super(name, email, login, password);
+        this.id = null;
+        this.name = name;
+        this.email = email;
+        this.login = login;
+        this.password = password;
     }
 
     /**
      *
-     * @param object Receive a random object
-     * @return Return true if the given object is equal to the current Technician object, or false if they are not the same
+     * @return Return the Person's ID
      */
-    @Override
-    public boolean equals(Object object) {
-        if (object instanceof Technician) {
-            Technician technician = (Technician) object;
-            if (this.getID().equals(technician.getID())) {
-                return true;
-            }
-        }
-        return false;
+    public String getID() {
+        return id;
+    }
+
+    /**
+     *
+     * @param id New value to ID
+     */
+    public void setID(String id) {
+        this.id = id;
+    }
+
+    /**
+     *
+     * @return Return the Person's name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     *
+     * @param name New value to name
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     *
+     * @return Return the Person's email
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     *
+     * @param email New value to email
+     */
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    /**
+     *
+     * @return Return the User's login
+     */
+    public String getLogin() {
+        return login;
+    }
+
+    /**
+     *
+     * @param login New value to login
+     */
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    /**
+     *
+     * @return Return the User's password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     *
+     * @param password New value to password
+     */
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     /**
@@ -35,6 +110,6 @@ public class Technician extends User {
      */
     @Override
     public String toString() {
-        return super.toString() + ", Role: Technician";
+        return "ID: " + this.id + ", Name: " + this.name + ", Email: " + this.email + ", Login: " + this.login + ", Password: " + this.password;
     }
 }
