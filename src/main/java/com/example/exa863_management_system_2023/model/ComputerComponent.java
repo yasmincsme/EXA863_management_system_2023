@@ -6,43 +6,28 @@ public class ComputerComponent {
 
     private String name;
     private String id;
-    private String description;
     private String manufacturer;
     private String serialNumber;
-    private long unitCost;
-    private long unitPrice;
+    private Double unitPrice;
+    private Double unitCost;
     private int quantity;
 
     /**
      *
      * @param name Name of the Component
-     * @param description Description of the Component
      * @param manufacturer Manufacturer of the Component
      * @param serialNumber Serial number of the Component
-     * @param unitCost Unit cost of the Component
      * @param unitPrice Unit price of the Component
+     * @param unitCost Unit cost of the Component
      * @param quantity Quantity of the Component
      */
-    public ComputerComponent(String name, String description, String manufacturer, String serialNumber, long unitCost, long unitPrice, int quantity) {
+    public ComputerComponent(String name, String manufacturer, String serialNumber, Double unitPrice, Double unitCost, int quantity) {
         this.name = name;
-        this.description = description;
         this.manufacturer = manufacturer;
         this.serialNumber = serialNumber;
-        this.unitCost = unitCost;
         this.unitPrice = unitPrice;
+        this.unitCost = unitCost;
         this.quantity = quantity;
-    }
-
-    /**
-     *
-     * @param name Name of the Component
-     * @param description Description of the Component
-     * @param manufacturer Manufacturer of the Component
-     */
-    public ComputerComponent(String name, String description, String manufacturer) {
-        this.name = name;
-        this.description = description;
-        this.manufacturer = manufacturer;
     }
 
     /**
@@ -79,23 +64,6 @@ public class ComputerComponent {
 
     /**
      *
-     * @return Return Component's description
-     */
-    public String getDescription() {
-        return description;
-    }
-
-    /**
-     *
-     * @param description New value to description
-     */
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-
-    /**
-     *
      * @return Return Component's manufacturer
      */
     public String getManufacturer() {
@@ -128,25 +96,9 @@ public class ComputerComponent {
 
     /**
      *
-     * @return Return Component's unit cost
-     */
-    public long getUnitCost() {
-        return unitCost;
-    }
-
-    /**
-     *
-     * @param unitCost New value to unit cost
-     */
-    public void setUnitCost(long unitCost) {
-        this.unitCost = unitCost;
-    }
-
-    /**
-     *
      * @return Return Component's unit price
      */
-    public long getUnitPrice() {
+    public Double getUnitPrice() {
         return unitPrice;
     }
 
@@ -154,8 +106,24 @@ public class ComputerComponent {
      *
      * @param unitPrice New value to unit price
      */
-    public void setUnitPrice(long unitPrice) {
+    public void setUnitPrice(Double unitPrice) {
         this.unitPrice = unitPrice;
+    }
+
+    /**
+     *
+     * @return Return Component's unit cost
+     */
+    public Double getUnitCost() {
+        return unitCost;
+    }
+
+    /**
+     *
+     * @param unitCost New value to unit cost
+     */
+    public void setUnitCost(Double unitCost) {
+        this.unitCost = unitCost;
     }
 
     /**
@@ -177,7 +145,7 @@ public class ComputerComponent {
      *
      * @return Return the result of the multiplication between the unit cost and the quantity
      */
-    public long getCost() {
+    public Double getCost() {
         return this.getUnitCost() * this.getQuantity();
     }
 
@@ -185,7 +153,7 @@ public class ComputerComponent {
      *
      * @return Return the result of the multiplication between the unit price and the quantity
      */
-    public long getPrice() {
+    public Double getPrice() {
         return this.getUnitPrice() * this.getQuantity();
     }
 
@@ -211,6 +179,6 @@ public class ComputerComponent {
      */
     @Override
     public String toString() {
-        return "ID: " + this.id + ", Name: " + this.name + ", Description: " + this.description + ", Manufacturer: " + this.manufacturer + ", Serial Number: " + this.serialNumber + ", Unit Cost: " + this.unitCost + ", Unit Price: " + this.unitPrice + ", Quantity: " + this.quantity;
+        return "ID: " + this.id + ", Name: " + this.name + ", Manufacturer: " + this.manufacturer + ", Serial Number: " + this.serialNumber + ", Unit Cost: " + this.unitCost + ", Unit Price: " + this.unitPrice + ", Quantity: " + this.quantity;
     }
 }
