@@ -3,39 +3,90 @@ package com.example.exa863_management_system_2023.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Installation extends Service {
+public class Installation {
 
-    private List<String> programs;
+    private String id;
+    private final String type = "INSTALLATION";
+    private String description;
+    private Double price;
+    private Double cost;
     private String operatingSystem;
 
     /**
      *
-     * @param name Name of the Installation
      * @param description Description of the Installation
      * @param price Price of the Installation
      * @param cost Cost of the Installation
-     * @param operatingSystem Operating system of the Installation
+     * @param operatingSystem Hardware's operating system
      */
-    public Installation(String name, String description, long price, long cost, String operatingSystem) {
-        super(name, description, price, cost);
-        this.programs = new ArrayList<>();
+    public Installation(String description, Double price, Double cost, String operatingSystem) {
+        this.id = null;
+        this.description = description;
+        this.price = price;
+        this.cost = cost;
         this.operatingSystem = operatingSystem;
     }
 
     /**
      *
-     * @return Return Installation's programs
+     * @return Return Service's ID
      */
-    public List<String> getPrograms() {
-        return programs;
+    public String getID() { return id;}
+
+    /**
+     *
+     * @param id New value to ID
+     */
+    public void setID(String id) {
+        this.id = id;
     }
 
     /**
      *
-     * @param programs new value to programs
+     * @return Return Service's description
      */
-    public void setPrograms(List<String> programs) {
-        this.programs = programs;
+    public String getDescription() {
+        return description;
+    }
+
+    /**
+     *
+     * @param description New value to description
+     */
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    /**
+     *
+     * @return Return Service's price
+     */
+    public Double getPrice() {
+        return price;
+    }
+
+    /**
+     *
+     * @param price New value to price
+     */
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    /**
+     *
+     * @return Return Service's cost
+     */
+    public Double getCost() {
+        return cost;
+    }
+
+    /**
+     *
+     * @param cost New value to cost
+     */
+    public void setCost(Double cost) {
+        this.cost = cost;
     }
 
     /**
@@ -52,14 +103,6 @@ public class Installation extends Service {
      */
     public void setOperatingSystem(String operatingSystem) {
         this.operatingSystem = operatingSystem;
-    }
-
-    /**
-     * Add a new program to the program list
-     * @param program New program
-     */
-    public void addProgram(String program) {
-        this.programs.add(program);
     }
 
     /**
@@ -84,6 +127,6 @@ public class Installation extends Service {
      */
     @Override
     public String toString() {
-        return super.toString() + ", Service: Installation" + ", Programs: " + this.programs + ", Operating System: " + this.operatingSystem;
+        return "Type: " + this.type + ", ID: " + this.id + ", Description: " + this.description + ", Price: " + this.price + ", Cost: " + this.cost;
     }
 }
