@@ -11,10 +11,10 @@ public class Technician {
 
     /**
      *
-     * @param name Name of the User
-     * @param email Email of the User
-     * @param login Login of the User
-     * @param password Password of the User
+     * @param name Technician's name
+     * @param email Technician's email
+     * @param login Technician's login
+     * @param password Technician's password
      */
     public Technician(String name, String email, String login, String password) {
         this.id = null;
@@ -26,7 +26,7 @@ public class Technician {
 
     /**
      *
-     * @return Return the Person's ID
+     * @return Return Technician's ID
      */
     public String getID() {
         return id;
@@ -42,7 +42,7 @@ public class Technician {
 
     /**
      *
-     * @return Return the Person's name
+     * @return Return Technician's name
      */
     public String getName() {
         return name;
@@ -58,7 +58,7 @@ public class Technician {
 
     /**
      *
-     * @return Return the Person's email
+     * @return Return Technician's email
      */
     public String getEmail() {
         return email;
@@ -74,7 +74,7 @@ public class Technician {
 
     /**
      *
-     * @return Return the User's login
+     * @return Return Technician's login
      */
     public String getLogin() {
         return login;
@@ -90,7 +90,7 @@ public class Technician {
 
     /**
      *
-     * @return Return the User's password
+     * @return Return Technician's password
      */
     public String getPassword() {
         return password;
@@ -102,6 +102,22 @@ public class Technician {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     *
+     * @param object Receive a random object
+     * @return Return true if the given object is equal to the current Manager object, or false if they are not the same
+     */
+    @Override
+    public boolean equals(Object object) {
+        if(object instanceof ComputerComponent) {
+            ComputerComponent component = (ComputerComponent) object;
+            if (this.getID().equals(component.getID())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
