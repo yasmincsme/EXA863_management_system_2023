@@ -77,6 +77,22 @@ public class Client {
 
     /**
      *
+     * @param object Receive a random object
+     * @return Return true if the given object is equal to the current Manager object, or false if they are not the same
+     */
+    @Override
+    public boolean equals(Object object) {
+        if(object instanceof ComputerComponent) {
+            ComputerComponent component = (ComputerComponent) object;
+            if (this.getID().equals(component.getID())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     *
      * @return Return a short formatted description of the object
      */
     @Override
