@@ -11,10 +11,10 @@ public class Manager {
 
     /**
      *
-     * @param name Name of the User
-     * @param email Email of the User
-     * @param login Login of the User
-     * @param password Password of the User
+     * @param name Manager's name
+     * @param email Manager's email
+     * @param login Manager's login
+     * @param password Manager's password
      */
     public Manager(String name, String email, String login, String password) {
         this.id = null;
@@ -26,7 +26,7 @@ public class Manager {
 
     /**
      *
-     * @return Return the Person's ID
+     * @return Return Manager's ID
      */
     public String getID() {
         return id;
@@ -42,7 +42,7 @@ public class Manager {
 
     /**
      *
-     * @return Return the Person's name
+     * @return Return Manager's name
      */
     public String getName() {
         return name;
@@ -58,7 +58,7 @@ public class Manager {
 
     /**
      *
-     * @return Return the Person's email
+     * @return Return Manager's email
      */
     public String getEmail() {
         return email;
@@ -74,7 +74,7 @@ public class Manager {
 
     /**
      *
-     * @return Return the User's login
+     * @return Return Manager's login
      */
     public String getLogin() {
         return login;
@@ -90,7 +90,7 @@ public class Manager {
 
     /**
      *
-     * @return Return the User's password
+     * @return Return Manager's password
      */
     public String getPassword() {
         return password;
@@ -102,6 +102,22 @@ public class Manager {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     *
+     * @param object Receive a random object
+     * @return Return true if the given object is equal to the current Manager object, or false if they are not the same
+     */
+    @Override
+    public boolean equals(Object object) {
+        if(object instanceof ComputerComponent) {
+            ComputerComponent component = (ComputerComponent) object;
+            if (this.getID().equals(component.getID())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
