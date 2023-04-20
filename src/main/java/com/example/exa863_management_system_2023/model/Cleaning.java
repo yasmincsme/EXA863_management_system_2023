@@ -3,48 +3,83 @@ package com.example.exa863_management_system_2023.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cleaning extends Service{
+public class Cleaning {
 
-    private List<ComputerComponent> components;
+    private String id;
+    private final String type = "CLEANING";
+    private String description;
+    private Double price;
+    private Double cost;
 
     /**
-     *
-     * @param name Name of the Cleaning
      * @param description Description of the Cleaning
-     * @param price Price of the Cleaning
-     * @param cost Cost og the Cleaning
+     * @param price       Price of the Cleaning
+     * @param cost        Cost og the Cleaning
      */
-    public Cleaning(String name, String description, long price, long cost) {
-        super(name, description, price, cost);
-        this.components = new ArrayList<>();
+    public Cleaning(String description, Double price, Double cost) {
+        this.id = null;
+        this.description = description;
+        this.price = price;
+        this.cost = cost;
     }
 
     /**
-     *
-     * @return Return Cleaning's component list
+     * @return Return Service's ID
      */
-    public List<ComputerComponent> getComponents() {
-        return components;
+    public String getID() {
+        return id;
     }
 
     /**
-     *
-     * @param components New value to component list
+     * @param id New value to ID
      */
-    public void setComponents(List<ComputerComponent> components) {
-        this.components = components;
+    public void setID(String id) {
+        this.id = id;
     }
 
     /**
-     * Add a new component to the component list
-     * @param component New component
+     * @return Return Service's description
      */
-    public void addComponent(ComputerComponent component) {
-        this.components.add(component);
+    public String getDescription() {
+        return description;
     }
 
     /**
-     *
+     * @param description New value to description
+     */
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    /**
+     * @return Return Service's price
+     */
+    public Double getPrice() {
+        return price;
+    }
+
+    /**
+     * @param price New value to price
+     */
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    /**
+     * @return Return Service's cost
+     */
+    public Double getCost() {
+        return cost;
+    }
+
+    /**
+     * @param cost New value to cost
+     */
+    public void setCost(Double cost) {
+        this.cost = cost;
+    }
+
+    /**
      * @param object Receive a random object
      * @return Return true if the given object is equal to the current Cleaning object, or false if they are not the same
      */
@@ -60,11 +95,10 @@ public class Cleaning extends Service{
     }
 
     /**
-     *
      * @return Return a short formatted description of the object
      */
     @Override
     public String toString() {
-        return super.toString() + ", Service: Cleaning" + ", Components: " + this.components;
+        return "Type: " + this.type + ", ID: " + this.id + ", Description: " + this.description + ", Price: " + this.price + ", Cost: " + this.cost;
     }
 }
