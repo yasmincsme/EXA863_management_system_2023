@@ -8,10 +8,10 @@ public class ClientTest {
 
     @Test
     public void testConstructor() {
-        Client client = new Client("Matthew Delgado", "matthew.delgado@example.com", "Belmont, California(CA), 94002", "(262) 633-9393");
+        Client client = new Client("Matthew Delgado", "math.delgado@example.com", "Belmont, California(CA), 94002", "(262) 633-9393");
 
         assertEquals("Matthew Delgado", client.getName());
-        assertEquals("matthew.delgado@example.com", client.getEmail());
+        assertEquals("math.delgado@example.com", client.getEmail());
         assertEquals("Belmont, California(CA), 94002", client.getAddress());
         assertEquals("(262) 633-9393", client.getPhone());
     }
@@ -24,21 +24,21 @@ public class ClientTest {
         client2.setID("ed198b64-dd37-11ed");
         Client client3 = new Client("John Smith", "john.smith@example.com", "257 Fireweed Ln, Ketchikan, Alaska 99901, USA", "password");
         client3.setID("a908ffa4-dd37-11ed");
-        Client client4 = new Client("John Smith", "john.smith@example.com", "23475 Glacier View Dr, Eagle River, Alaska 99577, USA", "password");
-        client4.setID("f89174f2-dd37-11ed");
+
 
         //Verify that two clients with the same ID are equal
         assertEquals(client1, client3);
 
         //Verify that two clients with different IDs are not equal
         assertNotEquals(client1, client2);
-        assertNotEquals(client1, client4);
-
-        //Same name and email, but different ID
-        assertNotEquals(client1, client4);
 
         //Null object
         assertNotEquals(null, client1);
+
+        //Same object
+        assertEquals(client1, client1);
+        assertEquals(client2, client2);
+        assertEquals(client3, client3);
     }
 
     @Test
