@@ -44,7 +44,7 @@ class EmployeeTest{
     public void testToString() {
         Employee employee = new Employee("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
         employee.setID("a908ffa4-dd37-11ed");
-        String expected = "Role: EMPLOYEE, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Login: lionelCraig, 94002, Password: password123";
+        String expected = "Role: EMPLOYEE, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Login: lionelCraig, Password: password123";
         String actual = employee.toString();
         assertEquals(expected, actual);
     }
