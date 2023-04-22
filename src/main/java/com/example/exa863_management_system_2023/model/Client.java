@@ -77,6 +77,38 @@ public class Client {
 
     /**
      *
+     * @return Client's address
+     */
+    public String getAddress() {
+        return this.address;
+    }
+
+    /**
+     *
+     * @param address New value to address
+     */
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    /**
+     *
+     * @return Client's phone
+     */
+    public String getPhone() {
+        return this.phone;
+    }
+
+    /**
+     *
+     * @param phone New value to phone
+     */
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    /**
+     *
      * @param object Receive a random object
      * @return Return true if the given object is equal to the current Manager object, or false if they are not the same
      */
