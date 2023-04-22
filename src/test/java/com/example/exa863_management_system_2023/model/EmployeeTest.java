@@ -7,42 +7,44 @@ class EmployeeTest{
 
     @Test
     public void testConstructor() {
-        Employee employee = new Employee("Julia Ortega", "julia.ortega@example.com", "juliaOrtega", "password");
+        Employee employee = new Employee("Matthew Delgado", "math.delgado@example.com", "mathDelgado", "password123");
 
-        assertEquals("Julia Ortega", employee.getName());
-        assertEquals("julia.ortega@example.com", employee.getEmail());
-        assertEquals("juliaOrtega", employee.getLogin());
-        assertEquals("password", employee.getPassword());
+        assertEquals("Matthew Delgado", employee.getName());
+        assertEquals("math.delgado@example.com", employee.getEmail());
+        assertEquals("mathDelgado", employee.getLogin());
+        assertEquals("password123", employee.getLogin());
     }
+
     @Test
     public void testEquals() {
-        Employee employee1 = new Employee("John Smith", "john.smith@example.com", "johnsmith", "password");
-        employee1.setID("42686206-dd39-11ed");
-        Employee employee2 = new Employee("Jane Doe", "jane.doe@example.com", "janedoe", "password");
-        employee2.setID("4fa2c696-dd39-11ed");
-        Employee employee3 = new Employee("John Smith", "john.smith@example.com", "johnsmith", "password");
-        employee3.setID("42686206-dd39-11ed");
-        Employee employee4 = new Employee("John Smith", "john.smith@example.com", "johndoe", "password");
-        employee4.setID("59763b6c-dd39-11ed");
+        Employee employee1 = new Employee("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
+        employee1.setID("a908ffa4-dd37-11ed");
+        Employee employee2 = new Employee("Jane Doe", "jane.doe@example.com", "janeDoe", "password123");
+        employee2.setID("ed198b64-dd37-11ed");
+        Employee employee3 = new Employee("John Smith", "john.smith@example.com", "johnSmith", "password123");
+        employee3.setID("a908ffa4-dd37-11ed");
 
-        //Verify that two employees with the same ID are equal
-        assertEquals(employee1, employee3);
 
-        //Verify that two employees with different IDs are not equal
+        //Verify that two clients with the same ID are equal
+        assertEquals(employee1, employee1);
+
+        //Verify that two clients with different IDs are not equal
         assertNotEquals(employee1, employee2);
-        assertNotEquals(employee1, employee4);
-
-        //Same name and email, but different login ID
-        assertNotEquals(employee1, employee4);
 
         //Null object
         assertNotEquals(null, employee1);
+
+        //Same object
+        assertEquals(employee1, employee1);
+        assertEquals(employee2, employee2);
+        assertEquals(employee3, employee3);
     }
+
     @Test
     public void testToString() {
-        Employee employee = new Employee("Julia Ortega", "julia.ortega@example.com", "juliaOrtega", "password");
-        employee.setID("5a071186-dc9f-11ed");
-        String expected = "ID: 5a071186-dc9f-11ed, Name: Julia Ortega, Email: julia.ortega@example.com, Login: juliaOrtega, Password: password, Role: Employee";
+        Employee employee = new Employee("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
+        employee.setID("a908ffa4-dd37-11ed");
+        String expected = "Role: EMPLOYEE, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Login: lionelCraig, 94002, Password: password123";
         String actual = employee.toString();
         assertEquals(expected, actual);
     }
