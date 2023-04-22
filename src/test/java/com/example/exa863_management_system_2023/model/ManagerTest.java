@@ -7,44 +7,44 @@ class ManagerTest {
 
     @Test
     public void testConstructor() {
-        Manager manager = new Manager("Jenna Mars", "jenna.mars@example.com", "jenMars", "password");
+        Manager manager = new Manager("Matthew Delgado", "math.delgado@example.com", "mathDelgado", "password123");
 
-        assertEquals("Jenna Mars", manager.getName());
-        assertEquals("jenna.mars@example.com", manager.getEmail());
-        assertEquals("jenMars", manager.getLogin());
-        assertEquals("password", manager.getPassword());
+        assertEquals("Matthew Delgado", manager.getName());
+        assertEquals("math.delgado@example.com", manager.getEmail());
+        assertEquals("mathDelgado", manager.getLogin());
+        assertEquals("password123", manager.getLogin());
     }
 
     @Test
     public void testEquals() {
-        Manager manager1 = new Manager("John Smith", "john.smith@example.com", "johnsmith", "password");
-        manager1.setID("7913cf6a-dd3a-11ed");
-        Manager manager2 = new Manager("Jane", "jane.doe@example.com", "janedoe", "password");
-        manager2.setID("84fc3fba-dd3a-11ed");
-        Manager manager3 = new Manager("John Smith", "john.smith@example.com", "johnsmith", "password");
-        manager3.setID("7913cf6a-dd3a-11ed");
-        Manager manager4 = new Manager("John Smith", "john.smith@example.com", "johndoe", "password");
-        manager4.setID("f89174f2-dd37-11ed");
+        Manager manager1 = new Manager("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
+        manager1.setID("a908ffa4-dd37-11ed");
+        Manager manager2 = new Manager("Jane Doe", "jane.doe@example.com", "janeDoe", "password123");
+        manager2.setID("ed198b64-dd37-11ed");
+        Manager manager3 = new Manager("John Smith", "john.smith@example.com", "johnSmith", "password123");
+        manager3.setID("a908ffa4-dd37-11ed");
 
-        //Verify that two managers with the same ID are equal
+
+        //Verify that two clients with the same ID are equal
         assertEquals(manager1, manager3);
 
-        //Verify that two managers with different IDs are not equal
+        //Verify that two clients with different IDs are not equal
         assertNotEquals(manager1, manager2);
-        assertNotEquals(manager1, manager4);
-
-        //Same name and email,but different ID
-        assertNotEquals(manager1, manager4);
 
         //Null object
         assertNotEquals(null, manager1);
+
+        //Same object
+        assertEquals(manager1, manager1);
+        assertEquals(manager2, manager2);
+        assertEquals(manager3, manager3);
     }
 
     @Test
     public void testToString() {
-        Manager manager = new Manager("Jenna Mars", "jenna.mars@example.com", "jenMars", "password");
-        manager.setID("6c5c766e-dc9f-11ed");
-        String expected = "ID: 6c5c766e-dc9f-11ed, Name: Jenna Mars, Email: jenna.mars@example.com, Login: jenMars, Password: password, Role: Manager";
+        Manager manager = new Manager("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
+        manager.setID("a908ffa4-dd37-11ed");
+        String expected = "Role: MANAGER, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Login: lionelCraig, 94002, Password: password123";
         String actual = manager.toString();
         assertEquals(expected, actual);
     }
