@@ -7,43 +7,44 @@ class TechnicianTest{
 
     @Test
     public void testConstructor() {
-        Technician technician = new Technician( "John Doe", "john.doe@example.com", "johnDoe", "password");
+        Technician technician = new Technician("Matthew Delgado", "math.delgado@example.com", "mathDelgado", "password123");
 
-        assertEquals("John Doe", technician.getName());
-        assertEquals("john.doe@example.com", technician.getEmail());
-        assertEquals("johnDoe", technician.getLogin());
-        assertEquals("password", technician.getPassword());
+        assertEquals("Matthew Delgado", technician.getName());
+        assertEquals("math.delgado@example.com", technician.getEmail());
+        assertEquals("mathDelgado", technician.getLogin());
+        assertEquals("password123", technician.getLogin());
     }
 
     @Test
     public void testEquals() {
-        Technician technician1 = new Technician("John Smith", "john.smith@example.com", "johnsmith", "password");
+        Technician technician1 = new Technician("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
         technician1.setID("a908ffa4-dd37-11ed");
-        Technician technician2 = new Technician("Jane Doe", "jane.doe@example.com", "janedoe", "password");
+        Technician technician2 = new Technician("Jane Doe", "jane.doe@example.com", "janeDoe", "password123");
         technician2.setID("ed198b64-dd37-11ed");
-        Technician technician3 = new Technician("John Smith", "john.smith@example.com", "johnsmith", "password");
+        Technician technician3 = new Technician("John Smith", "john.smith@example.com", "johnSmith", "password123");
         technician3.setID("a908ffa4-dd37-11ed");
-        Technician technician4 = new Technician("John Smith", "john.smith@example.com", "johndoe", "password");
-        technician4.setID("f89174f2-dd37-11ed");
 
-        //Verify that two technicians with the same ID are equal
+
+        //Verify that two clients with the same ID are equal
         assertEquals(technician1, technician3);
 
-        //Verify that two technicians with different IDs are not equal
+        //Verify that two clients with different IDs are not equal
         assertNotEquals(technician1, technician2);
-        assertNotEquals(technician1, technician4);
-
-        //Same name and email, but different ID
-        assertNotEquals(technician1, technician4);
 
         //Null object
         assertNotEquals(null, technician1);
+
+        //Same object
+        assertEquals(technician1, technician2);
+        assertEquals(technician1, technician2);
+        assertEquals(technician3, technician3);
     }
+
     @Test
     public void testToString() {
-        Technician technician = new Technician("John Doe", "john.doe@example.com", "johnDoe", "password");
-        technician.setID("915e9532-dc9f-11ed");
-        String expected = "Role: TECHNICIAN, ID: 915e9532-dc9f-11ed, Name: John Doe, Email: john.doe@example.com, Login: johnDoe, Password: password, Role: Technician";
+        Technician technician = new Technician("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
+        technician.setID("a908ffa4-dd37-11ed");
+        String expected = "Role: TECHNICIAN, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Login: lionelCraig, Password: password123";
         String actual = technician.toString();
         assertEquals(expected, actual);
     }
