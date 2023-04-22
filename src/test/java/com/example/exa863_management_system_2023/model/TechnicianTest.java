@@ -43,7 +43,7 @@ class TechnicianTest{
     public void testToString() {
         Technician technician = new Technician("John Doe", "john.doe@example.com", "johnDoe", "password");
         technician.setID("915e9532-dc9f-11ed");
-        String expected = "ID: 915e9532-dc9f-11ed, Name: John Doe, Email: john.doe@example.com, Login: johnDoe, Password: password, Role: Technician";
+        String expected = "Role: TECHNICIAN, ID: 915e9532-dc9f-11ed, Name: John Doe, Email: john.doe@example.com, Login: johnDoe, Password: password, Role: Technician";
         String actual = technician.toString();
         assertEquals(expected, actual);
     }
