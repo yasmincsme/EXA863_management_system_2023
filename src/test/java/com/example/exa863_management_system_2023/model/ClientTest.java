@@ -45,7 +45,7 @@ public class ClientTest {
     public void testToString() {
         Client client = new Client("Matthew Delgado", "matthew.delgado@example.com", "Belmont, California(CA), 94002", "(262) 633-9393");
         client.setID("6e056406-dc97-11ed");
-        String expected = "ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Address: Belmont, California(CA), 94002, Phone: (262) 633-9393";
+        String expected = "Role: CLIENT, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Address: Belmont, California(CA), 94002, Phone: (262) 633-9393";
         String actual = client.toString();
         assertEquals(expected, actual);
     }
