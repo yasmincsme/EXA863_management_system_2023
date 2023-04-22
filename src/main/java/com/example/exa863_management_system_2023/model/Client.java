@@ -129,6 +129,6 @@ public class Client {
      */
     @Override
     public String toString() {
-        return "Role: " + this.type + "ID: " + this.id + ", Name: " + this.name + ", Email: " + this.email + ", Address: " + this.address + ", Phone: " + this.phone;
+        return "Role: " + this.type + ", ID: " + this.id + ", Name: " + this.name + ", Email: " + this.email + ", Address: " + this.address + ", Phone: " + this.phone;
     }
 }
