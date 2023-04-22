@@ -44,7 +44,7 @@ class ManagerTest {
     public void testToString() {
         Manager manager = new Manager("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
         manager.setID("a908ffa4-dd37-11ed");
-        String expected = "Role: MANAGER, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Login: lionelCraig, 94002, Password: password123";
+        String expected = "Role: MANAGER, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Login: lionelCraig, Password: password123";
         String actual = manager.toString();
         assertEquals(expected, actual);
     }
