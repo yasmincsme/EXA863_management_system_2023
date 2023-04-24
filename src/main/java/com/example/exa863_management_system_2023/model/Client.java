@@ -80,7 +80,7 @@ public class Client {
      * @return Client's address
      */
     public String getAddress() {
-        return this.address;
+        return address;
     }
 
     /**
@@ -96,7 +96,7 @@ public class Client {
      * @return Client's phone
      */
     public String getPhone() {
-        return this.phone;
+        return phone;
     }
 
     /**
@@ -110,13 +110,13 @@ public class Client {
     /**
      *
      * @param object Receive a random object
-     * @return Return true if the given object is equal to the current Manager object, or false if they are not the same
+     * @return Return true if the given object is equal to the current Client object, or false if they are not the same
      */
     @Override
     public boolean equals(Object object) {
-        if(object instanceof ComputerComponent) {
-            ComputerComponent component = (ComputerComponent) object;
-            if (this.getID().equals(component.getID())) {
+        if(object instanceof Client) {
+            Client client = (Client) object;
+            if (this.getID().equals(client.getID())) {
                 return true;
             }
         }
