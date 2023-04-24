@@ -11,55 +11,44 @@ public class InstallationTest {
     @Test
     public void testConstructor() {
 
-        Installation installation = new Installation("Installation of the Office package and antivirus", "Provide a seamless and hassle-free installation of the Microsoft Office package and a reliable antivirus software to protect the computer", 100, 0, "Windows");
+        Installation installation = new Installation("Install Windows 10", 70.00, 25.00, "Windows 8");
 
-        assertEquals("Installation of the Office package and antivirus", installation.getName());
-        assertEquals("Provide a seamless and hassle-free installation of the Microsoft Office package and a reliable antivirus software to protect the computer", installation.getDescription());
-        assertEquals(100, installation.getPrice());
-        assertEquals(0, installation.getCost());
-        assertEquals("Windows", installation.getOperatingSystem());
-        assertNotNull(installation.getPrograms());
-        assertTrue(installation.getPrograms().isEmpty());
-    }
-
-    @Test
-    public void testAddProgram() {
-        Installation installation = new Installation("Installation of the Office package and antivirus", "Provide a seamless and hassle-free installation of the Microsoft Office package and a reliable antivirus software to protect the computer", 100, 0, "Windows");
-        String program1 = "Microsoft Word";
-        String program2 = "Microsoft PowerPoint";
-        String program3 = "McAfee";
-        installation.addProgram(program1);
-        installation.addProgram(program2);
-        installation.addProgram(program3);
-        assertEquals(3, installation.getPrograms().size());
-        assertEquals(program1, installation.getPrograms().get(0));
-        assertEquals(program2, installation.getPrograms().get(1));
-        assertEquals(program3, installation.getPrograms().get(2));
+        assertNull(installation.getID());
+        assertEquals("Install Windows 10", installation.getDescription());
+        assertEquals(70.00, installation.getPrice(), 3);
+        assertEquals(25.00, installation.getCost(), 3);
+        assertEquals("Windows 8", installation.getOperatingSystem());
     }
 
     @Test
     public void testEquals() {
-        Installation installation1 = new Installation("Installation of the Office package and antivirus", "Provide a seamless and hassle-free installation of the Microsoft Office package and a reliable antivirus software to protect the computer", 100, 0, "Windows");
-        installation1.setID("68e7e64c-dd4b-11ed");
-        Installation installation2 = new Installation("Browser Setup", "Install and configure your preferred web browser", 50, 0, "MacOS");
-        installation2.setID("72980f1e-dd4b-11ed");
+        Installation installation1 = new Installation("Install Windows 10", 70.00, 25.00, "Windows 8");
+        installation1.setID("c28c7bbe-dd45-11ed");
+        Installation installation2 = new Installation("Install Microsoft Word", 70.00, 25.00, "Windows 10");
+        installation2.setID("d9c0adb4-dd45-11ed");
+        Installation installation3 = new Installation("Install Quartus", 70.00, 25.00, "Xubuntu");
+        installation3.setID("c28c7bbe-dd45-11ed");
 
-        //Test equality of two different components with different IDs
+        //Verify that two clients with the same ID are equal
+        assertEquals(installation1, installation3);
+
+        //Verify that two clients with different IDs are not equal
         assertNotEquals(installation1, installation2);
-
-        //Test equality of the same component
-        assertEquals(installation1, installation1);
-        assertEquals(installation2, installation2);
 
         //Null object
         assertNotEquals(null, installation1);
+
+        //Same object
+        assertEquals(installation1, installation1);
+        assertEquals(installation2, installation2);
+        assertEquals(installation3, installation3);
     }
 
     @Test
     public void testToString() {
-        Installation installation = new Installation("Installation of the Office package and antivirus", "Provide a seamless and hassle-free installation of the Microsoft Office package and a reliable antivirus software to protect the computer", 100, 0, "Windows");
-        installation.setID("68e7e64c-dd4b-11ed");
-        String expected = "ID: 68e7e64c-dd4b-11ed, Name: Installation of the Office package and antivirus, Description: Provide a seamless and hassle-free installation of the Microsoft Office package and a reliable antivirus software to protect the computer, Price: 100, Cost: 0, Service: Installation, Programs: [], Operating System: Windows";
+        Installation installation = new Installation("Install Windows 10", 70.00, 25.00, "Windows 8");
+        installation.setID("c28c7bbe-dd45-11ed");
+        String expected = "Type: INSTALLATION, ID: c28c7bbe-dd45-11ed, Description: Install Windows 10, Price: 70.0, Cost: 25.0, Operating System: Windows 8";
         String actual = installation.toString();
         assertEquals(expected, actual);
     }
