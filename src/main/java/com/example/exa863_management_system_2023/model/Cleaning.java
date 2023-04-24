@@ -6,6 +6,7 @@ import java.util.List;
 public class Cleaning {
 
     private String id;
+    private String workOrderID;
     private final String type = "CLEANING";
     private String description;
     private double price;
@@ -16,8 +17,9 @@ public class Cleaning {
      * @param price       Price of the Cleaning
      * @param cost        Cost og the Cleaning
      */
-    public Cleaning(String description, double price, double cost) {
+    public Cleaning(String description, String workOrderID, double price, double cost) {
         this.id = null;
+        this.workOrderID = workOrderID;
         this.description = description;
         this.price = price;
         this.cost = cost;
@@ -35,6 +37,22 @@ public class Cleaning {
      */
     public void setID(String id) {
         this.id = id;
+    }
+
+    /**
+     *
+     * @return ID of the work order that it belongs
+     */
+    public String getWorkOrderID() {
+        return workOrderID;
+    }
+
+    /**
+     *
+     * @param workOrderID New value to work order's ID
+     */
+    public void setWorkOrderID(String workOrderID) {
+        this.workOrderID = workOrderID;
     }
 
     /**
@@ -99,6 +117,6 @@ public class Cleaning {
      */
     @Override
     public String toString() {
-        return "Type: " + this.type + ", ID: " + this.id + ", Description: " + this.description + ", Price: " + this.price + ", Cost: " + this.cost;
+        return "Type: " + this.type + ", ID: " + this.id + ", Order's ID: " + this.workOrderID + ", Description: " + this.description + ", Price: " + this.price + ", Cost: " + this.cost;
     }
 }
