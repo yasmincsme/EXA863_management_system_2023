@@ -8,8 +8,8 @@ public class Installation {
     private String id;
     private final String type = "INSTALLATION";
     private String description;
-    private Double price;
-    private Double cost;
+    private double price;
+    private double cost;
     private String operatingSystem;
 
     /**
@@ -19,7 +19,7 @@ public class Installation {
      * @param cost Cost of the Installation
      * @param operatingSystem Hardware's operating system
      */
-    public Installation(String description, Double price, Double cost, String operatingSystem) {
+    public Installation(String description, double price, double cost, String operatingSystem) {
         this.id = null;
         this.description = description;
         this.price = price;
@@ -61,7 +61,7 @@ public class Installation {
      *
      * @return Return Service's price
      */
-    public Double getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -69,7 +69,7 @@ public class Installation {
      *
      * @param price New value to price
      */
-    public void setPrice(Double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -77,7 +77,7 @@ public class Installation {
      *
      * @return Return Service's cost
      */
-    public Double getCost() {
+    public double getCost() {
         return cost;
     }
 
@@ -85,7 +85,7 @@ public class Installation {
      *
      * @param cost New value to cost
      */
-    public void setCost(Double cost) {
+    public void setCost(double cost) {
         this.cost = cost;
     }
 
@@ -108,7 +108,7 @@ public class Installation {
     /**
      *
      * @param object Receive a random object
-     * @return Return true if the given object is equal to the current Manager object, or false if they are not the same
+     * @return Return true if the given object is equal to the current Installation object, or false if they are not the same
      */
     @Override
     public boolean equals(Object object) {
@@ -127,6 +127,6 @@ public class Installation {
      */
     @Override
     public String toString() {
-        return "Type: " + this.type + ", ID: " + this.id + ", Description: " + this.description + ", Price: " + this.price + ", Cost: " + this.cost;
+        return "Type: " + this.type + ", ID: " + this.id + ", Description: " + this.description + ", Price: " + this.price + ", Cost: " + this.cost + ", Operating System: " + this.operatingSystem;
     }
 }
