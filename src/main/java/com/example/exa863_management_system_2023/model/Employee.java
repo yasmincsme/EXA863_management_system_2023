@@ -107,13 +107,13 @@ public class Employee {
     /**
      *
      * @param object Receive a random object
-     * @return Return true if the given object is equal to the current Manager object, or false if they are not the same
+     * @return Return true if the given object is equal to the current Employee object, or false if they are not the same
      */
     @Override
     public boolean equals(Object object) {
-        if(object instanceof ComputerComponent) {
-            ComputerComponent component = (ComputerComponent) object;
-            if (this.getID().equals(component.getID())) {
+        if(object instanceof Employee) {
+            Employee employee = (Employee) object;
+            if (this.getID().equals(employee.getID())) {
                 return true;
             }
         }
