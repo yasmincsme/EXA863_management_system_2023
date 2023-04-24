@@ -6,6 +6,7 @@ import java.util.List;
 public class Installation {
 
     private String id;
+    private String workOrderID;
     private final String type = "INSTALLATION";
     private String description;
     private double price;
@@ -19,8 +20,9 @@ public class Installation {
      * @param cost Cost of the Installation
      * @param operatingSystem Hardware's operating system
      */
-    public Installation(String description, double price, double cost, String operatingSystem) {
+    public Installation(String description, String workOrderID, double price, double cost, String operatingSystem) {
         this.id = null;
+        this.workOrderID = workOrderID;
         this.description = description;
         this.price = price;
         this.cost = cost;
@@ -39,6 +41,22 @@ public class Installation {
      */
     public void setID(String id) {
         this.id = id;
+    }
+
+    /**
+     *
+     * @return ID of the work order that it belongs
+     */
+    public String getWorkOrderID() {
+        return workOrderID;
+    }
+
+    /**
+     *
+     * @param workOrderID New value to work order's ID
+     */
+    public void setWorkOrderID(String workOrderID) {
+        this.workOrderID = workOrderID;
     }
 
     /**
@@ -127,6 +145,6 @@ public class Installation {
      */
     @Override
     public String toString() {
-        return "Type: " + this.type + ", ID: " + this.id + ", Description: " + this.description + ", Price: " + this.price + ", Cost: " + this.cost + ", Operating System: " + this.operatingSystem;
+        return "Type: " + this.type + ", ID: " + this.id + ", Order's ID: " + this.workOrderID + ", Description: " + this.description + ", Price: " + this.price + ", Cost: " + this.cost + ", Operating System: " + this.operatingSystem;
     }
 }
