@@ -15,9 +15,10 @@ public class BuildingTest {
     @Test
     public void testConstructor() {
 
-        Building building = new Building("Switch the HD", 70.00, 25.00);
+        Building building = new Building("Switch the HD", "c28c7bbe-dd45-11ed", 70.00, 25.00);
 
         assertNull(building.getID());
+        assertEquals("c28c7bbe-dd45-11ed", building.getWorkOrderID());
         assertEquals("Switch the HD", building.getDescription());
         assertEquals(70.00, building.getPrice(), 3);
         assertEquals(25.00, building.getCost(), 3);
@@ -26,7 +27,7 @@ public class BuildingTest {
 
     @Test
     public void testIncrease() {
-        Building building = new Building("Switch the HD", 70.00, 25.00);
+        Building building = new Building("Switch the HD", "c28c7bbe-dd45-11ed", 70.00, 25.00);
         building.setID("c28c7bbe-dd45-11ed");
 
         assertTrue(building.getUsedComponents().isEmpty());
@@ -53,11 +54,11 @@ public class BuildingTest {
 
     @Test
     public void testEquals() {
-        Building building1 = new Building("Switch the HD", 70.00, 25.00);
+        Building building1 = new Building("Switch the HD", "c28c7bbe-dd45-11ed", 70.00, 25.00);
         building1.setID("c28c7bbe-dd45-11ed");
-        Building building2 = new Building("Switch the RAM", 90.00, 65.00);
+        Building building2 = new Building("Switch the RAM", "c28c7bbe-dd45-11ed", 90.00, 65.00);
         building2.setID("d9c0adb4-dd45-11ed");
-        Building building3 = new Building("Switch the CPU", 300.00, 120.00);
+        Building building3 = new Building("Switch the CPU", "c28c7bbe-dd45-11ed", 300.00, 120.00);
         building3.setID("c28c7bbe-dd45-11ed");
 
         //Verify that two clients with the same ID are equal
@@ -77,9 +78,9 @@ public class BuildingTest {
 
     @Test
     public void testToString() {
-        Building building = new Building("Switch the HD", 70.00, 25.00);
+        Building building = new Building("Switch the HD", "f28c7bbe-dd45-11ed", 70.00, 25.00);
         building.setID("c28c7bbe-dd45-11ed");
-        String expected = "Type: BUILDING, ID: c28c7bbe-dd45-11ed, Description: Switch the HD, Price: 70.0, Cost: 25.0, Used Components: []";
+        String expected = "Type: BUILDING, ID: c28c7bbe-dd45-11ed, Order's ID: f28c7bbe-dd45-11ed, Description: Switch the HD, Price: 70.0, Cost: 25.0, Used Components: []";
         String actual = building.toString();
         assertEquals(expected, actual);
     }
