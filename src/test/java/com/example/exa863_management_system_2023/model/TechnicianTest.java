@@ -9,10 +9,11 @@ class TechnicianTest{
     public void testConstructor() {
         Technician technician = new Technician("Matthew Delgado", "math.delgado@example.com", "mathDelgado", "password123");
 
+        assertNull(technician.getID());
         assertEquals("Matthew Delgado", technician.getName());
         assertEquals("math.delgado@example.com", technician.getEmail());
         assertEquals("mathDelgado", technician.getLogin());
-        assertEquals("password123", technician.getLogin());
+        assertEquals("password123", technician.getPassword());
     }
 
     @Test
@@ -35,8 +36,8 @@ class TechnicianTest{
         assertNotEquals(null, technician1);
 
         //Same object
-        assertEquals(technician1, technician2);
-        assertEquals(technician1, technician2);
+        assertEquals(technician1, technician1);
+        assertEquals(technician2, technician2);
         assertEquals(technician3, technician3);
     }
 
@@ -44,7 +45,7 @@ class TechnicianTest{
     public void testToString() {
         Technician technician = new Technician("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
         technician.setID("a908ffa4-dd37-11ed");
-        String expected = "Role: TECHNICIAN, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Login: lionelCraig, Password: password123";
+        String expected = "Role: TECHNICIAN, ID: a908ffa4-dd37-11ed, Name: Lionel Craig, Email: lionel.craig@example.com, Login: lionelCraig, Password: password123";
         String actual = technician.toString();
         assertEquals(expected, actual);
     }
