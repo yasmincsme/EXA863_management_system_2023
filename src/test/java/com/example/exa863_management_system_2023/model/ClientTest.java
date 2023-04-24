@@ -10,6 +10,7 @@ public class ClientTest {
     public void testConstructor() {
         Client client = new Client("Matthew Delgado", "math.delgado@example.com", "Belmont, California(CA), 94002", "(262) 633-9393");
 
+        assertNull(client.getID());
         assertEquals("Matthew Delgado", client.getName());
         assertEquals("math.delgado@example.com", client.getEmail());
         assertEquals("Belmont, California(CA), 94002", client.getAddress());
