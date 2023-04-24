@@ -8,15 +8,15 @@ public class Cleaning {
     private String id;
     private final String type = "CLEANING";
     private String description;
-    private Double price;
-    private Double cost;
+    private double price;
+    private double cost;
 
     /**
      * @param description Description of the Cleaning
      * @param price       Price of the Cleaning
      * @param cost        Cost og the Cleaning
      */
-    public Cleaning(String description, Double price, Double cost) {
+    public Cleaning(String description, double price, double cost) {
         this.id = null;
         this.description = description;
         this.price = price;
@@ -54,7 +54,7 @@ public class Cleaning {
     /**
      * @return Return Service's price
      */
-    public Double getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -68,7 +68,7 @@ public class Cleaning {
     /**
      * @return Return Service's cost
      */
-    public Double getCost() {
+    public double getCost() {
         return cost;
     }
 
