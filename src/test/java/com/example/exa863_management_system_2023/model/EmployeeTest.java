@@ -9,10 +9,11 @@ class EmployeeTest{
     public void testConstructor() {
         Employee employee = new Employee("Matthew Delgado", "math.delgado@example.com", "mathDelgado", "password123");
 
+        assertNull(employee.getID());
         assertEquals("Matthew Delgado", employee.getName());
         assertEquals("math.delgado@example.com", employee.getEmail());
         assertEquals("mathDelgado", employee.getLogin());
-        assertEquals("password123", employee.getLogin());
+        assertEquals("password123", employee.getPassword());
     }
 
     @Test
@@ -44,7 +45,7 @@ class EmployeeTest{
     public void testToString() {
         Employee employee = new Employee("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
         employee.setID("a908ffa4-dd37-11ed");
-        String expected = "Role: EMPLOYEE, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Login: lionelCraig, Password: password123";
+        String expected = "Role: EMPLOYEE, ID: a908ffa4-dd37-11ed, Name: Lionel Craig, Email: lionel.craig@example.com, Login: lionelCraig, Password: password123";
         String actual = employee.toString();
         assertEquals(expected, actual);
     }
