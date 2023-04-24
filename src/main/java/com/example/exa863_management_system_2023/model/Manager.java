@@ -111,9 +111,9 @@ public class Manager {
      */
     @Override
     public boolean equals(Object object) {
-        if(object instanceof ComputerComponent) {
-            ComputerComponent component = (ComputerComponent) object;
-            if (this.getID().equals(component.getID())) {
+        if(object instanceof Manager) {
+            Manager manager = (Manager) object;
+            if (this.getID().equals(manager.getID())) {
                 return true;
             }
         }
