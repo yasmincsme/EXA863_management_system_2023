@@ -8,8 +8,8 @@ public class ComputerComponent {
     private String id;
     private String manufacturer;
     private String serialNumber;
-    private Double unitPrice;
-    private Double unitCost;
+    private double unitPrice;
+    private double unitCost;
     private int quantity;
 
     /**
@@ -21,7 +21,7 @@ public class ComputerComponent {
      * @param unitCost Component's unit cost
      * @param quantity Component's quantity
      */
-    public ComputerComponent(String name, String manufacturer, String serialNumber, Double unitPrice, Double unitCost, int quantity) {
+    public ComputerComponent(String name, String manufacturer, String serialNumber, double unitPrice, double unitCost, int quantity) {
         this.name = name;
         this.manufacturer = manufacturer;
         this.serialNumber = serialNumber;
@@ -98,7 +98,7 @@ public class ComputerComponent {
      *
      * @return Return Component's unit price
      */
-    public Double getUnitPrice() {
+    public double getUnitPrice() {
         return unitPrice;
     }
 
@@ -106,7 +106,7 @@ public class ComputerComponent {
      *
      * @param unitPrice New value to unit price
      */
-    public void setUnitPrice(Double unitPrice) {
+    public void setUnitPrice(double unitPrice) {
         this.unitPrice = unitPrice;
     }
 
@@ -114,7 +114,7 @@ public class ComputerComponent {
      *
      * @return Return Component's unit cost
      */
-    public Double getUnitCost() {
+    public double getUnitCost() {
         return unitCost;
     }
 
@@ -122,7 +122,7 @@ public class ComputerComponent {
      *
      * @param unitCost New value to unit cost
      */
-    public void setUnitCost(Double unitCost) {
+    public void setUnitCost(double unitCost) {
         this.unitCost = unitCost;
     }
 
@@ -145,7 +145,7 @@ public class ComputerComponent {
      *
      * @return Return the result of the multiplication between the unit cost and the quantity
      */
-    public Double getCost() {
+    public double getCost() {
         return this.getUnitCost() * this.getQuantity();
     }
 
@@ -153,7 +153,7 @@ public class ComputerComponent {
      *
      * @return Return the result of the multiplication between the unit price and the quantity
      */
-    public Double getPrice() {
+    public double getPrice() {
         return this.getUnitPrice() * this.getQuantity();
     }
 
@@ -179,6 +179,6 @@ public class ComputerComponent {
      */
     @Override
     public String toString() {
-        return "ID: " + this.id + ", Name: " + this.name + ", Manufacturer: " + this.manufacturer + ", Serial Number: " + this.serialNumber + ", Unit Cost: " + this.unitCost + ", Unit Price: " + this.unitPrice + ", Quantity: " + this.quantity;
+        return "ID: " + this.id + ", Name: " + this.name + ", Manufacturer: " + this.manufacturer + ", Serial Number: " + this.serialNumber + ", Unit Price: " + this.unitPrice + ", Unit Cost: " + this.unitCost + ", Quantity: " + this.quantity;
     }
 }
