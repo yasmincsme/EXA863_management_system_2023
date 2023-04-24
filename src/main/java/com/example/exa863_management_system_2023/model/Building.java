@@ -8,8 +8,8 @@ public class Building {
     private String id;
     private final String type = "BUILDING";
     private String description;
-    private Double price;
-    private Double cost;
+    private double price;
+    private double cost;
     private List<ComputerComponent> usedComponents;
 
     /**
@@ -18,7 +18,7 @@ public class Building {
      * @param price Price of the Building
      * @param cost Cost of the Building
      */
-    public Building(String description, Double price, Double cost) {
+    public Building(String description, double price, double cost) {
         this.id = null;
         this.description = description;
         this.price = price;
@@ -60,7 +60,7 @@ public class Building {
      *
      * @return Return Service's price
      */
-    public Double getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -68,7 +68,7 @@ public class Building {
      *
      * @param price New value to price
      */
-    public void setPrice(Double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -76,7 +76,7 @@ public class Building {
      *
      * @return Return Service's cost
      */
-    public Double getCost() {
+    public double getCost() {
         return cost;
     }
 
@@ -84,7 +84,7 @@ public class Building {
      *
      * @param cost New value to cost
      */
-    public void setCost(Double cost) {
+    public void setCost(double cost) {
         this.cost = cost;
     }
 
@@ -105,35 +105,24 @@ public class Building {
     }
 
     /**
-     * Add a new component to the component list
-     * @param component New component
+     * Update the subtotal based on the list of components
      */
-    public void addComputerComponent(ComputerComponent component) {
-        this.usedComponents.add(component);
-    }
-
-    /**
-     * Add the price of the used components to the subtotal
-     * @return Return the price that was fixed to the Building plus the additional price of the components
-     */
-    public Double increasePrice() {
-       long price = 0;
+    public void increasePrice() {
+       double price = 0;
        for (ComputerComponent component : this.usedComponents) {
             price += component.getUnitPrice() * component.getQuantity();
        }
-       return price + this.getPrice();
+       double newPrice = this.getPrice() + price;
+       this.setPrice(newPrice);
     }
 
-    /**
-     * Add the cost of the used components to the subtotal
-     * @return Return the cost that was fixed to the Building plus the additional cost of the components
-     */
-    public Double increaseCost() {
-        long cost = 0;
+    public void increaseCost() {
+        double cost = 0;
         for (ComputerComponent component : this.usedComponents) {
             cost += component.getUnitCost() * component.getQuantity();
         }
-        return cost + this.getCost();
+        double newCost = this.getCost() + cost;
+        this.setCost(newCost);
     }
 
     /**
