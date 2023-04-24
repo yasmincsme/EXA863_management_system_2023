@@ -9,10 +9,11 @@ class ManagerTest {
     public void testConstructor() {
         Manager manager = new Manager("Matthew Delgado", "math.delgado@example.com", "mathDelgado", "password123");
 
+        assertNull(manager.getID());
         assertEquals("Matthew Delgado", manager.getName());
         assertEquals("math.delgado@example.com", manager.getEmail());
         assertEquals("mathDelgado", manager.getLogin());
-        assertEquals("password123", manager.getLogin());
+        assertEquals("password123", manager.getPassword());
     }
 
     @Test
@@ -44,7 +45,7 @@ class ManagerTest {
     public void testToString() {
         Manager manager = new Manager("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "password123");
         manager.setID("a908ffa4-dd37-11ed");
-        String expected = "Role: MANAGER, ID: 6e056406-dc97-11ed, Name: Matthew Delgado, Email: matthew.delgado@example.com, Login: lionelCraig, Password: password123";
+        String expected = "Role: MANAGER, ID: a908ffa4-dd37-11ed, Name: Lionel Craig, Email: lionel.craig@example.com, Login: lionelCraig, Password: password123";
         String actual = manager.toString();
         assertEquals(expected, actual);
     }
