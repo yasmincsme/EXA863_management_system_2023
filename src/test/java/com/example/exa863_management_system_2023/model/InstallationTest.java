@@ -11,9 +11,10 @@ public class InstallationTest {
     @Test
     public void testConstructor() {
 
-        Installation installation = new Installation("Install Windows 10", 70.00, 25.00, "Windows 8");
+        Installation installation = new Installation("Install Windows 10","c28c7bbe-dd45-11ed", 70.00, 25.00, "Windows 8");
 
         assertNull(installation.getID());
+        assertEquals("c28c7bbe-dd45-11ed", installation.getWorkOrderID());
         assertEquals("Install Windows 10", installation.getDescription());
         assertEquals(70.00, installation.getPrice(), 3);
         assertEquals(25.00, installation.getCost(), 3);
@@ -22,11 +23,11 @@ public class InstallationTest {
 
     @Test
     public void testEquals() {
-        Installation installation1 = new Installation("Install Windows 10", 70.00, 25.00, "Windows 8");
+        Installation installation1 = new Installation("Install Windows 10", "c28c7bbe-dd45-11ed", 70.00, 25.00, "Windows 8");
         installation1.setID("c28c7bbe-dd45-11ed");
-        Installation installation2 = new Installation("Install Microsoft Word", 70.00, 25.00, "Windows 10");
+        Installation installation2 = new Installation("Install Microsoft Word", "c28c7bbe-dd45-11ed", 70.00, 25.00, "Windows 10");
         installation2.setID("d9c0adb4-dd45-11ed");
-        Installation installation3 = new Installation("Install Quartus", 70.00, 25.00, "Xubuntu");
+        Installation installation3 = new Installation("Install Quartus", "c28c7bbe-dd45-11ed", 70.00, 25.00, "Xubuntu");
         installation3.setID("c28c7bbe-dd45-11ed");
 
         //Verify that two clients with the same ID are equal
@@ -46,9 +47,9 @@ public class InstallationTest {
 
     @Test
     public void testToString() {
-        Installation installation = new Installation("Install Windows 10", 70.00, 25.00, "Windows 8");
+        Installation installation = new Installation("Install Windows 10", "f28c7bbe-dd45-11ed", 70.00, 25.00, "Windows 8");
         installation.setID("c28c7bbe-dd45-11ed");
-        String expected = "Type: INSTALLATION, ID: c28c7bbe-dd45-11ed, Description: Install Windows 10, Price: 70.0, Cost: 25.0, Operating System: Windows 8";
+        String expected = "Type: INSTALLATION, ID: c28c7bbe-dd45-11ed, Order's ID: f28c7bbe-dd45-11ed, Description: Install Windows 10, Price: 70.0, Cost: 25.0, Operating System: Windows 8";
         String actual = installation.toString();
         assertEquals(expected, actual);
     }
