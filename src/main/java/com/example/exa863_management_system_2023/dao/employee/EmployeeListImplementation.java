@@ -16,6 +16,7 @@ public class EmployeeListImplementation implements EmployeeDAO {
         this.listOfEmployees = new ArrayList<Employee>();
         UUID uuid = UUID.randomUUID();
         this.nextID = uuid.toString();
+
     }
 
     @Override
