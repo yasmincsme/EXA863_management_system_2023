@@ -1,26 +1,24 @@
 package com.example.exa863_management_system_2023.model;
 
-import java.text.DateFormat;
-import java.time.Duration;
+import java.text.ParsePosition;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
+import java.text.SimpleDateFormat;
 public class WorkOrder {
 
     private String id;
     private String clientID;
     private String technicianID;
     private String status;
-    private List<Building> buildingList;
-    private List<Cleaning> cleaningList;
-    private List<Installation> installationList;
     private String description;
-    private Date createdAt;
-    private Date finishedAt;
+    private String createdAt;
+    private String finishedAt;
     private int clientSatisfaction;
+    private double price;
+    private double cost;
     private String paymentMethod;
 
     /**
@@ -29,15 +27,16 @@ public class WorkOrder {
      * @param description Description of the WorkOrder
      */
     public WorkOrder(String clientID, String description) {
+        this.id = null;
         this.clientID = clientID;
         this.technicianID = null;
-        this.status = "This work order is still active";
-        this.buildingList = new ArrayList<>();
-        this.cleaningList = new ArrayList<>();
-        this.installationList = new ArrayList<>();
+        this.status = "OPEN";
         this.description = description;
-        this.createdAt = new Date();
+        this.createdAt = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss.S").format(Calendar.getInstance().getTime());
+        this.finishedAt = null;
         this.clientSatisfaction = 0;
+        this.price = 0.00;
+        this.cost = 0.00;
         this.paymentMethod = null;
     }
 
@@ -107,55 +106,6 @@ public class WorkOrder {
 
     /**
      *
-     * @return Return WorkOrder's building list
-     */
-    public List<Building> getBuildindList() {
-        return buildingList;
-    }
-
-    /**
-     *
-     * @param buildingList New value to building list
-     */
-    public void setBuildingList(List<Building> buildingList) {
-        this.buildingList = buildingList;
-    }
-
-
-    /**
-     *
-     * @return Return WorkOrder's cleaning list
-     */
-    public List<Cleaning> getCleaningList() {
-        return cleaningList;
-    }
-
-    /**
-     *
-     * @param cleaningList New value to cleaning list
-     */
-    public void setCleaningList(List<Cleaning> cleaningList) {
-        this.cleaningList = cleaningList;
-    }
-
-    /**
-     *
-     * @return Return WorkOrder's installation list
-     */
-    public List<Installation> getInstallationList() {
-        return installationList;
-    }
-
-    /**
-     *
-     * @param installationList New value to installation list
-     */
-    public void setInstallationList(List<Installation> installationList) {
-        this.installationList = installationList;
-    }
-
-    /**
-     *
      * @return Return WorkOrder's description
      */
     public String getDescription() {
@@ -174,7 +124,7 @@ public class WorkOrder {
      *
      * @return Return WorkOrder's initial date
      */
-    public Date getCreatedAt() {
+    public String getCreatedAt() {
         return createdAt;
     }
 
@@ -182,7 +132,7 @@ public class WorkOrder {
      *
      * @param createdAt New value to initial date
      */
-    public void setCreatedAt(Date createdAt) {
+    public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
     }
 
@@ -190,7 +140,7 @@ public class WorkOrder {
      *
      * @return Return WorkOrder's final date
      */
-    public Date getFinishedAt() {
+    public String getFinishedAt() {
         return finishedAt;
     }
 
@@ -198,13 +148,13 @@ public class WorkOrder {
      *
      * @param finishedAt New value to final date
      */
-    public void setFinishedAt(Date finishedAt) {
+    public void setFinishedAt(String finishedAt) {
         this.finishedAt = finishedAt;
     }
 
     /**
      *
-     * @return Return
+     * @return Return client's satisfaction
      */
     public int getClientSatisfaction() {
         return clientSatisfaction;
@@ -216,6 +166,38 @@ public class WorkOrder {
      */
     public void setClientSatisfaction(int clientSatisfaction) {
         this.clientSatisfaction = clientSatisfaction;
+    }
+
+    /**
+     *
+     * @return Return work order's price
+     */
+    public double getPrice() {
+        return price;
+    }
+
+    /**
+     *
+     * @param price New value to price
+     */
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    /**
+     *
+     * @return Return work order's cost
+     */
+    public double getCost() {
+        return cost;
+    }
+
+    /**
+     *
+     * @param cost New value to cost
+     */
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
     /**
@@ -235,155 +217,28 @@ public class WorkOrder {
     }
 
     /**
-     * Add a new Building to the Building list
-     * @param building New Building
-     */
-    public void addBuildingService(Building building) {
-        this.buildingList.add(building);
-    }
-
-    /**
-     * Add a new Cleaning to the Cleaning list
-     * @param cleaning New Cleaning
-     */
-    public void addCleaningService(Cleaning cleaning) {
-        this.cleaningList.add(cleaning);
-    }
-
-    /**
-     * Add a new Installation to the installation list
-     * @param installation New Installation
-     */
-    public void addInstallationService(Installation installation) {
-        this.installationList.add(installation);
-    }
-
-    /**
-     * Get the price of all the Buildings
-     * @return Return the price of all the Buildings
-     */
-    public long getBuildingListPrice() {
-        long price = 0;
-        for(Building building : buildingList) {
-            price += building.getPrice();
-        }
-        return price;
-    }
-
-    /**
-     * Get the price of all the Installations
-     * @return Return the price of all the Installations
-     */
-    public long getCleaningListPrice() {
-        long price = 0;
-        for(Cleaning cleaning : cleaningList) {
-            price += cleaning.getPrice();
-        }
-        return price;
-    }
-
-    /**
-     * Get the price of all the Installations
-     * @return Return the price of all the Installations
-     */
-    public long getInstallationListPrice() {
-        long price = 0;
-        for(Installation installation: installationList) {
-            price += installation.getPrice();
-        }
-        return price;
-    }
-
-    /**
-     * Get the price of all the Services
-     * @return Return the price of all the Services
-     */
-    public long getPrice() {
-        return this.getBuildingListPrice() + this.getCleaningListPrice() + this.getInstallationListPrice();
-    }
-
-    /**
-     * Get the cost of all the Buildings
-     * @return Return the cost of all the Buildings
-     */
-    public long getBuildingListCost() {
-        long cost = 0;
-        for(Building building : buildingList) {
-            cost += building.getCost();
-        }
-        return cost;
-    }
-
-    /**
-     * Get the cost of all the Cleanings
-     * @return Return the cost of all the Cleanings
-     */
-    public long getCleaningListCost() {
-        long cost = 0;
-        for(Cleaning cleaning : cleaningList) {
-            cost += cleaning.getCost();
-        }
-        return cost;
-    }
-
-    /**
-     * Get the cost of all the Installations
-     * @return Return the cost of all the Installations
-     */
-    public long getInstallationListCost() {
-        long cost = 0;
-        for(Installation installation : installationList) {
-            cost += installation.getCost();
-        }
-        return cost;
-    }
-
-    /**
-     * Get the cost of all the Services
-     * @return Return the cost of all the Services
-     */
-    public long getCost() {
-        return this.getBuildingListCost() + this.getCleaningListCost() + this.getInstallationListCost();
-    }
-
-    /**
-     * Indicates that the WorkOrder is finished
-     * @return Return the status of the WorkOrder
-     */
-    public boolean isFinished() {
-        return this.status.equals("This work order has been completed.");
-    }
-
-    /**
-     * Indicates that the WorkOrder is canceled
-     * @return Return the status of the WorkOrder
-     */
-    public boolean isCanceled() {
-        return this.status.equals("This work order has been cancelled");
-    }
-
-    /**
      * Indicates that the WorkOrder is on going
      * @return Return the status of the WorkOrder
      */
-    public boolean isOnGoing() {
-        return this.status.equals("This work order is still active");
+    public void reopen() {
+        this.setStatus("OPEN");
+        this.finishedAt = null;
     }
 
     /**
-     * Finalize the WorkOrder
+     * Finalize the work order
      */
     public void finish() {
-        this.status = "This work order has been completed.";
-        this.finishedAt = new Date();
+        this.setStatus("FINISHED");
+        this.finishedAt = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss.S").format(Calendar.getInstance().getTime());
     }
 
     /**
-     * Cancel the WorkOrder
+     * Cancel the work order
      */
     public void cancel() {
-        this.status = "This work order has been cancelled";
-        this.finishedAt = new Date();
+        this.setStatus("CANCELLED");
+        this.finishedAt = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss.S").format(Calendar.getInstance().getTime());
     }
 
     /**
@@ -391,9 +246,16 @@ public class WorkOrder {
      * @return Return the time between two dates in days
      */
     public long getWaitingTime() {
-        LocalDate createdAt = LocalDate.ofInstant(this.createdAt.toInstant(), ZoneId.systemDefault());
-        LocalDate finishedAt = LocalDate.ofInstant(this.finishedAt.toInstant(), ZoneId.systemDefault());
-        return ChronoUnit.DAYS.between(createdAt, finishedAt);
+        ParsePosition position1 = new ParsePosition(0);
+        ParsePosition position2 = new ParsePosition(0);
+
+        Date createdAtDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(this.createdAt, position1);
+        Date finishedAtDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.S").parse(this.finishedAt, position2);
+
+        LocalDate createdAtTemporal = createdAtDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        LocalDate finishedAtTemporal = finishedAtDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+
+        return ChronoUnit.DAYS.between(createdAtTemporal, finishedAtTemporal);
     }
 
     /**
@@ -418,6 +280,6 @@ public class WorkOrder {
      */
     @Override
     public String toString() {
-        return "ID: " + this.id + ", Client ID: " + this.clientID + ", Technician ID: " + this.technicianID + ", Status: " + this.status + ", Building List: " + this.buildingList + ", Cleaning List: " + this.cleaningList + "Installation List: " + this.installationList + ", Description: " + this.description + ", Creation Date: " + this.createdAt + ", Completion Date: " + this.finishedAt + ", Satisfaction Score: " + this.clientSatisfaction + ", Payment Method: " + this.paymentMethod;
+        return "ID: " + this.id + ", Client ID: " + this.clientID + ", Technician ID: " + this.technicianID + ", Status: " + this.status + ", Description: " + this.description + ", Creation Date: " + this.createdAt + ", Completion Date: " + this.finishedAt + ", Satisfaction Score: " + this.clientSatisfaction + ", Price:" + this.price + ", Cost: " + this.cost + ", Payment Method: " + this.paymentMethod;
     }
 }
