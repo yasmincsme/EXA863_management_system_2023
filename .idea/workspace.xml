@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":sparkles: feat: Adição de método para atualizar o status da &quot;WorkOrder&quot;">
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":recycle: refactor: Excluindo testes inadequados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/Generator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -81,15 +84,15 @@
       <recent name="com.example.exa863_management_system_2023.dao" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.exa863_management_system_2023.dao.employee" />
+      <recent name="com.example.exa863_management_system_2023.model" />
       <recent name="com.example.exa863_management_system_2023.dao.workOrder" />
       <recent name="com.example.exa863_management_system_2023.dao.technician" />
       <recent name="com.example.exa863_management_system_2023.dao.manager" />
-      <recent name="com.example.exa863_management_system_2023.dao.installation" />
-      <recent name="com.example.exa863_management_system_2023.dao.employee" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ComputerComponentTest.testFirstConstructor">
-    <configuration name="BuildingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.model in EXA863_management_system_2023">
+    <configuration name="WorkOrderTest.TestGetWaitingTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
@@ -98,29 +101,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.BuildingTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ClientListImplementationTest.testCreateClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EXA863_management_system_2023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.exa863_management_system_2023.dao.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.dao.client" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.dao.client.ClientListImplementationTest" />
-      <option name="METHOD_NAME" value="testCreateClient" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.WorkOrderTest" />
+      <option name="METHOD_NAME" value="TestGetWaitingTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComputerComponentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WorkOrderTest.testCancel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
@@ -129,49 +117,60 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.ComputerComponentTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ComputerComponentTest.testFirstConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EXA863_management_system_2023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.exa863_management_system_2023.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.ComputerComponentTest" />
-      <option name="METHOD_NAME" value="testFirstConstructor" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.WorkOrderTest" />
+      <option name="METHOD_NAME" value="testCancel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.exa863_management_system_2023.dao in EXA863_management_system_2023" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WorkOrderTest.testFinish" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.exa863_management_system_2023.dao.*" />
+          <option name="PATTERN" value="com.example.exa863_management_system_2023.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.dao" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.WorkOrderTest" />
+      <option name="METHOD_NAME" value="testFinish" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WorkOrderTest.testReopen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EXA863_management_system_2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.exa863_management_system_2023.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.WorkOrderTest" />
+      <option name="METHOD_NAME" value="testReopen" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="model in EXA863_management_system_2023" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EXA863_management_system_2023" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ComputerComponentTest.testFirstConstructor" />
-        <item itemvalue="JUnit.ComputerComponentTest" />
-        <item itemvalue="JUnit.BuildingTest" />
-        <item itemvalue="JUnit.com.example.exa863_management_system_2023.dao in EXA863_management_system_2023" />
-        <item itemvalue="JUnit.ClientListImplementationTest.testCreateClient" />
+        <item itemvalue="JUnit.model in EXA863_management_system_2023" />
+        <item itemvalue="JUnit.WorkOrderTest.TestGetWaitingTime" />
+        <item itemvalue="JUnit.WorkOrderTest.testCancel" />
+        <item itemvalue="JUnit.WorkOrderTest.testReopen" />
+        <item itemvalue="JUnit.WorkOrderTest.testFinish" />
       </list>
     </recent_temporary>
   </component>
@@ -202,352 +201,354 @@
       <workItem from="1681664464438" duration="83188000" />
       <workItem from="1681866147735" duration="10292000" />
       <workItem from="1681919847888" duration="2834000" />
-      <workItem from="1681944302971" duration="1582000" />
+      <workItem from="1681944302971" duration="3639000" />
+      <workItem from="1682129088446" duration="5700000" />
+      <workItem from="1682296317678" duration="29666000" />
     </task>
-    <task id="LOCAL-00149" summary="Update the test &quot;ClientTest&quot;">
-      <created>1681742892890</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
+    <task id="LOCAL-00205" summary=":lipstick: feat: Adicionando método &quot;equals&quot; à classe &quot;Employee&quot;">
+      <created>1681964460542</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
       <option name="project" value="LOCAL" />
-      <updated>1681742892890</updated>
+      <updated>1681964460543</updated>
     </task>
-    <task id="LOCAL-00150" summary="Update the class &quot;WorkOrder&quot;">
-      <created>1681742922969</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
+    <task id="LOCAL-00206" summary=":bulb: docs: Corrigindo comentários da classe &quot;Client&quot;">
+      <created>1681964529797</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
       <option name="project" value="LOCAL" />
-      <updated>1681742922969</updated>
+      <updated>1681964529797</updated>
     </task>
-    <task id="LOCAL-00151" summary="Update the class &quot;BuildingListImplementation&quot;">
-      <created>1681742954046</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
+    <task id="LOCAL-00207" summary=":sparkles: feat: Adicionando getters e setters para os atributos &quot;Address&quot; e &quot;Phone&quot;">
+      <created>1682129726495</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
       <option name="project" value="LOCAL" />
-      <updated>1681742954047</updated>
+      <updated>1682129726496</updated>
     </task>
-    <task id="LOCAL-00152" summary="Update the class &quot;CleaningListImplementation&quot;">
-      <created>1681742973470</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
+    <task id="LOCAL-00208" summary=":test_tube: test: Adaptando o teste &quot;ClientTest&quot; ao novo formato da classe &quot;Client&quot;">
+      <created>1682130072980</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
       <option name="project" value="LOCAL" />
-      <updated>1681742973470</updated>
+      <updated>1682130072982</updated>
     </task>
-    <task id="LOCAL-00153" summary="Update the class &quot;WorkOrderListImplementation&quot;">
-      <created>1681742998991</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
+    <task id="LOCAL-00209" summary=":test_tube: test: Adaptando o teste &quot;EmployeeTest&quot; ao novo formato da classe &quot;Employee&quot;">
+      <created>1682131392311</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
       <option name="project" value="LOCAL" />
-      <updated>1681742998991</updated>
+      <updated>1682131392311</updated>
     </task>
-    <task id="LOCAL-00154" summary="Update the class &quot;ClientListImplementation&quot;">
-      <created>1681743040372</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
+    <task id="LOCAL-00210" summary=":test_tube: test: Adaptando o teste &quot;ManagerTest&quot; ao novo formato da classe &quot;Manager&quot;">
+      <created>1682131426759</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
       <option name="project" value="LOCAL" />
-      <updated>1681743040372</updated>
+      <updated>1682131426759</updated>
     </task>
-    <task id="LOCAL-00155" summary="Update the class &quot;EmployeeListImplementation&quot;">
-      <created>1681743060508</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
+    <task id="LOCAL-00211" summary=":test_tube: test: Adaptando o teste &quot;TechnicianTest&quot; ao novo formato da classe &quot;Technician&quot;">
+      <created>1682131451596</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
       <option name="project" value="LOCAL" />
-      <updated>1681743060508</updated>
+      <updated>1682131451596</updated>
     </task>
-    <task id="LOCAL-00156" summary="Update the class &quot;InstallationListImplementation&quot;">
-      <created>1681743081341</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
+    <task id="LOCAL-00212" summary=":test_tube: test: Adaptando o teste &quot;ClientTest&quot; ao novo formato da classe &quot;Client&quot;">
+      <created>1682131477080</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
       <option name="project" value="LOCAL" />
-      <updated>1681743081341</updated>
+      <updated>1682131477080</updated>
     </task>
-    <task id="LOCAL-00157" summary="Update the class &quot;ComponentListImplementation&quot;">
-      <created>1681743102125</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
+    <task id="LOCAL-00213" summary=":bug: fix: Corrigindo retorno do método &quot;toString&quot;">
+      <created>1682131541066</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
       <option name="project" value="LOCAL" />
-      <updated>1681743102125</updated>
+      <updated>1682131541066</updated>
     </task>
-    <task id="LOCAL-00158" summary="Update the class &quot;ManagerListImplementation&quot;">
-      <created>1681743120778</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
+    <task id="LOCAL-00214" summary=":bug: fix: Corrigindo retorno do método &quot;toString&quot;">
+      <created>1682131564248</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
       <option name="project" value="LOCAL" />
-      <updated>1681743120778</updated>
+      <updated>1682131564248</updated>
     </task>
-    <task id="LOCAL-00159" summary="Update the class &quot;TechnicianListImplementation&quot;">
-      <created>1681743139699</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
+    <task id="LOCAL-00215" summary=":bug: fix: Corrigindo retorno do método &quot;toString&quot;">
+      <created>1682131579308</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
       <option name="project" value="LOCAL" />
-      <updated>1681743139699</updated>
+      <updated>1682131579308</updated>
     </task>
-    <task id="LOCAL-00160" summary="Update the interface &quot;ClientDAO&quot;">
-      <created>1681743169661</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
+    <task id="LOCAL-00216" summary=":bug: fix: Corrigindo retorno do método &quot;toString&quot;">
+      <created>1682131590949</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
       <option name="project" value="LOCAL" />
-      <updated>1681743169661</updated>
+      <updated>1682131590949</updated>
     </task>
-    <task id="LOCAL-00161" summary="Update the interface &quot;EmployeeDAO&quot;">
-      <created>1681743184121</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
+    <task id="LOCAL-00217" summary=":bug: fix: Corrigindo erro de digitação na escrita da classe">
+      <created>1682131636507</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
       <option name="project" value="LOCAL" />
-      <updated>1681743184121</updated>
+      <updated>1682131636507</updated>
     </task>
-    <task id="LOCAL-00162" summary="Update the interface &quot;InstallationDAO&quot;">
-      <created>1681743200389</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
+    <task id="LOCAL-00218" summary=":bug: fix: Alterando parâmetro &quot;expected&quot; para que o teste passe">
+      <created>1682132261874</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
       <option name="project" value="LOCAL" />
-      <updated>1681743200389</updated>
+      <updated>1682132261874</updated>
     </task>
-    <task id="LOCAL-00163" summary="Update the interface &quot;ManagerDAO&quot;">
-      <created>1681743218834</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
+    <task id="LOCAL-00219" summary=":bug: fix: Alterando parâmetro &quot;expected&quot; para que o teste passe">
+      <created>1682132284380</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
       <option name="project" value="LOCAL" />
-      <updated>1681743218834</updated>
+      <updated>1682132284381</updated>
     </task>
-    <task id="LOCAL-00164" summary="Update the interface &quot;WorkOrderDAO&quot;">
-      <created>1681743236548</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
+    <task id="LOCAL-00220" summary=":bug: fix: Alterando parâmetro &quot;expected&quot; para que o teste passe">
+      <created>1682132301569</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
       <option name="project" value="LOCAL" />
-      <updated>1681743236548</updated>
+      <updated>1682132301570</updated>
     </task>
-    <task id="LOCAL-00165" summary="Update the file &quot;workspace.xml&quot;">
-      <created>1681743259033</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
+    <task id="LOCAL-00221" summary=":test_tube: test: Correção de grafia dentro do teste">
+      <created>1682304488804</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
       <option name="project" value="LOCAL" />
-      <updated>1681743259033</updated>
+      <updated>1682304488806</updated>
     </task>
-    <task id="LOCAL-00166" summary="Update the file &quot;pom.xml&quot;">
-      <created>1681743277604</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
+    <task id="LOCAL-00222" summary=":test_tube: test: Correção de grafia dentro do teste">
+      <created>1682304513931</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
       <option name="project" value="LOCAL" />
-      <updated>1681743277604</updated>
+      <updated>1682304513931</updated>
     </task>
-    <task id="LOCAL-00167" summary="Update the test &quot;ClientTest&quot; - Now it has high coverage">
-      <created>1681749492225</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
+    <task id="LOCAL-00223" summary=":test_tube: test: Correção de grafia dentro do teste">
+      <created>1682304527335</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
       <option name="project" value="LOCAL" />
-      <updated>1681749492226</updated>
+      <updated>1682304527335</updated>
     </task>
-    <task id="LOCAL-00168" summary="Update the test &quot;EmployeeTest&quot; - Now it has high coverage">
-      <created>1681749509386</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
+    <task id="LOCAL-00224" summary=":test_tube: test: Correção de grafia dentro do teste">
+      <created>1682304551364</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
       <option name="project" value="LOCAL" />
-      <updated>1681749509386</updated>
+      <updated>1682304551364</updated>
     </task>
-    <task id="LOCAL-00169" summary="Update the test &quot;ManagerTest&quot; - Now it has high coverage">
-      <created>1681749525323</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
+    <task id="LOCAL-00225" summary=":test_tube: test: Correção de grafia dentro do teste">
+      <created>1682304731657</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
       <option name="project" value="LOCAL" />
-      <updated>1681749525323</updated>
+      <updated>1682304731657</updated>
     </task>
-    <task id="LOCAL-00170" summary="Update the test &quot;TechnicianTest&quot; - Now it has high coverage">
-      <created>1681749542652</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
+    <task id="LOCAL-00226" summary=":test_tube: test: Correção de grafia dentro do teste">
+      <created>1682304745232</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
       <option name="project" value="LOCAL" />
-      <updated>1681749542652</updated>
+      <updated>1682304745232</updated>
     </task>
-    <task id="LOCAL-00171" summary="Update the file &quot;workspace.xml&quot;">
-      <created>1681749565363</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
+    <task id="LOCAL-00227" summary=":test_tube: test: Correção de grafia dentro do teste">
+      <created>1682304760131</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
       <option name="project" value="LOCAL" />
-      <updated>1681749565363</updated>
+      <updated>1682304760131</updated>
     </task>
-    <task id="LOCAL-00172" summary="Update the class &quot;ComputerComponent&quot;">
-      <created>1681750672845</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
+    <task id="LOCAL-00228" summary=":test_tube: test: Correção de grafia dentro do teste">
+      <created>1682304772154</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
       <option name="project" value="LOCAL" />
-      <updated>1681750672845</updated>
+      <updated>1682304772154</updated>
     </task>
-    <task id="LOCAL-00173" summary="Update the test &quot;ComputerComponentTest&quot; - Now it has high coverage">
-      <created>1681750706807</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
+    <task id="LOCAL-00229" summary=":boom: fix: Corrigindo erros acusados nos testes">
+      <created>1682305106662</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
       <option name="project" value="LOCAL" />
-      <updated>1681750706807</updated>
+      <updated>1682305106662</updated>
     </task>
-    <task id="LOCAL-00174" summary="Update the test &quot;ComputerComponentTest&quot; - Now it has high coverage">
-      <created>1681763308430</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
+    <task id="LOCAL-00230" summary=":boom: fix: Corrigindo erros acusados nos testes">
+      <created>1682305129277</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
       <option name="project" value="LOCAL" />
-      <updated>1681763308431</updated>
+      <updated>1682305129277</updated>
     </task>
-    <task id="LOCAL-00175" summary="Create the test &quot;InstallationTest&quot; - Now it has high coverage">
-      <created>1681763347655</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
+    <task id="LOCAL-00231" summary=":boom: fix: Corrigindo erros acusados nos testes">
+      <created>1682306043292</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
       <option name="project" value="LOCAL" />
-      <updated>1681763347655</updated>
+      <updated>1682306043292</updated>
     </task>
-    <task id="LOCAL-00176" summary="Create the test &quot;BuildingTest&quot; - Now it has high coverage">
-      <created>1681763367177</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
+    <task id="LOCAL-00232" summary=":boom: fix: Corrigindo erros acusados nos testes">
+      <created>1682306056068</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
       <option name="project" value="LOCAL" />
-      <updated>1681763367177</updated>
+      <updated>1682306056068</updated>
     </task>
-    <task id="LOCAL-00177" summary="Update the test &quot;CleaningTest&quot; - Now it has high coverage">
-      <created>1681763396822</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
+    <task id="LOCAL-00233" summary=":boom: fix: Corrigindo erros acusados nos testes">
+      <created>1682306082238</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
       <option name="project" value="LOCAL" />
-      <updated>1681763396822</updated>
+      <updated>1682306082238</updated>
     </task>
-    <task id="LOCAL-00178" summary="Update the class &quot;Building&quot;">
-      <created>1681763426387</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
+    <task id="LOCAL-00234" summary=":boom: fix: Corrigindo erros acusados nos testes">
+      <created>1682306094656</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
       <option name="project" value="LOCAL" />
-      <updated>1681763426387</updated>
+      <updated>1682306094656</updated>
     </task>
-    <task id="LOCAL-00179" summary="Update the class &quot;ComputerComponent&quot;">
-      <created>1681763448148</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
+    <task id="LOCAL-00235" summary=":boom: fix: Corrigindo erros acusados nos testes">
+      <created>1682306105683</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
       <option name="project" value="LOCAL" />
-      <updated>1681763448148</updated>
+      <updated>1682306105683</updated>
     </task>
-    <task id="LOCAL-00180" summary="Update the class &quot;Installation&quot;">
-      <created>1681763468653</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
+    <task id="LOCAL-00236" summary=":boom: fix: Corrigindo erros acusados nos testes">
+      <created>1682306134072</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
       <option name="project" value="LOCAL" />
-      <updated>1681763468653</updated>
+      <updated>1682306134072</updated>
     </task>
-    <task id="LOCAL-00181" summary="Create the test &quot;WorkOrderTest&quot;">
-      <created>1681764914426</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
+    <task id="LOCAL-00237" summary=":sparkles: feat: A instância da classe passou a armazenar o ID da &quot;WorkOrder&quot; a qual pertence">
+      <created>1682356488509</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
       <option name="project" value="LOCAL" />
-      <updated>1681764914426</updated>
+      <updated>1682356488509</updated>
     </task>
-    <task id="LOCAL-00182" summary="Final commit">
-      <created>1681789533710</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
+    <task id="LOCAL-00238" summary=":sparkles: feat: A instância da classe passou a armazenar o ID da &quot;WorkOrder&quot; a qual pertence">
+      <created>1682356510888</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
       <option name="project" value="LOCAL" />
-      <updated>1681789533711</updated>
+      <updated>1682356510888</updated>
     </task>
-    <task id="LOCAL-00183" summary="Update the file &quot;Building&quot;">
-      <created>1681944344569</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
+    <task id="LOCAL-00239" summary=":sparkles: feat: A instância da classe passou a armazenar o ID da &quot;WorkOrder&quot; a qual pertence">
+      <created>1682356522925</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
       <option name="project" value="LOCAL" />
-      <updated>1681944344569</updated>
+      <updated>1682356522925</updated>
     </task>
-    <task id="LOCAL-00184" summary="Update the test &quot;BuildingTest&quot;">
-      <created>1681944367102</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
+    <task id="LOCAL-00240" summary=":test_tube: test: Criando novo teste">
+      <created>1682356569622</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
       <option name="project" value="LOCAL" />
-      <updated>1681944367102</updated>
+      <updated>1682356569622</updated>
     </task>
-    <task id="LOCAL-00185" summary=":test_tube: test: Atualização do teste">
-      <created>1681961855972</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
+    <task id="LOCAL-00241" summary=":test_tube: test: Adaptando o teste à nova funcionalidade da classe">
+      <created>1682356597371</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
       <option name="project" value="LOCAL" />
-      <updated>1681961855972</updated>
+      <updated>1682356597371</updated>
     </task>
-    <task id="LOCAL-00186" summary=":recycle: refactor: Desfazendo herança da classe &quot;User&quot;">
-      <created>1681962104566</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
+    <task id="LOCAL-00242" summary=":test_tube: test: Adaptando o teste à nova funcionalidade da classe">
+      <created>1682356614792</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
       <option name="project" value="LOCAL" />
-      <updated>1681962104566</updated>
+      <updated>1682356614792</updated>
     </task>
-    <task id="LOCAL-00187" summary=":recycle: refactor: Desfazendo herança da classe &quot;User&quot;">
-      <created>1681962134383</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
+    <task id="LOCAL-00243" summary=":test_tube: test: Adaptando o teste à nova funcionalidade da classe">
+      <created>1682356627348</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
       <option name="project" value="LOCAL" />
-      <updated>1681962134383</updated>
+      <updated>1682356627348</updated>
     </task>
-    <task id="LOCAL-00188" summary=":recycle: refactor: Desfazendo herança da classe &quot;Person&quot;">
-      <created>1681962160634</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
+    <task id="LOCAL-00244" summary=":recycle: refactor: Excluindo testes inadequados">
+      <created>1682389256103</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
       <option name="project" value="LOCAL" />
-      <updated>1681962160634</updated>
+      <updated>1682389256103</updated>
     </task>
-    <task id="LOCAL-00189" summary=":recycle: refactor: Desfazendo herança da classe &quot;User&quot;">
-      <created>1681962185541</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
+    <task id="LOCAL-00245" summary=":recycle: refactor: Excluindo testes inadequados">
+      <created>1682389268215</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
       <option name="project" value="LOCAL" />
-      <updated>1681962185541</updated>
+      <updated>1682389268215</updated>
     </task>
-    <task id="LOCAL-00190" summary=":recycle: refactor: Deletando classe abstrata &quot;Service&quot;">
-      <created>1681962217681</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
+    <task id="LOCAL-00246" summary=":recycle: refactor: Excluindo testes inadequados">
+      <created>1682389278793</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
       <option name="project" value="LOCAL" />
-      <updated>1681962217681</updated>
+      <updated>1682389278793</updated>
     </task>
-    <task id="LOCAL-00191" summary=":recycle: refactor: Deletando classe abstrata &quot;User&quot;">
-      <created>1681962241365</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
+    <task id="LOCAL-00247" summary=":recycle: refactor: Excluindo testes inadequados">
+      <created>1682389288158</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
       <option name="project" value="LOCAL" />
-      <updated>1681962241365</updated>
+      <updated>1682389288158</updated>
     </task>
-    <task id="LOCAL-00192" summary=":recycle: refactor: Desfazendo herança da classe &quot;Service&quot;">
-      <created>1681962279093</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
+    <task id="LOCAL-00248" summary=":recycle: refactor: Excluindo testes inadequados">
+      <created>1682389299181</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
       <option name="project" value="LOCAL" />
-      <updated>1681962279094</updated>
+      <updated>1682389299181</updated>
     </task>
-    <task id="LOCAL-00193" summary=":recycle: refactor: Desfazendo herança da classe &quot;Service&quot;">
-      <created>1681962352617</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
+    <task id="LOCAL-00249" summary=":recycle: refactor: Excluindo testes inadequados">
+      <created>1682389310053</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
       <option name="project" value="LOCAL" />
-      <updated>1681962352617</updated>
+      <updated>1682389310053</updated>
     </task>
-    <task id="LOCAL-00194" summary=":test_tube: test: Adaptando teste à nova configuração da classe &quot;Cleaning&quot;">
-      <created>1681962412385</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
+    <task id="LOCAL-00250" summary=":recycle: refactor: Excluindo testes inadequados">
+      <created>1682389322502</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
       <option name="project" value="LOCAL" />
-      <updated>1681962412385</updated>
+      <updated>1682389322502</updated>
     </task>
-    <task id="LOCAL-00195" summary=":boom: fix: Excluindo atributos subutilizados">
-      <created>1681962490316</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
+    <task id="LOCAL-00251" summary=":recycle: refactor: Excluindo testes inadequados">
+      <created>1682389332144</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
       <option name="project" value="LOCAL" />
-      <updated>1681962490316</updated>
+      <updated>1682389332145</updated>
     </task>
-    <task id="LOCAL-00196" summary=":sparkles: feat: Adição de função para retornar o ID">
-      <created>1681962547221</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
+    <task id="LOCAL-00252" summary=":recycle: refactor: Excluindo testes inadequados">
+      <created>1682389343348</created>
+      <option name="number" value="00252" />
+      <option name="presentableId" value="LOCAL-00252" />
       <option name="project" value="LOCAL" />
-      <updated>1681962547221</updated>
+      <updated>1682389343348</updated>
     </task>
-    <task id="LOCAL-00197" summary=":sparkles: feat: Adição de método para atualizar o status da &quot;WorkOrder&quot;">
-      <created>1681962591038</created>
-      <option name="number" value="00197" />
-      <option name="presentableId" value="LOCAL-00197" />
+    <task id="LOCAL-00253" summary=":recycle: refactor: Excluindo testes inadequados">
+      <created>1682389357770</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
       <option name="project" value="LOCAL" />
-      <updated>1681962591038</updated>
+      <updated>1682389357770</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <option name="localTasksCounter" value="254" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,32 +566,32 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update the test &quot;ManagerTest&quot; - Now it has high coverage" />
-    <MESSAGE value="Update the test &quot;TechnicianTest&quot; - Now it has high coverage" />
-    <MESSAGE value="Update the file &quot;workspace.xml&quot;" />
-    <MESSAGE value="Update the test &quot;ComputerComponentTest&quot; - Now it has high coverage" />
-    <MESSAGE value="Create the test &quot;InstallationTest&quot; - Now it has high coverage" />
-    <MESSAGE value="Create the test &quot;BuildingTest&quot; - Now it has high coverage" />
-    <MESSAGE value="Update the test &quot;CleaningTest&quot; - Now it has high coverage" />
-    <MESSAGE value="Update the class &quot;Building&quot;" />
-    <MESSAGE value="Update the class &quot;ComputerComponent&quot;" />
-    <MESSAGE value="Update the class &quot;Installation&quot;" />
-    <MESSAGE value="Create the test &quot;WorkOrderTest&quot;" />
-    <MESSAGE value="Final commit" />
-    <MESSAGE value="Update the file &quot;Building&quot;" />
-    <MESSAGE value="Update the test &quot;BuildingTest&quot;" />
-    <MESSAGE value="Update the class &quot;Technician&quot;" />
-    <MESSAGE value=":test_tube: test: Atualização do teste" />
-    <MESSAGE value=":recycle: refactor: Desfazendo herança da classe &quot;Person&quot;" />
-    <MESSAGE value=":recycle: refactor: Desfazendo herança da classe &quot;User&quot;" />
-    <MESSAGE value=":recycle: refactor: Deletando classe abstrata &quot;Service&quot;" />
-    <MESSAGE value=":recycle: refactor: Deletando classe abstrata &quot;User&quot;" />
-    <MESSAGE value=":recycle: refactor: Desfazendo herança da classe &quot;Service&quot;" />
-    <MESSAGE value=":test_tube: test: Adaptando teste à nova configuração da classe &quot;Cleaning&quot;" />
-    <MESSAGE value=":boom: fix: Excluindo atributos subutilizados" />
     <MESSAGE value=":sparkles: feat: Adição de função para retornar o ID" />
     <MESSAGE value=":sparkles: feat: Adição de método para atualizar o status da &quot;WorkOrder&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: feat: Adição de método para atualizar o status da &quot;WorkOrder&quot;" />
+    <MESSAGE value=":books: docs: Atualização da página &quot;workspace.xml&quot;" />
+    <MESSAGE value=":boom: fix: Alterando retorno do método &quot;toString&quot;" />
+    <MESSAGE value=":lipstick: feat: Sobrescrevendo método &quot;equals&quot; na classe &quot;Client&quot;" />
+    <MESSAGE value=":bulb: docs: Alterando comentários do método construtor" />
+    <MESSAGE value=":lipstick: feat: Adicionando método &quot;equals&quot; à classe &quot;Technician&quot;" />
+    <MESSAGE value=":recycle: refactor: Excluindo classe abstrata &quot;Person&quot;" />
+    <MESSAGE value=":lipstick: feat: Adicionando método &quot;equals&quot; à classe &quot;Manager&quot;" />
+    <MESSAGE value=":lipstick: feat: Adicionando método &quot;equals&quot; à classe &quot;Employee&quot;" />
+    <MESSAGE value=":bulb: docs: Corrigindo comentários da classe &quot;Client&quot;" />
+    <MESSAGE value=":sparkles: feat: Adicionando getters e setters para os atributos &quot;Address&quot; e &quot;Phone&quot;" />
+    <MESSAGE value=":test_tube: test: Adaptando o teste &quot;EmployeeTest&quot; ao novo formato da classe &quot;Employee&quot;" />
+    <MESSAGE value=":test_tube: test: Adaptando o teste &quot;ManagerTest&quot; ao novo formato da classe &quot;Manager&quot;" />
+    <MESSAGE value=":test_tube: test: Adaptando o teste &quot;TechnicianTest&quot; ao novo formato da classe &quot;Technician&quot;" />
+    <MESSAGE value=":test_tube: test: Adaptando o teste &quot;ClientTest&quot; ao novo formato da classe &quot;Client&quot;" />
+    <MESSAGE value=":bug: fix: Corrigindo retorno do método &quot;toString&quot;" />
+    <MESSAGE value=":bug: fix: Corrigindo erro de digitação na escrita da classe" />
+    <MESSAGE value=":bug: fix: Alterando parâmetro &quot;expected&quot; para que o teste passe" />
+    <MESSAGE value=":test_tube: test: Correção de grafia dentro do teste" />
+    <MESSAGE value=":boom: fix: Corrigindo erros acusados nos testes" />
+    <MESSAGE value=":sparkles: feat: A instância da classe passou a armazenar o ID da &quot;WorkOrder&quot; a qual pertence" />
+    <MESSAGE value=":test_tube: test: Criando novo teste" />
+    <MESSAGE value=":test_tube: test: Adaptando o teste à nova funcionalidade da classe" />
+    <MESSAGE value=":recycle: refactor: Excluindo testes inadequados" />
+    <option name="LAST_COMMIT_MESSAGE" value=":recycle: refactor: Excluindo testes inadequados" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EXA863_management_system_2023$WorkOrderTest_testAddInstallationService.ic" NAME="WorkOrderTest.testAddInstallationService Coverage Results" MODIFIED="1681770639234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
