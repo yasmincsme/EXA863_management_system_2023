@@ -5,8 +5,7 @@ import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
+
 
 public class EmployeeListImplementation implements EmployeeDAO {
 
@@ -16,7 +15,6 @@ public class EmployeeListImplementation implements EmployeeDAO {
     public EmployeeListImplementation() {
         this.listOfEmployees = new ArrayList<Employee>();
         this.nextID = Generator.generateID();
-
     }
 
     @Override
@@ -24,16 +22,13 @@ public class EmployeeListImplementation implements EmployeeDAO {
         employee.setID(this.nextID);
         this.nextID = Generator.generateID();
         this.listOfEmployees.add(employee);
+        System.out.println(employee);
         return employee;
     }
 
     @Override
     public List<Employee> findMany() {
-        List<Employee> employeeList = new ArrayList<Employee>();
-        for (Employee employee : this.listOfEmployees) {
-            employeeList.add(employee);
-        }
-        return employeeList;
+        return listOfEmployees;
     }
 
     @Override
