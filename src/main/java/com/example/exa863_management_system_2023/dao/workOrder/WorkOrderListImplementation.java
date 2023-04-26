@@ -3,6 +3,7 @@ package com.example.exa863_management_system_2023.dao.workOrder;
 import com.example.exa863_management_system_2023.dao.technician.TechnicianListImplementation;
 import com.example.exa863_management_system_2023.model.Technician;
 import com.example.exa863_management_system_2023.model.WorkOrder;
+import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,15 +17,13 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
 
     public WorkOrderListImplementation() {
         this.listOfWorkOrder = new ArrayList<>();
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
     }
 
     @Override
     public WorkOrder create(WorkOrder workOrder) {
         workOrder.setID(this.nextID);
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
         this.listOfWorkOrder.add(workOrder);
         return workOrder;
     }
