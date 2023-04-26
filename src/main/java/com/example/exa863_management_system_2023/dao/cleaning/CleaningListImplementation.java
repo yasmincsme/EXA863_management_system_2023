@@ -1,37 +1,34 @@
 package com.example.exa863_management_system_2023.dao.cleaning;
 
+import com.example.exa863_management_system_2023.model.Building;
 import com.example.exa863_management_system_2023.model.Cleaning;
-import com.example.exa863_management_system_2023.model.Client;
+import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
 
 public class CleaningListImplementation implements CleaningDAO {
 
-    private List<Cleaning> listOfCleaning;
+    private List<Cleaning> listOfCleanings;
     private String nextID;
 
     public CleaningListImplementation() {
-        this.listOfCleaning = new ArrayList<Cleaning>();
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.listOfCleanings = new ArrayList<Cleaning>();
+        this.nextID = Generator.generateID();
     }
 
     @Override
     public Cleaning create(Cleaning cleaning) {
         cleaning.setID(this.nextID);
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
-        this.listOfCleaning.add(cleaning);
+        this.nextID = Generator.generateID();
+        this.listOfCleanings.add(cleaning);
         return cleaning;
     }
 
     @Override
     public List<Cleaning> findMany() {
         List<Cleaning> cleaningList = new ArrayList<Cleaning>();
-        for (Cleaning cleaning : this.listOfCleaning) {
+        for (Cleaning cleaning : this.listOfCleanings) {
             cleaningList.add(cleaning);
         }
         return cleaningList;
@@ -39,7 +36,7 @@ public class CleaningListImplementation implements CleaningDAO {
 
     @Override
     public Cleaning findByID(String id) {
-        for (Cleaning cleaning : this.listOfCleaning) {
+        for (Cleaning cleaning : this.listOfCleanings) {
             if (cleaning.getID().equals(id)) {
                 return cleaning;
             }
@@ -48,10 +45,21 @@ public class CleaningListImplementation implements CleaningDAO {
     }
 
     @Override
+    public List<Cleaning> findByWorkOrderID(String workOrderID) {
+        List<Cleaning> orderCleaningList = new ArrayList<>();
+        for (Cleaning cleaning : this.listOfCleanings) {
+            if (cleaning.getWorkOrderID().equals(workOrderID)) {
+                orderCleaningList.add(cleaning);
+            }
+        }
+        return orderCleaningList;
+    }
+
+    @Override
     public void update(Cleaning cleaning) throws Exception {
-        for (int i = 0; i < this.listOfCleaning.size(); i++) {
-            if (this.listOfCleaning.get(i).getID().equals(cleaning.getID())) {
-                this.listOfCleaning.set(i, cleaning);
+        for (int i = 0; i < this.listOfCleanings.size(); i++) {
+            if (this.listOfCleanings.get(i).getID().equals(cleaning.getID())) {
+                this.listOfCleanings.set(i, cleaning);
                 return;
             }
         }
@@ -59,9 +67,9 @@ public class CleaningListImplementation implements CleaningDAO {
 
     @Override
     public void delete(String id) {
-        for (int i = 0; i < this.listOfCleaning.size(); i++) {
-            if (this.listOfCleaning.get(i).getID().equals(id)) {
-                this.listOfCleaning.remove(i);
+        for (int i = 0; i < this.listOfCleanings.size(); i++) {
+            if (this.listOfCleanings.get(i).getID().equals(id)) {
+                this.listOfCleanings.remove(i);
                 return;
             }
         }
@@ -69,7 +77,7 @@ public class CleaningListImplementation implements CleaningDAO {
 
     @Override
     public void deleteMany() {
-        this.listOfCleaning = new ArrayList<Cleaning>();
+        this.listOfCleanings = new ArrayList<Cleaning>();
         this.nextID = null;
     }
 }
