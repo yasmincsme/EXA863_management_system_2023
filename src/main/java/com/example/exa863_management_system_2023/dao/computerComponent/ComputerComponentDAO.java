@@ -5,6 +5,6 @@ import com.example.exa863_management_system_2023.model.ComputerComponent;
 
 import java.util.List;
 
-public interface ComputerComponentLDAO extends CRUD<ComputerComponent, Exception> {
+public interface ComputerComponentDAO extends CRUD<ComputerComponent, Exception> {
     public List<ComputerComponent> findByName(String name);
 }
