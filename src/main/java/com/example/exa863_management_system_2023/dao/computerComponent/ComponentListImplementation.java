@@ -1,29 +1,26 @@
 package com.example.exa863_management_system_2023.dao.computerComponent;
 
-import com.example.exa863_management_system_2023.model.Client;
 import com.example.exa863_management_system_2023.model.ComputerComponent;
+import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.UUID;
 
-public class ComponentListImplementation implements ComputerComponentLDAO {
+public class ComponentListImplementation implements ComputerComponentDAO {
 
     private List<ComputerComponent> stock;
     private String nextID;
 
     public ComponentListImplementation() {
         this.stock = new ArrayList<ComputerComponent>();
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
     }
 
     @Override
     public ComputerComponent create(ComputerComponent component) {
         component.setID(this.nextID);
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
         this.stock.add(component);
         return component;
     }
