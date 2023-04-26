@@ -1,6 +1,8 @@
 package com.example.exa863_management_system_2023.dao.installation;
 
+import com.example.exa863_management_system_2023.model.Building;
 import com.example.exa863_management_system_2023.model.Installation;
+import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,15 +16,13 @@ public class InstallationListImplementation implements InstallationDAO {
 
     public InstallationListImplementation() {
         this.listOfInstallations = new ArrayList<Installation>();
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
     }
 
     @Override
     public Installation create(Installation installation) {
         installation.setID(this.nextID);
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
         this.listOfInstallations.add(installation);
         return installation;
     }
@@ -44,6 +44,17 @@ public class InstallationListImplementation implements InstallationDAO {
             }
         }
         return null;
+    }
+
+    @Override
+    public List<Installation> findByWorkOrderID(String workOrderID) {
+        List<Installation> orderInstallationList = new ArrayList<>();
+        for (Installation installation : this.listOfInstallations) {
+            if (installation.getWorkOrderID().equals(workOrderID)) {
+                orderInstallationList.add(installation);
+            }
+        }
+        return orderInstallationList;
     }
 
     @Override
