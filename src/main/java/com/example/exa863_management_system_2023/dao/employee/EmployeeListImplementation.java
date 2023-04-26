@@ -1,6 +1,7 @@
 package com.example.exa863_management_system_2023.dao.employee;
 
 import com.example.exa863_management_system_2023.model.Employee;
+import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,16 +15,14 @@ public class EmployeeListImplementation implements EmployeeDAO {
 
     public EmployeeListImplementation() {
         this.listOfEmployees = new ArrayList<Employee>();
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
 
     }
 
     @Override
     public Employee create(Employee employee) {
         employee.setID(this.nextID);
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
         this.listOfEmployees.add(employee);
         return employee;
     }
