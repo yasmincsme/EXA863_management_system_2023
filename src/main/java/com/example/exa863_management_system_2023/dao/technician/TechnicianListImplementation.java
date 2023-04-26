@@ -1,6 +1,7 @@
 package com.example.exa863_management_system_2023.dao.technician;
 
 import com.example.exa863_management_system_2023.model.Technician;
+import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,15 +15,13 @@ public class TechnicianListImplementation implements TechnicianDAO {
 
     public TechnicianListImplementation() {
         this.listOfTechnician = new ArrayList<Technician>();
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
     }
 
     @Override
     public Technician create(Technician technician) {
         technician.setID(this.nextID);
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
         this.listOfTechnician.add(technician);
         return technician;
     }
