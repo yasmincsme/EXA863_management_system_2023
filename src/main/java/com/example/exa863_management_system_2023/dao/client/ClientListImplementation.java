@@ -1,6 +1,7 @@
 package com.example.exa863_management_system_2023.dao.client;
 
 import com.example.exa863_management_system_2023.model.Client;
+import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,15 +15,13 @@ public class ClientListImplementation implements ClientDAO {
 
     public ClientListImplementation() {
         this.listOfClients = new ArrayList<Client>();
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
     }
 
     @Override
     public Client create(Client client) {
         client.setID(this.nextID);
-        UUID uuid = UUID.randomUUID();
-        this.nextID = uuid.toString();
+        this.nextID = Generator.generateID();
         this.listOfClients.add(client);
         return client;
     }
