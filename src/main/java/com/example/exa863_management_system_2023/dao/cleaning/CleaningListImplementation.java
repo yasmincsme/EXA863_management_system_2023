@@ -82,4 +82,26 @@ public class CleaningListImplementation implements CleaningDAO {
         this.listOfCleanings = new ArrayList<Cleaning>();
         this.nextID = null;
     }
+
+    @Override
+    public double getPriceByServices(String workOrderID) {
+        double servicesPrice = 0;
+        for (Cleaning cleaning : this.listOfCleanings) {
+            if(cleaning.getWorkOrderID().equals(workOrderID)) {
+                servicesPrice += cleaning.getPrice();
+            }
+        }
+        return servicesPrice;
+    }
+
+    @Override
+    public double getCostByServices(String workOrderID) {
+        double servicesCost = 0;
+        for (Cleaning cleaning : this.listOfCleanings) {
+            if(cleaning.getWorkOrderID().equals(workOrderID)) {
+                servicesCost += cleaning.getCost();
+            }
+        }
+        return servicesCost;
+    }
 }
