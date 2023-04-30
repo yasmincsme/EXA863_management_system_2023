@@ -1,5 +1,6 @@
 package com.example.exa863_management_system_2023.dao.building;
 
+import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.model.Building;
 import com.example.exa863_management_system_2023.utils.Generator;
 
@@ -55,23 +56,25 @@ public class BuildingListImplementation implements BuildingDAO {
     }
 
     @Override
-    public void update(Building building) throws Exception {
+    public void update(Building building) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfBuildings.size(); i++) {
             if (this.listOfBuildings.get(i).getID().equals(building.getID())) {
                 this.listOfBuildings.set(i, building);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed service is not registered in the system");
     }
 
     @Override
-    public void delete(String id) throws Exception {
+    public void delete(String id) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfBuildings.size(); i++) {
             if (this.listOfBuildings.get(i).getID().equals(id)) {
                 this.listOfBuildings.remove(i);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed service is not registered in the system");
     }
 
     @Override
