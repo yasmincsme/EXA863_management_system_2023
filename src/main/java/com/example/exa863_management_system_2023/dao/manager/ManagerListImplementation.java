@@ -22,11 +22,7 @@ public class ManagerListImplementation implements ManagerDAO {
 
     @Override
     public List<Manager> findMany() {
-        List<Manager> managerList = new ArrayList<Manager>();
-        for (Manager manager : this.listOfManagers) {
-            managerList.add(manager);
-        }
-        return managerList;
+        return listOfManagers;
     }
 
     @Override
