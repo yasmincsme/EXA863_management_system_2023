@@ -1,5 +1,6 @@
 package com.example.exa863_management_system_2023.dao.employee;
 
+import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.model.Employee;
 import com.example.exa863_management_system_2023.utils.Generator;
 
@@ -10,19 +11,15 @@ import java.util.List;
 public class EmployeeListImplementation implements EmployeeDAO {
 
     private List<Employee> listOfEmployees;
-    private String nextID;
 
     public EmployeeListImplementation() {
         this.listOfEmployees = new ArrayList<Employee>();
-        this.nextID = Generator.generateID();
     }
 
     @Override
     public Employee create(Employee employee) {
-        employee.setID(this.nextID);
-        this.nextID = Generator.generateID();
+        employee.setID(Generator.generateID());
         this.listOfEmployees.add(employee);
-        System.out.println(employee);
         return employee;
     }
 
@@ -53,28 +50,29 @@ public class EmployeeListImplementation implements EmployeeDAO {
     }
 
     @Override
-    public void update(Employee employee) {
+    public void update(Employee employee) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfEmployees.size(); i++) {
             if (this.listOfEmployees.get(i).getID().equals(employee.getID())) {
                 this.listOfEmployees.set(i, employee);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed employee is not registered in the system");
     }
 
     @Override
-    public void delete(String id) {
+    public void delete(String id) throws ObjectNotFoundException{
         for (int i = 0; i < this.listOfEmployees.size(); i++) {
             if (this.listOfEmployees.get(i).getID().equals(id)) {
                 this.listOfEmployees.remove(i);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed employee is not registered in the system");
     }
 
     @Override
     public void deleteMany() {
         this.listOfEmployees = new ArrayList<Employee>();
-        this.nextID = null;
     }
 }
