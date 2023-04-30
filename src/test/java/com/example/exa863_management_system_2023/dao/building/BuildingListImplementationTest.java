@@ -91,14 +91,13 @@ public class BuildingListImplementationTest {
 
     @Test
     public void testGetPriceByServices() {
-        double actual = DAO.getBuilding().getPriceByServices(building1.getWorkOrderID());
+        double actual = DAO.getBuilding().getPriceByServices("c28c7bbe-dd45-11ed");
         assertEquals(370.0, actual);
     }
 
     @Test
     public void testGetCostByServices() {
-        double actual = DAO.getBuilding().getCostByServices(building1.getWorkOrderID());
+        double actual = DAO.getBuilding().getCostByServices("c28c7bbe-dd45-11ed");
         assertEquals(145.0, actual);
     }
-
 }
