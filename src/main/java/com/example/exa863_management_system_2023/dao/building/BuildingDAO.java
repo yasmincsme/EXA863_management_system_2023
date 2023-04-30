@@ -8,4 +8,7 @@ import java.util.List;
 
 public interface BuildingDAO extends CRUD<Building, Exception> {
     public List<Building> findByWorkOrderID(String workOrderID);
+    public double getPriceByServices(String workOrderID);
+    public double getCostByServices(String workOrderID);
+
 }
