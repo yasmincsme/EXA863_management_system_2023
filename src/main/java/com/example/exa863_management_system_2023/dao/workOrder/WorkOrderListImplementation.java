@@ -1,5 +1,6 @@
 package com.example.exa863_management_system_2023.dao.workOrder;
 
+import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.dao.technician.TechnicianListImplementation;
 import com.example.exa863_management_system_2023.model.Technician;
 import com.example.exa863_management_system_2023.model.WorkOrder;
@@ -89,23 +90,25 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
         return null;
     }
     @Override
-    public void update(WorkOrder workOrder) throws Exception {
+    public void update(WorkOrder workOrder) throws ObjectNotFoundException {
         for (int i = 0; i < listOfWorkOrder.size(); i++) {
             if (this.listOfWorkOrder.get(i).getID().equals(workOrder.getID())) {
                 this.listOfWorkOrder.set(i, workOrder);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed work order is not registered in the system");
     }
 
     @Override
-    public void delete(String id) throws Exception {
+    public void delete(String id) throws ObjectNotFoundException{
         for (int i = 0; i < this.listOfWorkOrder.size(); i++) {
             if (this.listOfWorkOrder.get(i).getID().equals(id)) {
                 this.listOfWorkOrder.remove(i);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed work order is not registered in the system");
     }
 
     @Override
