@@ -1,7 +1,6 @@
 package com.example.exa863_management_system_2023.model;
 
 public class Employee {
-
     private String id;
     private final String type = "EMPLOYEE";
     private String name;
@@ -11,10 +10,10 @@ public class Employee {
 
     /**
      *
-     * @param name Employee's name
-     * @param email Employee's email
-     * @param login Employee's login
-     * @param password Employee's password
+     * @param name Manager's name
+     * @param email Manager's email
+     * @param login Manager's login
+     * @param password Manager's password
      */
     public Employee(String name, String email, String login, String password) {
         this.id = null;
@@ -58,7 +57,7 @@ public class Employee {
 
     /**
      *
-     * @return Return Employee's email
+     * @return Return Emplyee's email
      */
     public String getEmail() {
         return email;
@@ -107,7 +106,7 @@ public class Employee {
     /**
      *
      * @param object Receive a random object
-     * @return Return true if the given object is equal to the current Employee object, or false if they are not the same
+     * @return Return true if the given object is equal to the current Manager object, or false if they are not the same
      */
     @Override
     public boolean equals(Object object) {
