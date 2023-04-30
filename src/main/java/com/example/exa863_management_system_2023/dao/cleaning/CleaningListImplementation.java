@@ -1,7 +1,6 @@
 package com.example.exa863_management_system_2023.dao.cleaning;
 
 import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
-import com.example.exa863_management_system_2023.model.Building;
 import com.example.exa863_management_system_2023.model.Cleaning;
 import com.example.exa863_management_system_2023.utils.Generator;
 
@@ -11,28 +10,21 @@ import java.util.List;
 public class CleaningListImplementation implements CleaningDAO {
 
     private List<Cleaning> listOfCleanings;
-    private String nextID;
 
     public CleaningListImplementation() {
         this.listOfCleanings = new ArrayList<Cleaning>();
-        this.nextID = Generator.generateID();
     }
 
     @Override
     public Cleaning create(Cleaning cleaning) {
-        cleaning.setID(this.nextID);
-        this.nextID = Generator.generateID();
+        cleaning.setID(Generator.generateID());
         this.listOfCleanings.add(cleaning);
         return cleaning;
     }
 
     @Override
     public List<Cleaning> findMany() {
-        List<Cleaning> cleaningList = new ArrayList<Cleaning>();
-        for (Cleaning cleaning : this.listOfCleanings) {
-            cleaningList.add(cleaning);
-        }
-        return cleaningList;
+        return listOfCleanings;
     }
 
     @Override
@@ -80,7 +72,6 @@ public class CleaningListImplementation implements CleaningDAO {
     @Override
     public void deleteMany() {
         this.listOfCleanings = new ArrayList<Cleaning>();
-        this.nextID = null;
     }
 
     @Override
