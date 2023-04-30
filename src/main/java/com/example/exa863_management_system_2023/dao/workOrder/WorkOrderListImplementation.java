@@ -1,41 +1,32 @@
 package com.example.exa863_management_system_2023.dao.workOrder;
 
 import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
-import com.example.exa863_management_system_2023.dao.technician.TechnicianListImplementation;
-import com.example.exa863_management_system_2023.model.Technician;
-import com.example.exa863_management_system_2023.model.WorkOrder;
+import com.example.exa863_management_system_2023.dao.DAO;
+import com.example.exa863_management_system_2023.model.*;
 import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
+
 
 public class WorkOrderListImplementation implements WorkOrderDAO {
 
     private List<WorkOrder> listOfWorkOrder;
-    private String nextID;
 
     public WorkOrderListImplementation() {
         this.listOfWorkOrder = new ArrayList<>();
-        this.nextID = Generator.generateID();
     }
 
     @Override
     public WorkOrder create(WorkOrder workOrder) {
-        workOrder.setID(this.nextID);
-        this.nextID = Generator.generateID();
+        workOrder.setID(Generator.generateID());
         this.listOfWorkOrder.add(workOrder);
         return workOrder;
     }
 
     @Override
     public List<WorkOrder> findMany() {
-        List<WorkOrder> workOrderList = new ArrayList<WorkOrder>();
-        for(WorkOrder workOrder: this.listOfWorkOrder) {
-            workOrderList.add(workOrder);
-        }
-        return workOrderList;
+        return listOfWorkOrder;
     }
 
     @Override
@@ -70,10 +61,10 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     }
 
     @Override
-    public List<WorkOrder> findOrderByClientID(String id) {
+    public List<WorkOrder> findOrderByClientID(String clientID) {
         List<WorkOrder> workOrderListByClient = new ArrayList<>();
         for (WorkOrder workOrder : this.listOfWorkOrder) {
-            if (workOrder.getClientID().equals(id)) {
+            if (workOrder.getClientID().equals(clientID)) {
                 workOrderListByClient.add(workOrder);
             }
         }
@@ -81,13 +72,14 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     }
 
     @Override
-    public WorkOrder findOrderByTechnicianID(String id) {
+    public List<WorkOrder> findOrderByTechnicianID(String technicianID) {
+        List<WorkOrder> workOrderListByTechnician = new ArrayList<>();
         for (WorkOrder workOrder : this.listOfWorkOrder) {
-            if (workOrder.getTechnicianID().equals(id)) {
-                return workOrder;
+            if (workOrder.getTechnicianID().equals(technicianID)) {
+                workOrderListByTechnician.add(workOrder);
             }
         }
-        return null;
+        return workOrderListByTechnician;
     }
     @Override
     public void update(WorkOrder workOrder) throws ObjectNotFoundException {
@@ -114,6 +106,16 @@ public class WorkOrderListImplementation implements WorkOrderDAO {
     @Override
     public void deleteMany() {
         this.listOfWorkOrder = new ArrayList<>();
-        this.nextID = null;
+    }
+
+    @Override
+    public double getPriceByWorkOrderID(String workOrderID) {
+        return DAO.getBuilding().getPriceByServices(workOrderID) + DAO.getCleaning().getPriceByServices(workOrderID) + DAO.getInstallation().getPriceByServices(workOrderID);
+
+    }
+
+    @Override
+    public double getCostByWorkOrderID(String workOrderID) {
+        return DAO.getBuilding().getCostByServices(workOrderID) + DAO.getCleaning().getCostByServices(workOrderID) + DAO.getInstallation().getCostByServices(workOrderID);
     }
 }
