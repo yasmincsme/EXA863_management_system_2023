@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface CleaningDAO extends CRUD<Cleaning, Exception> {
     public List<Cleaning> findByWorkOrderID(String workOrderID);
+    public double getPriceByServices(String workOrderID);
+    public double getCostByServices(String workOrderID);
 }
