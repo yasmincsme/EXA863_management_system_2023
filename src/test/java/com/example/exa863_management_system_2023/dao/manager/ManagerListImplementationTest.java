@@ -4,7 +4,6 @@ import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundExcept
 import com.example.exa863_management_system_2023.dao.DAO;
 import com.example.exa863_management_system_2023.model.Manager;
 import org.junit.jupiter.api.*;
-
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -57,16 +56,15 @@ public class ManagerListImplementationTest {
 
     @Test
     public void testUpdate() {
-        String manager1ID = manager1.getID();
         Manager newManager1 = DAO.getManager().create(new Manager("Lionel Craig", "lionel.craig@example.com", "lionelCraig", "newPassword123"));
-        newManager1.setID(manager1ID);
+        newManager1.setID(manager1.getID());
 
         try {
             DAO.getManager().update(newManager1);
         } catch (ObjectNotFoundException exception) {
             throw new RuntimeException(exception);
         }
-        assertEquals(newManager1, DAO.getManager().findByID(manager1ID));
+        assertEquals(newManager1, DAO.getManager().findByID(manager1.getID()));
     }
 
     @Test
