@@ -2,9 +2,11 @@ package com.example.exa863_management_system_2023.dao.building;
 
 import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.model.Building;
+import com.example.exa863_management_system_2023.model.ComputerComponent;
 import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class BuildingListImplementation implements BuildingDAO {
@@ -14,24 +16,18 @@ public class BuildingListImplementation implements BuildingDAO {
 
     public BuildingListImplementation() {
         this.listOfBuildings = new ArrayList<Building>();
-        this.nextID = Generator.generateID();
     }
 
     @Override
     public Building create(Building building) {
-        building.setID(this.nextID);
-        this.nextID = Generator.generateID();
+        building.setID(Generator.generateID());
         this.listOfBuildings.add(building);
         return building;
     }
 
     @Override
     public List<Building> findMany() {
-        List<Building> buildingList = new ArrayList<Building>();
-        for (Building building : this.listOfBuildings) {
-            buildingList.add(building);
-        }
-        return buildingList;
+        return listOfBuildings;
     }
 
     @Override
@@ -81,5 +77,27 @@ public class BuildingListImplementation implements BuildingDAO {
     public void deleteMany() {
         this.listOfBuildings = new ArrayList<>();
         this.nextID = null;
+    }
+
+    @Override
+    public double getPriceByServices(String workOrderID) {
+        double servicesPrice = 0;
+        for (Building building : this.listOfBuildings) {
+            if(building.getWorkOrderID().equals(workOrderID)) {
+                servicesPrice += building.getPrice();
+            }
+        }
+        return servicesPrice;
+    }
+
+    @Override
+    public double getCostByServices(String workOrderID) {
+        double servicesCost = 0;
+        for (Building building : this.listOfBuildings) {
+            if(building.getWorkOrderID().equals(workOrderID)) {
+                servicesCost += building.getCost();
+            }
+        }
+        return servicesCost;
     }
 }
