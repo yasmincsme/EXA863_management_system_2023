@@ -6,7 +6,6 @@ import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 public class ComponentListImplementation implements ComputerComponentDAO {
 
