@@ -1,5 +1,6 @@
 package com.example.exa863_management_system_2023.dao.cleaning;
 
+import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.model.Building;
 import com.example.exa863_management_system_2023.model.Cleaning;
 import com.example.exa863_management_system_2023.utils.Generator;
@@ -56,13 +57,14 @@ public class CleaningListImplementation implements CleaningDAO {
     }
 
     @Override
-    public void update(Cleaning cleaning) throws Exception {
+    public void update(Cleaning cleaning) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfCleanings.size(); i++) {
             if (this.listOfCleanings.get(i).getID().equals(cleaning.getID())) {
                 this.listOfCleanings.set(i, cleaning);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed service is not registered in the system");
     }
 
     @Override
