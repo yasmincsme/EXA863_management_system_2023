@@ -1,5 +1,6 @@
 package com.example.exa863_management_system_2023.model;
 
+import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -23,6 +24,45 @@ public class BuildingTest {
         assertEquals(70.00, building.getPrice(), 3);
         assertEquals(25.00, building.getCost(), 3);
         assertTrue(building.getUsedComponents().isEmpty());
+    }
+
+    @Test
+    public void testAddComponent() {
+        Building building = new Building("Switch the HD", "c28c7bbe-dd45-11ed", 70.00, 25.00);
+        building.setID("c28c7bbe-dd45-11ed");
+        ComputerComponent component1 = new ComputerComponent("CPU", "Intel", "ABC123", 200.00, 100.00, 2);
+        component1.setID("a908ffa4-dd37-11ed");
+        ComputerComponent component2 = new ComputerComponent("RAM", "Intel", "XYZ456", 300.00, 200.00, 2);
+        component2.setID("ed198b64-dd37-11ed");
+
+        building.addComponent(component1);
+        building.addComponent(component2);
+
+        assertEquals(2, building.getUsedComponents().size());
+    }
+
+    @Test
+    public void testRemoveComponent() {
+        Building building = new Building("Switch the HD", "c28c7bbe-dd45-11ed", 70.00, 25.00);
+        building.setID("c28c7bbe-dd45-11ed");
+
+        ComputerComponent component1 = new ComputerComponent("CPU", "Intel", "ABC123", 200.00, 100.00, 2);
+        component1.setID("a908ffa4-dd37-11ed");
+        ComputerComponent component2 = new ComputerComponent("RAM", "Intel", "XYZ456", 300.00, 200.00, 2);
+        component2.setID("ed198b64-dd37-11ed");
+
+        building.addComponent(component1);
+        building.addComponent(component2);
+
+        assertEquals(2, building.getUsedComponents().size());
+        System.out.println(building);
+        try {
+            building.removeComponent(building.getUsedComponents().get(0).getID());
+        } catch (ObjectNotFoundException exception) {
+            throw new RuntimeException(exception);
+        }
+        assertEquals(1, building.getUsedComponents().size());
+
     }
 
     @Test
@@ -50,6 +90,44 @@ public class BuildingTest {
         building.increaseCost();
         assertEquals(625.00, building.getCost(), 3);
 
+    }
+
+    @Test
+    public void testDecrease() {
+        Building building = new Building("Switch the HD", "c28c7bbe-dd45-11ed", 70.00, 25.00);
+        building.setID("c28c7bbe-dd45-11ed");
+
+        assertTrue(building.getUsedComponents().isEmpty());
+
+        ComputerComponent component1 = new ComputerComponent("CPU", "Intel", "ABC123", 200.00, 100.00, 2);
+        component1.setID("a908ffa4-dd37-11ed");
+        ComputerComponent component2 = new ComputerComponent("RAM", "Intel", "XYZ456", 300.00, 200.00, 2);
+        component2.setID("ed198b64-dd37-11ed");
+
+        ArrayList<ComputerComponent> usedComponents = new ArrayList<>();
+        usedComponents.add(component1);
+        usedComponents.add(component2);
+        building.setUsedComponents(usedComponents);
+
+        assertFalse(building.getUsedComponents().isEmpty());
+
+        building.increasePrice();
+        assertEquals(1070.00, building.getPrice(), 3);
+
+        building.increaseCost();
+        assertEquals(625.00, building.getCost(), 3);
+
+        building.decreasePrice();
+        assertEquals(70.0, building.getPrice(), 3);
+
+        building.decreaseCost();
+        assertEquals(25.0, building.getCost(), 3);
+
+        usedComponents.remove(component1);
+        usedComponents.remove(component2);
+        building.setUsedComponents(usedComponents);
+
+        assertTrue(building.getUsedComponents().isEmpty());
     }
 
     @Test
