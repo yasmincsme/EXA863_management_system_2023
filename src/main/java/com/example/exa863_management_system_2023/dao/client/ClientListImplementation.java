@@ -11,28 +11,21 @@ import java.util.UUID;
 public class ClientListImplementation implements ClientDAO {
 
     private List<Client> listOfClients;
-    private String nextID;
 
     public ClientListImplementation() {
         this.listOfClients = new ArrayList<Client>();
-        this.nextID = Generator.generateID();
     }
 
     @Override
     public Client create(Client client) {
-        client.setID(this.nextID);
-        this.nextID = Generator.generateID();
+        client.setID(Generator.generateID());
         this.listOfClients.add(client);
         return client;
     }
 
     @Override
     public List<Client> findMany() {
-        List<Client> clientList = new ArrayList<Client>();
-        for (Client client : this.listOfClients) {
-            clientList.add(client);
-        }
-        return clientList;
+        return listOfClients;
     }
 
     @Override
@@ -79,6 +72,5 @@ public class ClientListImplementation implements ClientDAO {
     @Override
     public void deleteMany() {
         this.listOfClients = new ArrayList<>();
-        this.nextID = null;
     }
 }
