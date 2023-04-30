@@ -90,13 +90,13 @@ class CleaningListImplementationTest {
 
     @Test
     public void testGetPriceByServices() {
-        double actual = DAO.getCleaning().getPriceByServices(cleaning1.getWorkOrderID());
-        assertEquals(370.0, actual);
+        double actual = DAO.getCleaning().getPriceByServices("f28c7bbe-dd45-11ed");
+        assertEquals(105.0, actual);
     }
 
     @Test
     public void testGetCostByServices() {
-        double actual = DAO.getCleaning().getCostByServices(cleaning1.getWorkOrderID());
-        assertEquals(145.0, actual);
+        double actual = DAO.getCleaning().getCostByServices("f28c7bbe-dd45-11ed");
+        assertEquals(30.0, actual);
     }
 }
