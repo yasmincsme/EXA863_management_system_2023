@@ -1,5 +1,8 @@
 package com.example.exa863_management_system_2023.model;
 
+import com.example.exa863_management_system_2023.Exceptions.InvalidSatisfactionScore;
+import com.example.exa863_management_system_2023.Exceptions.WorkOrderWithoutTechnician;
+
 import java.text.ParsePosition;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -166,7 +169,10 @@ public class WorkOrder {
      *
      * @param clientSatisfaction New value to client satisfaction
      */
-    public void setClientSatisfaction(int clientSatisfaction) {
+    public void setClientSatisfaction(int clientSatisfaction) throws InvalidSatisfactionScore {
+        if (clientSatisfaction < 0 || clientSatisfaction > 10) {
+            throw new InvalidSatisfactionScore("Please enter a valid value for the customer satisfaction level");
+        }
         this.clientSatisfaction = clientSatisfaction;
     }
 
@@ -230,7 +236,10 @@ public class WorkOrder {
     /**
      * Finalize the work order
      */
-    public void finish() {
+    public void finish() throws WorkOrderWithoutTechnician {
+        if (this.technicianID == null) {
+            throw new WorkOrderWithoutTechnician("There is no technician assigned to the service so that it can be completed");
+        }
         this.setStatus("FINISHED");
         this.finishedAt = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss.S").format(Calendar.getInstance().getTime());
     }
