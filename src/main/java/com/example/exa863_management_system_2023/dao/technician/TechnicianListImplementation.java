@@ -1,5 +1,6 @@
 package com.example.exa863_management_system_2023.dao.technician;
 
+import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.model.Technician;
 import com.example.exa863_management_system_2023.utils.Generator;
 
@@ -11,17 +12,14 @@ import java.util.UUID;
 public class TechnicianListImplementation implements TechnicianDAO {
 
     private List<Technician> listOfTechnician;
-    private String nextID;
 
     public TechnicianListImplementation() {
         this.listOfTechnician = new ArrayList<Technician>();
-        this.nextID = Generator.generateID();
     }
 
     @Override
     public Technician create(Technician technician) {
-        technician.setID(this.nextID);
-        this.nextID = Generator.generateID();
+        technician.setID(Generator.generateID());
         this.listOfTechnician.add(technician);
         return technician;
     }
@@ -57,28 +55,29 @@ public class TechnicianListImplementation implements TechnicianDAO {
     }
 
     @Override
-    public void update(Technician technician) throws Exception {
+    public void update(Technician technician) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfTechnician.size(); i++) {
             if (this.listOfTechnician.get(i).getID().equals(technician.getID())) {
                 this.listOfTechnician.set(i,technician);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed technician is not registered in the system");
     }
 
     @Override
-    public void delete(String id) throws Exception {
+    public void delete(String id) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfTechnician.size(); i++) {
             if (this.listOfTechnician.get(i).getID().equals(id)) {
                 this.listOfTechnician.remove(i);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed technician is not registered in the system");
     }
 
     @Override
     public void deleteMany() {
         this.listOfTechnician = new ArrayList<>();
-        this.nextID = null;
     }
 }
