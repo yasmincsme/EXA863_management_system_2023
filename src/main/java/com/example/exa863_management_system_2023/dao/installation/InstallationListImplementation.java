@@ -85,4 +85,26 @@ public class InstallationListImplementation implements InstallationDAO {
         this.listOfInstallations = new ArrayList<>();
         this.nextID = null;
     }
+
+    @Override
+    public double getPriceByServices(String workOrderID) {
+        double servicesPrice = 0;
+        for (Installation installation : this.listOfInstallations) {
+            if(installation.getWorkOrderID().equals(workOrderID)) {
+                servicesPrice += installation.getPrice();
+            }
+        }
+        return servicesPrice;
+    }
+
+    @Override
+    public double getCostByServices(String workOrderID) {
+        double servicesCost = 0;
+        for (Installation installation : this.listOfInstallations) {
+            if(installation.getWorkOrderID().equals(workOrderID)) {
+                servicesCost += installation.getCost();
+            }
+        }
+        return servicesCost;
+    }
 }
