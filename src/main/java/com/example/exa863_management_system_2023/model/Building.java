@@ -1,5 +1,8 @@
 package com.example.exa863_management_system_2023.model;
 
+import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
+import com.example.exa863_management_system_2023.dao.DAO;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -122,6 +125,25 @@ public class Building {
         this.usedComponents = usedComponents;
     }
 
+    public void addComponent(ComputerComponent component) {
+        this.usedComponents.add(component);
+        increasePrice();
+        increaseCost();
+    }
+
+    public void removeComponent(String componentID) throws ObjectNotFoundException {
+        for (ComputerComponent component : this.usedComponents) {
+            System.out.println(component);
+            if (component.getID().equals(componentID)) {
+                decreasePrice();
+                decreaseCost();
+                this.usedComponents.remove(component);
+                return;
+            }
+        }
+        throw new ObjectNotFoundException("The informed component is not registered in the system");
+    }
+
     /**
      * Update the subtotal based on the list of components
      */
@@ -140,6 +162,24 @@ public class Building {
             cost += component.getUnitCost() * component.getQuantity();
         }
         double newCost = this.getCost() + cost;
+        this.setCost(newCost);
+    }
+
+    public void decreasePrice() {
+        double price = 0;
+        for (ComputerComponent component : this.usedComponents) {
+            price += component.getUnitPrice() * component.getQuantity();
+        }
+        double newPrice = this.getPrice() - price;
+        this.setPrice(newPrice);
+    }
+
+    public void decreaseCost() {
+        double cost = 0;
+        for (ComputerComponent component : this.usedComponents) {
+            cost += component.getUnitCost() * component.getQuantity();
+        }
+        double newCost = this.getCost() - cost;
         this.setCost(newCost);
     }
 
