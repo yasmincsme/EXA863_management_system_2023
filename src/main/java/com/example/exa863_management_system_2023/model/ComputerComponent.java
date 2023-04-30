@@ -6,6 +6,7 @@ public class ComputerComponent {
 
     private String name;
     private String id;
+    private String buildingID;
     private String manufacturer;
     private String serialNumber;
     private double unitPrice;
@@ -23,6 +24,7 @@ public class ComputerComponent {
      */
     public ComputerComponent(String name, String manufacturer, String serialNumber, double unitPrice, double unitCost, int quantity) {
         this.name = name;
+        this.buildingID = null;
         this.manufacturer = manufacturer;
         this.serialNumber = serialNumber;
         this.unitPrice = unitPrice;
@@ -60,6 +62,22 @@ public class ComputerComponent {
      */
     public void setID(String id) {
         this.id = id;
+    }
+
+    /**
+     *
+     * @return Return building's ID
+     */
+    public String getBuildingID() {
+        return buildingID;
+    }
+
+    /**
+     *
+     * @param buildingID New value to building's ID
+     */
+    public void setBuildingID(String buildingID) {
+        this.buildingID = buildingID;
     }
 
     /**
