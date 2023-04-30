@@ -61,13 +61,14 @@ public class ComponentListImplementation implements ComputerComponentDAO {
     }
 
     @Override
-    public void delete(String id) {
+    public void delete(String id) throws ObjectNotFoundException {
         for (int i = 0; i < this.stock.size(); i++) {
             if (this.stock.get(i).getID().equals(id)) {
                 this.stock.remove(i);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed component is not registered in the system");
     }
 
     @Override
