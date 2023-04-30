@@ -6,13 +6,12 @@ import com.example.exa863_management_system_2023.model.ComputerComponent;
 import com.example.exa863_management_system_2023.utils.Generator;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class BuildingListImplementation implements BuildingDAO {
 
     private List<Building> listOfBuildings;
-    private String nextID;
+    private List<ComputerComponent> listOfComponents;
 
     public BuildingListImplementation() {
         this.listOfBuildings = new ArrayList<Building>();
@@ -76,7 +75,6 @@ public class BuildingListImplementation implements BuildingDAO {
     @Override
     public void deleteMany() {
         this.listOfBuildings = new ArrayList<>();
-        this.nextID = null;
     }
 
     @Override
