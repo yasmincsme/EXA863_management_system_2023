@@ -1,28 +1,21 @@
 package com.example.exa863_management_system_2023.dao.manager;
 
-import com.example.exa863_management_system_2023.model.Employee;
 import com.example.exa863_management_system_2023.model.Manager;
 import com.example.exa863_management_system_2023.utils.Generator;
-
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.UUID;
 
 public class ManagerListImplementation implements ManagerDAO {
 
     private List<Manager> listOfManagers;
-    private String nextID;
 
     public ManagerListImplementation() {
         this.listOfManagers = new ArrayList<Manager>();
-        this.nextID = Generator.generateID();
     }
 
     @Override
     public Manager create(Manager manager) {
-        manager.setID(this.nextID);
-        this.nextID = Generator.generateID();
+        manager.setID(Generator.generateID());
         this.listOfManagers.add(manager);
         return manager;
     }
@@ -80,6 +73,5 @@ public class ManagerListImplementation implements ManagerDAO {
     @Override
     public void deleteMany() {
         this.listOfManagers = new ArrayList<Manager>();
-        this.nextID = null;
     }
 }
