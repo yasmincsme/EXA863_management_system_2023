@@ -1,5 +1,6 @@
 package com.example.exa863_management_system_2023.dao.installation;
 
+import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.model.Building;
 import com.example.exa863_management_system_2023.model.Installation;
 import com.example.exa863_management_system_2023.utils.Generator;
@@ -58,23 +59,25 @@ public class InstallationListImplementation implements InstallationDAO {
     }
 
     @Override
-    public void update(Installation installation) throws Exception {
+    public void update(Installation installation) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfInstallations.size(); i++) {
             if (this.listOfInstallations.get(i).getID().equals(installation.getID())) {
                 this.listOfInstallations.set(i, installation);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed service is not registered in the system");
     }
 
     @Override
-    public void delete(String id) throws Exception {
+    public void delete(String id) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfInstallations.size(); i++) {
             if (this.listOfInstallations.get(i).getID().equals(id)) {
                 this.listOfInstallations.remove(i);
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed service is not registered in the system");
     }
 
     @Override
