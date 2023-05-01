@@ -1,5 +1,6 @@
 package com.example.exa863_management_system_2023.model;
 
+import com.example.exa863_management_system_2023.Exceptions.WorkOrderWithoutTechnician;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,7 +33,12 @@ public class WorkOrderTest {
         workOrder.setCreatedAt("24-04-2023 14:05:35.377");
         workOrder.setPaymentMethod("PIX");
 
-        workOrder.finish();
+        try {
+            workOrder.finish();
+        } catch (WorkOrderWithoutTechnician exception) {
+            throw new RuntimeException(exception);
+        }
+
         assertEquals("FINISHED", workOrder.getStatus());
         assertNotNull(workOrder.getFinishedAt());
 
@@ -48,7 +54,11 @@ public class WorkOrderTest {
         workOrder.setCreatedAt("24-04-2023 14:05:35.377");
         workOrder.setPaymentMethod("PIX");
 
-        workOrder.finish();
+        try {
+            workOrder.finish();
+        } catch (WorkOrderWithoutTechnician exception) {
+            throw new RuntimeException(exception);
+        }
         assertEquals("FINISHED", workOrder.getStatus());
         assertNotNull(workOrder.getFinishedAt());
     }
@@ -110,7 +120,13 @@ public class WorkOrderTest {
         workOrder.setCreatedAt("24-04-2023 14:05:35.377");
         workOrder.setFinishedAt("24-05-2023 14:05:35.377");
         workOrder.setPaymentMethod("PIX");
-        workOrder.finish();
+
+        try {
+            workOrder.finish();
+        } catch (WorkOrderWithoutTechnician exception) {
+            throw new RuntimeException(exception);
+        }
+
         String expected = "ID: d9c0adb4-dd45-11ed, Client ID: c28c7bbe-dd45-11ed, Technician ID: 6e056406-dc97-11ed, Status: FINISHED, Description: Computer hardware upgrade, Creation Date: 24-04-2023 14:05:35.377, Completion Date: 24-05-2023 14:05:35.377, Satisfaction Score: 0, Price: 0.0, Cost: 0.0,Payment Method: PIX";
         String actual = workOrder.toString();
     }
