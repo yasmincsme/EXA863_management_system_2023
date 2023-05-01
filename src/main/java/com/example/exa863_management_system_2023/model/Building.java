@@ -133,7 +133,6 @@ public class Building {
 
     public void removeComponent(String componentID) throws ObjectNotFoundException {
         for (ComputerComponent component : this.usedComponents) {
-            System.out.println(component);
             if (component.getID().equals(componentID)) {
                 decreasePrice();
                 decreaseCost();
