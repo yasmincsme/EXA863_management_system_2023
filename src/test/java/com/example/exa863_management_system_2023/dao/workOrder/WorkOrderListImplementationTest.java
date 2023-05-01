@@ -133,7 +133,6 @@ public class WorkOrderListImplementationTest {
             throw new RuntimeException(exception);
         }
         List<WorkOrder> workOrderList = DAO.getWorkOrder().findMany();
-        int expectedLength = 1;
         assertEquals(1, workOrderList.size());
         assertEquals(workOrder2, workOrderList.get(0));
     }
