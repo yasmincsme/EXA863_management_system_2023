@@ -55,14 +55,14 @@ public class BuildingTest {
         building.addComponent(component2);
 
         assertEquals(2, building.getUsedComponents().size());
-        System.out.println(building);
+
         try {
             building.removeComponent(building.getUsedComponents().get(0).getID());
         } catch (ObjectNotFoundException exception) {
             throw new RuntimeException(exception);
         }
-        assertEquals(1, building.getUsedComponents().size());
 
+        assertEquals(1, building.getUsedComponents().size());
     }
 
     @Test
