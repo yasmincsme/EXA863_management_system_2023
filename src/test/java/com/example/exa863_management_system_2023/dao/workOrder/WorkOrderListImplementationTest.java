@@ -1,6 +1,7 @@
 package com.example.exa863_management_system_2023.dao.workOrder;
 
 import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
+import com.example.exa863_management_system_2023.Exceptions.WorkOrderWithoutTechnician;
 import com.example.exa863_management_system_2023.dao.DAO;
 import com.example.exa863_management_system_2023.model.Building;
 import com.example.exa863_management_system_2023.model.Cleaning;
@@ -75,9 +76,24 @@ public class WorkOrderListImplementationTest {
     @Test
     public void testGetFirstOpenedWorkOrder() {
         assertEquals(workOrder1, DAO.getWorkOrder().getFirstOpenedWorkOrder());
-        workOrder1.finish();
+
+        workOrder1.setTechnicianID("490a63ae-0b5a-48f3");
+        workOrder2.setTechnicianID("8fde-43d051c4b8f7");
+
+        try {
+            workOrder1.finish();
+        } catch (WorkOrderWithoutTechnician exception) {
+            throw new RuntimeException(exception);
+        }
+
         assertEquals(workOrder2, DAO.getWorkOrder().getFirstOpenedWorkOrder());
-        workOrder2.finish();
+
+        try {
+            workOrder2.finish();
+        } catch (WorkOrderWithoutTechnician exception) {
+            throw new RuntimeException(exception);
+        }
+
         assertNull(DAO.getWorkOrder().getFirstOpenedWorkOrder());
     }
 
