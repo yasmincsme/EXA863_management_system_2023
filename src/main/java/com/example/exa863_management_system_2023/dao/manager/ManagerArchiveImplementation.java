@@ -9,7 +9,7 @@ import com.example.exa863_management_system_2023.utils.Generator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ManagerArchiveImplementation implements ManagerDAO{
+public class ManagerArchiveImplementation implements ManagerDAO {
     private List<Manager> listOfManagers;
     private FileManager<String> fileManager;
 
