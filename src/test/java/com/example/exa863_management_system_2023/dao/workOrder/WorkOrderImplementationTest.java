@@ -11,7 +11,7 @@ import org.junit.jupiter.api.*;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class WorkOrderListImplementationTest {
+public class WorkOrderImplementationTest {
 
     private WorkOrder workOrder1;
     private WorkOrder workOrder2;
