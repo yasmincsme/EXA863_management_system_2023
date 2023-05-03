@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":recycle: refactor: Excluindo testes inadequados">
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":sparkles: feat: Modificando implementação em arquivo">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/BuildingArchiveImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentArchiveImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeArchiveImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationArchiveImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianArchiveImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderArchiveImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeListImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/manager/ManagerArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/manager/ManagerArchiveImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/FileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,7 +64,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/meira/Downloads/GitHub/gestao-academica&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/meira/Downloads/GitHub/EXA863_management_system_2023&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -84,15 +90,15 @@
       <recent name="com.example.exa863_management_system_2023.dao" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.exa863_management_system_2023.dao.employee" />
-      <recent name="com.example.exa863_management_system_2023.model" />
       <recent name="com.example.exa863_management_system_2023.dao.workOrder" />
-      <recent name="com.example.exa863_management_system_2023.dao.technician" />
-      <recent name="com.example.exa863_management_system_2023.dao.manager" />
+      <recent name="com.example.exa863_management_system_2023.dao.installation" />
+      <recent name="com.example.exa863_management_system_2023.dao.cleaning" />
+      <recent name="com.example.exa863_management_system_2023.dao.building" />
+      <recent name="com.example.exa863_management_system_2023.dao.computerComponent" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.model in EXA863_management_system_2023">
-    <configuration name="WorkOrderTest.TestGetWaitingTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.exa863_management_system_2023 in EXA863_management_system_2023">
+    <configuration name="BuildingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
@@ -101,14 +107,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.WorkOrderTest" />
-      <option name="METHOD_NAME" value="TestGetWaitingTime" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.BuildingTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkOrderTest.testCancel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BuildingTest.testAddComponent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
@@ -117,60 +122,58 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.WorkOrderTest" />
-      <option name="METHOD_NAME" value="testCancel" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.BuildingTest" />
+      <option name="METHOD_NAME" value="testAddComponent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkOrderTest.testFinish" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerImplementationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.exa863_management_system_2023.model.*" />
+          <option name="PATTERN" value="com.example.exa863_management_system_2023.dao.manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.WorkOrderTest" />
-      <option name="METHOD_NAME" value="testFinish" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.dao.manager" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.dao.manager.ManagerImplementationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WorkOrderTest.testReopen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WorkOrderImplementationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.exa863_management_system_2023.model.*" />
+          <option name="PATTERN" value="com.example.exa863_management_system_2023.dao.workOrder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.WorkOrderTest" />
-      <option name="METHOD_NAME" value="testReopen" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.dao.workOrder" />
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.dao.workOrder.WorkOrderImplementationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="model in EXA863_management_system_2023" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="exa863_management_system_2023 in EXA863_management_system_2023" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EXA863_management_system_2023" />
       <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.model in EXA863_management_system_2023" />
-        <item itemvalue="JUnit.WorkOrderTest.TestGetWaitingTime" />
-        <item itemvalue="JUnit.WorkOrderTest.testCancel" />
-        <item itemvalue="JUnit.WorkOrderTest.testReopen" />
-        <item itemvalue="JUnit.WorkOrderTest.testFinish" />
+        <item itemvalue="JUnit.exa863_management_system_2023 in EXA863_management_system_2023" />
+        <item itemvalue="JUnit.ManagerImplementationTest" />
+        <item itemvalue="JUnit.WorkOrderImplementationTest" />
+        <item itemvalue="JUnit.BuildingTest" />
+        <item itemvalue="JUnit.BuildingTest.testAddComponent" />
       </list>
     </recent_temporary>
   </component>
@@ -203,352 +206,359 @@
       <workItem from="1681919847888" duration="2834000" />
       <workItem from="1681944302971" duration="3639000" />
       <workItem from="1682129088446" duration="5700000" />
-      <workItem from="1682296317678" duration="29666000" />
+      <workItem from="1682296317678" duration="29937000" />
+      <workItem from="1682464765779" duration="5436000" />
+      <workItem from="1682534907960" duration="16015000" />
+      <workItem from="1682795978023" duration="27722000" />
+      <workItem from="1682878956911" duration="28386000" />
+      <workItem from="1682911065811" duration="78000" />
+      <workItem from="1683075251210" duration="7638000" />
+      <workItem from="1683128570976" duration="3644000" />
     </task>
-    <task id="LOCAL-00205" summary=":lipstick: feat: Adicionando método &quot;equals&quot; à classe &quot;Employee&quot;">
-      <created>1681964460542</created>
-      <option name="number" value="00205" />
-      <option name="presentableId" value="LOCAL-00205" />
+    <task id="LOCAL-00304" summary=":test_tube: test: Criando novo teste">
+      <created>1682884564041</created>
+      <option name="number" value="00304" />
+      <option name="presentableId" value="LOCAL-00304" />
       <option name="project" value="LOCAL" />
-      <updated>1681964460543</updated>
+      <updated>1682884564042</updated>
     </task>
-    <task id="LOCAL-00206" summary=":bulb: docs: Corrigindo comentários da classe &quot;Client&quot;">
-      <created>1681964529797</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
+    <task id="LOCAL-00305" summary=":sparkles: feat: Adicionando novos métodos">
+      <created>1682891442984</created>
+      <option name="number" value="00305" />
+      <option name="presentableId" value="LOCAL-00305" />
       <option name="project" value="LOCAL" />
-      <updated>1681964529797</updated>
+      <updated>1682891442984</updated>
     </task>
-    <task id="LOCAL-00207" summary=":sparkles: feat: Adicionando getters e setters para os atributos &quot;Address&quot; e &quot;Phone&quot;">
-      <created>1682129726495</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
+    <task id="LOCAL-00306" summary=":sparkles: feat: Adicionando assinatura de novos métodos">
+      <created>1682891485050</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
       <option name="project" value="LOCAL" />
-      <updated>1682129726496</updated>
+      <updated>1682891485050</updated>
     </task>
-    <task id="LOCAL-00208" summary=":test_tube: test: Adaptando o teste &quot;ClientTest&quot; ao novo formato da classe &quot;Client&quot;">
-      <created>1682130072980</created>
-      <option name="number" value="00208" />
-      <option name="presentableId" value="LOCAL-00208" />
+    <task id="LOCAL-00307" summary=":sparkles: feat: Adicionando novos métodos">
+      <created>1682891500587</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
       <option name="project" value="LOCAL" />
-      <updated>1682130072982</updated>
+      <updated>1682891500587</updated>
     </task>
-    <task id="LOCAL-00209" summary=":test_tube: test: Adaptando o teste &quot;EmployeeTest&quot; ao novo formato da classe &quot;Employee&quot;">
-      <created>1682131392311</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
+    <task id="LOCAL-00308" summary=":bug: fix: Adaptando lógica do código">
+      <created>1682891664856</created>
+      <option name="number" value="00308" />
+      <option name="presentableId" value="LOCAL-00308" />
       <option name="project" value="LOCAL" />
-      <updated>1682131392311</updated>
+      <updated>1682891664856</updated>
     </task>
-    <task id="LOCAL-00210" summary=":test_tube: test: Adaptando o teste &quot;ManagerTest&quot; ao novo formato da classe &quot;Manager&quot;">
-      <created>1682131426759</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
+    <task id="LOCAL-00309" summary=":bug: fix: Consertando método &quot;findMany&quot;">
+      <created>1682891705653</created>
+      <option name="number" value="00309" />
+      <option name="presentableId" value="LOCAL-00309" />
       <option name="project" value="LOCAL" />
-      <updated>1682131426759</updated>
+      <updated>1682891705653</updated>
     </task>
-    <task id="LOCAL-00211" summary=":test_tube: test: Adaptando o teste &quot;TechnicianTest&quot; ao novo formato da classe &quot;Technician&quot;">
-      <created>1682131451596</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
+    <task id="LOCAL-00310" summary=":bug: fix: Consertando método &quot;findMany&quot;">
+      <created>1682891716052</created>
+      <option name="number" value="00310" />
+      <option name="presentableId" value="LOCAL-00310" />
       <option name="project" value="LOCAL" />
-      <updated>1682131451596</updated>
+      <updated>1682891716052</updated>
     </task>
-    <task id="LOCAL-00212" summary=":test_tube: test: Adaptando o teste &quot;ClientTest&quot; ao novo formato da classe &quot;Client&quot;">
-      <created>1682131477080</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
+    <task id="LOCAL-00311" summary=":bug: fix: Consertando método &quot;findMany&quot;">
+      <created>1682891727779</created>
+      <option name="number" value="00311" />
+      <option name="presentableId" value="LOCAL-00311" />
       <option name="project" value="LOCAL" />
-      <updated>1682131477080</updated>
+      <updated>1682891727779</updated>
     </task>
-    <task id="LOCAL-00213" summary=":bug: fix: Corrigindo retorno do método &quot;toString&quot;">
-      <created>1682131541066</created>
-      <option name="number" value="00213" />
-      <option name="presentableId" value="LOCAL-00213" />
+    <task id="LOCAL-00312" summary=":bug: fix: Consertando método &quot;findMany&quot;">
+      <created>1682891744019</created>
+      <option name="number" value="00312" />
+      <option name="presentableId" value="LOCAL-00312" />
       <option name="project" value="LOCAL" />
-      <updated>1682131541066</updated>
+      <updated>1682891744019</updated>
     </task>
-    <task id="LOCAL-00214" summary=":bug: fix: Corrigindo retorno do método &quot;toString&quot;">
-      <created>1682131564248</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
+    <task id="LOCAL-00313" summary=":bug: fix: Consertando método &quot;findMany&quot;">
+      <created>1682891762581</created>
+      <option name="number" value="00313" />
+      <option name="presentableId" value="LOCAL-00313" />
       <option name="project" value="LOCAL" />
-      <updated>1682131564248</updated>
+      <updated>1682891762581</updated>
     </task>
-    <task id="LOCAL-00215" summary=":bug: fix: Corrigindo retorno do método &quot;toString&quot;">
-      <created>1682131579308</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
+    <task id="LOCAL-00314" summary=":bug: fix: Consertando método &quot;findMany&quot;">
+      <created>1682891778576</created>
+      <option name="number" value="00314" />
+      <option name="presentableId" value="LOCAL-00314" />
       <option name="project" value="LOCAL" />
-      <updated>1682131579308</updated>
+      <updated>1682891778576</updated>
     </task>
-    <task id="LOCAL-00216" summary=":bug: fix: Corrigindo retorno do método &quot;toString&quot;">
-      <created>1682131590949</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
+    <task id="LOCAL-00315" summary=":sparkles: feat: Adicionando novos métodos">
+      <created>1682891809914</created>
+      <option name="number" value="00315" />
+      <option name="presentableId" value="LOCAL-00315" />
       <option name="project" value="LOCAL" />
-      <updated>1682131590949</updated>
+      <updated>1682891809914</updated>
     </task>
-    <task id="LOCAL-00217" summary=":bug: fix: Corrigindo erro de digitação na escrita da classe">
-      <created>1682131636507</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
+    <task id="LOCAL-00316" summary=":test_tube: test: Adicionando novos métodos">
+      <created>1682891858678</created>
+      <option name="number" value="00316" />
+      <option name="presentableId" value="LOCAL-00316" />
       <option name="project" value="LOCAL" />
-      <updated>1682131636507</updated>
+      <updated>1682891858678</updated>
     </task>
-    <task id="LOCAL-00218" summary=":bug: fix: Alterando parâmetro &quot;expected&quot; para que o teste passe">
-      <created>1682132261874</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
+    <task id="LOCAL-00317" summary=":test_tube: test: Adicionando novos métodos">
+      <created>1682891872964</created>
+      <option name="number" value="00317" />
+      <option name="presentableId" value="LOCAL-00317" />
       <option name="project" value="LOCAL" />
-      <updated>1682132261874</updated>
+      <updated>1682891872964</updated>
     </task>
-    <task id="LOCAL-00219" summary=":bug: fix: Alterando parâmetro &quot;expected&quot; para que o teste passe">
-      <created>1682132284380</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
+    <task id="LOCAL-00318" summary=":test_tube: test: Adicionando novos testes">
+      <created>1682891886608</created>
+      <option name="number" value="00318" />
+      <option name="presentableId" value="LOCAL-00318" />
       <option name="project" value="LOCAL" />
-      <updated>1682132284381</updated>
+      <updated>1682891886608</updated>
     </task>
-    <task id="LOCAL-00220" summary=":bug: fix: Alterando parâmetro &quot;expected&quot; para que o teste passe">
-      <created>1682132301569</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
+    <task id="LOCAL-00319" summary=":test_tube: test: Adicionando novos testes">
+      <created>1682891902694</created>
+      <option name="number" value="00319" />
+      <option name="presentableId" value="LOCAL-00319" />
       <option name="project" value="LOCAL" />
-      <updated>1682132301570</updated>
+      <updated>1682891902694</updated>
     </task>
-    <task id="LOCAL-00221" summary=":test_tube: test: Correção de grafia dentro do teste">
-      <created>1682304488804</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
+    <task id="LOCAL-00320" summary=":sparkles: feat: Adicionando novos métodos">
+      <created>1682891933864</created>
+      <option name="number" value="00320" />
+      <option name="presentableId" value="LOCAL-00320" />
       <option name="project" value="LOCAL" />
-      <updated>1682304488806</updated>
+      <updated>1682891933864</updated>
     </task>
-    <task id="LOCAL-00222" summary=":test_tube: test: Correção de grafia dentro do teste">
-      <created>1682304513931</created>
-      <option name="number" value="00222" />
-      <option name="presentableId" value="LOCAL-00222" />
+    <task id="LOCAL-00321" summary=":sparkles: feat: Adicionando assinatura de novos métodos">
+      <created>1682891958919</created>
+      <option name="number" value="00321" />
+      <option name="presentableId" value="LOCAL-00321" />
       <option name="project" value="LOCAL" />
-      <updated>1682304513931</updated>
+      <updated>1682891958919</updated>
     </task>
-    <task id="LOCAL-00223" summary=":test_tube: test: Correção de grafia dentro do teste">
-      <created>1682304527335</created>
-      <option name="number" value="00223" />
-      <option name="presentableId" value="LOCAL-00223" />
+    <task id="LOCAL-00322" summary=":sparkles: feat: Adicionando tratamento de erros">
+      <created>1682897935856</created>
+      <option name="number" value="00322" />
+      <option name="presentableId" value="LOCAL-00322" />
       <option name="project" value="LOCAL" />
-      <updated>1682304527335</updated>
+      <updated>1682897935856</updated>
     </task>
-    <task id="LOCAL-00224" summary=":test_tube: test: Correção de grafia dentro do teste">
-      <created>1682304551364</created>
-      <option name="number" value="00224" />
-      <option name="presentableId" value="LOCAL-00224" />
+    <task id="LOCAL-00323" summary=":sparkles: feat: Adicionando classe para tratamento de erro">
+      <created>1682897978230</created>
+      <option name="number" value="00323" />
+      <option name="presentableId" value="LOCAL-00323" />
       <option name="project" value="LOCAL" />
-      <updated>1682304551364</updated>
+      <updated>1682897978230</updated>
     </task>
-    <task id="LOCAL-00225" summary=":test_tube: test: Correção de grafia dentro do teste">
-      <created>1682304731657</created>
-      <option name="number" value="00225" />
-      <option name="presentableId" value="LOCAL-00225" />
+    <task id="LOCAL-00324" summary=":sparkles: feat: Adicionando classe para tratamento de erro">
+      <created>1682898020734</created>
+      <option name="number" value="00324" />
+      <option name="presentableId" value="LOCAL-00324" />
       <option name="project" value="LOCAL" />
-      <updated>1682304731657</updated>
+      <updated>1682898020734</updated>
     </task>
-    <task id="LOCAL-00226" summary=":test_tube: test: Correção de grafia dentro do teste">
-      <created>1682304745232</created>
-      <option name="number" value="00226" />
-      <option name="presentableId" value="LOCAL-00226" />
+    <task id="LOCAL-00325" summary=":sparkles: feat: Adicionando implementação em arquivo">
+      <created>1682910078127</created>
+      <option name="number" value="00325" />
+      <option name="presentableId" value="LOCAL-00325" />
       <option name="project" value="LOCAL" />
-      <updated>1682304745232</updated>
+      <updated>1682910078127</updated>
     </task>
-    <task id="LOCAL-00227" summary=":test_tube: test: Correção de grafia dentro do teste">
-      <created>1682304760131</created>
-      <option name="number" value="00227" />
-      <option name="presentableId" value="LOCAL-00227" />
+    <task id="LOCAL-00326" summary=":sparkles: feat: Adicionando implementação em arquivo">
+      <created>1682910092739</created>
+      <option name="number" value="00326" />
+      <option name="presentableId" value="LOCAL-00326" />
       <option name="project" value="LOCAL" />
-      <updated>1682304760131</updated>
+      <updated>1682910092739</updated>
     </task>
-    <task id="LOCAL-00228" summary=":test_tube: test: Correção de grafia dentro do teste">
-      <created>1682304772154</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
+    <task id="LOCAL-00327" summary=":ok_hand: style: Alterando formatação do código">
+      <created>1682910406472</created>
+      <option name="number" value="00327" />
+      <option name="presentableId" value="LOCAL-00327" />
       <option name="project" value="LOCAL" />
-      <updated>1682304772154</updated>
+      <updated>1682910406472</updated>
     </task>
-    <task id="LOCAL-00229" summary=":boom: fix: Corrigindo erros acusados nos testes">
-      <created>1682305106662</created>
-      <option name="number" value="00229" />
-      <option name="presentableId" value="LOCAL-00229" />
+    <task id="LOCAL-00328" summary=":ok_hand: style: Alterando formatação do código">
+      <created>1682910424739</created>
+      <option name="number" value="00328" />
+      <option name="presentableId" value="LOCAL-00328" />
       <option name="project" value="LOCAL" />
-      <updated>1682305106662</updated>
+      <updated>1682910424739</updated>
     </task>
-    <task id="LOCAL-00230" summary=":boom: fix: Corrigindo erros acusados nos testes">
-      <created>1682305129277</created>
-      <option name="number" value="00230" />
-      <option name="presentableId" value="LOCAL-00230" />
+    <task id="LOCAL-00329" summary=":test_tube: test: Adicionando novos testes">
+      <created>1682910481540</created>
+      <option name="number" value="00329" />
+      <option name="presentableId" value="LOCAL-00329" />
       <option name="project" value="LOCAL" />
-      <updated>1682305129277</updated>
+      <updated>1682910481540</updated>
     </task>
-    <task id="LOCAL-00231" summary=":boom: fix: Corrigindo erros acusados nos testes">
-      <created>1682306043292</created>
-      <option name="number" value="00231" />
-      <option name="presentableId" value="LOCAL-00231" />
+    <task id="LOCAL-00330" summary=":test_tube: test: Adicionando novos testes">
+      <created>1682910495440</created>
+      <option name="number" value="00330" />
+      <option name="presentableId" value="LOCAL-00330" />
       <option name="project" value="LOCAL" />
-      <updated>1682306043292</updated>
+      <updated>1682910495440</updated>
     </task>
-    <task id="LOCAL-00232" summary=":boom: fix: Corrigindo erros acusados nos testes">
-      <created>1682306056068</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
+    <task id="LOCAL-00331" summary=":test_tube: test: Excluindo linha desnecessária">
+      <created>1682910664932</created>
+      <option name="number" value="00331" />
+      <option name="presentableId" value="LOCAL-00331" />
       <option name="project" value="LOCAL" />
-      <updated>1682306056068</updated>
+      <updated>1682910664932</updated>
     </task>
-    <task id="LOCAL-00233" summary=":boom: fix: Corrigindo erros acusados nos testes">
-      <created>1682306082238</created>
-      <option name="number" value="00233" />
-      <option name="presentableId" value="LOCAL-00233" />
+    <task id="LOCAL-00332" summary=":recycle: refactor: Alterando nome do teste">
+      <created>1683079440985</created>
+      <option name="number" value="00332" />
+      <option name="presentableId" value="LOCAL-00332" />
       <option name="project" value="LOCAL" />
-      <updated>1682306082238</updated>
+      <updated>1683079440986</updated>
     </task>
-    <task id="LOCAL-00234" summary=":boom: fix: Corrigindo erros acusados nos testes">
-      <created>1682306094656</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
+    <task id="LOCAL-00333" summary=":recycle: refactor: Alterando nome do teste">
+      <created>1683079514351</created>
+      <option name="number" value="00333" />
+      <option name="presentableId" value="LOCAL-00333" />
       <option name="project" value="LOCAL" />
-      <updated>1682306094656</updated>
+      <updated>1683079514351</updated>
     </task>
-    <task id="LOCAL-00235" summary=":boom: fix: Corrigindo erros acusados nos testes">
-      <created>1682306105683</created>
-      <option name="number" value="00235" />
-      <option name="presentableId" value="LOCAL-00235" />
+    <task id="LOCAL-00334" summary=":recycle: refactor: Alterando nome do teste">
+      <created>1683079529552</created>
+      <option name="number" value="00334" />
+      <option name="presentableId" value="LOCAL-00334" />
       <option name="project" value="LOCAL" />
-      <updated>1682306105683</updated>
+      <updated>1683079529552</updated>
     </task>
-    <task id="LOCAL-00236" summary=":boom: fix: Corrigindo erros acusados nos testes">
-      <created>1682306134072</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
+    <task id="LOCAL-00335" summary=":recycle: refactor: Alterando nome do teste">
+      <created>1683079546155</created>
+      <option name="number" value="00335" />
+      <option name="presentableId" value="LOCAL-00335" />
       <option name="project" value="LOCAL" />
-      <updated>1682306134072</updated>
+      <updated>1683079546155</updated>
     </task>
-    <task id="LOCAL-00237" summary=":sparkles: feat: A instância da classe passou a armazenar o ID da &quot;WorkOrder&quot; a qual pertence">
-      <created>1682356488509</created>
-      <option name="number" value="00237" />
-      <option name="presentableId" value="LOCAL-00237" />
+    <task id="LOCAL-00336" summary=":recycle: refactor: Alterando nome do teste">
+      <created>1683079561603</created>
+      <option name="number" value="00336" />
+      <option name="presentableId" value="LOCAL-00336" />
       <option name="project" value="LOCAL" />
-      <updated>1682356488509</updated>
+      <updated>1683079561603</updated>
     </task>
-    <task id="LOCAL-00238" summary=":sparkles: feat: A instância da classe passou a armazenar o ID da &quot;WorkOrder&quot; a qual pertence">
-      <created>1682356510888</created>
-      <option name="number" value="00238" />
-      <option name="presentableId" value="LOCAL-00238" />
+    <task id="LOCAL-00337" summary=":recycle: refactor: Alterando nome do teste">
+      <created>1683079613042</created>
+      <option name="number" value="00337" />
+      <option name="presentableId" value="LOCAL-00337" />
       <option name="project" value="LOCAL" />
-      <updated>1682356510888</updated>
+      <updated>1683079613043</updated>
     </task>
-    <task id="LOCAL-00239" summary=":sparkles: feat: A instância da classe passou a armazenar o ID da &quot;WorkOrder&quot; a qual pertence">
-      <created>1682356522925</created>
-      <option name="number" value="00239" />
-      <option name="presentableId" value="LOCAL-00239" />
+    <task id="LOCAL-00338" summary=":recycle: refactor: Alterando nome do teste">
+      <created>1683079628095</created>
+      <option name="number" value="00338" />
+      <option name="presentableId" value="LOCAL-00338" />
       <option name="project" value="LOCAL" />
-      <updated>1682356522925</updated>
+      <updated>1683079628095</updated>
     </task>
-    <task id="LOCAL-00240" summary=":test_tube: test: Criando novo teste">
-      <created>1682356569622</created>
-      <option name="number" value="00240" />
-      <option name="presentableId" value="LOCAL-00240" />
+    <task id="LOCAL-00339" summary=":recycle: refactor: Alterando nome do teste">
+      <created>1683079640384</created>
+      <option name="number" value="00339" />
+      <option name="presentableId" value="LOCAL-00339" />
       <option name="project" value="LOCAL" />
-      <updated>1682356569622</updated>
+      <updated>1683079640384</updated>
     </task>
-    <task id="LOCAL-00241" summary=":test_tube: test: Adaptando o teste à nova funcionalidade da classe">
-      <created>1682356597371</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
+    <task id="LOCAL-00340" summary=":recycle: refactor: Alterando nome do teste">
+      <created>1683079653617</created>
+      <option name="number" value="00340" />
+      <option name="presentableId" value="LOCAL-00340" />
       <option name="project" value="LOCAL" />
-      <updated>1682356597371</updated>
+      <updated>1683079653617</updated>
     </task>
-    <task id="LOCAL-00242" summary=":test_tube: test: Adaptando o teste à nova funcionalidade da classe">
-      <created>1682356614792</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
+    <task id="LOCAL-00341" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
+      <created>1683079824688</created>
+      <option name="number" value="00341" />
+      <option name="presentableId" value="LOCAL-00341" />
       <option name="project" value="LOCAL" />
-      <updated>1682356614792</updated>
+      <updated>1683079824688</updated>
     </task>
-    <task id="LOCAL-00243" summary=":test_tube: test: Adaptando o teste à nova funcionalidade da classe">
-      <created>1682356627348</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
+    <task id="LOCAL-00342" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
+      <created>1683079834916</created>
+      <option name="number" value="00342" />
+      <option name="presentableId" value="LOCAL-00342" />
       <option name="project" value="LOCAL" />
-      <updated>1682356627348</updated>
+      <updated>1683079834916</updated>
     </task>
-    <task id="LOCAL-00244" summary=":recycle: refactor: Excluindo testes inadequados">
-      <created>1682389256103</created>
-      <option name="number" value="00244" />
-      <option name="presentableId" value="LOCAL-00244" />
+    <task id="LOCAL-00343" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
+      <created>1683079846397</created>
+      <option name="number" value="00343" />
+      <option name="presentableId" value="LOCAL-00343" />
       <option name="project" value="LOCAL" />
-      <updated>1682389256103</updated>
+      <updated>1683079846397</updated>
     </task>
-    <task id="LOCAL-00245" summary=":recycle: refactor: Excluindo testes inadequados">
-      <created>1682389268215</created>
-      <option name="number" value="00245" />
-      <option name="presentableId" value="LOCAL-00245" />
+    <task id="LOCAL-00344" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
+      <created>1683079860456</created>
+      <option name="number" value="00344" />
+      <option name="presentableId" value="LOCAL-00344" />
       <option name="project" value="LOCAL" />
-      <updated>1682389268215</updated>
+      <updated>1683079860456</updated>
     </task>
-    <task id="LOCAL-00246" summary=":recycle: refactor: Excluindo testes inadequados">
-      <created>1682389278793</created>
-      <option name="number" value="00246" />
-      <option name="presentableId" value="LOCAL-00246" />
+    <task id="LOCAL-00345" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
+      <created>1683079873548</created>
+      <option name="number" value="00345" />
+      <option name="presentableId" value="LOCAL-00345" />
       <option name="project" value="LOCAL" />
-      <updated>1682389278793</updated>
+      <updated>1683079873548</updated>
     </task>
-    <task id="LOCAL-00247" summary=":recycle: refactor: Excluindo testes inadequados">
-      <created>1682389288158</created>
-      <option name="number" value="00247" />
-      <option name="presentableId" value="LOCAL-00247" />
+    <task id="LOCAL-00346" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
+      <created>1683079885770</created>
+      <option name="number" value="00346" />
+      <option name="presentableId" value="LOCAL-00346" />
       <option name="project" value="LOCAL" />
-      <updated>1682389288158</updated>
+      <updated>1683079885770</updated>
     </task>
-    <task id="LOCAL-00248" summary=":recycle: refactor: Excluindo testes inadequados">
-      <created>1682389299181</created>
-      <option name="number" value="00248" />
-      <option name="presentableId" value="LOCAL-00248" />
+    <task id="LOCAL-00347" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
+      <created>1683079897081</created>
+      <option name="number" value="00347" />
+      <option name="presentableId" value="LOCAL-00347" />
       <option name="project" value="LOCAL" />
-      <updated>1682389299181</updated>
+      <updated>1683079897081</updated>
     </task>
-    <task id="LOCAL-00249" summary=":recycle: refactor: Excluindo testes inadequados">
-      <created>1682389310053</created>
-      <option name="number" value="00249" />
-      <option name="presentableId" value="LOCAL-00249" />
+    <task id="LOCAL-00348" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
+      <created>1683079909328</created>
+      <option name="number" value="00348" />
+      <option name="presentableId" value="LOCAL-00348" />
       <option name="project" value="LOCAL" />
-      <updated>1682389310053</updated>
+      <updated>1683079909328</updated>
     </task>
-    <task id="LOCAL-00250" summary=":recycle: refactor: Excluindo testes inadequados">
-      <created>1682389322502</created>
-      <option name="number" value="00250" />
-      <option name="presentableId" value="LOCAL-00250" />
+    <task id="LOCAL-00349" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
+      <created>1683079920800</created>
+      <option name="number" value="00349" />
+      <option name="presentableId" value="LOCAL-00349" />
       <option name="project" value="LOCAL" />
-      <updated>1682389322502</updated>
+      <updated>1683079920801</updated>
     </task>
-    <task id="LOCAL-00251" summary=":recycle: refactor: Excluindo testes inadequados">
-      <created>1682389332144</created>
-      <option name="number" value="00251" />
-      <option name="presentableId" value="LOCAL-00251" />
+    <task id="LOCAL-00350" summary=":sparkles: feat: Adicionando implementação em arquivo">
+      <created>1683082412745</created>
+      <option name="number" value="00350" />
+      <option name="presentableId" value="LOCAL-00350" />
       <option name="project" value="LOCAL" />
-      <updated>1682389332145</updated>
+      <updated>1683082412745</updated>
     </task>
-    <task id="LOCAL-00252" summary=":recycle: refactor: Excluindo testes inadequados">
-      <created>1682389343348</created>
-      <option name="number" value="00252" />
-      <option name="presentableId" value="LOCAL-00252" />
+    <task id="LOCAL-00351" summary=":sparkles: feat: Adicionando implementação em arquivo">
+      <created>1683082431353</created>
+      <option name="number" value="00351" />
+      <option name="presentableId" value="LOCAL-00351" />
       <option name="project" value="LOCAL" />
-      <updated>1682389343348</updated>
+      <updated>1683082431353</updated>
     </task>
-    <task id="LOCAL-00253" summary=":recycle: refactor: Excluindo testes inadequados">
-      <created>1682389357770</created>
-      <option name="number" value="00253" />
-      <option name="presentableId" value="LOCAL-00253" />
+    <task id="LOCAL-00352" summary=":sparkles: feat: Modificando implementação em arquivo">
+      <created>1683082451050</created>
+      <option name="number" value="00352" />
+      <option name="presentableId" value="LOCAL-00352" />
       <option name="project" value="LOCAL" />
-      <updated>1682389357770</updated>
+      <updated>1683082451050</updated>
     </task>
-    <option name="localTasksCounter" value="254" />
+    <option name="localTasksCounter" value="353" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,32 +576,32 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":sparkles: feat: Adição de função para retornar o ID" />
-    <MESSAGE value=":sparkles: feat: Adição de método para atualizar o status da &quot;WorkOrder&quot;" />
-    <MESSAGE value=":books: docs: Atualização da página &quot;workspace.xml&quot;" />
-    <MESSAGE value=":boom: fix: Alterando retorno do método &quot;toString&quot;" />
-    <MESSAGE value=":lipstick: feat: Sobrescrevendo método &quot;equals&quot; na classe &quot;Client&quot;" />
-    <MESSAGE value=":bulb: docs: Alterando comentários do método construtor" />
-    <MESSAGE value=":lipstick: feat: Adicionando método &quot;equals&quot; à classe &quot;Technician&quot;" />
-    <MESSAGE value=":recycle: refactor: Excluindo classe abstrata &quot;Person&quot;" />
-    <MESSAGE value=":lipstick: feat: Adicionando método &quot;equals&quot; à classe &quot;Manager&quot;" />
-    <MESSAGE value=":lipstick: feat: Adicionando método &quot;equals&quot; à classe &quot;Employee&quot;" />
-    <MESSAGE value=":bulb: docs: Corrigindo comentários da classe &quot;Client&quot;" />
-    <MESSAGE value=":sparkles: feat: Adicionando getters e setters para os atributos &quot;Address&quot; e &quot;Phone&quot;" />
-    <MESSAGE value=":test_tube: test: Adaptando o teste &quot;EmployeeTest&quot; ao novo formato da classe &quot;Employee&quot;" />
-    <MESSAGE value=":test_tube: test: Adaptando o teste &quot;ManagerTest&quot; ao novo formato da classe &quot;Manager&quot;" />
-    <MESSAGE value=":test_tube: test: Adaptando o teste &quot;TechnicianTest&quot; ao novo formato da classe &quot;Technician&quot;" />
-    <MESSAGE value=":test_tube: test: Adaptando o teste &quot;ClientTest&quot; ao novo formato da classe &quot;Client&quot;" />
-    <MESSAGE value=":bug: fix: Corrigindo retorno do método &quot;toString&quot;" />
-    <MESSAGE value=":bug: fix: Corrigindo erro de digitação na escrita da classe" />
-    <MESSAGE value=":bug: fix: Alterando parâmetro &quot;expected&quot; para que o teste passe" />
-    <MESSAGE value=":test_tube: test: Correção de grafia dentro do teste" />
-    <MESSAGE value=":boom: fix: Corrigindo erros acusados nos testes" />
-    <MESSAGE value=":sparkles: feat: A instância da classe passou a armazenar o ID da &quot;WorkOrder&quot; a qual pertence" />
+    <MESSAGE value=":recycle: refactor: Trocando implementação do gerador de ID" />
+    <MESSAGE value=":sparkles: feat: Adicionando novo método" />
+    <MESSAGE value=":sparkles: feat: Adicionando assinatura de novo método" />
+    <MESSAGE value=":sparkles: feat: Adicionando de novo método" />
+    <MESSAGE value="refactor: Adicionando novos testes unitários" />
+    <MESSAGE value="refactor: Adicionando novos métodos" />
+    <MESSAGE value=":recycle: refactor: Remodelando o teste" />
+    <MESSAGE value=":test_tube: test: Modelando teste para a classe" />
+    <MESSAGE value=":sparkles: feat: Adicionando classe para tratamento dos casos em que o objeto buscado não for encontrado" />
+    <MESSAGE value=":recycle: refactor: Realizando correções de erros apontados nos testes" />
     <MESSAGE value=":test_tube: test: Criando novo teste" />
-    <MESSAGE value=":test_tube: test: Adaptando o teste à nova funcionalidade da classe" />
-    <MESSAGE value=":recycle: refactor: Excluindo testes inadequados" />
-    <option name="LAST_COMMIT_MESSAGE" value=":recycle: refactor: Excluindo testes inadequados" />
+    <MESSAGE value=":bug: fix: Adaptando lógica do código" />
+    <MESSAGE value=":bug: fix: Consertando método &quot;findMany&quot;" />
+    <MESSAGE value=":test_tube: test: Adicionando novos métodos" />
+    <MESSAGE value=":sparkles: feat: Adicionando novos métodos" />
+    <MESSAGE value=":sparkles: feat: Adicionando assinatura de novos métodos" />
+    <MESSAGE value=":sparkles: feat: Adicionando tratamento de erros" />
+    <MESSAGE value=":sparkles: feat: Adicionando classe para tratamento de erro" />
+    <MESSAGE value=":ok_hand: style: Alterando formatação do código" />
+    <MESSAGE value=":test_tube: test: Adicionando novos testes" />
+    <MESSAGE value=":test_tube: test: Excluindo linha desnecessária" />
+    <MESSAGE value=":recycle: refactor: Alterando nome do teste" />
+    <MESSAGE value=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;" />
+    <MESSAGE value=":sparkles: feat: Adicionando implementação em arquivo" />
+    <MESSAGE value=":sparkles: feat: Modificando implementação em arquivo" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: feat: Modificando implementação em arquivo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EXA863_management_system_2023$WorkOrderTest_testAddInstallationService.ic" NAME="WorkOrderTest.testAddInstallationService Coverage Results" MODIFIED="1681770639234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
