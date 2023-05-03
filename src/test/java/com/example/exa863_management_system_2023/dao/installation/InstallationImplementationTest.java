@@ -11,7 +11,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class InstallationListImplementationTest {
+class InstallationImplementationTest {
 
     private Installation installation1;
     private Installation installation2;
