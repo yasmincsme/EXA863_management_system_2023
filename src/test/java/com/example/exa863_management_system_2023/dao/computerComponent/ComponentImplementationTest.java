@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-public class ComponentListImplementationTest {
+public class ComponentImplementationTest {
 
     private ComputerComponent component1;
     private ComputerComponent component2;
