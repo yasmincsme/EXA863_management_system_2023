@@ -1,6 +1,8 @@
 package com.example.exa863_management_system_2023.model;
 
-public class Technician {
+import java.io.Serializable;
+
+public class Technician implements Serializable {
 
     private String id;
     private final String type = "TECHNICIAN";
