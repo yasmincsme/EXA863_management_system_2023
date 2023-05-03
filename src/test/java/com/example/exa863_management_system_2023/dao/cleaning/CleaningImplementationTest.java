@@ -7,7 +7,7 @@ import org.junit.jupiter.api.*;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
-class CleaningListImplementationTest {
+class CleaningImplementationTest {
 
     private Cleaning cleaning1;
     private Cleaning cleaning2;
