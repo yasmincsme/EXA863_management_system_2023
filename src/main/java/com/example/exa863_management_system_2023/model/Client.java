@@ -1,8 +1,9 @@
 package com.example.exa863_management_system_2023.model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Client {
+public class Client implements Serializable {
 
     private String id;
     private final String type = "CLIENT";
