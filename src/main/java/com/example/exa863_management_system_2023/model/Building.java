@@ -3,10 +3,11 @@ package com.example.exa863_management_system_2023.model;
 import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.dao.DAO;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Building {
+public class Building implements Serializable {
 
     private String id;
     private String workOrderID;
