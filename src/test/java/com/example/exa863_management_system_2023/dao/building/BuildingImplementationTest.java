@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-public class BuildingListImplementationTest {
+public class BuildingImplementationTest {
 
     private Building building1;
     private Building building2;
