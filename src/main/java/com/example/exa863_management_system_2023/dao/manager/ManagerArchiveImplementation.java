@@ -11,8 +11,10 @@ import java.util.List;
 
 public class ManagerArchiveImplementation implements ManagerDAO{
     private List<Manager> listOfManagers;
+    private FileManager<String> fileManager;
 
     public ManagerArchiveImplementation() {
+        fileManager = new FileManager<>("managers.dat");
         listOfManagers = FileManager.readListFromFile("managers.dat");
     }
 
@@ -31,7 +33,6 @@ public class ManagerArchiveImplementation implements ManagerDAO{
 
     @Override
     public Manager findByID(String id) {
-        listOfManagers = FileManager.readListFromFile("managers.dat");
         for (Manager manager : this.listOfManagers) {
             if (manager.getID().equals(id)) {
                 return manager;
@@ -42,7 +43,6 @@ public class ManagerArchiveImplementation implements ManagerDAO{
 
     @Override
     public List<Manager> findByLogin(String login) {
-        listOfManagers = FileManager.readListFromFile("managers.dat");
         List<Manager> managerList = new ArrayList<>();
         for (Manager manager : this.listOfManagers) {
             if (manager.getLogin().equals(login)) {
@@ -54,10 +54,9 @@ public class ManagerArchiveImplementation implements ManagerDAO{
 
     @Override
     public void update(Manager manager) throws ObjectNotFoundException {
-        listOfManagers = FileManager.readListFromFile("managers.dat");
         for (int i = 0; i < listOfManagers.size(); i++) {
             if (listOfManagers.get(i).getID().equals(manager.getID())) {
-                listOfManagers.set(1, manager);
+                listOfManagers.set(i, manager);
                 FileManager.writeListToFile(listOfManagers, "managers.dat");
                 return;
             }
@@ -67,7 +66,6 @@ public class ManagerArchiveImplementation implements ManagerDAO{
 
     @Override
     public void delete(String id) throws ObjectNotFoundException {
-        listOfManagers = FileManager.readListFromFile("managers.dat");
         for (int i = 0; i < this.listOfManagers.size(); i++) {
             if (listOfManagers.get(i).getID().equals(id)) {
                 listOfManagers.remove(i);
@@ -75,11 +73,12 @@ public class ManagerArchiveImplementation implements ManagerDAO{
                 return;
             }
         }
-        throw new ObjectNotFoundException("managers.dat");
+        throw new ObjectNotFoundException("The informed manager is not registered in the system");
     }
 
     @Override
     public void deleteMany() {
-        FileManager.writeListToFile(new ArrayList<>(), "managers.dat");
+        listOfManagers = new ArrayList<>();
+        FileManager.writeListToFile(listOfManagers, "managers.dat");
     }
 }
