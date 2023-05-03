@@ -1,8 +1,9 @@
 package com.example.exa863_management_system_2023.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class ComputerComponent {
+public class ComputerComponent implements Serializable {
 
     private String name;
     private String id;
