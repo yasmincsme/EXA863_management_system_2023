@@ -8,7 +8,7 @@ import org.junit.jupiter.api.*;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class EmployeeListImplementationTest {
+public class EmployeeImplementationTest {
     private Employee employee1;
     private Employee employee2;
 
