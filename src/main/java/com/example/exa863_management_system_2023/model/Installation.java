@@ -1,9 +1,10 @@
 package com.example.exa863_management_system_2023.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Installation {
+public class Installation implements Serializable {
 
     private String id;
     private String workOrderID;
