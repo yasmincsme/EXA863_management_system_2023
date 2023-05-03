@@ -3,6 +3,7 @@ package com.example.exa863_management_system_2023.model;
 import com.example.exa863_management_system_2023.Exceptions.InvalidSatisfactionScore;
 import com.example.exa863_management_system_2023.Exceptions.WorkOrderWithoutTechnician;
 
+import java.io.Serializable;
 import java.text.ParsePosition;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -12,7 +13,7 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-public class WorkOrder {
+public class WorkOrder implements Serializable {
 
     private String id;
     private String clientID;
