@@ -14,17 +14,17 @@ public interface CRUD<T, E extends Exception> {
     public T create(T object);
 
     /**
+     * Retorna todos os objetos do tipo especificado registrados no sistema.
+     * @return Lista com todos os objetos do tipo especificado registrados no sistema
+     */
+    public List<T> findMany();
+
+    /**
      * Percorre a lista e retorna o objeto conforme o ID informado.
      * @param id ID do objeto que se deseja encontrar
      * @return Objeto desejado
      */
     public T findByID(String id);
-
-    /**
-     * Retorna todos os objetos do tipo especificado registrados no sistema.
-     * @return Lista com todos os objetos do tipo especificado registrados no sistema
-     */
-    public List<T> findMany();
 
     /**
      * Percorre a lista e atualiza o objeto informado.
