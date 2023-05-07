@@ -14,6 +14,11 @@ public class InstallationListImplementation implements InstallationDAO {
         this.listOfInstallations = new ArrayList<Installation>();
     }
 
+    /**
+     * Cria um novo objeto do tipo especificado.
+     * @param installation Objeto que será adicionado ao sistema
+     * @return Objeto recém criado
+     */
     @Override
     public Installation create(Installation installation) {
         installation.setID(Generator.generateID());
@@ -21,11 +26,20 @@ public class InstallationListImplementation implements InstallationDAO {
         return installation;
     }
 
+    /**
+     * Retorna todos os objetos do tipo especificado registrados no sistema.
+     * @return Lista com todos os objetos do tipo especificado registrados no sistema
+     */
     @Override
     public List<Installation> findMany() {
         return listOfInstallations;
     }
 
+    /**
+     * Percorre a lista e retorna o objeto conforme o ID informado.
+     * @param id ID do objeto que se deseja encontrar
+     * @return Objeto desejado
+     */
     @Override
     public Installation findByID(String id) {
         for (Installation installation : this.listOfInstallations) {
@@ -36,6 +50,11 @@ public class InstallationListImplementation implements InstallationDAO {
         return null;
     }
 
+    /**
+     * Percorre a lista e retorna os serviços do tipo "installation" que contém o ID da mesma ordem de serviço.
+     * @param workOrderID ID da ordem de serviço
+     * @return Lista com todos os serviços do tipo "installation" que pertencem a uma mesma ordem de serviço
+     */
     @Override
     public List<Installation> findByWorkOrderID(String workOrderID) {
         List<Installation> orderInstallationList = new ArrayList<>();
@@ -47,6 +66,11 @@ public class InstallationListImplementation implements InstallationDAO {
         return orderInstallationList;
     }
 
+    /**
+     * Percorre a lista e atualiza o objeto informado.
+     * @param installation Objeto que será atualizado
+     * @throws ObjectNotFoundException
+     */
     @Override
     public void update(Installation installation) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfInstallations.size(); i++) {
@@ -58,6 +82,11 @@ public class InstallationListImplementation implements InstallationDAO {
         throw new ObjectNotFoundException("The informed service is not registered in the system");
     }
 
+    /**
+     * Percorre a lista e deleta o objeto informado.
+     * @param id ID do objeto que será atualizado
+     * @throws ObjectNotFoundException
+     */
     @Override
     public void delete(String id) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfInstallations.size(); i++) {
@@ -69,11 +98,19 @@ public class InstallationListImplementation implements InstallationDAO {
         throw new ObjectNotFoundException("The informed service is not registered in the system");
     }
 
+    /**
+     * Deleta todos os elementos da lista
+     */
     @Override
     public void deleteMany() {
         this.listOfInstallations = new ArrayList<>();
     }
 
+    /**
+     * Percorre a lista e retorna o preço de todos os serviços do tipo "installation" da ordem de serviço desejada.
+     * @param workOrderID ID da ordem de serviço
+     * @return Preço de todos os serviços do tipo "installation" de uma ordem de serviço
+     */
     @Override
     public double getPriceByServices(String workOrderID) {
         double servicesPrice = 0;
@@ -85,6 +122,11 @@ public class InstallationListImplementation implements InstallationDAO {
         return servicesPrice;
     }
 
+    /**
+     * Percorre a lista e retorna o custo de todos os serviços do tipo "installation" da ordem de serviço desejada.
+     * @param workOrderID ID da ordem de serviço
+     * @return Custo de todos os serviços do tipo "installation" de uma ordem de serviço
+     */
     @Override
     public double getCostByServices(String workOrderID) {
         double servicesCost = 0;
