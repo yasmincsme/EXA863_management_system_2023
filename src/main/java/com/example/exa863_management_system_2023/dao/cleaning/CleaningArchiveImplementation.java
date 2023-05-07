@@ -19,6 +19,11 @@ public class CleaningArchiveImplementation implements CleaningDAO{
         listOfCleanings = FileManager.readListFromFile("cleanings.dat");
     }
 
+    /**
+     * Cria um novo objeto do tipo especificado.
+     * @param cleaning Objeto que será adicionado ao sistema
+     * @return Objeto recém criado
+     */
     @Override
     public Cleaning create(Cleaning cleaning) {
         cleaning.setID(Generator.generateID());
@@ -27,11 +32,20 @@ public class CleaningArchiveImplementation implements CleaningDAO{
         return cleaning;
     }
 
+    /**
+     * Retorna todos os objetos do tipo especificado registrados no sistema.
+     * @return Lista com todos os objetos do tipo especificado registrados no sistema
+     */
     @Override
     public List<Cleaning> findMany() {
         return FileManager.readListFromFile("cleanings.dat");
     }
 
+    /**
+     * Percorre a lista e retorna o objeto conforme o ID informado.
+     * @param id ID do objeto que se deseja encontrar
+     * @return Objeto desejado
+     */
     @Override
     public Cleaning findByID(String id) {
         for (Cleaning cleaning : this.listOfCleanings) {
@@ -42,6 +56,11 @@ public class CleaningArchiveImplementation implements CleaningDAO{
         return null;
     }
 
+    /**
+     * Percorre a lista e retorna os serviços do tipo "cleaning" que contém o ID da mesma ordem de serviço.
+     * @param workOrderID ID da ordem de serviço
+     * @return Lista com todos os serviços do tipo "cleaning" que pertencem a uma mesma ordem de serviço
+     */
     @Override
     public List<Cleaning> findByWorkOrderID(String workOrderID) {
         List<Cleaning> orderCleaningList = new ArrayList<>();
@@ -53,6 +72,11 @@ public class CleaningArchiveImplementation implements CleaningDAO{
         return orderCleaningList;
     }
 
+    /**
+     * Percorre a lista e atualiza o objeto informado.
+     * @param cleaning Objeto que será atualizado
+     * @throws ObjectNotFoundException
+     */
     @Override
     public void update(Cleaning cleaning) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfCleanings.size(); i++) {
@@ -65,6 +89,11 @@ public class CleaningArchiveImplementation implements CleaningDAO{
         throw new ObjectNotFoundException("The informed service is not registered in the system");
     }
 
+    /**
+     * Percorre a lista e deleta o objeto informado.
+     * @param id ID do objeto que será atualizado
+     * @throws ObjectNotFoundException
+     */
     @Override
     public void delete(String id) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfCleanings.size(); i++) {
@@ -77,12 +106,20 @@ public class CleaningArchiveImplementation implements CleaningDAO{
         throw new ObjectNotFoundException("The informed service is not registered in the system");
     }
 
+    /**
+     * Deleta todos os elementos da lista
+     */
     @Override
     public void deleteMany() {
         listOfCleanings = new ArrayList<>();
         FileManager.writeListToFile(listOfCleanings, "cleanings.dat");
     }
 
+    /**
+     * Percorre a lista e retorna o preço de todos os serviços do tipo "cleaning" da ordem de serviço desejada.
+     * @param workOrderID ID da ordem de serviço
+     * @return Preço de todos os serviços do tipo "cleaning" de uma ordem de serviço
+     */
     @Override
     public double getPriceByServices(String workOrderID) {
         double servicesPrice = 0;
@@ -94,6 +131,11 @@ public class CleaningArchiveImplementation implements CleaningDAO{
         return servicesPrice;
     }
 
+    /**
+     * Percorre a lista e retorna o custo de todos os serviços do tipo "cleaning" da ordem de serviço desejada.
+     * @param workOrderID ID da ordem de serviço
+     * @return Custo de todos os serviços do tipo "cleaning" de uma ordem de serviço
+     */
     @Override
     public double getCostByServices(String workOrderID) {
         double servicesCost = 0;
