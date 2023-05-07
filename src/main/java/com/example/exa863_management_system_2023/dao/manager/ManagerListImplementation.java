@@ -1,6 +1,8 @@
 package com.example.exa863_management_system_2023.dao.manager;
 
+import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.model.Manager;
+import com.example.exa863_management_system_2023.utils.FileManager;
 import com.example.exa863_management_system_2023.utils.Generator;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +15,11 @@ public class ManagerListImplementation implements ManagerDAO {
         this.listOfManagers = new ArrayList<Manager>();
     }
 
+    /**
+     * Cria um novo objeto do tipo especificado.
+     * @param manager Objeto que será adicionado ao sistema
+     * @return Objeto recém criado
+     */
     @Override
     public Manager create(Manager manager) {
         manager.setID(Generator.generateID());
@@ -20,11 +27,20 @@ public class ManagerListImplementation implements ManagerDAO {
         return manager;
     }
 
+    /**
+     * Retorna todos os objetos do tipo especificado registrados no sistema.
+     * @return Lista com todos os objetos do tipo especificado registrados no sistema
+     */
     @Override
     public List<Manager> findMany() {
         return listOfManagers;
     }
 
+    /**
+     * Percorre a lista e retorna o objeto conforme o ID informado.
+     * @param id ID do objeto que se deseja encontrar
+     * @return Objeto desejado
+     */
     @Override
     public Manager findByID(String id) {
         for (Manager manager : this.listOfManagers) {
@@ -35,6 +51,11 @@ public class ManagerListImplementation implements ManagerDAO {
         return null;
     }
 
+    /**
+     * Percorre a lista e retorna o objeto Técnico correspondente ao login informado.
+     * @param login Login do gerente que se deseja encontrar
+     * @return Lista com os gerentes que possuem o login informado
+     */
     @Override
     public List<Manager> findByLogin(String login) {
         List<Manager> managerList = new ArrayList<Manager>();
@@ -46,26 +67,43 @@ public class ManagerListImplementation implements ManagerDAO {
         return managerList;
     }
 
+    /**
+     * Percorre a lista e atualiza o objeto informado.
+     * @param manager Objeto que será atualizado
+     * @throws ObjectNotFoundException
+     */
     @Override
-    public void update(Manager manager) {
-        for (int i = 0; i < this.listOfManagers.size(); i++) {
-            if (this.listOfManagers.get(i).getID().equals(manager.getID())) {
-                this.listOfManagers.set(i, manager);
+    public void update(Manager manager) throws ObjectNotFoundException {
+        for (int i = 0; i < listOfManagers.size(); i++) {
+            if (listOfManagers.get(i).getID().equals(manager.getID())) {
+                listOfManagers.set(i, manager);
+                FileManager.writeListToFile(listOfManagers, "managers.dat");
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed manager is not registered in the system");
     }
 
+    /**
+     * Percorre a lista e deleta o objeto informado.
+     * @param id ID do objeto que será atualizado
+     * @throws ObjectNotFoundException
+     */
     @Override
-    public void delete(String id) {
+    public void delete(String id) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfManagers.size(); i++) {
-            if(this.listOfManagers.get(i).getID().equals(id)) {
-                this.listOfManagers.remove(i);
+            if (listOfManagers.get(i).getID().equals(id)) {
+                listOfManagers.remove(i);
+                FileManager.writeListToFile(listOfManagers, "managers.dat");
                 return;
             }
         }
+        throw new ObjectNotFoundException("The informed manager is not registered in the system");
     }
 
+    /**
+     * Deleta todos os elementos da lista
+     */
     @Override
     public void deleteMany() {
         this.listOfManagers = new ArrayList<Manager>();
