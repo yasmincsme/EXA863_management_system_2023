@@ -18,6 +18,11 @@ public class ManagerArchiveImplementation implements ManagerDAO {
         listOfManagers = FileManager.readListFromFile("managers.dat");
     }
 
+    /**
+     * Cria um novo objeto do tipo especificado.
+     * @param manager Objeto que será adicionado ao sistema
+     * @return Objeto recém criado
+     */
     @Override
     public Manager create(Manager manager) {
         manager.setID(Generator.generateID());
@@ -26,11 +31,20 @@ public class ManagerArchiveImplementation implements ManagerDAO {
         return manager;
     }
 
+    /**
+     * Retorna todos os objetos do tipo especificado registrados no sistema.
+     * @return Lista com todos os objetos do tipo especificado registrados no sistema
+     */
     @Override
     public List<Manager> findMany() {
         return FileManager.readListFromFile("managers.dat");
     }
 
+    /**
+     * Percorre a lista e retorna o objeto conforme o ID informado.
+     * @param id ID do objeto que se deseja encontrar
+     * @return Objeto desejado
+     */
     @Override
     public Manager findByID(String id) {
         for (Manager manager : this.listOfManagers) {
@@ -41,6 +55,11 @@ public class ManagerArchiveImplementation implements ManagerDAO {
         return null;
     }
 
+    /**
+     * Percorre a lista e retorna o objeto Técnico correspondente ao login informado.
+     * @param login Login do gerente que se deseja encontrar
+     * @return Lista com os gerentes que possuem o login informado
+     */
     @Override
     public List<Manager> findByLogin(String login) {
         List<Manager> managerList = new ArrayList<>();
@@ -52,6 +71,11 @@ public class ManagerArchiveImplementation implements ManagerDAO {
         return managerList;
     }
 
+    /**
+     * Percorre a lista e atualiza o objeto informado.
+     * @param manager Objeto que será atualizado
+     * @throws ObjectNotFoundException
+     */
     @Override
     public void update(Manager manager) throws ObjectNotFoundException {
         for (int i = 0; i < listOfManagers.size(); i++) {
@@ -64,6 +88,11 @@ public class ManagerArchiveImplementation implements ManagerDAO {
         throw new ObjectNotFoundException("The informed manager is not registered in the system");
     }
 
+    /**
+     * Percorre a lista e deleta o objeto informado.
+     * @param id ID do objeto que será atualizado
+     * @throws ObjectNotFoundException
+     */
     @Override
     public void delete(String id) throws ObjectNotFoundException {
         for (int i = 0; i < this.listOfManagers.size(); i++) {
@@ -76,6 +105,9 @@ public class ManagerArchiveImplementation implements ManagerDAO {
         throw new ObjectNotFoundException("The informed manager is not registered in the system");
     }
 
+    /**
+     * Deleta todos os elementos da lista
+     */
     @Override
     public void deleteMany() {
         listOfManagers = new ArrayList<>();
