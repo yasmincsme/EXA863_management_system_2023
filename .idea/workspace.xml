@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -206,14 +209,7 @@
       <workItem from="1683161895998" duration="3327000" />
       <workItem from="1683233996293" duration="647000" />
       <workItem from="1683425480986" duration="6037000" />
-      <workItem from="1683589476198" duration="6898000" />
-    </task>
-    <task id="LOCAL-00358" summary=":sparkles: feat: Adicionando implementação em arquivo">
-      <created>1683132308980</created>
-      <option name="number" value="00358" />
-      <option name="presentableId" value="LOCAL-00358" />
-      <option name="project" value="LOCAL" />
-      <updated>1683132308980</updated>
+      <workItem from="1683589476198" duration="7255000" />
     </task>
     <task id="LOCAL-00359" summary=":bug: fix: Alterando implementação em arquivo">
       <created>1683132517770</created>
@@ -551,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683596217081</updated>
     </task>
-    <option name="localTasksCounter" value="407" />
+    <task id="LOCAL-00407" summary=":books: docs: Atualizando o arquivo &quot;workspace.xml&quot;">
+      <created>1683596712736</created>
+      <option name="number" value="00407" />
+      <option name="presentableId" value="LOCAL-00407" />
+      <option name="project" value="LOCAL" />
+      <updated>1683596712737</updated>
+    </task>
+    <option name="localTasksCounter" value="408" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
