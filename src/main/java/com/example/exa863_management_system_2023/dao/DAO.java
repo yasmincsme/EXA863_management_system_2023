@@ -42,6 +42,10 @@ public class DAO {
     private static ComputerComponentDAO computerComponentDAO;
     private static WorkOrderDAO workOrderDAO;
 
+    /**
+     * Retorna uma instância da implementação do DAO da classe "building"
+     * @return Implementação do DAO de "building"
+     */
     public static BuildingDAO getBuilding() {
         if (buildingDAO == null) {
             buildingDAO = new BuildingArchiveImplementation();
@@ -49,6 +53,10 @@ public class DAO {
         return buildingDAO;
     }
 
+    /**
+     * Retorna uma instância da implementação do DAO da classe "cleaning"
+     * @return Implementação do DAO de "cleaning"
+     */
     public static CleaningDAO getCleaning() {
         if (cleaningDAO == null) {
             cleaningDAO = new CleaningArchiveImplementation();
@@ -56,6 +64,10 @@ public class DAO {
         return cleaningDAO;
     }
 
+    /**
+     * Retorna uma instância da implementação do DAO da classe "installation"
+     * @return Implementação do DAO de "installation"
+     */
     public static InstallationDAO getInstallation() {
         if (installationDAO == null) {
             installationDAO = new InstallationArchiveImplementation();
@@ -63,6 +75,10 @@ public class DAO {
         return installationDAO;
     }
 
+    /**
+     * Retorna uma instância da implementação do DAO da classe "manager"
+     * @return Implementação do DAO de "manager"
+     */
     public static ManagerDAO getManager() {
         if (managerDAO == null) {
             managerDAO = new ManagerArchiveImplementation();
@@ -70,6 +86,10 @@ public class DAO {
         return managerDAO;
     }
 
+    /**
+     * Retorna uma instância da implementação do DAO da classe "employee"
+     * @return Implementação do DAO de "employee"
+     */
     public static EmployeeDAO getEmployee() {
         if (employeeDAO == null) {
             employeeDAO = new EmployeeArchiveImplementation();
@@ -77,6 +97,10 @@ public class DAO {
         return employeeDAO;
     }
 
+    /**
+     * Retorna uma instância da implementação do DAO da classe "client"
+     * @return Implementação do DAO de "client"
+     */
     public static ClientDAO getClient() {
         if (clientDAO == null) {
             clientDAO = new ClientArchiveImplementation();
@@ -84,6 +108,10 @@ public class DAO {
         return clientDAO;
     }
 
+    /**
+     * Retorna uma instância da implementação do DAO da classe "technician"
+     * @return Implementação do DAO de "technician"
+     */
     public static TechnicianDAO getTechnician() {
         if (technicianDAO == null) {
             technicianDAO = new TechnicianArchiveImplementation();
@@ -91,6 +119,10 @@ public class DAO {
         return technicianDAO;
     }
 
+    /**
+     * Retorna uma instância da implementação do DAO da classe "component"
+     * @return Implementação do DAO de "component"
+     */
     public static ComputerComponentDAO getComponent() {
         if (computerComponentDAO == null) {
             computerComponentDAO = new ComponentArchiveImplementation();
@@ -98,6 +130,10 @@ public class DAO {
         return computerComponentDAO;
     }
 
+    /**
+     * Retorna uma instância da implementação do DAO da classe "work order"
+     * @return Implementação do DAO de "workorder"
+     */
     public static WorkOrderDAO getWorkOrder() {
         if (workOrderDAO == null) {
             workOrderDAO = new WorkOrderArchiveImplementation();
