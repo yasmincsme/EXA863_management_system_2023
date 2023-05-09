@@ -14,11 +14,11 @@ public class Client implements Serializable {
 
 
     /**
-     *
-     * @param name Client's name
-     * @param email Client's email
-     * @param address Client's address
-     * @param phone Client's phone
+     * Cria um novo objeto do tipo "client".
+     * @param name Nome do cliente
+     * @param email Email do cliente
+     * @param address Endereço do cliente
+     * @param phone Endereço do telefone
      */
     public Client(String name, String email, String address, String phone) {
         this.id = null;
@@ -29,89 +29,89 @@ public class Client implements Serializable {
     }
 
     /**
-     *
-     * @return Return Client's ID
+     * Retorna o ID do objeto.
+     * @return ID do objeto
      */
     public String getID() {
         return id;
     }
 
     /**
-     *
-     * @param id New value to ID
+     * Atribui um novo valor para o ID.
+     * @param id Novo valor para o ID
      */
     public void setID(String id) {
         this.id = id;
     }
 
     /**
-     *
-     * @return Return Client's name
+     * Retorna o nome da entidade referida.
+     * @return Nome da entidade referida
      */
     public String getName() {
         return name;
     }
 
     /**
-     *
-     * @param name New value to name
+     * Atribui um novo nome à entidade referida.
+     * @param name Novo nome para a entidade referida
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     *
-     * @return Return Client's email
+     * Retorna o email da entidade referida.
+     * @return Email da entidade referida
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     *
-     * @param email New value to email
+     * Atribui um novo email à entidade referida.
+     * @param email Novo email para a entidade referida
      */
     public void setEmail(String email) {
         this.email = email;
     }
 
     /**
-     *
-     * @return Client's address
+     * Retorna o endereço da entidade referida.
+     * @return Endereço da entidade referida
      */
     public String getAddress() {
         return address;
     }
 
     /**
-     *
-     * @param address New value to address
+     * Atribui um novo endereço à entidade referida.
+     * @param address Novo endereço para a entidade referida
      */
     public void setAddress(String address) {
         this.address = address;
     }
 
     /**
-     *
-     * @return Client's phone
+     * Retorna o telefone da entidade referida.
+     * @return Telefone da entidade referida
      */
     public String getPhone() {
         return phone;
     }
 
     /**
-     *
-     * @param phone New value to phone
+     * Atribui um novo telefone à entidade referida.
+     * @param phone Novo telefone para a entidade referida
      */
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
     /**
-     *
-     * @param object Receive a random object
-     * @return Return true if the given object is equal to the current Client object, or false if they are not the same
+     * Compara dois objetos do tipo "client" a partir do ID
+     * @param object Objeto do tipo "client"
+     * @return True se o objeto informado tem o mesmo ID do objeto comparado, False caso contrário.
      */
     @Override
     public boolean equals(Object object) {
@@ -125,8 +125,8 @@ public class Client implements Serializable {
     }
 
     /**
-     *
-     * @return Return a short formatted description of the object
+     * Retorna uma representação em String do objeto.
+     * @return Representação em String do objeto
      */
     @Override
     public String toString() {
