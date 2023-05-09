@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":bulb: docs: Adicionando comentários para documentação">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":books: docs: Atualizando o arquivo &quot;workspace.xml&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,14 +206,7 @@
       <workItem from="1683161895998" duration="3327000" />
       <workItem from="1683233996293" duration="647000" />
       <workItem from="1683425480986" duration="6037000" />
-      <workItem from="1683589476198" duration="6515000" />
-    </task>
-    <task id="LOCAL-00357" summary=":sparkles: feat: Adicionando implementação em arquivo">
-      <created>1683132299884</created>
-      <option name="number" value="00357" />
-      <option name="presentableId" value="LOCAL-00357" />
-      <option name="project" value="LOCAL" />
-      <updated>1683132299884</updated>
+      <workItem from="1683589476198" duration="6898000" />
     </task>
     <task id="LOCAL-00358" summary=":sparkles: feat: Adicionando implementação em arquivo">
       <created>1683132308980</created>
@@ -553,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683595991709</updated>
     </task>
-    <option name="localTasksCounter" value="406" />
+    <task id="LOCAL-00406" summary=":books: docs: Atualizando o arquivo &quot;workspace.xml&quot;">
+      <created>1683596217081</created>
+      <option name="number" value="00406" />
+      <option name="presentableId" value="LOCAL-00406" />
+      <option name="project" value="LOCAL" />
+      <updated>1683596217081</updated>
+    </task>
+    <option name="localTasksCounter" value="407" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: Adicionando novos métodos" />
     <MESSAGE value=":recycle: refactor: Remodelando o teste" />
     <MESSAGE value=":test_tube: test: Modelando teste para a classe" />
     <MESSAGE value=":sparkles: feat: Adicionando classe para tratamento dos casos em que o objeto buscado não for encontrado" />
@@ -596,7 +593,8 @@
     <MESSAGE value=":goal_net: procedure: Adicionando tratamento de erros" />
     <MESSAGE value=":books: docs: Atualizando arquivo &quot;workspace.xml&quot;" />
     <MESSAGE value=":bulb: docs: Adicionando comentários para documentação" />
-    <option name="LAST_COMMIT_MESSAGE" value=":bulb: docs: Adicionando comentários para documentação" />
+    <MESSAGE value=":books: docs: Atualizando o arquivo &quot;workspace.xml&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value=":books: docs: Atualizando o arquivo &quot;workspace.xml&quot;" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EXA863_management_system_2023$WorkOrderTest_testAddInstallationService.ic" NAME="WorkOrderTest.testAddInstallationService Coverage Results" MODIFIED="1681770639234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
