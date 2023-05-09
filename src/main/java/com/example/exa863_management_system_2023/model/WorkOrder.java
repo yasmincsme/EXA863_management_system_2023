@@ -28,9 +28,9 @@ public class WorkOrder implements Serializable {
     private String paymentMethod;
 
     /**
-     *
-     * @param clientID Client ID of the WorkOrder
-     * @param description Description of the WorkOrder
+     * Cria um novo objeto do tipo "work order".
+     * @param clientID ID do cliente
+     * @param description Descrição da ordem de serviço
      */
     public WorkOrder(String clientID, String description) {
         this.id = null;
@@ -47,128 +47,128 @@ public class WorkOrder implements Serializable {
     }
 
     /**
-     *
-     * @return Return WorkOrder's ID
+     * Retorna o ID do objeto.
+     * @return ID do objeto
      */
     public String getID() {
         return id;
     }
 
     /**
-     *
-     * @param id New value to ID
+     * Atribui um novo valor para o ID.
+     * @param id Novo valor para o ID
      */
     public void setID(String id) {
         this.id = id;
     }
 
     /**
-     *
-     * @return Return WorkOrder's client ID
+     * Retorna o ID do cliente ao qual a ordem de serviço serviço está associada.
+     * @return ID do cliente ao qual a ordem de serviço serviço está associada
      */
     public String getClientID() {
         return clientID;
     }
 
     /**
-     *
-     * @param clientID New value to client ID
+     * Atribui um novo valor para o ID do cliente ao qual a ordem de serviço está associada.
+     * @param clientID ID do cliente ao qual a ordem de serviço está associada
      */
     public void setClientID(String clientID) {
         this.clientID = clientID;
     }
 
     /**
-     *
-     * @return Return WorkOrder's technician ID
+     * Retorna o ID do técnico ao qual a ordem de serviço serviço está associada.
+     * @return ID do técnico ao qual a ordem de serviço serviço está associada
      */
     public String getTechnicianID() {
         return technicianID;
     }
 
     /**
-     *
-     * @param technicianID New value to technician ID
+     * Atribui um novo valor para o ID do técnico ao qual a ordem de serviço está associada.
+     * @param technicianID ID do técnico ao qual a ordem de serviço está associada
      */
     public void setTechnicianID(String technicianID) {
         this.technicianID = technicianID;
     }
 
     /**
-     *
-     * @return Return WorkOrder's status
+     * Retorna o status da ordem de serviço.
+     * @return Status da ordem de serviço
      */
     public String getStatus() {
         return status;
     }
 
     /**
-     *
-     * @param status New value to status
+     * Atualiza o status da ordem de serviço.
+     * @param status Novo valor para o status da ordem de serviço
      */
     public void setStatus(String status) {
         this.status = status;
     }
 
     /**
-     *
-     * @return Return WorkOrder's description
+     * Retorna a descrição do serviço.
+     * @return Descrição do serviço
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     *
-     * @param description New value to description
+     * Atribui uma nova informação à descrição.
+     * @param description Nova descrição para o serviço
      */
     public void setDescription(String description) {
         this.description = description;
     }
 
     /**
-     *
-     * @return Return WorkOrder's initial date
+     * Retorna o dia de criação da ordem de serviço.
+     * @return Dia de criação da ordem de serviço
      */
     public String getCreatedAt() {
         return createdAt;
     }
 
     /**
-     *
-     * @param createdAt New value to initial date
+     * Atualiza o dia de criação da ordem de serviço.
+     * @param createdAt Novo valor para o dia de criação da ordem de serviço.
      */
     public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
     }
 
     /**
-     *
-     * @return Return WorkOrder's final date
+     * Retorna o dia de finalização da ordem de serviço.
+     * @return Dia de finalização da ordem de serviço
      */
     public String getFinishedAt() {
         return finishedAt;
     }
 
     /**
-     *
-     * @param finishedAt New value to final date
+     * Atualiza o dia de finalização da ordem de serviço.
+     * @param finishedAt Novo valor para o dia de finalização da ordem de serviço.
      */
     public void setFinishedAt(String finishedAt) {
         this.finishedAt = finishedAt;
     }
 
     /**
-     *
-     * @return Return client's satisfaction
+     * Retorna a satisfação do cliente.
+     * @return Satisfação do cliente
      */
     public int getClientSatisfaction() {
         return clientSatisfaction;
     }
 
     /**
-     *
-     * @param clientSatisfaction New value to client satisfaction
+     * Atualiza a satisfação do cliente.
+     * @param clientSatisfaction Novo valor para a satisfação do cliente
      */
     public void setClientSatisfaction(int clientSatisfaction) throws InvalidSatisfactionScore {
         if (clientSatisfaction < 0 || clientSatisfaction > 10) {
@@ -178,56 +178,55 @@ public class WorkOrder implements Serializable {
     }
 
     /**
-     *
-     * @return Return work order's price
+     * Retorna o preço da ordem de serviço.
+     * @return Preço da ordem de serviço
      */
     public double getPrice() {
         return price;
     }
 
     /**
-     *
-     * @param price New value to price
+     * Atribui um novo valor para o preço da ordem de serviço.
+     * @param price Novo preço para a ordem de serviço
      */
     public void setPrice(double price) {
         this.price = price;
     }
 
     /**
-     *
-     * @return Return work order's cost
+     * Retorna o custo da ordem de serviço.
+     * @return Custo da ordem de serviço
      */
     public double getCost() {
         return cost;
     }
 
     /**
-     *
-     * @param cost New value to cost
+     * Atribui um novo valor para o custo da ordem de serviço.
+     * @param cost Novo custo para a ordem de serviço
      */
     public void setCost(double cost) {
         this.cost = cost;
     }
 
     /**
-     *
-     * @return Return WorkOrder's payment method
+     * Retorna o método de pagamento da ordem de serviço.
+     * @return Método de pagamento da ordem de serviço
      */
     public String getPaymentMethod() {
         return paymentMethod;
     }
 
     /**
-     *
-     * @param paymentMethod New value to payment method
+     * Atualiza o método de pagamento da ordem de serviço.
+     * @param paymentMethod Novo valor para o método de pagamento da ordem de serviço
      */
     public void setPaymentMethod(String paymentMethod) {
         this.paymentMethod = paymentMethod;
     }
 
     /**
-     * Indicates that the WorkOrder is on going
-     * @return Return the status of the WorkOrder
+     * Reabre uma ordem de serviço fechada
      */
     public void reopen() {
         this.setStatus("OPEN");
@@ -235,7 +234,7 @@ public class WorkOrder implements Serializable {
     }
 
     /**
-     * Finalize the work order
+     * Finaliza uma ordem de serviço aberta
      */
     public void finish() throws WorkOrderWithoutTechnician {
         if (this.technicianID == null) {
@@ -246,7 +245,7 @@ public class WorkOrder implements Serializable {
     }
 
     /**
-     * Cancel the work order
+     * Cancela uma ordem de serviço aberta
      */
     public void cancel() {
         this.setStatus("CANCELLED");
@@ -254,8 +253,8 @@ public class WorkOrder implements Serializable {
     }
 
     /**
-     * Get the time between the initial date and the final date of a WordOrder
-     * @return Return the time between two dates in days
+     * Retorna o tempo de espera para finalização da ordem de serviço em dias.
+     * @return Tempo de espera para finalização da ordem de serviço em dias
      */
     public long getWaitingTime() {
         ParsePosition position1 = new ParsePosition(0);
@@ -271,9 +270,9 @@ public class WorkOrder implements Serializable {
     }
 
     /**
-     *
-     * @param object Receive a random object
-     * @return Return true if the given object is equal to the current WorkOrder object, or false if they are not the same
+     * Compara dois objetos do tipo "work order" a partir do ID
+     * @param object Objeto do tipo "work order"
+     * @return True se o objeto informado tem o mesmo ID do objeto comparado, False caso contrário.
      */
     @Override
     public boolean equals(Object object) {
@@ -287,8 +286,8 @@ public class WorkOrder implements Serializable {
     }
 
     /**
-     *
-     * @return Return a short formatted description of the object
+     * Retorna uma representação em String do objeto.
+     * @return Representação em String do objeto
      */
     @Override
     public String toString() {
