@@ -5,8 +5,8 @@ import java.util.Objects;
 
 public class ComputerComponent implements Serializable {
 
-    private String name;
     private String id;
+    private String name;
     private String buildingID;
     private String manufacturer;
     private String serialNumber;
@@ -15,16 +15,17 @@ public class ComputerComponent implements Serializable {
     private int quantity;
 
     /**
-     *
-     * @param name Component's name
-     * @param manufacturer Component's manufacturer
-     * @param serialNumber Component's serial number
-     * @param unitPrice Component's unit price
-     * @param unitCost Component's unit cost
-     * @param quantity Component's quantity
+     * Cria um novo objeto do tipo "computer component".
+     * @param name Nome do componente
+     * @param manufacturer Fabricante do componente
+     * @param serialNumber Número de série do componente
+     * @param unitPrice Preço uniário do componente
+     * @param unitCost Custo unitário do componente
+     * @param quantity Quantidade do componente
      */
     public ComputerComponent(String name, String manufacturer, String serialNumber, double unitPrice, double unitCost, int quantity) {
         this.name = name;
+        this.id = null;
         this.buildingID = null;
         this.manufacturer = manufacturer;
         this.serialNumber = serialNumber;
@@ -34,152 +35,154 @@ public class ComputerComponent implements Serializable {
     }
 
     /**
-     *
-     * @return Return Component's name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     *
-     * @param name New value to name
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    /**
-     *
-     * @return Return Component's ID
+     * Retorna o ID do objeto.
+     * @return ID do objeto
      */
     public String getID() {
         return id;
     }
 
     /**
-     *
-     * @param id New value to ID
+     * Atribui um novo valor para o ID.
+     * @param id Novo valor para o ID
      */
     public void setID(String id) {
         this.id = id;
     }
 
     /**
-     *
-     * @return Return building's ID
+     * Retorna o nome da entidade referida.
+     * @return Nome da entidade referida
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Atribui um novo nome à entidade referida.
+     * @param name Novo nome para a entidade referida
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+    /**
+     * Retorna o ID do serviço ao qual o componente está associado.
+     * @return ID do serviço ao qual o componente está associado
      */
     public String getBuildingID() {
         return buildingID;
     }
 
     /**
-     *
-     * @param buildingID New value to building's ID
+     * Atribui um novo valor para ID do serviço ao qual o componente está associado.
+     * @param buildingID Novo valor para o ID do serviço ao qual o componente está associado
      */
     public void setBuildingID(String buildingID) {
         this.buildingID = buildingID;
     }
 
     /**
-     *
-     * @return Return Component's manufacturer
+     * Retorna a fabricante do componente.
+     * @return Nome da fabricante do componente
      */
     public String getManufacturer() {
         return manufacturer;
     }
 
     /**
-     *
-     * @param manufacturer New value to manufacturer
+     * Atribui uma nova informação ao atributo fabricante.
+     * @param manufacturer Novo nome para a fabricante do componente
      */
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
 
     /**
-     *
-     * @return Return Component's serial number
+     * Retorna o número de série do componente.
+     * @return Número de série do componente
      */
     public String getSerialNumber() {
         return serialNumber;
     }
 
     /**
-     *
-     * @param serialNumber New value to serial number
+     * Atribui uma nova informação ao atributo número de série.
+     * @param serialNumber Novo valor para o número de série do componente
      */
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
     /**
-     *
-     * @return Return Component's unit price
+     * Retorna o preço unitário do componente.
+     * @return Preço unitário do componente
      */
     public double getUnitPrice() {
         return unitPrice;
     }
 
     /**
-     *
-     * @param unitPrice New value to unit price
+     * Atribui um novo preço unitário para componente.
+     * @param unitPrice Novo preço unitário para o componente
      */
     public void setUnitPrice(double unitPrice) {
         this.unitPrice = unitPrice;
     }
 
     /**
-     *
-     * @return Return Component's unit cost
+     * Retorna o custo unitário do componente.
+     * @return Custo unitário do componente
      */
     public double getUnitCost() {
         return unitCost;
     }
 
     /**
-     *
-     * @param unitCost New value to unit cost
+     * Atribui um novo custo unitário para componente.
+     * @param unitCost Novo custo unitário para o componente
      */
     public void setUnitCost(double unitCost) {
         this.unitCost = unitCost;
     }
 
     /**
-     *
-     * @return Return Component's quantity
+     * Retorna a quantidade do componente em estoque.
+     * @return Quantidade do componente em estoque
      */
     public int getQuantity() {
         return quantity;
     }
 
     /**
-     *
-     * @param quantity New value to quantity
+     * Atribui uma nova quantidade para o componente.
+     * @param quantity Nova quantidade para o componente
      */
     public void setQuantity(int quantity) {
         this.quantity = quantity;}
 
     /**
-     *
-     * @return Return the result of the multiplication between the unit cost and the quantity
+     * Retorna a multiplicação entre o preço unitário e a quantidade disponível no sistema
+     * @return Multiplicação entre o preço unitário e a quantidade disponível no sistema
+     */
+    public double getPrice() {
+        return this.getUnitPrice() * this.getQuantity();
+    }
+
+
+    /**
+     * Retorna a multiplicação entre o custo unitário e a quantidade disponível no sistema
+     * @return Multiplicação entre o custo unitário e a quantidade disponível no sistema
      */
     public double getCost() {
         return this.getUnitCost() * this.getQuantity();
     }
 
     /**
-     *
-     * @return Return the result of the multiplication between the unit price and the quantity
-     */
-    public double getPrice() {
-        return this.getUnitPrice() * this.getQuantity();
-    }
-
-    /**
-     *
-     * @param object Receive a random object
-     * @return Return true if the given object is equal to the current Manager object, or false if they are not the same
+     * Compara dois objetos do tipo "computer component" a partir do ID
+     * @param object Objeto do tipo "computer component"
+     * @return True se o objeto informado tem o mesmo ID do objeto comparado, False caso contrário.
      */
     @Override
     public boolean equals(Object object) {
@@ -193,8 +196,8 @@ public class ComputerComponent implements Serializable {
     }
 
     /**
-     *
-     * @return Return a short formatted description of the object
+     * Retorna uma representação em String do objeto.
+     * @return Representação em String do objeto
      */
     @Override
     public String toString() {
