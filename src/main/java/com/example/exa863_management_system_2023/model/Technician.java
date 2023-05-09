@@ -12,11 +12,11 @@ public class Technician implements Serializable {
     private String password;
 
     /**
-     *
-     * @param name Technician's name
-     * @param email Technician's email
-     * @param login Technician's login
-     * @param password Technician's password
+     * Cria um novo objeto do tipo "technician"
+     * @param name Nome do técnico
+     * @param email Email do técnico
+     * @param login Login do técnico
+     * @param password Senha do técnico
      */
     public Technician(String name, String email, String login, String password) {
         this.id = null;
@@ -27,89 +27,89 @@ public class Technician implements Serializable {
     }
 
     /**
-     *
-     * @return Return Technician's ID
+     * Retorna o ID do objeto.
+     * @return ID do objeto
      */
     public String getID() {
         return id;
     }
 
     /**
-     *
-     * @param id New value to ID
+     * Atribui um novo valor para o ID.
+     * @param id Novo valor para o ID
      */
     public void setID(String id) {
         this.id = id;
     }
 
     /**
-     *
-     * @return Return Technician's name
+     * Retorna o nome da entidade referida.
+     * @return Nome da entidade referida
      */
     public String getName() {
         return name;
     }
 
     /**
-     *
-     * @param name New value to name
+     * Atribui um novo nome à entidade referida.
+     * @param name Novo nome para a entidade referida
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     *
-     * @return Return Technician's email
+     * Retorna o email da entidade referida.
+     * @return Email da entidade referida
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     *
-     * @param email New value to email
+     * Atribui um novo email à entidade referida.
+     * @param email Novo email para a entidade referida
      */
     public void setEmail(String email) {
         this.email = email;
     }
 
     /**
-     *
-     * @return Return Technician's login
+     * Retorna o login da entidade referida.
+     * @return Login da entidade referida
      */
     public String getLogin() {
         return login;
     }
 
     /**
-     *
-     * @param login New value to login
+     * Atribui um novo login à entidade referida.
+     * @param login Novo login para a entidade referida
      */
     public void setLogin(String login) {
         this.login = login;
     }
 
     /**
-     *
-     * @return Return Technician's password
+     * Retorna a senha da entidade referida.
+     * @return Senha da entidade referida
      */
     public String getPassword() {
         return password;
     }
 
     /**
-     *
-     * @param password New value to password
+     * Atribui uma nova senha à entidade referida.
+     * @param password Nova senha para a entidade referida
      */
     public void setPassword(String password) {
         this.password = password;
     }
 
     /**
-     *
-     * @param object Receive a random object
-     * @return Return true if the given object is equal to the current Technician object, or false if they are not the same
+     * Compara dois objetos do tipo "technician" a partir do ID
+     * @param object Objeto do tipo "technician"
+     * @return True se o objeto informado tem o mesmo ID do objeto comparado, False caso contrário.
      */
     @Override
     public boolean equals(Object object) {
@@ -123,8 +123,8 @@ public class Technician implements Serializable {
     }
 
     /**
-     *
-     * @return Return a short formatted description of the object
+     * Retorna uma representação em String do objeto.
+     * @return Representação em String do objeto
      */
     @Override
     public String toString() {
