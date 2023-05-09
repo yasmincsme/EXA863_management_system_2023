@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":sparkles: feat: Modificando implementação em arquivo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/BuildingArchiveImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentArchiveImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeArchiveImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationArchiveImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianArchiveImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderArchiveImplementation.java" afterDir="false" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":bulb: docs: Adicionando comentários para documentação">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/manager/ManagerArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/manager/ManagerArchiveImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/FileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,352 +204,356 @@
       <workItem from="1682878956911" duration="28386000" />
       <workItem from="1682911065811" duration="78000" />
       <workItem from="1683075251210" duration="7638000" />
-      <workItem from="1683128570976" duration="3644000" />
+      <workItem from="1683128570976" duration="6506000" />
+      <workItem from="1683161895998" duration="3327000" />
+      <workItem from="1683233996293" duration="647000" />
+      <workItem from="1683425480986" duration="6037000" />
+      <workItem from="1683589476198" duration="6515000" />
     </task>
-    <task id="LOCAL-00304" summary=":test_tube: test: Criando novo teste">
-      <created>1682884564041</created>
-      <option name="number" value="00304" />
-      <option name="presentableId" value="LOCAL-00304" />
+    <task id="LOCAL-00357" summary=":sparkles: feat: Adicionando implementação em arquivo">
+      <created>1683132299884</created>
+      <option name="number" value="00357" />
+      <option name="presentableId" value="LOCAL-00357" />
       <option name="project" value="LOCAL" />
-      <updated>1682884564042</updated>
+      <updated>1683132299884</updated>
     </task>
-    <task id="LOCAL-00305" summary=":sparkles: feat: Adicionando novos métodos">
-      <created>1682891442984</created>
-      <option name="number" value="00305" />
-      <option name="presentableId" value="LOCAL-00305" />
+    <task id="LOCAL-00358" summary=":sparkles: feat: Adicionando implementação em arquivo">
+      <created>1683132308980</created>
+      <option name="number" value="00358" />
+      <option name="presentableId" value="LOCAL-00358" />
       <option name="project" value="LOCAL" />
-      <updated>1682891442984</updated>
+      <updated>1683132308980</updated>
     </task>
-    <task id="LOCAL-00306" summary=":sparkles: feat: Adicionando assinatura de novos métodos">
-      <created>1682891485050</created>
-      <option name="number" value="00306" />
-      <option name="presentableId" value="LOCAL-00306" />
+    <task id="LOCAL-00359" summary=":bug: fix: Alterando implementação em arquivo">
+      <created>1683132517770</created>
+      <option name="number" value="00359" />
+      <option name="presentableId" value="LOCAL-00359" />
       <option name="project" value="LOCAL" />
-      <updated>1682891485050</updated>
+      <updated>1683132517770</updated>
     </task>
-    <task id="LOCAL-00307" summary=":sparkles: feat: Adicionando novos métodos">
-      <created>1682891500587</created>
-      <option name="number" value="00307" />
-      <option name="presentableId" value="LOCAL-00307" />
+    <task id="LOCAL-00360" summary=":recycle: refactor: Trocando implementação para arquivo">
+      <created>1683132555439</created>
+      <option name="number" value="00360" />
+      <option name="presentableId" value="LOCAL-00360" />
       <option name="project" value="LOCAL" />
-      <updated>1682891500587</updated>
+      <updated>1683132555439</updated>
     </task>
-    <task id="LOCAL-00308" summary=":bug: fix: Adaptando lógica do código">
-      <created>1682891664856</created>
-      <option name="number" value="00308" />
-      <option name="presentableId" value="LOCAL-00308" />
+    <task id="LOCAL-00361" summary=":goal_net: procedure: Adicionando tratamento de erros">
+      <created>1683132741239</created>
+      <option name="number" value="00361" />
+      <option name="presentableId" value="LOCAL-00361" />
       <option name="project" value="LOCAL" />
-      <updated>1682891664856</updated>
+      <updated>1683132741239</updated>
     </task>
-    <task id="LOCAL-00309" summary=":bug: fix: Consertando método &quot;findMany&quot;">
-      <created>1682891705653</created>
-      <option name="number" value="00309" />
-      <option name="presentableId" value="LOCAL-00309" />
+    <task id="LOCAL-00362" summary=":books: docs: Atualizando arquivo &quot;workspace.xml&quot;">
+      <created>1683132925509</created>
+      <option name="number" value="00362" />
+      <option name="presentableId" value="LOCAL-00362" />
       <option name="project" value="LOCAL" />
-      <updated>1682891705653</updated>
+      <updated>1683132925510</updated>
     </task>
-    <task id="LOCAL-00310" summary=":bug: fix: Consertando método &quot;findMany&quot;">
-      <created>1682891716052</created>
-      <option name="number" value="00310" />
-      <option name="presentableId" value="LOCAL-00310" />
+    <task id="LOCAL-00363" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683208518728</created>
+      <option name="number" value="00363" />
+      <option name="presentableId" value="LOCAL-00363" />
       <option name="project" value="LOCAL" />
-      <updated>1682891716052</updated>
+      <updated>1683208518732</updated>
     </task>
-    <task id="LOCAL-00311" summary=":bug: fix: Consertando método &quot;findMany&quot;">
-      <created>1682891727779</created>
-      <option name="number" value="00311" />
-      <option name="presentableId" value="LOCAL-00311" />
+    <task id="LOCAL-00364" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683208547008</created>
+      <option name="number" value="00364" />
+      <option name="presentableId" value="LOCAL-00364" />
       <option name="project" value="LOCAL" />
-      <updated>1682891727779</updated>
+      <updated>1683208547008</updated>
     </task>
-    <task id="LOCAL-00312" summary=":bug: fix: Consertando método &quot;findMany&quot;">
-      <created>1682891744019</created>
-      <option name="number" value="00312" />
-      <option name="presentableId" value="LOCAL-00312" />
+    <task id="LOCAL-00365" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683208640766</created>
+      <option name="number" value="00365" />
+      <option name="presentableId" value="LOCAL-00365" />
       <option name="project" value="LOCAL" />
-      <updated>1682891744019</updated>
+      <updated>1683208640766</updated>
     </task>
-    <task id="LOCAL-00313" summary=":bug: fix: Consertando método &quot;findMany&quot;">
-      <created>1682891762581</created>
-      <option name="number" value="00313" />
-      <option name="presentableId" value="LOCAL-00313" />
+    <task id="LOCAL-00366" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683208652575</created>
+      <option name="number" value="00366" />
+      <option name="presentableId" value="LOCAL-00366" />
       <option name="project" value="LOCAL" />
-      <updated>1682891762581</updated>
+      <updated>1683208652575</updated>
     </task>
-    <task id="LOCAL-00314" summary=":bug: fix: Consertando método &quot;findMany&quot;">
-      <created>1682891778576</created>
-      <option name="number" value="00314" />
-      <option name="presentableId" value="LOCAL-00314" />
+    <task id="LOCAL-00367" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683208663978</created>
+      <option name="number" value="00367" />
+      <option name="presentableId" value="LOCAL-00367" />
       <option name="project" value="LOCAL" />
-      <updated>1682891778576</updated>
+      <updated>1683208663978</updated>
     </task>
-    <task id="LOCAL-00315" summary=":sparkles: feat: Adicionando novos métodos">
-      <created>1682891809914</created>
-      <option name="number" value="00315" />
-      <option name="presentableId" value="LOCAL-00315" />
+    <task id="LOCAL-00368" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683427753939</created>
+      <option name="number" value="00368" />
+      <option name="presentableId" value="LOCAL-00368" />
       <option name="project" value="LOCAL" />
-      <updated>1682891809914</updated>
+      <updated>1683427753940</updated>
     </task>
-    <task id="LOCAL-00316" summary=":test_tube: test: Adicionando novos métodos">
-      <created>1682891858678</created>
-      <option name="number" value="00316" />
-      <option name="presentableId" value="LOCAL-00316" />
+    <task id="LOCAL-00369" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683427766332</created>
+      <option name="number" value="00369" />
+      <option name="presentableId" value="LOCAL-00369" />
       <option name="project" value="LOCAL" />
-      <updated>1682891858678</updated>
+      <updated>1683427766332</updated>
     </task>
-    <task id="LOCAL-00317" summary=":test_tube: test: Adicionando novos métodos">
-      <created>1682891872964</created>
-      <option name="number" value="00317" />
-      <option name="presentableId" value="LOCAL-00317" />
+    <task id="LOCAL-00370" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683427778949</created>
+      <option name="number" value="00370" />
+      <option name="presentableId" value="LOCAL-00370" />
       <option name="project" value="LOCAL" />
-      <updated>1682891872964</updated>
+      <updated>1683427778949</updated>
     </task>
-    <task id="LOCAL-00318" summary=":test_tube: test: Adicionando novos testes">
-      <created>1682891886608</created>
-      <option name="number" value="00318" />
-      <option name="presentableId" value="LOCAL-00318" />
+    <task id="LOCAL-00371" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683427793395</created>
+      <option name="number" value="00371" />
+      <option name="presentableId" value="LOCAL-00371" />
       <option name="project" value="LOCAL" />
-      <updated>1682891886608</updated>
+      <updated>1683427793395</updated>
     </task>
-    <task id="LOCAL-00319" summary=":test_tube: test: Adicionando novos testes">
-      <created>1682891902694</created>
-      <option name="number" value="00319" />
-      <option name="presentableId" value="LOCAL-00319" />
+    <task id="LOCAL-00372" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431811315</created>
+      <option name="number" value="00372" />
+      <option name="presentableId" value="LOCAL-00372" />
       <option name="project" value="LOCAL" />
-      <updated>1682891902694</updated>
+      <updated>1683431811320</updated>
     </task>
-    <task id="LOCAL-00320" summary=":sparkles: feat: Adicionando novos métodos">
-      <created>1682891933864</created>
-      <option name="number" value="00320" />
-      <option name="presentableId" value="LOCAL-00320" />
+    <task id="LOCAL-00373" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431831100</created>
+      <option name="number" value="00373" />
+      <option name="presentableId" value="LOCAL-00373" />
       <option name="project" value="LOCAL" />
-      <updated>1682891933864</updated>
+      <updated>1683431831102</updated>
     </task>
-    <task id="LOCAL-00321" summary=":sparkles: feat: Adicionando assinatura de novos métodos">
-      <created>1682891958919</created>
-      <option name="number" value="00321" />
-      <option name="presentableId" value="LOCAL-00321" />
+    <task id="LOCAL-00374" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431849253</created>
+      <option name="number" value="00374" />
+      <option name="presentableId" value="LOCAL-00374" />
       <option name="project" value="LOCAL" />
-      <updated>1682891958919</updated>
+      <updated>1683431849254</updated>
     </task>
-    <task id="LOCAL-00322" summary=":sparkles: feat: Adicionando tratamento de erros">
-      <created>1682897935856</created>
-      <option name="number" value="00322" />
-      <option name="presentableId" value="LOCAL-00322" />
+    <task id="LOCAL-00375" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431867174</created>
+      <option name="number" value="00375" />
+      <option name="presentableId" value="LOCAL-00375" />
       <option name="project" value="LOCAL" />
-      <updated>1682897935856</updated>
+      <updated>1683431867174</updated>
     </task>
-    <task id="LOCAL-00323" summary=":sparkles: feat: Adicionando classe para tratamento de erro">
-      <created>1682897978230</created>
-      <option name="number" value="00323" />
-      <option name="presentableId" value="LOCAL-00323" />
+    <task id="LOCAL-00376" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431906876</created>
+      <option name="number" value="00376" />
+      <option name="presentableId" value="LOCAL-00376" />
       <option name="project" value="LOCAL" />
-      <updated>1682897978230</updated>
+      <updated>1683431906876</updated>
     </task>
-    <task id="LOCAL-00324" summary=":sparkles: feat: Adicionando classe para tratamento de erro">
-      <created>1682898020734</created>
-      <option name="number" value="00324" />
-      <option name="presentableId" value="LOCAL-00324" />
+    <task id="LOCAL-00377" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431920003</created>
+      <option name="number" value="00377" />
+      <option name="presentableId" value="LOCAL-00377" />
       <option name="project" value="LOCAL" />
-      <updated>1682898020734</updated>
+      <updated>1683431920003</updated>
     </task>
-    <task id="LOCAL-00325" summary=":sparkles: feat: Adicionando implementação em arquivo">
-      <created>1682910078127</created>
-      <option name="number" value="00325" />
-      <option name="presentableId" value="LOCAL-00325" />
+    <task id="LOCAL-00378" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431936403</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
       <option name="project" value="LOCAL" />
-      <updated>1682910078127</updated>
+      <updated>1683431936403</updated>
     </task>
-    <task id="LOCAL-00326" summary=":sparkles: feat: Adicionando implementação em arquivo">
-      <created>1682910092739</created>
-      <option name="number" value="00326" />
-      <option name="presentableId" value="LOCAL-00326" />
+    <task id="LOCAL-00379" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431949206</created>
+      <option name="number" value="00379" />
+      <option name="presentableId" value="LOCAL-00379" />
       <option name="project" value="LOCAL" />
-      <updated>1682910092739</updated>
+      <updated>1683431949207</updated>
     </task>
-    <task id="LOCAL-00327" summary=":ok_hand: style: Alterando formatação do código">
-      <created>1682910406472</created>
-      <option name="number" value="00327" />
-      <option name="presentableId" value="LOCAL-00327" />
+    <task id="LOCAL-00380" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431961972</created>
+      <option name="number" value="00380" />
+      <option name="presentableId" value="LOCAL-00380" />
       <option name="project" value="LOCAL" />
-      <updated>1682910406472</updated>
+      <updated>1683431961973</updated>
     </task>
-    <task id="LOCAL-00328" summary=":ok_hand: style: Alterando formatação do código">
-      <created>1682910424739</created>
-      <option name="number" value="00328" />
-      <option name="presentableId" value="LOCAL-00328" />
+    <task id="LOCAL-00381" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431980562</created>
+      <option name="number" value="00381" />
+      <option name="presentableId" value="LOCAL-00381" />
       <option name="project" value="LOCAL" />
-      <updated>1682910424739</updated>
+      <updated>1683431980563</updated>
     </task>
-    <task id="LOCAL-00329" summary=":test_tube: test: Adicionando novos testes">
-      <created>1682910481540</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
+    <task id="LOCAL-00382" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683431995558</created>
+      <option name="number" value="00382" />
+      <option name="presentableId" value="LOCAL-00382" />
       <option name="project" value="LOCAL" />
-      <updated>1682910481540</updated>
+      <updated>1683431995559</updated>
     </task>
-    <task id="LOCAL-00330" summary=":test_tube: test: Adicionando novos testes">
-      <created>1682910495440</created>
-      <option name="number" value="00330" />
-      <option name="presentableId" value="LOCAL-00330" />
+    <task id="LOCAL-00383" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683432017384</created>
+      <option name="number" value="00383" />
+      <option name="presentableId" value="LOCAL-00383" />
       <option name="project" value="LOCAL" />
-      <updated>1682910495440</updated>
+      <updated>1683432017384</updated>
     </task>
-    <task id="LOCAL-00331" summary=":test_tube: test: Excluindo linha desnecessária">
-      <created>1682910664932</created>
-      <option name="number" value="00331" />
-      <option name="presentableId" value="LOCAL-00331" />
+    <task id="LOCAL-00384" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683432049568</created>
+      <option name="number" value="00384" />
+      <option name="presentableId" value="LOCAL-00384" />
       <option name="project" value="LOCAL" />
-      <updated>1682910664932</updated>
+      <updated>1683432049571</updated>
     </task>
-    <task id="LOCAL-00332" summary=":recycle: refactor: Alterando nome do teste">
-      <created>1683079440985</created>
-      <option name="number" value="00332" />
-      <option name="presentableId" value="LOCAL-00332" />
+    <task id="LOCAL-00385" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683432061915</created>
+      <option name="number" value="00385" />
+      <option name="presentableId" value="LOCAL-00385" />
       <option name="project" value="LOCAL" />
-      <updated>1683079440986</updated>
+      <updated>1683432061917</updated>
     </task>
-    <task id="LOCAL-00333" summary=":recycle: refactor: Alterando nome do teste">
-      <created>1683079514351</created>
-      <option name="number" value="00333" />
-      <option name="presentableId" value="LOCAL-00333" />
+    <task id="LOCAL-00386" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683432073957</created>
+      <option name="number" value="00386" />
+      <option name="presentableId" value="LOCAL-00386" />
       <option name="project" value="LOCAL" />
-      <updated>1683079514351</updated>
+      <updated>1683432073957</updated>
     </task>
-    <task id="LOCAL-00334" summary=":recycle: refactor: Alterando nome do teste">
-      <created>1683079529552</created>
-      <option name="number" value="00334" />
-      <option name="presentableId" value="LOCAL-00334" />
+    <task id="LOCAL-00387" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683432089949</created>
+      <option name="number" value="00387" />
+      <option name="presentableId" value="LOCAL-00387" />
       <option name="project" value="LOCAL" />
-      <updated>1683079529552</updated>
+      <updated>1683432089949</updated>
     </task>
-    <task id="LOCAL-00335" summary=":recycle: refactor: Alterando nome do teste">
-      <created>1683079546155</created>
-      <option name="number" value="00335" />
-      <option name="presentableId" value="LOCAL-00335" />
+    <task id="LOCAL-00388" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683432106063</created>
+      <option name="number" value="00388" />
+      <option name="presentableId" value="LOCAL-00388" />
       <option name="project" value="LOCAL" />
-      <updated>1683079546155</updated>
+      <updated>1683432106065</updated>
     </task>
-    <task id="LOCAL-00336" summary=":recycle: refactor: Alterando nome do teste">
-      <created>1683079561603</created>
-      <option name="number" value="00336" />
-      <option name="presentableId" value="LOCAL-00336" />
+    <task id="LOCAL-00389" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683432118330</created>
+      <option name="number" value="00389" />
+      <option name="presentableId" value="LOCAL-00389" />
       <option name="project" value="LOCAL" />
-      <updated>1683079561603</updated>
+      <updated>1683432118330</updated>
     </task>
-    <task id="LOCAL-00337" summary=":recycle: refactor: Alterando nome do teste">
-      <created>1683079613042</created>
-      <option name="number" value="00337" />
-      <option name="presentableId" value="LOCAL-00337" />
+    <task id="LOCAL-00390" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683432136385</created>
+      <option name="number" value="00390" />
+      <option name="presentableId" value="LOCAL-00390" />
       <option name="project" value="LOCAL" />
-      <updated>1683079613043</updated>
+      <updated>1683432136386</updated>
     </task>
-    <task id="LOCAL-00338" summary=":recycle: refactor: Alterando nome do teste">
-      <created>1683079628095</created>
-      <option name="number" value="00338" />
-      <option name="presentableId" value="LOCAL-00338" />
+    <task id="LOCAL-00391" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683432175366</created>
+      <option name="number" value="00391" />
+      <option name="presentableId" value="LOCAL-00391" />
       <option name="project" value="LOCAL" />
-      <updated>1683079628095</updated>
+      <updated>1683432175367</updated>
     </task>
-    <task id="LOCAL-00339" summary=":recycle: refactor: Alterando nome do teste">
-      <created>1683079640384</created>
-      <option name="number" value="00339" />
-      <option name="presentableId" value="LOCAL-00339" />
+    <task id="LOCAL-00392" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683432189816</created>
+      <option name="number" value="00392" />
+      <option name="presentableId" value="LOCAL-00392" />
       <option name="project" value="LOCAL" />
-      <updated>1683079640384</updated>
+      <updated>1683432189818</updated>
     </task>
-    <task id="LOCAL-00340" summary=":recycle: refactor: Alterando nome do teste">
-      <created>1683079653617</created>
-      <option name="number" value="00340" />
-      <option name="presentableId" value="LOCAL-00340" />
+    <task id="LOCAL-00393" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595814075</created>
+      <option name="number" value="00393" />
+      <option name="presentableId" value="LOCAL-00393" />
       <option name="project" value="LOCAL" />
-      <updated>1683079653617</updated>
+      <updated>1683595814076</updated>
     </task>
-    <task id="LOCAL-00341" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
-      <created>1683079824688</created>
-      <option name="number" value="00341" />
-      <option name="presentableId" value="LOCAL-00341" />
+    <task id="LOCAL-00394" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595836571</created>
+      <option name="number" value="00394" />
+      <option name="presentableId" value="LOCAL-00394" />
       <option name="project" value="LOCAL" />
-      <updated>1683079824688</updated>
+      <updated>1683595836571</updated>
     </task>
-    <task id="LOCAL-00342" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
-      <created>1683079834916</created>
-      <option name="number" value="00342" />
-      <option name="presentableId" value="LOCAL-00342" />
+    <task id="LOCAL-00395" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595871652</created>
+      <option name="number" value="00395" />
+      <option name="presentableId" value="LOCAL-00395" />
       <option name="project" value="LOCAL" />
-      <updated>1683079834916</updated>
+      <updated>1683595871652</updated>
     </task>
-    <task id="LOCAL-00343" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
-      <created>1683079846397</created>
-      <option name="number" value="00343" />
-      <option name="presentableId" value="LOCAL-00343" />
+    <task id="LOCAL-00396" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595883084</created>
+      <option name="number" value="00396" />
+      <option name="presentableId" value="LOCAL-00396" />
       <option name="project" value="LOCAL" />
-      <updated>1683079846397</updated>
+      <updated>1683595883084</updated>
     </task>
-    <task id="LOCAL-00344" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
-      <created>1683079860456</created>
-      <option name="number" value="00344" />
-      <option name="presentableId" value="LOCAL-00344" />
+    <task id="LOCAL-00397" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595894694</created>
+      <option name="number" value="00397" />
+      <option name="presentableId" value="LOCAL-00397" />
       <option name="project" value="LOCAL" />
-      <updated>1683079860456</updated>
+      <updated>1683595894694</updated>
     </task>
-    <task id="LOCAL-00345" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
-      <created>1683079873548</created>
-      <option name="number" value="00345" />
-      <option name="presentableId" value="LOCAL-00345" />
+    <task id="LOCAL-00398" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595905527</created>
+      <option name="number" value="00398" />
+      <option name="presentableId" value="LOCAL-00398" />
       <option name="project" value="LOCAL" />
-      <updated>1683079873548</updated>
+      <updated>1683595905527</updated>
     </task>
-    <task id="LOCAL-00346" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
-      <created>1683079885770</created>
-      <option name="number" value="00346" />
-      <option name="presentableId" value="LOCAL-00346" />
+    <task id="LOCAL-00399" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595918072</created>
+      <option name="number" value="00399" />
+      <option name="presentableId" value="LOCAL-00399" />
       <option name="project" value="LOCAL" />
-      <updated>1683079885770</updated>
+      <updated>1683595918072</updated>
     </task>
-    <task id="LOCAL-00347" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
-      <created>1683079897081</created>
-      <option name="number" value="00347" />
-      <option name="presentableId" value="LOCAL-00347" />
+    <task id="LOCAL-00400" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595928943</created>
+      <option name="number" value="00400" />
+      <option name="presentableId" value="LOCAL-00400" />
       <option name="project" value="LOCAL" />
-      <updated>1683079897081</updated>
+      <updated>1683595928943</updated>
     </task>
-    <task id="LOCAL-00348" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
-      <created>1683079909328</created>
-      <option name="number" value="00348" />
-      <option name="presentableId" value="LOCAL-00348" />
+    <task id="LOCAL-00401" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595942158</created>
+      <option name="number" value="00401" />
+      <option name="presentableId" value="LOCAL-00401" />
       <option name="project" value="LOCAL" />
-      <updated>1683079909328</updated>
+      <updated>1683595942158</updated>
     </task>
-    <task id="LOCAL-00349" summary=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;">
-      <created>1683079920800</created>
-      <option name="number" value="00349" />
-      <option name="presentableId" value="LOCAL-00349" />
+    <task id="LOCAL-00402" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595956435</created>
+      <option name="number" value="00402" />
+      <option name="presentableId" value="LOCAL-00402" />
       <option name="project" value="LOCAL" />
-      <updated>1683079920801</updated>
+      <updated>1683595956435</updated>
     </task>
-    <task id="LOCAL-00350" summary=":sparkles: feat: Adicionando implementação em arquivo">
-      <created>1683082412745</created>
-      <option name="number" value="00350" />
-      <option name="presentableId" value="LOCAL-00350" />
+    <task id="LOCAL-00403" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595970116</created>
+      <option name="number" value="00403" />
+      <option name="presentableId" value="LOCAL-00403" />
       <option name="project" value="LOCAL" />
-      <updated>1683082412745</updated>
+      <updated>1683595970116</updated>
     </task>
-    <task id="LOCAL-00351" summary=":sparkles: feat: Adicionando implementação em arquivo">
-      <created>1683082431353</created>
-      <option name="number" value="00351" />
-      <option name="presentableId" value="LOCAL-00351" />
+    <task id="LOCAL-00404" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595982123</created>
+      <option name="number" value="00404" />
+      <option name="presentableId" value="LOCAL-00404" />
       <option name="project" value="LOCAL" />
-      <updated>1683082431353</updated>
+      <updated>1683595982123</updated>
     </task>
-    <task id="LOCAL-00352" summary=":sparkles: feat: Modificando implementação em arquivo">
-      <created>1683082451050</created>
-      <option name="number" value="00352" />
-      <option name="presentableId" value="LOCAL-00352" />
+    <task id="LOCAL-00405" summary=":bulb: docs: Adicionando comentários para documentação">
+      <created>1683595991709</created>
+      <option name="number" value="00405" />
+      <option name="presentableId" value="LOCAL-00405" />
       <option name="project" value="LOCAL" />
-      <updated>1683082451050</updated>
+      <updated>1683595991709</updated>
     </task>
-    <option name="localTasksCounter" value="353" />
+    <option name="localTasksCounter" value="406" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,11 +571,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":recycle: refactor: Trocando implementação do gerador de ID" />
-    <MESSAGE value=":sparkles: feat: Adicionando novo método" />
-    <MESSAGE value=":sparkles: feat: Adicionando assinatura de novo método" />
-    <MESSAGE value=":sparkles: feat: Adicionando de novo método" />
-    <MESSAGE value="refactor: Adicionando novos testes unitários" />
     <MESSAGE value="refactor: Adicionando novos métodos" />
     <MESSAGE value=":recycle: refactor: Remodelando o teste" />
     <MESSAGE value=":test_tube: test: Modelando teste para a classe" />
@@ -599,9 +589,14 @@
     <MESSAGE value=":test_tube: test: Excluindo linha desnecessária" />
     <MESSAGE value=":recycle: refactor: Alterando nome do teste" />
     <MESSAGE value=":sparkles: feat: Adicionando implementação do &quot;Serializable&quot;" />
-    <MESSAGE value=":sparkles: feat: Adicionando implementação em arquivo" />
     <MESSAGE value=":sparkles: feat: Modificando implementação em arquivo" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: feat: Modificando implementação em arquivo" />
+    <MESSAGE value=":sparkles: feat: Adicionando implementação em arquivo" />
+    <MESSAGE value=":bug: fix: Alterando implementação em arquivo" />
+    <MESSAGE value=":recycle: refactor: Trocando implementação para arquivo" />
+    <MESSAGE value=":goal_net: procedure: Adicionando tratamento de erros" />
+    <MESSAGE value=":books: docs: Atualizando arquivo &quot;workspace.xml&quot;" />
+    <MESSAGE value=":bulb: docs: Adicionando comentários para documentação" />
+    <option name="LAST_COMMIT_MESSAGE" value=":bulb: docs: Adicionando comentários para documentação" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EXA863_management_system_2023$WorkOrderTest_testAddInstallationService.ic" NAME="WorkOrderTest.testAddInstallationService Coverage Results" MODIFIED="1681770639234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
