@@ -18,10 +18,10 @@ public class Building implements Serializable {
     private List<ComputerComponent> usedComponents;
 
     /**
-     *
-     * @param description Description of the Building
-     * @param price Price of the Building
-     * @param cost Cost of the Building
+     * Cria um novo objeto do tipo "building"
+     * @param description Descrição do serviço
+     * @param price Preço do serviço
+     * @param cost Custo do serviço
      */
     public Building(String description, String workOrderID, double price, double cost) {
         this.id = null;
@@ -33,105 +33,116 @@ public class Building implements Serializable {
     }
 
     /**
-     * @return Return Service's ID
+     * Retorna o ID do objeto.
+     * @return ID do objeto
      */
     public String getID() {
         return id;
     }
 
     /**
-     * @param id New value to ID
+     * Atribui um novo valor para o ID.
+     * @param id Novo valor para o ID
      */
     public void setID(String id) {
         this.id = id;
     }
 
     /**
-     *
-     * @return ID of the work order that it belongs
+     * Retorna o ID da ordem de serviço a qual o serviço está associado.
+     * @return ID da ordem de serviço a qual o serviço está associado
      */
     public String getWorkOrderID() {
         return workOrderID;
     }
 
     /**
-     *
-     * @param workOrderID New value to work order's ID
+     * Atribui um novo valor para o ID da ordem de serviço a qual o serviço está associado.
+     * @param workOrderID Novo valor para o ID da ordem de serviço a qual o serviço está associado
      */
     public void setWorkOrderID(String workOrderID) {
         this.workOrderID = workOrderID;
     }
 
     /**
-     *
-     * @return Return Service's description
+     * Retorna a descrição do serviço.
+     * @return Descrição do serviço
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     *
-     * @param description New value to description
+     * Atribui uma nova descrição para a descrição.
+     * @param description Nova descrição para o serviço
      */
     public void setDescription(String description) {
         this.description = description;
     }
 
     /**
-     *
-     * @return Return Service's price
+     * Retorna o preço do serviço.
+     * @return Preço do serviço
      */
     public double getPrice() {
         return price;
     }
 
     /**
-     *
-     * @param price New value to price
+     * Atribui um novo valor para o preço do serviço.
+     * @param price Novo preço para o serviço
      */
     public void setPrice(double price) {
         this.price = price;
     }
 
     /**
-     *
-     * @return Return Service's cost
+     * Retorna o custo do serviço.
+     * @return Custo do serviço
      */
     public double getCost() {
         return cost;
     }
 
     /**
-     *
-     * @param cost New value to cost
+     * Atribui um novo valor para o custo do serviço.
+     * @param cost Novo custo para o serviço
      */
     public void setCost(double cost) {
         this.cost = cost;
     }
 
     /**
-     *
-     * @return Return Building's used components
+     * Retorna uma lista contendo os componentes usados.
+     * @return Lista de componentes usados
      */
     public List<ComputerComponent> getUsedComponents() {
         return usedComponents;
     }
 
     /**
-     *
+     * Estabele uma nova lista de componentes usados que substituirá a anterior.
      * @param usedComponents new value to used components
      */
     public void setUsedComponents(List<ComputerComponent> usedComponents) {
         this.usedComponents = usedComponents;
     }
 
+    /**
+     * Adiciona um novo componente à lista.
+     * @param component Novo componente
+     */
     public void addComponent(ComputerComponent component) {
         this.usedComponents.add(component);
         increasePrice();
         increaseCost();
     }
 
+    /**
+     * Remove um componente existente da lista.
+     * @param componentID ID do componente que se deseja remover
+     * @throws ObjectNotFoundException
+     */
     public void removeComponent(String componentID) throws ObjectNotFoundException {
         for (ComputerComponent component : this.usedComponents) {
             if (component.getID().equals(componentID)) {
@@ -145,7 +156,7 @@ public class Building implements Serializable {
     }
 
     /**
-     * Update the subtotal based on the list of components
+     * Aumenta o preço do serviço conforme os componentes usados.
      */
     public void increasePrice() {
        double price = 0;
@@ -156,6 +167,9 @@ public class Building implements Serializable {
        this.setPrice(newPrice);
     }
 
+    /**
+     * Aumenta o custo do serviço conforme os componentes usados.
+     */
     public void increaseCost() {
         double cost = 0;
         for (ComputerComponent component : this.usedComponents) {
@@ -165,6 +179,9 @@ public class Building implements Serializable {
         this.setCost(newCost);
     }
 
+    /**
+     * Diminui o preço do serviço conforme os componentes usados.
+     */
     public void decreasePrice() {
         double price = 0;
         for (ComputerComponent component : this.usedComponents) {
@@ -174,6 +191,9 @@ public class Building implements Serializable {
         this.setPrice(newPrice);
     }
 
+    /**
+     * Diminui o preço do serviço conforme os componentes usados.
+     */
     public void decreaseCost() {
         double cost = 0;
         for (ComputerComponent component : this.usedComponents) {
@@ -184,9 +204,9 @@ public class Building implements Serializable {
     }
 
     /**
-     *
-     * @param object Receive a random object
-     * @return Return true if the given object is equal to the current Building object, or false if they are not the same
+     * Compara dois objetos do tipo "building" a partir do ID
+     * @param object Objeto do tipo "building"
+     * @return True se o objeto informado tem o mesmo ID do objeto comparado, False caso contrário.
      */
     @Override
     public boolean equals(Object object) {
@@ -200,8 +220,8 @@ public class Building implements Serializable {
     }
 
     /**
-     *
-     * @return Return a short formatted description of the object
+     * Retorna uma representação em String do objeto.
+     * @return Representação em String do objeto
      */
     @Override
     public String toString() {
