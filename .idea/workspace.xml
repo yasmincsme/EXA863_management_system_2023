@@ -7,7 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":books: docs: Atualizando o arquivo &quot;workspace.xml&quot;" />
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":sparkles: feat: hello apllication">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/MainApplication.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +21,7 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -89,34 +93,29 @@
       <recent name="com.example.exa863_management_system_2023.dao.computerComponent" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.exa863_management_system_2023 in EXA863_management_system_2023">
-    <configuration name="BuildingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.HelloApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.HelloApplication" />
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.exa863_management_system_2023.model.*" />
+          <option name="PATTERN" value="com.example.exa863_management_system_2023.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.BuildingTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuildingTest.testAddComponent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.MainController" />
       <module name="EXA863_management_system_2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.exa863_management_system_2023.model.*" />
+          <option name="PATTERN" value="com.example.exa863_management_system_2023.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.exa863_management_system_2023.model" />
-      <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.model.BuildingTest" />
-      <option name="METHOD_NAME" value="testAddComponent" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.MainController" />
         <item itemvalue="JUnit.exa863_management_system_2023 in EXA863_management_system_2023" />
         <item itemvalue="JUnit.ManagerImplementationTest" />
         <item itemvalue="JUnit.WorkOrderImplementationTest" />
-        <item itemvalue="JUnit.BuildingTest" />
-        <item itemvalue="JUnit.BuildingTest.testAddComponent" />
       </list>
     </recent_temporary>
   </component>
@@ -209,105 +208,15 @@
       <workItem from="1683161895998" duration="3327000" />
       <workItem from="1683233996293" duration="647000" />
       <workItem from="1683425480986" duration="6037000" />
-      <workItem from="1683589476198" duration="7255000" />
-    </task>
-    <task id="LOCAL-00359" summary=":bug: fix: Alterando implementação em arquivo">
-      <created>1683132517770</created>
-      <option name="number" value="00359" />
-      <option name="presentableId" value="LOCAL-00359" />
-      <option name="project" value="LOCAL" />
-      <updated>1683132517770</updated>
-    </task>
-    <task id="LOCAL-00360" summary=":recycle: refactor: Trocando implementação para arquivo">
-      <created>1683132555439</created>
-      <option name="number" value="00360" />
-      <option name="presentableId" value="LOCAL-00360" />
-      <option name="project" value="LOCAL" />
-      <updated>1683132555439</updated>
-    </task>
-    <task id="LOCAL-00361" summary=":goal_net: procedure: Adicionando tratamento de erros">
-      <created>1683132741239</created>
-      <option name="number" value="00361" />
-      <option name="presentableId" value="LOCAL-00361" />
-      <option name="project" value="LOCAL" />
-      <updated>1683132741239</updated>
-    </task>
-    <task id="LOCAL-00362" summary=":books: docs: Atualizando arquivo &quot;workspace.xml&quot;">
-      <created>1683132925509</created>
-      <option name="number" value="00362" />
-      <option name="presentableId" value="LOCAL-00362" />
-      <option name="project" value="LOCAL" />
-      <updated>1683132925510</updated>
-    </task>
-    <task id="LOCAL-00363" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683208518728</created>
-      <option name="number" value="00363" />
-      <option name="presentableId" value="LOCAL-00363" />
-      <option name="project" value="LOCAL" />
-      <updated>1683208518732</updated>
-    </task>
-    <task id="LOCAL-00364" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683208547008</created>
-      <option name="number" value="00364" />
-      <option name="presentableId" value="LOCAL-00364" />
-      <option name="project" value="LOCAL" />
-      <updated>1683208547008</updated>
-    </task>
-    <task id="LOCAL-00365" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683208640766</created>
-      <option name="number" value="00365" />
-      <option name="presentableId" value="LOCAL-00365" />
-      <option name="project" value="LOCAL" />
-      <updated>1683208640766</updated>
-    </task>
-    <task id="LOCAL-00366" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683208652575</created>
-      <option name="number" value="00366" />
-      <option name="presentableId" value="LOCAL-00366" />
-      <option name="project" value="LOCAL" />
-      <updated>1683208652575</updated>
-    </task>
-    <task id="LOCAL-00367" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683208663978</created>
-      <option name="number" value="00367" />
-      <option name="presentableId" value="LOCAL-00367" />
-      <option name="project" value="LOCAL" />
-      <updated>1683208663978</updated>
-    </task>
-    <task id="LOCAL-00368" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683427753939</created>
-      <option name="number" value="00368" />
-      <option name="presentableId" value="LOCAL-00368" />
-      <option name="project" value="LOCAL" />
-      <updated>1683427753940</updated>
-    </task>
-    <task id="LOCAL-00369" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683427766332</created>
-      <option name="number" value="00369" />
-      <option name="presentableId" value="LOCAL-00369" />
-      <option name="project" value="LOCAL" />
-      <updated>1683427766332</updated>
-    </task>
-    <task id="LOCAL-00370" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683427778949</created>
-      <option name="number" value="00370" />
-      <option name="presentableId" value="LOCAL-00370" />
-      <option name="project" value="LOCAL" />
-      <updated>1683427778949</updated>
-    </task>
-    <task id="LOCAL-00371" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683427793395</created>
-      <option name="number" value="00371" />
-      <option name="presentableId" value="LOCAL-00371" />
-      <option name="project" value="LOCAL" />
-      <updated>1683427793395</updated>
-    </task>
-    <task id="LOCAL-00372" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431811315</created>
-      <option name="number" value="00372" />
-      <option name="presentableId" value="LOCAL-00372" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431811320</updated>
+      <workItem from="1683589476198" duration="9267000" />
+      <workItem from="1684545874401" duration="1213000" />
+      <workItem from="1684710128010" duration="6593000" />
+      <workItem from="1685560560691" duration="3013000" />
+      <workItem from="1685642965388" duration="1243000" />
+      <workItem from="1685905999878" duration="3000" />
+      <workItem from="1685906862114" duration="6081000" />
+      <workItem from="1686449682677" duration="538000" />
+      <workItem from="1686528137716" duration="3951000" />
     </task>
     <task id="LOCAL-00373" summary=":bulb: docs: Adicionando comentários para documentação">
       <created>1683431831100</created>
@@ -554,7 +463,105 @@
       <option name="project" value="LOCAL" />
       <updated>1683596712737</updated>
     </task>
-    <option name="localTasksCounter" value="408" />
+    <task id="LOCAL-00408" summary=":books: docs: Atualizando o arquivo &quot;workspace.xml&quot;">
+      <created>1683596860953</created>
+      <option name="number" value="00408" />
+      <option name="presentableId" value="LOCAL-00408" />
+      <option name="project" value="LOCAL" />
+      <updated>1683596860954</updated>
+    </task>
+    <task id="LOCAL-00409" summary=":books: docs: Adicionando javaDoc">
+      <created>1683596879701</created>
+      <option name="number" value="00409" />
+      <option name="presentableId" value="LOCAL-00409" />
+      <option name="project" value="LOCAL" />
+      <updated>1683596879701</updated>
+    </task>
+    <task id="LOCAL-00410" summary=":sparkles: feat: Controller para clients">
+      <created>1686544096837</created>
+      <option name="number" value="00410" />
+      <option name="presentableId" value="LOCAL-00410" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544096838</updated>
+    </task>
+    <task id="LOCAL-00411" summary=":sparkles: feat: Controller para login">
+      <created>1686544151831</created>
+      <option name="number" value="00411" />
+      <option name="presentableId" value="LOCAL-00411" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544151831</updated>
+    </task>
+    <task id="LOCAL-00412" summary=":sparkles: feat: Controller para new client">
+      <created>1686544173972</created>
+      <option name="number" value="00412" />
+      <option name="presentableId" value="LOCAL-00412" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544173972</updated>
+    </task>
+    <task id="LOCAL-00413" summary=":sparkles: feat: Controller para new component controller">
+      <created>1686544200107</created>
+      <option name="number" value="00413" />
+      <option name="presentableId" value="LOCAL-00413" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544200107</updated>
+    </task>
+    <task id="LOCAL-00414" summary=":sparkles: feat: Controller para new component controller">
+      <created>1686544220049</created>
+      <option name="number" value="00414" />
+      <option name="presentableId" value="LOCAL-00414" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544220049</updated>
+    </task>
+    <task id="LOCAL-00415" summary=":sparkles: feat: Controller para new order controller">
+      <created>1686544240287</created>
+      <option name="number" value="00415" />
+      <option name="presentableId" value="LOCAL-00415" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544240288</updated>
+    </task>
+    <task id="LOCAL-00416" summary=":sparkles: feat: Controller para order controller">
+      <created>1686544265606</created>
+      <option name="number" value="00416" />
+      <option name="presentableId" value="LOCAL-00416" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544265607</updated>
+    </task>
+    <task id="LOCAL-00417" summary=":sparkles: feat: Controller para stock">
+      <created>1686544296257</created>
+      <option name="number" value="00417" />
+      <option name="presentableId" value="LOCAL-00417" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544296258</updated>
+    </task>
+    <task id="LOCAL-00418" summary=":sparkles: feat: Controller para users">
+      <created>1686544314854</created>
+      <option name="number" value="00418" />
+      <option name="presentableId" value="LOCAL-00418" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544314854</updated>
+    </task>
+    <task id="LOCAL-00419" summary=":sparkles: feat: Controller para new users">
+      <created>1686544334059</created>
+      <option name="number" value="00419" />
+      <option name="presentableId" value="LOCAL-00419" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544334059</updated>
+    </task>
+    <task id="LOCAL-00420" summary=":sparkles: feat: Controller para main">
+      <created>1686544350306</created>
+      <option name="number" value="00420" />
+      <option name="presentableId" value="LOCAL-00420" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544350306</updated>
+    </task>
+    <task id="LOCAL-00421" summary=":sparkles: feat: hello apllication">
+      <created>1686544372074</created>
+      <option name="number" value="00421" />
+      <option name="presentableId" value="LOCAL-00421" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544372074</updated>
+    </task>
+    <option name="localTasksCounter" value="422" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,18 +579,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":recycle: refactor: Remodelando o teste" />
-    <MESSAGE value=":test_tube: test: Modelando teste para a classe" />
-    <MESSAGE value=":sparkles: feat: Adicionando classe para tratamento dos casos em que o objeto buscado não for encontrado" />
-    <MESSAGE value=":recycle: refactor: Realizando correções de erros apontados nos testes" />
-    <MESSAGE value=":test_tube: test: Criando novo teste" />
-    <MESSAGE value=":bug: fix: Adaptando lógica do código" />
-    <MESSAGE value=":bug: fix: Consertando método &quot;findMany&quot;" />
-    <MESSAGE value=":test_tube: test: Adicionando novos métodos" />
-    <MESSAGE value=":sparkles: feat: Adicionando novos métodos" />
-    <MESSAGE value=":sparkles: feat: Adicionando assinatura de novos métodos" />
-    <MESSAGE value=":sparkles: feat: Adicionando tratamento de erros" />
-    <MESSAGE value=":sparkles: feat: Adicionando classe para tratamento de erro" />
     <MESSAGE value=":ok_hand: style: Alterando formatação do código" />
     <MESSAGE value=":test_tube: test: Adicionando novos testes" />
     <MESSAGE value=":test_tube: test: Excluindo linha desnecessária" />
@@ -597,7 +592,19 @@
     <MESSAGE value=":books: docs: Atualizando arquivo &quot;workspace.xml&quot;" />
     <MESSAGE value=":bulb: docs: Adicionando comentários para documentação" />
     <MESSAGE value=":books: docs: Atualizando o arquivo &quot;workspace.xml&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value=":books: docs: Atualizando o arquivo &quot;workspace.xml&quot;" />
+    <MESSAGE value=":books: docs: Adicionando javaDoc" />
+    <MESSAGE value=":sparkles: feat: Controller para clients" />
+    <MESSAGE value=":sparkles: feat: Controller para login" />
+    <MESSAGE value=":sparkles: feat: Controller para new client" />
+    <MESSAGE value=":sparkles: feat: Controller para new component controller" />
+    <MESSAGE value=":sparkles: feat: Controller para new order controller" />
+    <MESSAGE value=":sparkles: feat: Controller para order controller" />
+    <MESSAGE value=":sparkles: feat: Controller para stock" />
+    <MESSAGE value=":sparkles: feat: Controller para users" />
+    <MESSAGE value=":sparkles: feat: Controller para new users" />
+    <MESSAGE value=":sparkles: feat: Controller para main" />
+    <MESSAGE value=":sparkles: feat: hello apllication" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: feat: hello apllication" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EXA863_management_system_2023$WorkOrderTest_testAddInstallationService.ic" NAME="WorkOrderTest.testAddInstallationService Coverage Results" MODIFIED="1681770639234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
