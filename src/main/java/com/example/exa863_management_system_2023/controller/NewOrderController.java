@@ -1,5 +1,6 @@
 package com.example.exa863_management_system_2023.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -22,6 +23,9 @@ public class NewOrderController {
     private TextField paymentMethodField;
 
     @FXML
+    private TextField paymentMethodField1;
+
+    @FXML
     private TextField priceField;
 
     @FXML
@@ -31,6 +35,13 @@ public class NewOrderController {
     private Button saveButton;
 
     @FXML
-    private TextField technicianIDField;
+    void cancelOperation(ActionEvent event) {
+
+    }
+
+    @FXML
+    void saveOrder(ActionEvent event) {
+
+    }
 
 }
