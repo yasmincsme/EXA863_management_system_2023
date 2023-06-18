@@ -1,4 +1,4 @@
-package com.example.exa863_management_system_2023.Exceptions;
+package com.example.exa863_management_system_2023.exceptions;
 
 public class ObjectNotFoundException extends Exception{
 
