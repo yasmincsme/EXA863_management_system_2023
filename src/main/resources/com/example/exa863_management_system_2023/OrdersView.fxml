@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #1c0b2b;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exa863_management_system_2023.controller.OrdersController">
+   <children>
+      <Label layoutX="272.0" layoutY="42.0" text="Work Orders" textFill="#e6e8e3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="266.0" layoutY="86.0" prefHeight="98.0" prefWidth="654.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="59.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="numTotalLabel" text="22000" textFill="#e6e8e3">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalOrdersLabel" text="Total Orders" textFill="#e6e8e3" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <Label textFill="#e7e7e7" />
+            <VBox alignment="CENTER" prefHeight="59.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="numCompletedLabel" text="22000" textFill="#29b449">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalCompletedLabel" text="Total Completed" textFill="#e6e8e3" />
+               </children>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="59.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="numCanceledLabel" text="22000" textFill="#ff3030">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalCanceledLabel" text="Total Canceled" textFill="#e6e8e3" />
+               </children>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="59.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="numOrdersLabel" text="22000" textFill="#7256ff">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pendingOrdersLabel" text="Pending Orders" textFill="#e6e8e3" />
+               </children>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox prefHeight="600.0" prefWidth="240.0" style="-fx-background-color: #301c41;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="151.0" prefWidth="240.0">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/user1Icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="usernameLabel" text="Username" textFill="#e6e8e3">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Button fx:id="ordersButton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goToOrders" prefHeight="60.0" prefWidth="240.0" style="-fx-background-color: #301c41;" text="Orders" textFill="#e6e8e3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/orderIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="usersButton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goToUsers" prefHeight="60.0" prefWidth="240.0" style="-fx-background-color: #301c41;" text="Users" textFill="#e6e8e3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/employeeIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="clientsButton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goToClients" prefHeight="60.0" prefWidth="240.0" style="-fx-background-color: #301c41;" text="Clients" textFill="#e6e8e3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/conferenceIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="stockButton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goToStock" prefHeight="60.0" prefWidth="240.0" style="-fx-background-color: #301c41;" text="Stock" textFill="#e6e8e3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/boxIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="signoutButton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#quit" prefHeight="60.0" prefWidth="240.0" style="-fx-background-color: #301c41;" text="Sign Out" textFill="#e6e8e3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logoutIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <TableView fx:id="ordersTable" layoutX="269.0" layoutY="185.0" prefHeight="315.0" prefWidth="647.0" style="-fx-background-color: #e6e8e3;">
+        <columns>
+          <TableColumn fx:id="descriptionColumn" prefWidth="93.5999755859375" text="Description" />
+          <TableColumn fx:id="clientColumn" prefWidth="83.99993896484375" text="Client" />
+            <TableColumn fx:id="technicianColumn" prefWidth="147.2000732421875" text="Assigned Technician" />
+            <TableColumn fx:id="statusColumn" prefWidth="75.20001220703125" text="Status" />
+            <TableColumn fx:id="priceColumn" prefWidth="62.4000244140625" text="Price" />
+            <TableColumn fx:id="costColumn" prefWidth="55.20001220703125" text="Cost" />
+            <TableColumn fx:id="scoreColumn" prefWidth="130.4000122070313" text="Satisfaction Score" />
+        </columns>
+      </TableView>
+      <Button fx:id="removeButton" layoutX="266.0" layoutY="532.0" mnemonicParsing="false" onAction="#removeOrder" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1c0b2b; -fx-border-radius: 5cm; -fx-border-color: #ff3030;" text="Remove order" textFill="#ff3030">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateOrderButton" layoutX="493.0" layoutY="532.0" mnemonicParsing="false" onAction="#updateOrder" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1c0b2b; -fx-border-radius: 5cm; -fx-border-color: #38c8f4;" text="Update order" textFill="#38c8f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="newOrderButton" layoutX="716.0" layoutY="532.0" mnemonicParsing="false" onAction="#addNewOrder" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1c0b2b; -fx-border-radius: 5cm; -fx-border-color: #29b449;" text="Add new order" textFill="#29b449">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

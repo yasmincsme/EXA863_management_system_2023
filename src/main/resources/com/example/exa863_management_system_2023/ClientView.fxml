@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #1c0b2b;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exa863_management_system_2023.controller.ClientsController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="240.0" style="-fx-background-color: #301c41;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="151.0" prefWidth="240.0">
+               <children>
+                  <ImageView fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/user1Icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="usernameLabel" text="Username" textFill="#e6e8e3">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Button fx:id="ordersButton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goToClients" prefHeight="60.0" prefWidth="240.0" style="-fx-background-color: #301c41;" text="Orders" textFill="#e6e8e3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/orderIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="usersButton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goToUsers" prefHeight="60.0" prefWidth="240.0" style="-fx-background-color: #301c41;" text="Users" textFill="#e6e8e3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/employeeIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="clientsButton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goToClients" prefHeight="60.0" prefWidth="240.0" style="-fx-background-color: #301c41;" text="Clients" textFill="#e6e8e3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/conferenceIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="stockButton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#goToStock" prefHeight="60.0" prefWidth="240.0" style="-fx-background-color: #301c41;" text="Stock" textFill="#e6e8e3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/boxIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="signoutButton" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#quit" prefHeight="60.0" prefWidth="240.0" style="-fx-background-color: #301c41;" text="Sign Out" textFill="#e6e8e3">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logoutIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="removeButton" layoutX="283.0" layoutY="529.0" mnemonicParsing="false" onAction="#removeClient" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1c0b2b; -fx-border-radius: 5cm; -fx-border-color: #ff3030;" text="Remove client" textFill="#ff3030">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="newClientButton" layoutX="715.0" layoutY="529.0" mnemonicParsing="false" onAction="#addNewClient" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1c0b2b; -fx-border-radius: 5cm; -fx-border-color: #29b449;" text="Add new client" textFill="#29b449">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="282.0" layoutY="52.0" text="Clients" textFill="#e6e8e3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="283.0" layoutY="134.0" prefHeight="355.0" prefWidth="254.0" style="-fx-background-radius: 0.25cm; -fx-background-color: #301c41;">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="138.0" layoutX="60.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/userIcon.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="14.0" layoutY="156.0" prefHeight="179.0" prefWidth="226.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="151.0" prefWidth="94.0">
+                     <children>
+                        <Label text="Name:" textFill="#e6e8e3">
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="ID:" textFill="#e6e8e3">
+                           <padding>
+                              <Insets top="12.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Email:" textFill="#e6e8e3">
+                           <padding>
+                              <Insets top="12.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address" textFill="#e6e8e3">
+                           <padding>
+                              <Insets top="12.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Phone" textFill="#e6e8e3">
+                           <padding>
+                              <Insets top="12.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="179.0" prefWidth="198.0">
+                     <children>
+                        <Label fx:id="nameLabel" text="Robertinho vitor" textFill="#e6e8e3">
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="IDLabel" text="56298-abc5555-as896" textFill="#e6e8e3">
+                           <padding>
+                              <Insets top="12.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="emailLabel" text="isadora.maria@example.com" textFill="#e6e8e3">
+                           <padding>
+                              <Insets top="12.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="addressLabel" text="isadora.maria@example.com" textFill="#e6e8e3">
+                           <padding>
+                              <Insets top="12.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="phoneLabel" text="isadora.maria@example.com" textFill="#e6e8e3">
+                           <padding>
+                              <Insets top="12.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="usersTable" layoutX="544.0" layoutY="132.0" prefHeight="355.0" prefWidth="370.0" style="-fx-background-color: #e6e8e3;">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="182.4000244140625" text="Name" />
+            <TableColumn fx:id="emailColumn" minWidth="0.0" prefWidth="187.199951171875" text="Email" />
+         </columns>
+      </TableView>
+      <Button fx:id="updateClientButton" layoutX="500.0" layoutY="529.0" mnemonicParsing="false" onAction="#updateClient" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1c0b2b; -fx-border-radius: 5cm; -fx-border-color: #38c8f4;" text="Update client" textFill="#38c8f4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #1c0b2b;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exa863_management_system_2023.controller.NewClientController">
+   <children>
+      <Button fx:id="saveButton" layoutX="437.0" layoutY="517.0" mnemonicParsing="false" onAction="#saveClient" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1c0b2b; -fx-border-radius: 5cm; -fx-border-color: #29b449;" text="Save" textFill="#29b449">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="161.0" layoutY="517.0" mnemonicParsing="false" onAction="#cancelOperation" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #1c0b2b; -fx-border-radius: 5cm; -fx-border-color: #ff3030;" text="Cancel" textFill="#ff3030">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="81.0" layoutY="55.0" text="Register new client" textFill="#e6e8e3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="81.0" layoutY="167.0" prefHeight="266.0" prefWidth="638.0" style="-fx-background-color: #301c41; -fx-background-radius: 0.25cm;">
+         <children>
+            <Label layoutX="34.0" layoutY="31.0" text="Clients info" textFill="#e6e8e3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER_LEFT" layoutX="164.0" layoutY="70.0" prefHeight="162.0" prefWidth="438.0">
+               <children>
+                  <TextField fx:id="nameField" prefHeight="26.0" prefWidth="282.0" style="-fx-background-color: #301c41; -fx-border-color: #e6e8e3; -fx-border-radius: 0.10cm; -fx-text-inner-color: #e6e8e3;" />
+                  <TextField fx:id="emailField" prefHeight="26.0" prefWidth="282.0" style="-fx-background-color: #301c41; -fx-border-color: #e6e8e3; -fx-border-radius: 0.10cm; -fx-text-inner-color: #e6e8e3;">
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="addressField" prefHeight="26.0" prefWidth="282.0" style="-fx-background-color: #301c41; -fx-border-color: #e6e8e3; -fx-border-radius: 0.10cm; -fx-text-inner-color: #e6e8e3;">
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="phoneField" prefHeight="26.0" prefWidth="282.0" style="-fx-background-color: #301c41; -fx-border-color: #e6e8e3; -fx-border-radius: 0.10cm; -fx-text-inner-color: #e6e8e3;">
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox layoutX="34.0" layoutY="77.0" prefHeight="161.0" prefWidth="130.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="98.0" text="Name" textFill="#e6e8e3">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="117.0" text="Email" textFill="#e6e8e3">
+                     <padding>
+                        <Insets top="15.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="40.0" prefWidth="115.0" text="Address" textFill="#e6e8e3">
+                     <padding>
+                        <Insets top="15.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="40.0" prefWidth="115.0" text="Phone" textFill="#e6e8e3">
+                     <padding>
+                        <Insets top="15.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
