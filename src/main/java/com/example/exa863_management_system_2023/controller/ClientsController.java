@@ -53,6 +53,10 @@ public class ClientsController extends MenuController{
 
     public static Object selectedUser;
 
+    //TextField
+    @FXML
+    private TextField nameField;
+
 
     @FXML
     private void initialize(){

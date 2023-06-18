@@ -34,7 +34,7 @@ public class WorkOrder implements Serializable {
     public WorkOrder(String clientID, String description) {
         this.id = null;
         this.clientID = clientID;
-        this.technicianID = null;
+        this.technicianID = "";
         this.status = "OPEN";
         this.description = description;
         this.createdAt = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss.S").format(Calendar.getInstance().getTime());

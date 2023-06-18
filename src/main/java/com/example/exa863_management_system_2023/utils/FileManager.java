@@ -37,7 +37,7 @@ public class FileManager<T> {
     public static <T> List<T> readListFromFile(String fileName) {
         List<T> list = null;
         try (ObjectInputStream inputStream = new ObjectInputStream(new BufferedInputStream(new FileInputStream(fileName)))) {
-            list = (List<T>) inputStream.readObject();
+            list = (ArrayList<T>) inputStream.readObject();
         } catch (IOException | ClassNotFoundException exception) {
             throw new RuntimeException(exception);
         }
