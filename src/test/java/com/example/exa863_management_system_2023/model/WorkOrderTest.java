@@ -1,6 +1,6 @@
 package com.example.exa863_management_system_2023.model;
 
-import com.example.exa863_management_system_2023.Exceptions.WorkOrderWithoutTechnician;
+import com.example.exa863_management_system_2023.exceptions.WorkOrderWithoutTechnician;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
