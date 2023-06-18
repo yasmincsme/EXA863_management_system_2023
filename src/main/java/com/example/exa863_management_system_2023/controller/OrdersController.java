@@ -18,6 +18,7 @@ import javafx.util.converter.IntegerStringConverter;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Objects;
 
 public class OrdersController extends MenuController{
 
@@ -67,6 +68,7 @@ public class OrdersController extends MenuController{
     private void initialize(){
         selectedOrder = null;
         initializeTable();
+        updateValues();
     }
 
     private void initializeTable(){
@@ -102,6 +104,28 @@ public class OrdersController extends MenuController{
         for (WorkOrder order : ordersList) {
             ordersTable.getItems().add(order);
         }
+    }
+
+    public void updateValues() {
+        int totalOrders = 0;
+        int canceledOrders = 0;
+        int pendignOrders = 0;
+        int openedOrders = 0;
+        List<WorkOrder> orderList = DAO.getWorkOrder().findMany();
+        for(WorkOrder workOrder : orderList) {
+            totalOrders += 1;
+            if (Objects.equals(workOrder.getStatus(), "OPEN")) {
+                openedOrders += 1;
+            } else if (Objects.equals(workOrder.getStatus(), "CANCELED")) {
+                canceledOrders += 1;
+            } else {
+                pendignOrders += 1;
+            }
+        }
+        this.numTotalLabel.setText(String.valueOf(totalOrders));
+        this.numCanceledLabel.setText(String.valueOf(canceledOrders));
+        this.numCompletedLabel.setText(String.valueOf(pendignOrders));
+        this.numOrdersLabel.setText(String.valueOf(openedOrders));
     }
 
     @FXML

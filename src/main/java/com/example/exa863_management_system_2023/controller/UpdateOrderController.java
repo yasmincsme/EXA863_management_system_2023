@@ -4,6 +4,7 @@ import com.example.exa863_management_system_2023.MainController;
 import com.example.exa863_management_system_2023.dao.DAO;
 import com.example.exa863_management_system_2023.exceptions.InvalidSatisfactionScore;
 import com.example.exa863_management_system_2023.exceptions.ObjectNotFoundException;
+import com.example.exa863_management_system_2023.exceptions.WorkOrderWithoutTechnician;
 import com.example.exa863_management_system_2023.model.WorkOrder;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,35 +17,30 @@ import java.io.IOException;
 
 public class UpdateOrderController {
 
-    @FXML
-    private TextField IDField;
-
+    //Button
     @FXML
     private Button cancelButton;
-
-    @FXML
-    private TextField clientIDField;
-
-    @FXML
-    private TextField costField;
-
-    @FXML
-    private TextField descriptionField;
-
-    @FXML
-    private TextField paymentMethodField;
-
-    @FXML
-    private TextField priceField;
-
-    @FXML
-    private TextField satisfactionScoreField;
-
     @FXML
     private Button saveButton;
 
+
+    //Field
+    @FXML
+    private TextField descriptionField;
+    @FXML
+    private TextField clientIDField;
     @FXML
     private TextField technicianID;
+    @FXML
+    private TextField statusField;
+    @FXML
+    private TextField priceField;
+    @FXML
+    private TextField costField;
+    @FXML
+    private TextField satisfactionScoreField;
+    @FXML
+    private TextField paymentMethodField;
 
     @FXML
     void cancelOperation(ActionEvent event) throws IOException {
@@ -54,7 +50,7 @@ public class UpdateOrderController {
     }
 
     @FXML
-    void saveOrder(ActionEvent event) throws InvalidSatisfactionScore, ObjectNotFoundException, IOException {
+    void saveOrder(ActionEvent event) throws InvalidSatisfactionScore, ObjectNotFoundException, IOException, WorkOrderWithoutTechnician {
         WorkOrder order = (WorkOrder) OrdersController.selectedOrder;
 
         if (!descriptionField.getText().isEmpty()) {
@@ -65,6 +61,17 @@ public class UpdateOrderController {
         }
         if (!technicianID.getText().isEmpty()) {
             order.setTechnicianID(technicianID.getText());
+        }
+        if (!statusField.getText().isEmpty()) {
+            if (statusField.getText().toLowerCase().charAt(0) == 'o') {
+                order.reopen();
+            }
+            if (statusField.getText().toLowerCase().charAt(0) == 'c') {
+                order.cancel();
+            }
+            if (statusField.getText().toLowerCase().charAt(0) == 'f') {
+                order.finish();
+            }
         }
         if (!priceField.getText().isEmpty()) {
             order.setPrice(Double.parseDouble(priceField.getText()));

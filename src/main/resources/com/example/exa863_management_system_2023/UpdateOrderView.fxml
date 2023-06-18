@@ -25,14 +25,14 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="81.0" layoutY="99.0" prefHeight="402.0" prefWidth="638.0" style="-fx-background-color: #301c41; -fx-background-radius: 0.25cm;">
+      <AnchorPane layoutX="81.0" layoutY="95.0" prefHeight="410.0" prefWidth="638.0" style="-fx-background-color: #301c41; -fx-background-radius: 0.25cm;">
          <children>
             <Label layoutX="34.0" layoutY="35.0" text="Order info" textFill="#e6e8e3">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <VBox alignment="CENTER_LEFT" layoutX="164.0" layoutY="75.0" prefHeight="226.0" prefWidth="438.0">
+            <VBox alignment="CENTER_LEFT" layoutX="164.0" layoutY="66.0" prefHeight="226.0" prefWidth="438.0">
                <children>
                   <TextField fx:id="descriptionField" prefHeight="26.0" prefWidth="282.0" style="-fx-background-color: #301c41; -fx-border-color: #e6e8e3; -fx-border-radius: 0.1cm; -fx-text-inner-color: #e6e8e3;">
                      <VBox.margin>
@@ -45,6 +45,11 @@
                      </VBox.margin>
                   </TextField>
                   <TextField fx:id="technicianID" prefHeight="26.0" prefWidth="282.0" style="-fx-background-color: #301c41; -fx-border-color: #e6e8e3; -fx-border-radius: 0.10cm; -fx-text-inner-color: #e6e8e3;">
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="statusField" prefHeight="26.0" prefWidth="282.0" style="-fx-background-color: #301c41; -fx-border-color: #e6e8e3; -fx-border-radius: 0.10cm; -fx-text-inner-color: #e6e8e3;">
                      <VBox.margin>
                         <Insets top="12.0" />
                      </VBox.margin>
@@ -93,6 +98,14 @@
                      </font>
                   </Label>
                   <Label prefHeight="35.0" prefWidth="117.0" text="Technician ID" textFill="#e6e8e3">
+                     <padding>
+                        <Insets top="17.0" />
+                     </padding>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="117.0" text="Status" textFill="#e6e8e3">
                      <padding>
                         <Insets top="17.0" />
                      </padding>
