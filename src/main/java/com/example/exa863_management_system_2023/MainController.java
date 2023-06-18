@@ -22,10 +22,6 @@ public class MainController extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         MainController.stage = new Stage();
-        Manager manager = new Manager("Admin", "admin@example", "admin", "admin123");
-        if (DAO.getManager().findByLogin("yamisan").size() == 0) {
-            DAO.getManager().create(manager);
-        }
         gotoScene("LoginView.fxml");
     }
 }
