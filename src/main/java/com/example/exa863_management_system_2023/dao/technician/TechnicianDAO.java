@@ -13,4 +13,6 @@ public interface TechnicianDAO extends CRUD<Technician, Exception> {
      * @return Lista com os técnicos que possuem o nome informado
      */
     public List<Technician> findByName(String name);
+
+    public List<Technician> findByLogin(String login);
 }
