@@ -65,27 +65,21 @@ public class StockController {
 
         //Valores para o nome
         this.nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
-        this.nameColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         //Valores para o fabricante
         this.manufacturerColumn.setCellValueFactory(new PropertyValueFactory<>("manufacturer"));
-        this.manufacturerColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         //Valores para o número de série
         this.serialNumberColumn.setCellValueFactory(new PropertyValueFactory<>("serialNumber"));
-        this.serialNumberColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         //Valores para a coluna preço
         this.unitPriceColumn.setCellValueFactory(new PropertyValueFactory<>("unitPrice"));
-        this.unitPriceColumn.setCellFactory(TextFieldTableCell.forTableColumn( new DoubleStringConverter()));
 
         //Valores para a coluna custo
         this.unitCostColumn.setCellValueFactory(new PropertyValueFactory<>("unitCost"));
-        this.unitCostColumn.setCellFactory(TextFieldTableCell.forTableColumn( new DoubleStringConverter()));
 
         //Valores para a coluna quantidade
         this.quantityColumn.setCellValueFactory(new PropertyValueFactory<>("quantity"));
-        this.quantityColumn.setCellFactory(TextFieldTableCell.forTableColumn( new IntegerStringConverter()));
 
         this.componentsTable.onMouseClickedProperty().setValue(mouseEvent -> {
             if (componentsTable.getSelectionModel().getSelectedItem() != null) {
@@ -110,8 +104,8 @@ public class StockController {
     }
 
     @FXML
-    void updateComponent(ActionEvent event) {
-
+    void updateComponent(ActionEvent event) throws IOException{
+        MainController.popUp("UpdateComponentView.fxml");
     }
 
     @FXML
