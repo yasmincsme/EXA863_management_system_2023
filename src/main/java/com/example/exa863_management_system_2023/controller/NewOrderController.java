@@ -70,5 +70,4 @@ public class NewOrderController {
         currentStage.close();
         MainController.gotoScene("OrdersView.fxml");
     }
-
 }
