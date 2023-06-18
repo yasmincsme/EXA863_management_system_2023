@@ -8,67 +8,84 @@ import com.example.exa863_management_system_2023.model.Manager;
 import com.example.exa863_management_system_2023.model.Technician;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class UpdateUserController {
 
-    @FXML
-    private TextField loginField;
-
+    //Button
     @FXML
     private Button cancelButton;
-
-    @FXML
-    private TextField emailField;
-
-    @FXML
-    private TextField nameField;
-
     @FXML
     private Button saveButton;
 
-    @FXML
-    void cancelOperation(ActionEvent event) {
 
+    //Field
+    @FXML
+    private TextField nameField;
+    @FXML
+    private TextField emailField;
+    @FXML
+    private TextField loginField;
+    @FXML
+    private TextField passwordField;
+
+
+    @FXML
+    void cancelOperation(ActionEvent event) throws IOException {
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        currentStage.close();
+        MainController.gotoScene("UsersView.fxml");
     }
 
     @FXML
     void saveUser(ActionEvent event) throws ObjectNotFoundException, IOException {
         if (UsersController.selectedUser instanceof Manager) {
-            Manager updatingUser = (Manager) UsersController.selectedUser;
+            Manager user = (Manager) UsersController.selectedUser;
 
             if (nameField.getText().length() > 0) {
-                updatingUser.setName(nameField.getText());
+                user.setName(nameField.getText());
             }
             if (emailField.getText().length() > 0) {
-                updatingUser.setEmail(emailField.getText());
+                user.setEmail(emailField.getText());
             }
-            DAO.getManager().update(updatingUser);
+            if (passwordField.getText().length() > 0) {
+                user.setPassword(passwordField.getText());
+            }
+            DAO.getManager().update(user);
         } else if (UsersController.selectedUser instanceof Technician) {
-            Technician updatingUser = (Technician) UsersController.selectedUser;
+            Technician user = (Technician) UsersController.selectedUser;
 
             if (nameField.getText().length() > 0) {
-                updatingUser.setName(nameField.getText());
+                user.setName(nameField.getText());
             }
             if (emailField.getText().length() > 0) {
-                updatingUser.setEmail(emailField.getText());
+                user.setEmail(emailField.getText());
             }
-            DAO.getTechnician().update(updatingUser);
+            if (passwordField.getText().length() > 0) {
+                user.setPassword(passwordField.getText());
+            }
+            DAO.getTechnician().update(user);
         } else if (UsersController.selectedUser instanceof Employee) {
-            Employee updatingUser = (Employee) UsersController.selectedUser;
+            Employee user = (Employee) UsersController.selectedUser;
 
             if (nameField.getText().length() > 0) {
-                updatingUser.setName(nameField.getText());
+                user.setName(nameField.getText());
             }
             if (emailField.getText().length() > 0) {
-                updatingUser.setEmail(emailField.getText());
+                user.setEmail(emailField.getText());
             }
-            DAO.getEmployee().update(updatingUser);
+            if (passwordField.getText().length() > 0) {
+                user.setPassword(passwordField.getText());
+            }
+            DAO.getEmployee().update(user);
         }
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        currentStage.close();
         MainController.gotoScene("UsersView.fxml");
     }
-
 }

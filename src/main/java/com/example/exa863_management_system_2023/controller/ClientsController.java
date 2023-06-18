@@ -15,6 +15,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -63,11 +64,9 @@ public class ClientsController extends MenuController{
 
         //Valores para o nome
         this.nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
-        this.nameColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         //Valores para o email
         this.emailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
-        this.emailColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         this.usersTable.onMouseClickedProperty().setValue(mouseEvent -> {
             if (usersTable.getSelectionModel().getSelectedItem() != null) {
@@ -112,12 +111,13 @@ public class ClientsController extends MenuController{
     }
 
     @FXML
-    void updateClient(ActionEvent event) {
+    void updateClient(ActionEvent event) throws IOException {
+        Stage popUpStage = MainController.popUp("UpdateClientView.fxml");
 
     }
 
     @FXML
-    void addNewClient(ActionEvent event) {
-
+    void addNewClient(ActionEvent event) throws IOException {
+        Stage popUpStage = MainController.popUp("NewClientView.fxml");
     }
 }
