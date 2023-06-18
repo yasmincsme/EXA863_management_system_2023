@@ -18,4 +18,7 @@ module com.example.exa863_management_system_2023 {
 
     opens com.example.exa863_management_system_2023 to javafx.fxml;
     exports com.example.exa863_management_system_2023;
+
+    opens com.example.exa863_management_system_2023.controller to javafx.fxml;
+    exports com.example.exa863_management_system_2023.controller;
 }

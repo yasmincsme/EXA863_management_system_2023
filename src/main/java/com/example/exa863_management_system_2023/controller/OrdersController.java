@@ -19,8 +19,13 @@ import javafx.util.converter.IntegerStringConverter;
 import java.io.IOException;
 import java.util.List;
 
-public class OrdersController {
+public class OrdersController extends MenuController{
 
+    //Elementos das colunas
+    @FXML
+    private TableView<WorkOrder> ordersTable;
+    @FXML
+    private TableColumn<WorkOrder, String> descriptionColumn;
     @FXML
     private TableColumn<WorkOrder, String> clientColumn;
     @FXML

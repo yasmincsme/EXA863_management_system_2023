@@ -25,6 +25,9 @@ public class Employee implements Serializable {
         this.password = password;
     }
 
+    public String getType(){
+        return this.type;
+    }
     /**
      * Retorna o ID do objeto.
      * @return ID do objeto

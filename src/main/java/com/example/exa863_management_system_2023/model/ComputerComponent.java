@@ -151,7 +151,7 @@ public class ComputerComponent implements Serializable {
      * Retorna a quantidade do componente em estoque.
      * @return Quantidade do componente em estoque
      */
-    public int getQuantity() {
+    public Integer getQuantity() {
         return quantity;
     }
 
@@ -166,7 +166,7 @@ public class ComputerComponent implements Serializable {
      * Retorna a multiplicação entre o preço unitário e a quantidade disponível no sistema
      * @return Multiplicação entre o preço unitário e a quantidade disponível no sistema
      */
-    public double getPrice() {
+    public Double getPrice() {
         return this.getUnitPrice() * this.getQuantity();
     }
 
@@ -175,7 +175,7 @@ public class ComputerComponent implements Serializable {
      * Retorna a multiplicação entre o custo unitário e a quantidade disponível no sistema
      * @return Multiplicação entre o custo unitário e a quantidade disponível no sistema
      */
-    public double getCost() {
+    public Double getCost() {
         return this.getUnitCost() * this.getQuantity();
     }
 

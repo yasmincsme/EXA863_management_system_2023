@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class MainController extends Application {
+    public static Stage stage;
+    public static boolean popUpClosed = false;
 
     public static void main(String[] args) {
         launch(args);
@@ -23,5 +25,24 @@ public class MainController extends Application {
     public void start(Stage primaryStage) throws IOException {
         MainController.stage = new Stage();
         gotoScene("LoginView.fxml");
+    }
+
+    public static void gotoScene(String path) throws IOException{
+        Parent root = FXMLLoader.load(Objects.requireNonNull(MainController.class.getResource(path)));
+        MainController.stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    public static Stage popUp(String path) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(MainController.class.getResource(path)));
+        Stage newStage = new Stage();
+        newStage.initModality(Modality.WINDOW_MODAL);
+        newStage.initOwner(MainController.stage);
+        newStage.setScene(new Scene(root));
+        newStage.setOnHidden(e -> {
+            popUpClosed = true;
+        });
+        newStage.show();
+        return newStage;
     }
 }

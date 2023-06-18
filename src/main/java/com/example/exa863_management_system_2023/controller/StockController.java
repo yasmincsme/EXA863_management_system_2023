@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.text.Format;
 import java.util.List;
 
-public class StockController {
+public class StockController extends MenuController {
 
    //Elementos das colunas
     @FXML
