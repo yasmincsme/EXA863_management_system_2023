@@ -1,7 +1,7 @@
 package com.example.exa863_management_system_2023.model;
 
-import com.example.exa863_management_system_2023.Exceptions.InvalidSatisfactionScore;
-import com.example.exa863_management_system_2023.Exceptions.WorkOrderWithoutTechnician;
+import com.example.exa863_management_system_2023.exceptions.InvalidSatisfactionScore;
+import com.example.exa863_management_system_2023.exceptions.WorkOrderWithoutTechnician;
 
 import java.io.Serializable;
 import java.text.ParsePosition;
@@ -11,7 +11,6 @@ import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 import java.text.SimpleDateFormat;
-import java.util.List;
 
 public class WorkOrder implements Serializable {
 
@@ -41,8 +40,8 @@ public class WorkOrder implements Serializable {
         this.createdAt = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss.S").format(Calendar.getInstance().getTime());
         this.finishedAt = null;
         this.clientSatisfaction = 0;
-        this.price = 0.00;
-        this.cost = 0.00;
+        this.price = 0.0;
+        this.cost = 0.0;
         this.paymentMethod = null;
     }
 
