@@ -7,9 +7,79 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":sparkles: feat: hello apllication">
+    <list default="true" id="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" name="Changes" comment=":sparkles: feat: Novo controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/FindUsers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/Exceptions/InvalidSatisfactionScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/exceptions/InvalidSatisfactionScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/Exceptions/ObjectNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/exceptions/ObjectNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/Exceptions/WorkOrderWithoutTechnician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/exceptions/WorkOrderWithoutTechnician.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/ClientsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/ClientsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewComponentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewComponentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewComponentsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/UpdateClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/UpdateClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/UpdateComponentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/UpdateComponentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/UpdateOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/UpdateOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/UpdateUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/UpdateUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/CRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/BuildingArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/BuildingArchiveImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/BuildingListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/building/BuildingListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningArchiveImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientArchiveImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/client/ClientListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentArchiveImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeArchiveImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/employee/EmployeeListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationArchiveImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/installation/InstallationListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/manager/ManagerArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/manager/ManagerArchiveImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/manager/ManagerListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/manager/ManagerListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianArchiveImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/technician/TechnicianListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderArchiveImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderArchiveImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderListImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderListImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Building.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Technician.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/exa863_management_system_2023/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/building/BuildingImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/building/BuildingImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/cleaning/CleaningImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/client/ClientImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/client/ClientImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/computerComponent/ComponentImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/employee/EmployeeImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/employee/EmployeeImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/installation/InstallationImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/installation/InstallationImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/manager/ManagerImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/manager/ManagerImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/technician/TechnicianImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/technician/TechnicianImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/dao/workOrder/WorkOrderImplementationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/BuildingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/BuildingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/WorkOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/exa863_management_system_2023/model/WorkOrderTest.java" afterDir="false" />
+    </list>
+    <list id="8cdb840d-2721-4902-ae6a-87ec8cdf7187" name="Changes by vitin" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/ClientsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/ClientsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/utils/FileManager.java" afterDir="false" />
+    </list>
+    <list id="2e5f05ad-b0c0-47a1-a4cc-4a51b20ea0ea" name="Changes by Vitu" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewOrderController.java" afterDir="false" />
+    </list>
+    <list id="f3b0b34b-3680-46a4-8387-9e22b361b6e5" name="Changes by yamisan" comment="Changes by yamisan">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/ComputerComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +98,76 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/StockController.java">
+      <ranges>
+        <range start1="26" end1="27" start2="26" end2="27" changelist="f3b0b34b-3680-46a4-8387-9e22b361b6e5" />
+        <range start1="67" end1="68" start2="67" end2="67" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="71" end1="72" start2="70" end2="70" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="75" end1="76" start2="73" end2="73" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="79" end1="80" start2="76" end2="76" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="83" end1="84" start2="79" end2="79" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="87" end1="88" start2="82" end2="82" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="112" end1="114" start2="106" end2="108" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/model/WorkOrder.java">
+      <ranges>
+        <range start1="2" end1="4" start2="2" end2="4" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="13" end1="14" start2="13" end2="13" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="37" end1="38" start2="36" end2="37" changelist="8cdb840d-2721-4902-ae6a-87ec8cdf7187" />
+        <range start1="43" end1="45" start2="42" end2="44" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/ClientsController.java">
+      <ranges>
+        <range start1="17" end1="17" start2="17" end2="18" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="53" end1="53" start2="54" end2="58" changelist="8cdb840d-2721-4902-ae6a-87ec8cdf7187" />
+        <range start1="65" end1="66" start2="70" end2="70" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="69" end1="70" start2="73" end2="73" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="114" end1="115" start2="117" end2="119" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="119" end1="121" start2="123" end2="125" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/NewOrderController.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="7" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="4" end1="4" start2="9" end2="10" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="6" end1="6" start2="12" end2="15" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="9" end1="9" start2="18" end2="19" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="11" end1="11" start2="21" end2="23" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="12" end1="12" start2="24" end2="28" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="14" end1="15" start2="30" end2="32" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="17" end1="18" start2="34" end2="34" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="19" end1="21" start2="35" end2="36" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="24" end1="35" start2="39" end2="39" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="37" end1="39" start2="41" end2="45" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="42" end1="43" start2="48" end2="50" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="44" end1="44" start2="51" end2="71" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="45" end1="46" start2="72" end2="72" changelist="2e5f05ad-b0c0-47a1-a4cc-4a51b20ea0ea" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/com/example/exa863_management_system_2023/controller/OrdersController.java">
+      <ranges>
+        <range start1="5" end1="6" start2="5" end2="5" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="7" end1="8" start2="6" end2="6" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="14" end1="15" start2="12" end2="12" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="17" end1="17" start2="14" end2="15" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="21" end1="22" start2="19" end2="19" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="24" end1="25" start2="21" end2="22" changelist="f3b0b34b-3680-46a4-8387-9e22b361b6e5" />
+        <range start1="26" end1="26" start2="23" end2="28" changelist="f3b0b34b-3680-46a4-8387-9e22b361b6e5" />
+        <range start1="73" end1="74" start2="75" end2="75" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="77" end1="78" start2="78" end2="78" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="81" end1="82" start2="81" end2="81" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="85" end1="86" start2="84" end2="84" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="89" end1="90" start2="87" end2="87" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="93" end1="94" start2="90" end2="90" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="97" end1="98" start2="93" end2="93" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="122" end1="124" start2="117" end2="119" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+        <range start1="127" end1="129" start2="122" end2="124" changelist="ea28de08-1fb9-4b74-b31f-a16f8ab7fe77" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,6 +200,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/meira/Downloads/GitHub/EXA863_management_system_2023&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -93,7 +234,7 @@
       <recent name="com.example.exa863_management_system_2023.dao.computerComponent" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="Application.MainController">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.exa863_management_system_2023.HelloApplication" />
       <module name="EXA863_management_system_2023" />
@@ -160,8 +301,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="Application.MainController" />
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.exa863_management_system_2023 in EXA863_management_system_2023" />
         <item itemvalue="JUnit.ManagerImplementationTest" />
         <item itemvalue="JUnit.WorkOrderImplementationTest" />
@@ -216,112 +357,10 @@
       <workItem from="1685905999878" duration="3000" />
       <workItem from="1685906862114" duration="6081000" />
       <workItem from="1686449682677" duration="538000" />
-      <workItem from="1686528137716" duration="3951000" />
-    </task>
-    <task id="LOCAL-00373" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431831100</created>
-      <option name="number" value="00373" />
-      <option name="presentableId" value="LOCAL-00373" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431831102</updated>
-    </task>
-    <task id="LOCAL-00374" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431849253</created>
-      <option name="number" value="00374" />
-      <option name="presentableId" value="LOCAL-00374" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431849254</updated>
-    </task>
-    <task id="LOCAL-00375" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431867174</created>
-      <option name="number" value="00375" />
-      <option name="presentableId" value="LOCAL-00375" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431867174</updated>
-    </task>
-    <task id="LOCAL-00376" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431906876</created>
-      <option name="number" value="00376" />
-      <option name="presentableId" value="LOCAL-00376" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431906876</updated>
-    </task>
-    <task id="LOCAL-00377" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431920003</created>
-      <option name="number" value="00377" />
-      <option name="presentableId" value="LOCAL-00377" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431920003</updated>
-    </task>
-    <task id="LOCAL-00378" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431936403</created>
-      <option name="number" value="00378" />
-      <option name="presentableId" value="LOCAL-00378" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431936403</updated>
-    </task>
-    <task id="LOCAL-00379" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431949206</created>
-      <option name="number" value="00379" />
-      <option name="presentableId" value="LOCAL-00379" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431949207</updated>
-    </task>
-    <task id="LOCAL-00380" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431961972</created>
-      <option name="number" value="00380" />
-      <option name="presentableId" value="LOCAL-00380" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431961973</updated>
-    </task>
-    <task id="LOCAL-00381" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431980562</created>
-      <option name="number" value="00381" />
-      <option name="presentableId" value="LOCAL-00381" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431980563</updated>
-    </task>
-    <task id="LOCAL-00382" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683431995558</created>
-      <option name="number" value="00382" />
-      <option name="presentableId" value="LOCAL-00382" />
-      <option name="project" value="LOCAL" />
-      <updated>1683431995559</updated>
-    </task>
-    <task id="LOCAL-00383" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683432017384</created>
-      <option name="number" value="00383" />
-      <option name="presentableId" value="LOCAL-00383" />
-      <option name="project" value="LOCAL" />
-      <updated>1683432017384</updated>
-    </task>
-    <task id="LOCAL-00384" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683432049568</created>
-      <option name="number" value="00384" />
-      <option name="presentableId" value="LOCAL-00384" />
-      <option name="project" value="LOCAL" />
-      <updated>1683432049571</updated>
-    </task>
-    <task id="LOCAL-00385" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683432061915</created>
-      <option name="number" value="00385" />
-      <option name="presentableId" value="LOCAL-00385" />
-      <option name="project" value="LOCAL" />
-      <updated>1683432061917</updated>
-    </task>
-    <task id="LOCAL-00386" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683432073957</created>
-      <option name="number" value="00386" />
-      <option name="presentableId" value="LOCAL-00386" />
-      <option name="project" value="LOCAL" />
-      <updated>1683432073957</updated>
-    </task>
-    <task id="LOCAL-00387" summary=":bulb: docs: Adicionando comentários para documentação">
-      <created>1683432089949</created>
-      <option name="number" value="00387" />
-      <option name="presentableId" value="LOCAL-00387" />
-      <option name="project" value="LOCAL" />
-      <updated>1683432089949</updated>
+      <workItem from="1686528137716" duration="4405000" />
+      <workItem from="1686944727917" duration="783000" />
+      <workItem from="1686945532247" duration="21650000" />
+      <workItem from="1687008912982" duration="40832000" />
     </task>
     <task id="LOCAL-00388" summary=":bulb: docs: Adicionando comentários para documentação">
       <created>1683432106063</created>
@@ -561,7 +600,112 @@
       <option name="project" value="LOCAL" />
       <updated>1686544372074</updated>
     </task>
-    <option name="localTasksCounter" value="422" />
+    <task id="LOCAL-00422" summary=":sparkles: feat: hello apllication">
+      <created>1686544407776</created>
+      <option name="number" value="00422" />
+      <option name="presentableId" value="LOCAL-00422" />
+      <option name="project" value="LOCAL" />
+      <updated>1686544407776</updated>
+    </task>
+    <task id="LOCAL-00423" summary=":sparkles: feat: Novo controller">
+      <created>1687046042194</created>
+      <option name="number" value="00423" />
+      <option name="presentableId" value="LOCAL-00423" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046042195</updated>
+    </task>
+    <task id="LOCAL-00424" summary=":sparkles: feat: Novo controller">
+      <created>1687046076815</created>
+      <option name="number" value="00424" />
+      <option name="presentableId" value="LOCAL-00424" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046076815</updated>
+    </task>
+    <task id="LOCAL-00425" summary=":sparkles: feat: Novo controller">
+      <created>1687046091437</created>
+      <option name="number" value="00425" />
+      <option name="presentableId" value="LOCAL-00425" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046091437</updated>
+    </task>
+    <task id="LOCAL-00426" summary=":sparkles: feat: Novo controller">
+      <created>1687046105316</created>
+      <option name="number" value="00426" />
+      <option name="presentableId" value="LOCAL-00426" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046105316</updated>
+    </task>
+    <task id="LOCAL-00427" summary=":sparkles: feat: Novo controller">
+      <created>1687046119098</created>
+      <option name="number" value="00427" />
+      <option name="presentableId" value="LOCAL-00427" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046119098</updated>
+    </task>
+    <task id="LOCAL-00428" summary=":sparkles: feat: Novo controller">
+      <created>1687046157958</created>
+      <option name="number" value="00428" />
+      <option name="presentableId" value="LOCAL-00428" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046157958</updated>
+    </task>
+    <task id="LOCAL-00429" summary=":sparkles: feat: Novo controller">
+      <created>1687046180909</created>
+      <option name="number" value="00429" />
+      <option name="presentableId" value="LOCAL-00429" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046180909</updated>
+    </task>
+    <task id="LOCAL-00430" summary=":sparkles: feat: Novo controller">
+      <created>1687046199264</created>
+      <option name="number" value="00430" />
+      <option name="presentableId" value="LOCAL-00430" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046199264</updated>
+    </task>
+    <task id="LOCAL-00431" summary=":sparkles: feat: Novo controller">
+      <created>1687046214561</created>
+      <option name="number" value="00431" />
+      <option name="presentableId" value="LOCAL-00431" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046214561</updated>
+    </task>
+    <task id="LOCAL-00432" summary=":sparkles: feat: Novo controller">
+      <created>1687046235626</created>
+      <option name="number" value="00432" />
+      <option name="presentableId" value="LOCAL-00432" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046235626</updated>
+    </task>
+    <task id="LOCAL-00433" summary=":sparkles: feat: Novo controller">
+      <created>1687046250155</created>
+      <option name="number" value="00433" />
+      <option name="presentableId" value="LOCAL-00433" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046250155</updated>
+    </task>
+    <task id="LOCAL-00434" summary=":sparkles: feat: Novo controller">
+      <created>1687046319164</created>
+      <option name="number" value="00434" />
+      <option name="presentableId" value="LOCAL-00434" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046319165</updated>
+    </task>
+    <task id="LOCAL-00435" summary=":sparkles: feat: Novo controller">
+      <created>1687046330311</created>
+      <option name="number" value="00435" />
+      <option name="presentableId" value="LOCAL-00435" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046330311</updated>
+    </task>
+    <task id="LOCAL-00436" summary=":sparkles: feat: Novo controller">
+      <created>1687046344115</created>
+      <option name="number" value="00436" />
+      <option name="presentableId" value="LOCAL-00436" />
+      <option name="project" value="LOCAL" />
+      <updated>1687046344117</updated>
+    </task>
+    <option name="localTasksCounter" value="437" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,7 +723,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=":ok_hand: style: Alterando formatação do código" />
     <MESSAGE value=":test_tube: test: Adicionando novos testes" />
     <MESSAGE value=":test_tube: test: Excluindo linha desnecessária" />
     <MESSAGE value=":recycle: refactor: Alterando nome do teste" />
@@ -604,7 +747,8 @@
     <MESSAGE value=":sparkles: feat: Controller para new users" />
     <MESSAGE value=":sparkles: feat: Controller para main" />
     <MESSAGE value=":sparkles: feat: hello apllication" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: feat: hello apllication" />
+    <MESSAGE value=":sparkles: feat: Novo controller" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: feat: Novo controller" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EXA863_management_system_2023$WorkOrderTest_testAddInstallationService.ic" NAME="WorkOrderTest.testAddInstallationService Coverage Results" MODIFIED="1681770639234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
