@@ -1,11 +1,9 @@
 package com.example.exa863_management_system_2023.model;
 
-import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
+import com.example.exa863_management_system_2023.exceptions.ObjectNotFoundException;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeEach;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
