@@ -3,23 +3,20 @@ package com.example.exa863_management_system_2023.controller;
 import com.example.exa863_management_system_2023.MainController;
 import com.example.exa863_management_system_2023.dao.DAO;
 import com.example.exa863_management_system_2023.exceptions.ObjectNotFoundException;
-import com.example.exa863_management_system_2023.model.ComputerComponent;
 import com.example.exa863_management_system_2023.model.WorkOrder;
-import com.example.exa863_management_system_2023.utils.FindUsers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.stage.Stage;
 import javafx.util.converter.DoubleStringConverter;
 import javafx.util.converter.IntegerStringConverter;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class OrdersController {
@@ -71,31 +68,24 @@ public class OrdersController {
 
         //Valores para a descrição
         this.descriptionColumn.setCellValueFactory(new PropertyValueFactory<>("description"));
-        this.descriptionColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         //Valores para o ID do cliente
         this.clientColumn.setCellValueFactory(new PropertyValueFactory<>("clientID"));
-        this.clientColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         //Valores para o ID do técnico
         this.technicianColumn.setCellValueFactory(new PropertyValueFactory<>("technicianID"));
-        this.technicianColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         //Valores para o status
         this.statusColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
-        this.statusColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         //Valores para a coluna preço
         this.priceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
-        this.priceColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DoubleStringConverter()));
 
         //Valores para a coluna custo
         this.costColumn.setCellValueFactory(new PropertyValueFactory<>("cost"));
-        this.costColumn.setCellFactory(TextFieldTableCell.forTableColumn(new DoubleStringConverter()));
 
         //Valores para a coluna de score
         this.scoreColumn.setCellValueFactory(new PropertyValueFactory<>("clientSatisfaction"));
-        this.scoreColumn.setCellFactory(TextFieldTableCell.forTableColumn(new IntegerStringConverter()));
 
         this.ordersTable.onMouseClickedProperty().setValue(mouseEvent -> {
             if (ordersTable.getSelectionModel().getSelectedItem() != null) {
@@ -120,12 +110,12 @@ public class OrdersController {
     }
 
     @FXML
-    void updateOrder(ActionEvent event) {
-
+    void updateOrder(ActionEvent event) throws IOException {
+        Stage popUpStage = MainController.popUp("UpdateOrderView.fxml");
     }
 
     @FXML
-    void addNewOrder(ActionEvent event) {
-
+    void addNewOrder(ActionEvent event) throws IOException {
+        Stage popUpStage = MainController.popUp("NewOrderView.fxml");
     }
 }
