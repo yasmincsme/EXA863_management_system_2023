@@ -43,6 +43,14 @@ public class Technician implements Serializable {
     }
 
     /**
+     * Retorna o tipo da entidade referida.
+     * @return Tipo da entidade referida
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
      * Retorna o nome da entidade referida.
      * @return Nome da entidade referida
      */
