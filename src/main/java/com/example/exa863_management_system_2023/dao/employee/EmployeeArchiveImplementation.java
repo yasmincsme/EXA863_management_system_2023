@@ -1,8 +1,7 @@
 package com.example.exa863_management_system_2023.dao.employee;
 
-import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
+import com.example.exa863_management_system_2023.exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.model.Employee;
-import com.example.exa863_management_system_2023.model.Manager;
 import com.example.exa863_management_system_2023.utils.FileManager;
 import com.example.exa863_management_system_2023.utils.Generator;
 
