@@ -13,7 +13,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.stage.Stage;
@@ -67,15 +66,12 @@ public class UsersController extends MenuController {
 
         //Valores para o nome
         this.nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
-        this.nameColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         //Valores para o email
         this.emailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
-        this.emailColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         //Valores para o tipo
         this.roleColumn.setCellValueFactory(new PropertyValueFactory<>("type"));
-        this.roleColumn.setCellFactory(TextFieldTableCell.forTableColumn());
 
         this.usersTable.onMouseClickedProperty().setValue(mouseEvent -> {
             if (usersTable.getSelectionModel().getSelectedItem() != null) {
