@@ -1,6 +1,6 @@
 package com.example.exa863_management_system_2023.dao.technician;
 
-import com.example.exa863_management_system_2023.Exceptions.ObjectNotFoundException;
+import com.example.exa863_management_system_2023.exceptions.ObjectNotFoundException;
 import com.example.exa863_management_system_2023.model.Technician;
 import com.example.exa863_management_system_2023.utils.Generator;
 
@@ -62,6 +62,17 @@ public class TechnicianListImplementation implements TechnicianDAO {
         List<Technician> technicianList = new ArrayList<Technician>();
         for (Technician technician : this.listOfTechnician) {
             if (technician.getName().equals(name)) {
+                technicianList.add(technician);
+            }
+        }
+        return technicianList;
+    }
+
+    @Override
+    public List<Technician> findByLogin(String login) {
+        List<Technician> technicianList = new ArrayList<>();
+        for (Technician technician : this.listOfTechnician) {
+            if (technician.getLogin().equals(login)) {
                 technicianList.add(technician);
             }
         }
